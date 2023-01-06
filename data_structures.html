@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CSc 110 Computer Programming I – data_structures</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">CSc 110 Computer Programming I</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">CSc 110 Computer Programming I</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Start Here</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link">Schedule</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tas.html" class="sidebar-item-text sidebar-link">TAs and Office Hours</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">About the readings</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about_python.html" class="sidebar-item-text sidebar-link">About Python</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Week 1 - Basics</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./hello.html" class="sidebar-item-text sidebar-link">Hello World!</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basics.html" class="sidebar-item-text sidebar-link">Constants, variables, and comments</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Week 2 - Functions</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./functions.html" class="sidebar-item-text sidebar-link">Functions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Week 3 - Operators and Expressions</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./op_exp.html" class="sidebar-item-text sidebar-link">Operators and Expressions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Week 4 - Control Flow (if statements)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./control_flow.html" class="sidebar-item-text sidebar-link">Control Flow</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">Week 5 - Control Flow (while statements)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./control_flow.html" class="sidebar-item-text sidebar-link">Control Flow</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Week 6 - Data Structures (lists)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_structures.html" class="sidebar-item-text sidebar-link active">Data Structures</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Week 7 - Control Flow (for statements)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./control_flow.html" class="sidebar-item-text sidebar-link">Control Flow</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true">Week 8 - Data Structures (dictionaries)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_structures.html" class="sidebar-item-text sidebar-link">Data Structures</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true">Week 9 - Data Structures (dictionaries)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_structures.html" class="sidebar-item-text sidebar-link">Data Structures</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="true">Week 10 - Control Flow (for statements)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./control_flow.html" class="sidebar-item-text sidebar-link">Control Flow</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="true">Week 11 - Reading and Writing Text Files</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./io.html" class="sidebar-item-text sidebar-link">Input and Output</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="true">Week 12 - Data Structures (tuples)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_structures.html" class="sidebar-item-text sidebar-link">Data Structures</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="true">Week 13 - Control Flow with different Data Structures</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_structures.html" class="sidebar-item-text sidebar-link">Data Structures</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="true">Week 14 - Combining Data Structures</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_structures.html" class="sidebar-item-text sidebar-link">Data Structures</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="true">Week 15 - Handling Exceptions</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exceptions.html" class="sidebar-item-text sidebar-link">Exceptions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">Week 16 - Review</span>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-structures" id="toc-data-structures" class="nav-link active" data-scroll-target="#data-structures">Data Structures</a>
+  <ul class="collapse">
+  <li><a href="#list" id="toc-list" class="nav-link" data-scroll-target="#list">List</a></li>
+  <li><a href="#quick-introduction-to-objects-and-classes" id="toc-quick-introduction-to-objects-and-classes" class="nav-link" data-scroll-target="#quick-introduction-to-objects-and-classes">Quick Introduction To Objects And Classes</a></li>
+  <li><a href="#tuple" id="toc-tuple" class="nav-link" data-scroll-target="#tuple">Tuple</a></li>
+  <li><a href="#dictionary" id="toc-dictionary" class="nav-link" data-scroll-target="#dictionary">Dictionary</a></li>
+  <li><a href="#sequence" id="toc-sequence" class="nav-link" data-scroll-target="#sequence">Sequence</a></li>
+  <li><a href="#set" id="toc-set" class="nav-link" data-scroll-target="#set">Set</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#more-strings" id="toc-more-strings" class="nav-link" data-scroll-target="#more-strings">More About Strings</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="data-structures" class="level1">
+<h1>Data Structures</h1>
+<p>Data structures are basically just that - they are <em>structures</em> which can hold some <em>data</em> together. In other words, they are used to store a collection of related data.</p>
+<p>There are four built-in data structures in Python - <em>list, tuple, dictionary and set</em>. We will see how to use each of them and how they make life easier for us.</p>
+<section id="list" class="level2">
+<h2 class="anchored" data-anchor-id="list">List</h2>
+<p>A <code>list</code> is a data structure that holds an ordered collection of items i.e.&nbsp;you can store a <em>sequence</em> of items in a list. This is easy to imagine if you can think of a shopping list where you have a list of items to buy, except that you probably have each item on a separate line in your shopping list whereas in Python you put commas in between them.</p>
+<p>The list of items should be enclosed in square brackets so that Python understands that you are specifying a list. Once you have created a list, you can add, remove or search for items in the list. Since we can add and remove items, we say that a list is a <em>mutable</em> data type i.e.&nbsp;this type can be altered.</p>
+</section>
+<section id="quick-introduction-to-objects-and-classes" class="level2">
+<h2 class="anchored" data-anchor-id="quick-introduction-to-objects-and-classes">Quick Introduction To Objects And Classes</h2>
+<p>Although I’ve been generally delaying the discussion of objects and classes till now, a little explanation is needed right now so that you can understand lists better. We will explore this topic in detail in a <a href="./oop.md#oop">later chapter</a>.</p>
+<p>A list is an example of usage of objects and classes. When we use a variable <code>i</code> and assign a value to it, say integer <code>5</code> to it, you can think of it as creating an <em>object</em> (i.e.&nbsp;instance) <code>i</code> of <em>class</em> (i.e.&nbsp;type) <code>int</code>. In fact, you can read <code>help(int)</code> to understand this better.</p>
+<p>A class can also have <em>methods</em> i.e.&nbsp;functions defined for use with respect to that class only. You can use these pieces of functionality only when you have an object of that class. For example, Python provides an <code>append</code> method for the <code>list</code> class which allows you to add an item to the end of the list. For example, <code>mylist.append('an item')</code> will add that string to the list <code>mylist</code>. Note the use of dotted notation for accessing methods of the objects.</p>
+<p>A class can also have <em>fields</em> which are nothing but variables defined for use with respect to that class only. You can use these variables/names only when you have an object of that class. Fields are also accessed by the dotted notation, for example, <code>mylist.field</code>.</p>
+<p>Example (save as <code>ds_using_list.py</code>):</p>
+<pre><code class="lang-python">{% include "./programs/ds_using_list.py" %}</code></pre>
+<p>Output:</p>
+<pre><code>{% include "./programs/ds_using_list.txt" %}</code></pre>
+<p><strong>How It Works</strong></p>
+<p>The variable <code>shoplist</code> is a shopping list for someone who is going to the market. In <code>shoplist</code>, we only store strings of the names of the items to buy but you can add <em>any kind of object</em> to a list including numbers and even other lists.</p>
+<p>We have also used the <code>for..in</code> loop to iterate through the items of the list. By now, you must have realised that a list is also a sequence. The speciality of sequences will be discussed in a <a href="#sequence">later section</a>.</p>
+<p>Notice the use of the <code>end</code> parameter in the call to <code>print</code> function to indicate that we want to end the output with a space instead of the usual line break.</p>
+<p>Next, we add an item to the list using the <code>append</code> method of the list object, as already discussed before. Then, we check that the item has been indeed added to the list by printing the contents of the list by simply passing the list to the <code>print</code> function which prints it neatly.</p>
+<p>Then, we sort the list by using the <code>sort</code> method of the list. It is important to understand that this method affects the list itself and does not return a modified list - this is different from the way strings work. This is what we mean by saying that lists are <em>mutable</em> and that strings are <em>immutable</em>.</p>
+<p>Next, when we finish buying an item in the market, we want to remove it from the list. We achieve this by using the <code>del</code> statement. Here, we mention which item of the list we want to remove and the <code>del</code> statement removes it from the list for us. We specify that we want to remove the first item from the list and hence we use <code>del shoplist[0]</code> (remember that Python starts counting from 0).</p>
+<p>If you want to know all the methods defined by the list object, see <code>help(list)</code> for details.</p>
+</section>
+<section id="tuple" class="level2">
+<h2 class="anchored" data-anchor-id="tuple">Tuple</h2>
+<p>Tuples are used to hold together multiple objects. Think of them as similar to lists, but without the extensive functionality that the list class gives you. One major feature of tuples is that they are <em>immutable</em> like strings i.e.&nbsp;you cannot modify tuples.</p>
+<p>Tuples are defined by specifying items separated by commas within an optional pair of parentheses.</p>
+<p>Tuples are usually used in cases where a statement or a user-defined function can safely assume that the collection of values (i.e.&nbsp;the tuple of values used) will not change.</p>
+<p>Example (save as <code>ds_using_tuple.py</code>):</p>
+<pre><code class="lang-python">{% include "./programs/ds_using_tuple.py" %}</code></pre>
+<p>Output:</p>
+<pre><code>{% include "./programs/ds_using_tuple.txt" %}</code></pre>
+<p><strong>How It Works</strong></p>
+<p>The variable <code>zoo</code> refers to a tuple of items. We see that the <code>len</code> function can be used to get the length of the tuple. This also indicates that a tuple is a <a href="#sequence">sequence</a> as well.</p>
+<p>We are now shifting these animals to a new zoo since the old zoo is being closed. Therefore, the <code>new_zoo</code> tuple contains some animals which are already there along with the animals brought over from the old zoo. Back to reality, note that a tuple within a tuple does not lose its identity.</p>
+<p>We can access the items in the tuple by specifying the item’s position within a pair of square brackets just like we did for lists. This is called the <em>indexing</em> operator. We access the third item in <code>new_zoo</code> by specifying <code>new_zoo[2]</code> and we access the third item within the third item in the <code>new_zoo</code> tuple by specifying <code>new_zoo[2][2]</code>. This is pretty simple once you’ve understood the idiom.</p>
+<blockquote class="blockquote">
+<p><strong>Tuple with 0 or 1 items</strong></p>
+<p>An empty tuple is constructed by an empty pair of parentheses such as <code>myempty = ()</code>. However, a tuple with a single item is not so simple. You have to specify it using a comma following the first (and only) item so that Python can differentiate between a tuple and a pair of parentheses surrounding the object in an expression i.e.&nbsp;you have to specify <code>singleton = (2 , )</code> if you mean you want a tuple containing the item <code>2</code>.</p>
+</blockquote>
+<!-- -->
+<blockquote class="blockquote">
+<p><strong>Note for Perl programmers</strong></p>
+<p>A list within a list does not lose its identity i.e.&nbsp;lists are not flattened as in Perl. The same applies to a tuple within a tuple, or a tuple within a list, or a list within a tuple, etc. As far as Python is concerned, they are just objects stored using another object, that’s all.</p>
+</blockquote>
+</section>
+<section id="dictionary" class="level2">
+<h2 class="anchored" data-anchor-id="dictionary">Dictionary</h2>
+<p>A dictionary is like an address-book where you can find the address or contact details of a person by knowing only his/her name i.e.&nbsp;we associate <em>keys</em> (name) with <em>values</em> (details). Note that the key must be unique just like you cannot find out the correct information if you have two persons with the exact same name.</p>
+<p>Note that you can use only immutable objects (like strings) for the keys of a dictionary but you can use either immutable or mutable objects for the values of the dictionary. This basically translates to say that you should use only simple objects for keys.</p>
+<p>Pairs of keys and values are specified in a dictionary by using the notation <code>d = {key1 : value1, key2 : value2 }</code>. Notice that the key-value pairs are separated by a colon and the pairs are separated themselves by commas and all this is enclosed in a pair of curly braces.</p>
+<p>Remember that key-value pairs in a dictionary are not ordered in any manner. If you want a particular order, then you will have to sort them yourself before using it.</p>
+<p>The dictionaries that you will be using are instances/objects of the <code>dict</code> class.</p>
+<p>Example (save as <code>ds_using_dict.py</code>):</p>
+<pre><code class="lang-python">{% include "./programs/ds_using_dict.py" %}</code></pre>
+<p>Output:</p>
+<pre><code>{% include "./programs/ds_using_dict.txt" %}</code></pre>
+<p><strong>How It Works</strong></p>
+<p>We create the dictionary <code>ab</code> using the notation already discussed. We then access key-value pairs by specifying the key using the indexing operator as discussed in the context of lists and tuples. Observe the simple syntax.</p>
+<p>We can delete key-value pairs using our old friend - the <code>del</code> statement. We simply specify the dictionary and the indexing operator for the key to be removed and pass it to the <code>del</code> statement. There is no need to know the value corresponding to the key for this operation.</p>
+<p>Next, we access each key-value pair of the dictionary using the <code>items</code> method of the dictionary which returns a list of tuples where each tuple contains a pair of items - the key followed by the value. We retrieve this pair and assign it to the variables <code>name</code> and <code>address</code> correspondingly for each pair using the <code>for..in</code> loop and then print these values in the for-block.</p>
+<p>We can add new key-value pairs by simply using the indexing operator to access a key and assign that value, as we have done for Guido in the above case.</p>
+<p>We can check if a key-value pair exists using the <code>in</code> operator.</p>
+<p>For the list of methods of the <code>dict</code> class, see <code>help(dict)</code>.</p>
+<blockquote class="blockquote">
+<p><strong>Keyword Arguments and Dictionaries</strong></p>
+<p>If you have used keyword arguments in your functions, you have already used dictionaries! Just think about it - the key-value pair is specified by you in the parameter list of the function definition and when you access variables within your function, it is just a key access of a dictionary (which is called the <em>symbol table</em> in compiler design terminology).</p>
+</blockquote>
+</section>
+<section id="sequence" class="level2">
+<h2 class="anchored" data-anchor-id="sequence">Sequence</h2>
+<p>Lists, tuples and strings are examples of sequences, but what are sequences and what is so special about them?</p>
+<p>The major features are <em>membership tests</em>, (i.e.&nbsp;the <code>in</code> and <code>not in</code> expressions) and <em>indexing operations</em>, which allow us to fetch a particular item in the sequence directly.</p>
+<p>The three types of sequences mentioned above - lists, tuples and strings, also have a <em>slicing</em> operation which allows us to retrieve a slice of the sequence i.e.&nbsp;a part of the sequence.</p>
+<p>Example (save as <code>ds_seq.py</code>):</p>
+<pre><code class="lang-python">{% include "./programs/ds_seq.py" %}</code></pre>
+<p>Output:</p>
+<pre><code>{% include "./programs/ds_seq.txt" %}</code></pre>
+<p><strong>How It Works</strong></p>
+<p>First, we see how to use indexes to get individual items of a sequence. This is also referred to as the <em>subscription operation</em>. Whenever you specify a number to a sequence within square brackets as shown above, Python will fetch you the item corresponding to that position in the sequence. Remember that Python starts counting numbers from 0. Hence, <code>shoplist[0]</code> fetches the first item and <code>shoplist[3]</code> fetches the fourth item in the <code>shoplist</code> sequence.</p>
+<p>The index can also be a negative number, in which case, the position is calculated from the end of the sequence. Therefore, <code>shoplist[-1]</code> refers to the last item in the sequence and <code>shoplist[-2]</code> fetches the second last item in the sequence.</p>
+<p>The slicing operation is used by specifying the name of the sequence followed by an optional pair of numbers separated by a colon within square brackets. Note that this is very similar to the indexing operation you have been using till now. Remember the numbers are optional but the colon isn’t.</p>
+<p>The first number (before the colon) in the slicing operation refers to the position from where the slice starts and the second number (after the colon) indicates where the slice will stop at. If the first number is not specified, Python will start at the beginning of the sequence. If the second number is left out, Python will stop at the end of the sequence. Note that the slice returned <em>starts</em> at the start position and will end just before the <em>end</em> position i.e.&nbsp;the start position is included but the end position is excluded from the sequence slice.</p>
+<p>Thus, <code>shoplist[1:3]</code> returns a slice of the sequence starting at position 1, includes position 2 but stops at position 3 and therefore a <em>slice</em> of two items is returned. Similarly, <code>shoplist[:]</code> returns a copy of the whole sequence.</p>
+<p>You can also do slicing with negative positions. Negative numbers are used for positions from the end of the sequence. For example, <code>shoplist[:-1]</code> will return a slice of the sequence which excludes the last item of the sequence but contains everything else.</p>
+<p>You can also provide a third argument for the slice, which is the <em>step</em> for the slicing (by default, the step size is 1):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> shoplist <span class="op">=</span> [<span class="st">'apple'</span>, <span class="st">'mango'</span>, <span class="st">'carrot'</span>, <span class="st">'banana'</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> shoplist[::<span class="dv">1</span>]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>[<span class="st">'apple'</span>, <span class="st">'mango'</span>, <span class="st">'carrot'</span>, <span class="st">'banana'</span>]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> shoplist[::<span class="dv">2</span>]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>[<span class="st">'apple'</span>, <span class="st">'carrot'</span>]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> shoplist[::<span class="dv">3</span>]</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>[<span class="st">'apple'</span>, <span class="st">'banana'</span>]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> shoplist[::<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>[<span class="st">'banana'</span>, <span class="st">'carrot'</span>, <span class="st">'mango'</span>, <span class="st">'apple'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Notice that when the step is 2, we get the items with position 0, 2,… When the step size is 3, we get the items with position 0, 3, etc.</p>
+<p>Try various combinations of such slice specifications using the Python interpreter interactively i.e.&nbsp;the prompt so that you can see the results immediately. The great thing about sequences is that you can access tuples, lists and strings all in the same way!</p>
+</section>
+<section id="set" class="level2">
+<h2 class="anchored" data-anchor-id="set">Set</h2>
+<p>Sets are <em>unordered</em> collections of simple objects. These are used when the existence of an object in a collection is more important than the order or how many times it occurs.</p>
+<p>Using sets, you can test for membership, whether it is a subset of another set, find the intersection between two sets, and so on.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> bri <span class="op">=</span> <span class="bu">set</span>([<span class="st">'brazil'</span>, <span class="st">'russia'</span>, <span class="st">'india'</span>])</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="st">'india'</span> <span class="kw">in</span> bri</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="st">'usa'</span> <span class="kw">in</span> bri</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="va">False</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> bric <span class="op">=</span> bri.copy()</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> bric.add(<span class="st">'china'</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> bric.issuperset(bri)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> bri.remove(<span class="st">'russia'</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> bri <span class="op">&amp;</span> bric <span class="co"># OR bri.intersection(bric)</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>{<span class="st">'brazil'</span>, <span class="st">'india'</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>How It Works</strong></p>
+<p>If you remember basic set theory mathematics from school, then this example is fairly self-explanatory. But if not, you can google “set theory” and “Venn diagram” to better understand our use of sets in Python.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>When you create an object and assign it to a variable, the variable only <em>refers</em> to the object and does not represent the object itself! That is, the variable name points to that part of your computer’s memory where the object is stored. This is called <em>binding</em> the name to the object.</p>
+<p>Generally, you don’t need to be worried about this, but there is a subtle effect due to references which you need to be aware of:</p>
+<p>Example (save as <code>ds_reference.py</code>):</p>
+<pre><code class="lang-python">{% include "./programs/ds_reference.py" %}</code></pre>
+<p>Output:</p>
+<pre><code>{% include "./programs/ds_reference.txt" %}</code></pre>
+<p><strong>How It Works</strong></p>
+<p>Most of the explanation is available in the comments.</p>
+<p>Remember that if you want to make a copy of a list or such kinds of sequences or complex objects (not simple <em>objects</em> such as integers), then you have to use the slicing operation to make a copy. If you just assign the variable name to another name, both of them will ‘’refer’’ to the same object and this could be trouble if you are not careful.</p>
+<blockquote class="blockquote">
+<p><strong>Note for Perl programmers</strong></p>
+<p>Remember that an assignment statement for lists does <strong>not</strong> create a copy. You have to use slicing operation to make a copy of the sequence.</p>
+</blockquote>
+</section>
+<section id="more-strings" class="level2">
+<h2 class="anchored" data-anchor-id="more-strings">More About Strings</h2>
+<p>We have already discussed strings in detail earlier. What more can there be to know? Well, did you know that strings are also objects and have methods which do everything from checking part of a string to stripping spaces? In fact, you’ve already been using a string method… the <code>format</code> method!</p>
+<p>The strings that you use in programs are all objects of the class <code>str</code>. Some useful methods of this class are demonstrated in the next example. For a complete list of such methods, see <code>help(str)</code>.</p>
+<p>Example (save as <code>ds_str_methods.py</code>):</p>
+<pre><code class="lang-python">{% include "./programs/ds_str_methods.py" %}</code></pre>
+<p>Output:</p>
+<pre><code>{% include "./programs/ds_str_methods.txt" %}</code></pre>
+<p><strong>How It Works</strong></p>
+<p>Here, we see a lot of the string methods in action. The <code>startswith</code> method is used to find out whether the string starts with the given string. The <code>in</code> operator is used to check if a given string is a part of the string.</p>
+<p>The <code>find</code> method is used to locate the position of the given substring within the string; <code>find</code> returns -1 if it is unsuccessful in finding the substring. The <code>str</code> class also has a neat method to <code>join</code> the items of a sequence with the string acting as a delimiter between each item of the sequence and returns a bigger string generated from this.</p>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>We have explored the various built-in data structures of Python in detail. These data structures will be essential for writing programs of reasonable size.</p>
+<p>Now that we have a lot of the basics of Python in place, we will next see how to design and write a real-world Python program.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
