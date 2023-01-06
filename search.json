@@ -151,7 +151,7 @@
     "href": "schedule.html#assignments-1",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments"
+    "text": "Assignments\n\nModule 2 Programming Problems"
   },
   {
     "objectID": "schedule.html#readings-2",
@@ -964,5 +964,12 @@
     "title": "Math in Python (class slides)",
     "section": "Write a function",
     "text": "Write a function\nWrite a function that calculates the area of a sphere:\n\nIts name is sphere_area\nIt takes one argument: radius\nIt calculates the volume of the sphere (use 3.1415 for \\(\\pi\\)):\n\n\\[\na = 4 \\cdot \\pi \\cdot radius^2\n\\]\n\nIt returns the value for the calculated sphere area\nTest case: sphere_volume(.75) should return 7.07."
+  },
+  {
+    "objectID": "exercises-02.html",
+    "href": "exercises-02.html",
+    "title": "Module 2 Programming Problems",
+    "section": "",
+    "text": "Programming Problem 1\nWrite two python functions. The first function does the following:\n\nIts name is celsius_to_fahrenheit.\nIt takes a float argument, celsius.\nIt calculates the Fahrenheit temperature based on the given celsius temperature. To do so multiply the Celsius temperature by 1.8 (or 9/5) and add 32.\nIt returns the Fahrenheit temperature with two decimals of precision.\n\nThe other function convert temperatures in degrees from Fahrenheit to Celsius.\n\nIts name is fahrenheit_to_celsius.\nIt takes a float argument, fahrenheit.\nIt calculates the Celsius temperature based on the given Fahrenheit temperature. To do so subtract 32 from the Fahrenheit temperature and multiply the result by 5/9.\nIt returns the Celsius temperature with two decimals of precision.\n\nName the program temperatures.py. Make sure that gradescope gives you the points for passing the test cases.\n\n\nProgramming Problem 2\nWrite a python function that does the following:\n\nIts name is feet_to_inches.\nIt takes a float argument, feet.\nIt converts the feet measurement to inches. As you might already know, an inch is 1/12th of a foot.\nIt returns the measure in inches as an rounded integer.\n\nName the program measures.py. Make sure that gradescope gives you the points for passing the test cases."
   }
 ]
