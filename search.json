@@ -151,7 +151,7 @@
     "href": "schedule.html#assignments-1",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 2 Programming Problems"
+    "text": "Assignments\n\nModule 2 Programming Problems – Due date: Tuesday, January 24 at 7pm"
   },
   {
     "objectID": "schedule.html#readings-2",
@@ -368,7 +368,7 @@
     "href": "schedule.html#assignments",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nSurvey\nModule 1 Programming Problems"
+    "text": "Assignments\n\nSurvey – Due date: Friday, January 13 at 7pm\nModule 1 Programming Problems – Due date: Tuesday, January 17 at 7pm"
   },
   {
     "objectID": "op_exp.html",
@@ -971,5 +971,68 @@
     "title": "Module 2 Programming Problems",
     "section": "",
     "text": "Programming Problem 1\nWrite two python functions. The first function does the following:\n\nIts name is celsius_to_fahrenheit.\nIt takes a float argument, celsius.\nIt calculates the Fahrenheit temperature based on the given celsius temperature. To do so multiply the Celsius temperature by 1.8 (or 9/5) and add 32.\nIt returns the Fahrenheit temperature with two decimals of precision.\n\nThe other function convert temperatures in degrees from Fahrenheit to Celsius.\n\nIts name is fahrenheit_to_celsius.\nIt takes a float argument, fahrenheit.\nIt calculates the Celsius temperature based on the given Fahrenheit temperature. To do so subtract 32 from the Fahrenheit temperature and multiply the result by 5/9.\nIt returns the Celsius temperature with two decimals of precision.\n\nName the program temperatures.py. Make sure that gradescope gives you the points for passing the test cases.\n\n\nProgramming Problem 2\nWrite a python function that does the following:\n\nIts name is feet_to_inches.\nIt takes a float argument, feet.\nIt converts the feet measurement to inches. As you might already know, an inch is 1/12th of a foot.\nIt returns the measure in inches as an rounded integer.\n\nName the program measures.py. Make sure that gradescope gives you the points for passing the test cases."
+  },
+  {
+    "objectID": "slides-04-01.html#the-if-statement",
+    "href": "slides-04-01.html#the-if-statement",
+    "title": "If statements (class slides)",
+    "section": "The if statement",
+    "text": "The if statement\n\nIf statements can be used to run code conditionally\n\nBefore if-statements: Code has pretty much just run in a straight line\nWith ifs: Can run code optionally, depending on the value of a condition\n\n\nThis means our code can branch in different directions"
+  },
+  {
+    "objectID": "slides-04-01.html#the-if-statement-1",
+    "href": "slides-04-01.html#the-if-statement-1",
+    "title": "If statements (class slides)",
+    "section": "The if statement",
+    "text": "The if statement\nif condition:\n    statement 1\n    statement 2\n    . . .\n    statement N\n\nThe condition is an expression that is evaluated to a bool.\nExample:\n\ndef say_hello(name):\n  if name == \"Bond\":\n    print(\"Welcome on board 007.\")\n  else:\n    print(\"Hello,\", name)\n\nuser_name = input(\"Enter your name:\\n\")\nsay_hello(user_name)"
+  },
+  {
+    "objectID": "slides-04-01.html#validating-numbers",
+    "href": "slides-04-01.html#validating-numbers",
+    "title": "If statements (class slides)",
+    "section": "Validating numbers",
+    "text": "Validating numbers\n\nThe input() function always returns a string\nWe can use the string built-in function isnumeric() to determine if a string represents a number\nThe idea is to ensure the input string only contains digits\n\nTry these out:\n\nname = \"Jimmy\"\nname.isnumeric()\n\nage = 37\nage.isnumeric()"
+  },
+  {
+    "objectID": "slides-04-01.html#write-a-function",
+    "href": "slides-04-01.html#write-a-function",
+    "title": "If statements (class slides)",
+    "section": "Write a function",
+    "text": "Write a function"
+  },
+  {
+    "objectID": "slides-04-01.html#improve-the-function",
+    "href": "slides-04-01.html#improve-the-function",
+    "title": "If statements (class slides)",
+    "section": "Improve the function",
+    "text": "Improve the function\nInstead of checking if the name entered is “Bond”, also check whether the name is “James Bond”."
+  },
+  {
+    "objectID": "assignments-01.html",
+    "href": "assignments-01.html",
+    "title": "Module 1 Programming Problems",
+    "section": "",
+    "text": "Survey\nDue date: Friday, January 13 at 7pm\nhttps://uarizona.co1.qualtrics.com/jfe/form/SV_1SJfUXNtQ9hoa1w\nThis is a survey to collect information on your expectations for CSc 110 Computer Programming I. The completion of this survey is required and will be used for grading purposes.\n\n\nProgramming Problem 1\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation.\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Make sure that gradescope gives you the points for passing the test case."
+  },
+  {
+    "objectID": "slides-04-01.html",
+    "href": "slides-04-01.html",
+    "title": "If statements (class slides)",
+    "section": "",
+    "text": "If statements can be used to run code conditionally\n\nBefore if-statements: Code has pretty much just run in a straight line\nWith ifs: Can run code optionally, depending on the value of a condition\n\n\nThis means our code can branch in different directions\n\n\n\nif condition:\n    statement 1\n    statement 2\n    . . .\n    statement N\n\nThe condition is an expression that is evaluated to a bool.\nExample:\n\ndef say_hello(name):\n  if name == \"Bond\":\n    print(\"Welcome on board 007.\")\n  else:\n    print(\"Hello,\", name)\n\nuser_name = input(\"Enter your name:\\n\")\nsay_hello(user_name)\n\n\n\n\nInstead of checking if the name entered is “Bond”, also check whether the name is “James Bond”.\n\n\n\n\n\n\n\nage = int(input('How old are you?\\n'))\n\nif age >= 18:\n    print('You may apply to join the military')\n    \nif age >= 21:\n    print('You may drink')\n    \nif age > 35:\n    print('You may run for president')"
+  },
+  {
+    "objectID": "assignments-02.html",
+    "href": "assignments-02.html",
+    "title": "Module 2 Programming Problems",
+    "section": "",
+    "text": "Programming Problem 1\nDue date: Tuesday, January 24 at 7pm\nWrite two python functions. The first function does the following:\n\nIts name is celsius_to_fahrenheit.\nIt takes a float argument, celsius.\nIt calculates the Fahrenheit temperature based on the given celsius temperature. To do so multiply the Celsius temperature by 1.8 (or 9/5) and add 32.\nIt returns the Fahrenheit temperature with two decimals of precision.\n\nThe other function convert temperatures in degrees from Fahrenheit to Celsius.\n\nIts name is fahrenheit_to_celsius.\nIt takes a float argument, fahrenheit.\nIt calculates the Celsius temperature based on the given Fahrenheit temperature. To do so subtract 32 from the Fahrenheit temperature and multiply the result by 5/9.\nIt returns the Celsius temperature with two decimals of precision.\n\nName the program temperatures.py. Make sure that gradescope gives you the points for passing the test cases.\n\n\nProgramming Problem 2\nDue date: Tuesday, January 24 at 7pm\nWrite a python function that does the following:\n\nIts name is feet_to_inches.\nIt takes a float argument, feet.\nIt converts the feet measurement to inches. As you might already know, an inch is 1/12th of a foot.\nIt returns the measure in inches as an rounded integer.\n\nName the program measures.py. Make sure that gradescope gives you the points for passing the test cases."
+  },
+  {
+    "objectID": "slides-04-01.html#checking-age",
+    "href": "slides-04-01.html#checking-age",
+    "title": "If statements (class slides)",
+    "section": "Checking age",
+    "text": "Checking age\n\nage = int(input('How old are you?\\n'))\n\nif age >= 18:\n    print('You may apply to join the military')\n    \nif age >= 21:\n    print('You may drink')\n    \nif age > 35:\n    print('You may run for president')"
   }
 ]
