@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CSc 110 Computer Programming I – control_flow_while</title>
+<title>CSc 110 Computer Programming I - Style Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -126,7 +126,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">(Untitled)</h1>
+      <h1 class="quarto-secondary-nav-title">Style Guide</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -184,7 +184,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./style.html" class="sidebar-item-text sidebar-link">Style Guide</a>
+  <a href="./style.html" class="sidebar-item-text sidebar-link active">Style Guide</a>
   </div>
 </li>
     </ul>
@@ -309,7 +309,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./control_flow_while.html" class="sidebar-item-text sidebar-link active">Control Flow (while)</a>
+  <a href="./control_flow_while.html" class="sidebar-item-text sidebar-link">Control Flow (while)</a>
   </div>
 </li>
     </ul>
@@ -458,9 +458,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#control-flow" id="toc-control-flow" class="nav-link active" data-scroll-target="#control-flow">Control Flow (while)</a>
+  <li><a href="#csc-110-style-guide" id="toc-csc-110-style-guide" class="nav-link active" data-scroll-target="#csc-110-style-guide">CSc 110: Style Guide</a>
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#file-comments" id="toc-file-comments" class="nav-link" data-scroll-target="#file-comments"><em>File Comments</em></a></li>
+  <li><a href="#function-comments" id="toc-function-comments" class="nav-link" data-scroll-target="#function-comments"><em>Function Comments</em></a></li>
+  <li><a href="#other-formatting" id="toc-other-formatting" class="nav-link" data-scroll-target="#other-formatting"><em>Other formatting</em></a></li>
+  <li><a href="#variables-and-line-length" id="toc-variables-and-line-length" class="nav-link" data-scroll-target="#variables-and-line-length"><em>Variables and Line Length</em></a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -468,54 +472,110 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Style Guide</h1>
+</div>
 
 
-<section id="control-flow" class="level1">
-<h1>Control Flow (while)</h1>
-<p>The <code>while</code> statement allows you to repeatedly execute a block of statements as long as a condition is true. A <code>while</code> statement is an example of what is called a <em>looping</em> statement. A <code>while</code> statement can have an optional <code>else</code> clause.</p>
-<p>Example:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">23</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>running <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> running:</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    guess <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">'Enter an integer : '</span>))</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> guess <span class="op">==</span> number:</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'Congratulations, you guessed it.'</span>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># this causes the while loop to stop</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        running <span class="op">=</span> <span class="va">False</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> guess <span class="op">&lt;</span> number:</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'No, it is a little higher than that.'</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'No, it is a little lower than that.'</span>)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'The while loop is over.'</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Do anything else you want to do here</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Done'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Output:</p>
-<pre><code>
-Enter an integer : 50
-No, it is a little lower than that.
-Enter an integer : 22
-No, it is a little higher than that.
-Enter an integer : 23
-Congratulations, you guessed it.
-The while loop is over.
-Done
-</code></pre>
-<p><strong>How It Works</strong></p>
-<p>In this program, we are still playing the guessing game, but the advantage is that the user is allowed to keep guessing until he guesses correctly - there is no need to repeatedly run the program for each guess, as we have done in the previous section. This aptly demonstrates the use of the <code>while</code> statement.</p>
-<p>We move the <code>input</code> and <code>if</code> statements to inside the <code>while</code> loop and set the variable <code>running</code> to <code>True</code> before the while loop. First, we check if the variable <code>running</code> is <code>True</code> and then proceed to execute the corresponding <em>while-block</em>. After this block is executed, the condition is again checked which in this case is the <code>running</code> variable. If it is true, we execute the while-block again, else we continue to execute the optional else-block and then continue to the next statement.</p>
-<p>The <code>else</code> block is executed when the <code>while</code> loop condition becomes <code>False</code> - this may even be the first time that the condition is checked. If there is an <code>else</code> clause for a <code>while</code> loop, it is always executed unless you break out of the loop with a <code>break</code> statement.</p>
-<p>The <code>True</code> and <code>False</code> are called Boolean types and you can consider them to be equivalent to the value <code>1</code> and <code>0</code> respectively.</p>
-<blockquote class="blockquote">
-<p><strong>Note for C/C++ Programmers</strong></p>
-<p>Remember that you can have an <code>else</code> clause for the <code>while</code> loop.</p>
-</blockquote>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>We have seen how to use the <code>while</code> statement. This is commonly used parts of Python and hence, becoming comfortable with them is essential.</p>
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p><em>Coding style</em> refers to how you name your objects and functions, how you comment your code, how you use spacing throughout your code, etc. If your coding style is consistent, your code is easier to read and easier to debug as a result. Many companies enforce a specific coding style, and you won’t be able to push your code to the code base if your code does not pass the style check.</p>
+<p>This style guide is a list of <em>dos and don'ts</em> for Python programs. In this course, style will be enforced (meaning you will be graded on it) only for programming projects.</p>
+<section id="csc-110-style-guide" class="level1">
+<h1>CSc 110: Style Guide</h1>
+<section id="file-comments" class="level3">
+<h3 class="anchored" data-anchor-id="file-comments"><em>File Comments</em></h3>
+<p>File comments, also called header comments, are a <strong>required</strong> piece of your program. This belongs at the top of your code. Your name, the course title, the class section you are in, the assignment, and a brief description of your program should be located in the file comments. Below is an outline for reference.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">""" </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">Jane Doe</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">CSC110</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">Project -1</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">This program has a single function that computes the sum of two numbers.</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">"""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>Note that three double-quotes surround the header comments (you can also use three single-quotes).</p></li>
+<li><p>These are docstrings; they are utilized in Python to document your code.</p></li>
+<li><p>Docstrings should be organized and easy to read.</p></li>
+<li><p><strong>Remember:</strong> you are writing code for others and your future self to read!</p></li>
+</ul>
+</section>
+<section id="function-comments" class="level3">
+<h3 class="anchored" data-anchor-id="function-comments"><em>Function Comments</em></h3>
+<p>Every function created is required to have a function comment, including main. Function comments serve to describe the task the function performs. The function arguments and return should be included. Please follow the example below for reference.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> divide(x, y):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">    This function returns the integer division of its two parameters.</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">        x: the integer dividend.</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">        y: the integer divisor.</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">        The integer division of x and y.</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">//</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>Note the triple-quotes (docstrings) that surround the function comments.</p></li>
+<li><p>The function comments are located inside the function they describe, before any code.</p></li>
+<li><p>Function comments <strong>must</strong> contain a description of the function, the arguments, and the return value.</p></li>
+<li><p>The description of parameters should include their types and purpose.</p></li>
+<li><p>The description of the return value should include its type and what it represents.</p></li>
+<li><p>If the function has no arguments or return, document that in the docstrings.</p></li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func():</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">    This function prints the character char N times.</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">        None.</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">        None.</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"This is an example."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>The template above should be followed when there are no arguments or return values in a function.</p></li>
+<li><p>Please note that information about both arguments and return values are included in function comments, even if there are none in the function.</p></li>
+</ul>
+</section>
+<section id="other-formatting" class="level3">
+<h3 class="anchored" data-anchor-id="other-formatting"><em>Other formatting</em></h3>
+<ul>
+<li><p>When formatting a docstring, follow the template above.</p></li>
+<li><p>Description of the function should be first.</p></li>
+<li><p>A function's description should describe the purpose of the function, not the implementation of it.</p></li>
+<li><p>Arguments and information about them should follow the description of the function.</p></li>
+<li><p>The return value is the last piece of information in the docstring.</p></li>
+</ul>
+</section>
+<section id="variables-and-line-length" class="level3">
+<h3 class="anchored" data-anchor-id="variables-and-line-length"><em>Variables and Line Length</em></h3>
+<p>Variable names should follow typical Python style requirements. Variables should only consist of lower-case letters, numbers, and underscores. Variables should be indicative of what they represent. Below are examples of good variable naming and poor variable naming.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Good examples of variable names.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>product <span class="op">=</span> count<span class="op">*</span><span class="dv">3</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>word <span class="op">=</span> <span class="st">"Hello"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Zuko"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>employee_salary <span class="op">=</span> <span class="st">"70000"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Poor examples of variable names.</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="er">proDUCT</span> <span class="op">=</span> count<span class="op">*</span><span class="dv">3</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>word_GREETING <span class="op">=</span> <span class="st">"Hello"</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>xyz <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>__name <span class="op">=</span> <span class="st">"Zuko"</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>employeeSalary <span class="op">=</span> <span class="st">"70000"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Similarly to function comments, code should be easy to read. This can be done by breaking pieces of code into groups. If several lines of code relate to the same task, put them together with no spaces inbetween and use spacing to separate them from other groupings.</p>
+<p>All lines of code should be 80 characters or less. If there is a line of code that exceeds that length, it should be rewritten to be two statements. The backslash character (<code>\</code>) can also be used to continue the statement onto the next line.</p>
+</section>
+<section id="reference" class="level3">
+<h3 class="anchored" data-anchor-id="reference">Reference</h3>
+<p>This guide is derived from <a href="http://proebsting.cs.arizona.edu/">Todd Proebsting</a>’s guide, which is very loosely based on <a href="https://google.github.io/styleguide/pyguide.html">Google's Style Guide</a>.</p>
 
 
 </section>
