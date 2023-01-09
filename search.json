@@ -284,7 +284,35 @@
     "href": "index.html",
     "title": "CSc 110 Computer Programming I",
     "section": "",
-    "text": "Welcome to CSc 110!\nThis is an introduction to programming with an emphasis on solving problems drawn from a variety of domains. Topics include basic control and data structures, problem solving strategies, and software development tools and techniques. Specifically, the Python programming language will be taught.\nWhere to start:\n\nSyllabus\nSchedule\n\n\n\nInstructor Information\n\nAdriana Picoral\n\nOffice: Gould-Simpson 829\nEmail: adrianaps@arizona.edu\nInstructor Website: adrianapicoral.com\nCourse D2L: d2l.arizona.edu/d2l/home/1257984\nOffice hours (open door, drop in, my office GS 829):\n\nMonday 11:30am to 1pm\nWednesday 2pm to 4pm"
+    "text": "Instructor Information\n\nAdriana Picoral\n\nOffice: Gould-Simpson 829\nEmail: adrianaps@arizona.edu\nInstructor Website: adrianapicoral.com\nCourse D2L: d2l.arizona.edu/d2l/home/1257984\nOffice hours (open door, drop in, my office GS 829):\n\nMonday 11:30am to 1pm\nWednesday 2pm to 4pm"
+  },
+  {
+    "objectID": "project-1.html",
+    "href": "project-1.html",
+    "title": "Programming Project 1",
+    "section": "",
+    "text": "Due date: January 25, 7pm\nIn this first programming project you will implement a number of Python functions to calculate the area of different geometric shapes. Make sure you follow the provided style guide (you will be graded on it!). You are not allowed to use any built-in method or function for any Python library.\nName the program geometry.py. Make sure that gradescope gives you the points for passing the test cases."
+  },
+  {
+    "objectID": "project-1.html#area-of-a-rectangle",
+    "href": "project-1.html#area-of-a-rectangle",
+    "title": "Programming Project 1",
+    "section": "Area of a Rectangle",
+    "text": "Area of a Rectangle\n\nFunction name is rectangle_area\nIt takes two arguments: base and height\nIt returns the area of the rectangle with given base and height\n\n\\[\narea = base \\cdot height\n\\]"
+  },
+  {
+    "objectID": "project-1.html#area-of-a-triangle",
+    "href": "project-1.html#area-of-a-triangle",
+    "title": "Programming Project 1",
+    "section": "Area of a Triangle",
+    "text": "Area of a Triangle\n\nFunction name is triangle_area\nIt takes three arguments, one for the length of each side of the triangle: a, b, c.\nIt returns the area of the three given side lengths calculated according to Heron’s formula (calculate the semiperimeter first, then use that to calculate the area):\n\n\\[\ns = (a + b + c) / 2\n\\]\n\\[\narea = \\sqrt{s \\cdot (s-1) \\cdot (s-b) \\cdot (s-c)}\n\\]\n\nDo not use any built-in method or function for any Python library. Remember that roots are the opposite of an exponent. So you can calculate the square root of a number by using the exponent form \\(n^{1/2}\\)."
+  },
+  {
+    "objectID": "project-1.html#area-of-a-trapezoid",
+    "href": "project-1.html#area-of-a-trapezoid",
+    "title": "Programming Project 1",
+    "section": "Area of a Trapezoid",
+    "text": "Area of a Trapezoid\n\nFunction name is trapezoid_area\nIt takes three arguments: base_1, base_2, and height\nIt returns the area of the trapezoid with given base_1, base_2, and height.\n\n\\[\narea = {1/2} \\cdot (base_1 + base_2) \\cdot height\n\\]"
   },
   {
     "objectID": "about.html",
@@ -936,5 +964,12 @@
     "title": "Module 1 Programming Problems",
     "section": "",
     "text": "Programming Problem 1\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation.\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Make sure that gradescope gives you the points for passing the test case."
+  },
+  {
+    "objectID": "project-1.html#area-of-a-circle",
+    "href": "project-1.html#area-of-a-circle",
+    "title": "Programming Project 1",
+    "section": "Area of a Circle",
+    "text": "Area of a Circle\n\nFunction name is circle_area\nIt takes one argument: radius\nIt returns the area of the circle with the given radius\n\n\\[\narea = \\pi \\cdot radius^2\n\\]"
   }
 ]
