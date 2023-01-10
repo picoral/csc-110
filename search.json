@@ -978,5 +978,12 @@
     "title": "Module 1 Programming Problems",
     "section": "",
     "text": "Programming Problem 1\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation.\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Make sure that gradescope gives you the points for passing the test case."
+  },
+  {
+    "objectID": "syllabus.html#administrative-drops",
+    "href": "syllabus.html#administrative-drops",
+    "title": "Syllabus",
+    "section": "Administrative Drops",
+    "text": "Administrative Drops\nEvery semester, students enroll in introductory CS classes but do not submit any work, resulting in a grade of E at the end of the term. To prevent this, at the end of the second week (January 20), I will be administratively dropping all students who have not submitted/completed four or more of the following:\n\nJanuary 11 quiz\nClass presence on January 13\nJanuary 18 quiz\nClass presence on January 20\nBeginning of semester survey\nModule 1 Programming Problem 1\nModule 1 Programming Problem 2"
   }
 ]
