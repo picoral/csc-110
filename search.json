@@ -291,7 +291,7 @@
     "href": "project-1.html",
     "title": "Programming Project 1",
     "section": "",
-    "text": "Due date: January 25, 7pm\nIn this first programming project you will implement a number of Python functions to calculate the area of different geometric shapes. Make sure you follow the provided style guide (you will be graded on it!). You are not allowed to use any built-in method or function for any Python library.\nName the program geometry.py. Make sure that gradescope gives you the points for passing the test cases."
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: January 25, 7pm\nIn this first programming project you will implement a number of Python functions to calculate the area of different geometric shapes. Make sure you follow the provided style guide (you will be graded on it!). You are not allowed to use any built-in method or function for any Python library.\nName the program geometry.py. Make sure that gradescope (https://www.gradescope.com/courses/487587/assignments/2554521) gives you the points for passing the test cases."
   },
   {
     "objectID": "project-1.html#area-of-a-rectangle",
@@ -305,7 +305,7 @@
     "href": "project-1.html#area-of-a-triangle",
     "title": "Programming Project 1",
     "section": "Area of a Triangle",
-    "text": "Area of a Triangle\n\nFunction name is triangle_area\nIt takes three arguments, one for the length of each side of the triangle: a, b, c.\nIt returns the area of the three given side lengths calculated according to Heron’s formula (calculate the semiperimeter first, then use that to calculate the area):\n\n\\[\ns = (a + b + c) / 2\n\\]\n\\[\narea = \\sqrt{s \\cdot (s-1) \\cdot (s-b) \\cdot (s-c)}\n\\]\n\nDo not use any built-in method or function for any Python library. Remember that roots are the opposite of an exponent. So you can calculate the square root of a number by using the exponent form \\(n^{1/2}\\)."
+    "text": "Area of a Triangle\n\nFunction name is triangle_area\nIt takes three arguments, one for the length of each side of the triangle: a, b, c\nIt returns the area of the three given side lengths calculated according to Heron’s formula (calculate the semiperimeter first, then use that to calculate the area):\n\n\\[\ns = (a + b + c) / 2\n\\]\n\\[\narea = \\sqrt{s \\cdot (s-a) \\cdot (s-b) \\cdot (s-c)}\n\\]\n\nDo not use any built-in method or function for any Python library. Remember that roots are the opposite of an exponent. So you can calculate the square root of a number by using the exponent form \\(n^{1/2}\\)."
   },
   {
     "objectID": "project-1.html#area-of-a-trapezoid",
@@ -319,7 +319,7 @@
     "href": "project-1.html#area-of-a-circle",
     "title": "Programming Project 1",
     "section": "Area of a Circle",
-    "text": "Area of a Circle\n\nFunction name is circle_area\nIt takes one argument: radius\nIt returns the area of the circle with the given radius\n\n\\[\narea = \\pi \\cdot radius^2\n\\]"
+    "text": "Area of a Circle\n\nFunction name is circle_area\nIt takes one argument: radius\nIt returns the area of the circle with the given radius, rounded at two decimal places\nUse the value 3.1415 for \\(\\pi\\)\n\n\\[\narea = \\pi \\cdot radius^2\n\\]"
   },
   {
     "objectID": "about.html",
@@ -977,7 +977,7 @@
     "href": "assignments-01.html",
     "title": "Module 1 Programming Problems",
     "section": "",
-    "text": "Programming Problem 1\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation.\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Make sure that gradescope gives you the points for passing the test case."
+    "text": "Programming Problems should be submitted to gradescope.\n\nSurvey\nDue date: Friday, January 13 at 7pm\nhttps://uarizona.co1.qualtrics.com/jfe/form/SV_1SJfUXNtQ9hoa1w\nThis is a survey to collect information on your expectations for CSc 110 Computer Programming I. The completion of this survey is required and will be used for grading purposes.\n\n\nProgramming Problem 1\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation.\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope (https://www.gradescope.com/courses/487587/assignments/2554285) gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Tuesday, January 17 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Make sure that gradescope (https://www.gradescope.com/courses/487587/assignments/2554337) gives you the points for passing the test case.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences"
   },
   {
     "objectID": "syllabus.html#administrative-drops",
