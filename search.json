@@ -144,7 +144,7 @@
     "href": "slides-01-01.html#how-to-get-help-3",
     "title": "Course Introduction (class slides)",
     "section": "How to get help?",
-    "text": "How to get help?\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other peole for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself."
+    "text": "How to get help?\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself."
   },
   {
     "objectID": "slides-01-01.html#how-to-get-help-5",
@@ -964,6 +964,13 @@
     "title": "Hello World!",
     "section": "Video",
     "text": "Video"
+  },
+  {
+    "objectID": "discord.html",
+    "href": "discord.html",
+    "title": "Discord (online discussion and office hours)",
+    "section": "",
+    "text": "READ THE INFORMATION BELOW, IT’S VERY IMPORTANT.\n\nDiscord Rules\n\nChange your user name for the CSC 110 Spring 2023 server so that your name on this server matches your name on the roster/D2L. TAs, coords, and instructors will be checking if your name is in the roster before answering your questions or adding you to the office hours voice channels.\nDo not direct message (DM) TAs.\nIt is expected that everyone will participate in the online discussion in a mature and respectful manner. Do not demean or embarrass others. Do not make sexist, racist, xenophobic, homophobic, transphobic, or victim-blaming comments. Immature, aggressive, or disrespectful behavior will not be tolerated. If you see anyone breaking this rule, report that person to me (adrianaps@arizona.edu)\nBe cautious of how you use humor in sessions and online. Be aware of the potential impact of your words, regardless of the intentions. Think through and reread your comments before you say/post them."
   },
   {
     "objectID": "assignments-01.html",
