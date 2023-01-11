@@ -67,14 +67,14 @@
     "href": "slides-01-01.html#get-to-know-each-other",
     "title": "Course Introduction (class slides)",
     "section": "Get to know each-other",
-    "text": "Get to know each-other\n\nIntroduce yourself!\nShare your\n\nName\nPronouns\nMajor, declared or Intended (and why you chose that major)"
+    "text": "Get to know each-other\n\nIntroduce yourself!\nShare your\n\nName\nPronouns\nProgram/Major, declared or Intended (and why you chose that major)"
   },
   {
     "objectID": "slides-01-01.html#what-is-this-class-anyways",
     "href": "slides-01-01.html#what-is-this-class-anyways",
     "title": "Course Introduction (class slides)",
     "section": "What is this class, anyways?",
-    "text": "What is this class, anyways?\n\nIn this class, you will learn how to program\nSpecifically, programming in Python (version 3)\nWill cover many of the basic principles and concepts that are common to a number of programming languages, such as\n\ninput/output\nconditionals\nloops\nfunctions\ndata-structures\ndebugging\nand more!"
+    "text": "What is this class, anyways?\n\nIn this class, you will learn how to program\nSpecifically, programming in Python (version 3)\nWill cover many of the basic principles and concepts that are common to a number of programming languages, such as\n\ninput/output\nconditionals and loops (control flow)\nfunctions\ndata structures\ndebugging and more!"
   },
   {
     "objectID": "slides-01-01.html#the-intro-sequence",
@@ -137,14 +137,14 @@
     "href": "slides-01-01.html#how-to-get-help-2",
     "title": "Course Introduction (class slides)",
     "section": "How to get help?",
-    "text": "How to get help?\nBefore you ask for help:\n\nCheck for typos (read your error messages)\nGoogle is your friend (use it wisely). Copy and paste the exact error message on a Google search. (this step also includes read the documentation on the functions you’re trying to use).\nIf you are still stuck, you an always try rubber duck debugging. Describe the problem aloud, explaining it line-by-line, to a rubber duck or another person (who might not have any experience with programming). This is also a good preparation step to asking other people for help (next section)."
+    "text": "How to get help?\nBefore you ask for help:\n\nCheck for typos (read your error messages)\nGoogle is your friend (use it wisely). Copy and paste the exact error message on a Google search. (this step also includes read the documentation on the functions you’re trying to use)."
   },
   {
     "objectID": "slides-01-01.html#how-to-get-help-3",
     "href": "slides-01-01.html#how-to-get-help-3",
     "title": "Course Introduction (class slides)",
     "section": "How to get help?",
-    "text": "How to get help?\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself."
+    "text": "How to get help?\nBefore you ask for help:\n\nIf you are still stuck, you an always try rubber duck debugging. Describe the problem aloud, explaining it line-by-line, to a rubber duck or another person (who might not have any experience with programming). This is also a good preparation step to asking other people for help (next section)."
   },
   {
     "objectID": "slides-01-01.html#how-to-get-help-5",
@@ -172,7 +172,7 @@
     "href": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed",
     "title": "Course Introduction (class slides)",
     "section": "How is the structure of this class designed to help you succeed?",
-    "text": "How is the structure of this class designed to help you succeed?\n\nActive learning – you are expected to engage in the in-class activities\nDeep processing – I will elicit knowledge from you and help you make connections to new content\nSmall sequential steps – each week we build on top of the content of the previous week, make sure you are following along\nMastery checks – frequent assessment\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam"
+    "text": "How is the structure of this class designed to help you succeed?\n\nActive learning – you are expected to engage in the in-class activities\nDeep processing – I will elicit knowledge from you and help you make connections to new content\nSmall sequential steps – each week we build on top of the content of the previous week, make sure you are following along\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment"
   },
   {
     "objectID": "data_structures_tuples.html",
@@ -985,5 +985,33 @@
     "title": "Syllabus",
     "section": "Administrative Drops",
     "text": "Administrative Drops\nEvery semester, students enroll in introductory CS classes but do not submit any work, resulting in a grade of E at the end of the term. To prevent this, at the end of the second week (January 20), I will be administratively dropping all students who have not submitted/completed four or more of the following:\n\nJanuary 11 quiz\nClass presence on January 13\nJanuary 18 quiz\nClass presence on January 20\nBeginning of semester survey\nModule 1 Programming Problem 1\nModule 1 Programming Problem 2"
+  },
+  {
+    "objectID": "slides-01-01.html#assessment-structure",
+    "href": "slides-01-01.html#assessment-structure",
+    "title": "Course Introduction (class slides)",
+    "section": "Assessment structure",
+    "text": "Assessment structure\n\nProgramming Problems\nProjects\nExams and Quizzes"
+  },
+  {
+    "objectID": "slides-01-01.html#exams-and-quizzes",
+    "href": "slides-01-01.html#exams-and-quizzes",
+    "title": "Course Introduction (class slides)",
+    "section": "Exams and Quizzes",
+    "text": "Exams and Quizzes\nExams are on paper. Why?\n\nImportant skill to develop\nYou are able to show what you learned\nWhiteboard coding interviews are common"
+  },
+  {
+    "objectID": "slides-01-01.html#how-to-get-help-4",
+    "href": "slides-01-01.html#how-to-get-help-4",
+    "title": "Course Introduction (class slides)",
+    "section": "How to get help?",
+    "text": "How to get help?\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself."
+  },
+  {
+    "objectID": "slides-01-01.html#how-to-get-help-6",
+    "href": "slides-01-01.html#how-to-get-help-6",
+    "title": "Course Introduction (class slides)",
+    "section": "How to get help?",
+    "text": "How to get help?\n\nCome to office hours!\nJoin Discord and ask questions there\nDepartmental Tutors (free)\nEmail me (it will take longer than coming to office hours)"
   }
 ]
