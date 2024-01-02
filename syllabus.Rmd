@@ -167,6 +167,10 @@ You must keep theses dates available. Do not schedule any flights, travel plans,
 
 Weekly quizzes will be held every Wednesday (unless otherwise noted). The 2 (two) lowest grades for quizzes will be dropped from final grade calculations.
 
+Short programming projects are due on the same day as programming problems. While the instructions for programming problems are on the website, instructions for short projects will be available only during our weekly 45-minute in-person lab sessions. The 4 (four) lowest grades for short programming projects will be dropped at the end of the semester.
+
+To schedule your lab session go to <>.
+
 ## Late Work
 
 For programming problems and projects, late work is not accepted
