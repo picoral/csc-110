@@ -28,9 +28,9 @@ Midterm (individual) exams (pencil and paper format):
 
 The final exam (pencil and paper format) for all sections will be on:
 
--   `r schedule %>% filter(exam == "Final Exam" & term == "spring 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "spring 2024") %>% pull(time)` in  [ENR2](https://maps.app.goo.gl/RiDaC9Np7M8LVPYZ7) room N120
+-   `r schedule %>% filter(exam == "Final Exam" & term == "spring 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "spring 2024") %>% pull(time)` room TBA
 
-All assignments that are submitted on Gradescope are due at 7pm (Tuesdays for programming problems, and Wednesdays for Programming Projects).
+All assignments that are submitted on Gradescope are due at 7pm.
 
 # Week 1 (`r schedule %>% filter(week_number == 1 & term == "spring 2024") %>% pull(formatted_start)`)
 
