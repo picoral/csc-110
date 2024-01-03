@@ -2111,7 +2111,7 @@
     "href": "slides-07-03.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nRemember to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.6623727690484457\n8"
+    "text": "random module\nRemember to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.03493828433502577\n5"
   },
   {
     "objectID": "slides-07-03.html#write-a-function",
