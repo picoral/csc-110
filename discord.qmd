@@ -2,13 +2,13 @@
 title: "Discord (online discussion and office hours)"
 ---
 
-Link to join our Discord server: <https://discord.gg/wZrMTMG7v>
+Link to join our Discord server: TBA
 
 READ THE INFORMATION BELOW, IT'S **VERY** IMPORTANT.
 
 # Discord Rules
 
--   Change your user name for the CSC 110 Spring 2023 server so that **your name on this server matches your name on the roster/D2L**. TAs, coords, and instructors will be checking if your name is in the roster before answering your questions or adding you to the office hours voice channels.
+-   Change your user name for the course server so that **your name on this server matches your name on the roster/D2L**. TAs, coords, and instructors will be checking if your name is in the roster before answering your questions or adding you to the office hours voice channels.
 
 -   Do **not** direct message (DM) TAs.
 
