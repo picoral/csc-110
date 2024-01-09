@@ -879,6 +879,7 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
   <ul>
   <li><a href="#mismatch-in-file-name" id="toc-mismatch-in-file-name" class="nav-link active" data-scroll-target="#mismatch-in-file-name">Mismatch in file name</a></li>
   <li><a href="#mismatch-in-function-name" id="toc-mismatch-in-function-name" class="nav-link" data-scroll-target="#mismatch-in-function-name">Mismatch in function name</a></li>
+  <li><a href="#mismatch-in-ouput-for-strings" id="toc-mismatch-in-ouput-for-strings" class="nav-link" data-scroll-target="#mismatch-in-ouput-for-strings">Mismatch in ouput (for strings)</a></li>
   <li><a href="#conversion-function-error" id="toc-conversion-function-error" class="nav-link" data-scroll-target="#conversion-function-error">Conversion function error</a></li>
   <li><a href="#eof-error" id="toc-eof-error" class="nav-link" data-scroll-target="#eof-error">EOF error</a></li>
   <li><a href="#infinite-loop" id="toc-infinite-loop" class="nav-link" data-scroll-target="#infinite-loop">Infinite loop</a></li>
@@ -916,6 +917,14 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
 <h1>Mismatch in function name</h1>
 <pre class="{html}"><code>Test Failed: name 'farenheit' is not defined</code></pre>
 <p>Check the instructions for the correct function name. In the example above, the autograder is trying to call <code>fahrenheit()</code> and the function was written without the <code>h</code> after <code>a</code>.</p>
+</section>
+<section id="mismatch-in-ouput-for-strings" class="level1">
+<h1>Mismatch in ouput (for strings)</h1>
+<pre class="{html}"><code>Test Failed: 'Hello World\n' != 'Hello World!\n'
+- Hello World
++ Hello World!
+?            +</code></pre>
+<p>The first string is what was output by your code, the second is the expected output. This error message is indicating that the two strings are different (<code>!=</code>) and that the expected output has an extra character (the <code>!</code> at the end of the string).</p>
 </section>
 <section id="conversion-function-error" class="level1">
 <h1>Conversion function error</h1>
