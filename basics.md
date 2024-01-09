@@ -91,7 +91,7 @@ This means that once you have created a string, you cannot change it. Although t
 >
 > Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
 
-### The format method (this is not required for this course, you can skip this part)
+### The format method
 
 Sometimes we may want to construct strings from other information. This is where the `format()` method is useful.
 
