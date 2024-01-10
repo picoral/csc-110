@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CSc 110 Computer Programming I - String Manipulation</title>
+<title>CSc 110 Computer Programming I - What are Short Projects?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -116,7 +82,7 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./strings.html">Module 5 - Control Flow (while statements)</a></li><li class="breadcrumb-item"><a href="./strings.html">String Manipulation</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./short-projects.html">Short Projects</a></li><li class="breadcrumb-item"><a href="./short-projects.html">What are Short Projects?</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -288,7 +254,7 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./short-projects.html" class="sidebar-item-text sidebar-link">
+  <a href="./short-projects.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">What are Short Projects?</span></a>
   </div>
 </li>
@@ -527,7 +493,7 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./strings.html" class="sidebar-item-text sidebar-link active">
+  <a href="./strings.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">String Manipulation</span></a>
   </div>
 </li>
@@ -930,14 +896,20 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lab-schedule" id="toc-lab-schedule" class="nav-link active" data-scroll-target="#lab-schedule">Lab Schedule</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">String Manipulation</h1>
+<h1 class="title">What are Short Projects?</h1>
 </div>
 
 
@@ -952,60 +924,307 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
 
 </header>
 
-<p>Strings are <em>immutable sequences.</em> That means that we can retrieve a character in the string by indexing the string with square brackets. However, we are unable to change characters in the string.</p>
-<p>Given the string “Apple”, for example. The first character, “A” is at index 0, the second character “p” is at index 1 and so on:</p>
-<table class="table">
+<p>Short programming projects are due on the same day as programming problems. While the instructions for programming problems are on the website, instructions for short projects will be available only during our weekly 50-minute in-person lab sessions.</p>
+<p>The lowest grade for short programming projects will be dropped at the end of the semester. There will be one lab session (the week of March 25) for you to work on a maximum of two short programming project submissions you have missed.</p>
+<p>To schedule your lab session go to <a href="https://docs.google.com/spreadsheets/d/1mS3H-8GyLHb__rZaf9j66khmkncQgeqEXfyVk2l0sNo/edit?usp=sharing">the weekly lab session spreadsheet</a>.</p>
+<section id="lab-schedule" class="level1">
+<h1>Lab Schedule</h1>
+<p>This is for information only. You need to <a href="https://docs.google.com/spreadsheets/d/1mS3H-8GyLHb__rZaf9j66khmkncQgeqEXfyVk2l0sNo/edit?usp=sharing">sign up for a specific lab session</a> to be able to attend it.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 14%">
+<col style="width: 18%">
+<col style="width: 46%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">0</th>
-<th style="text-align: center;">1</th>
-<th style="text-align: center;">2</th>
-<th style="text-align: center;">3</th>
-<th style="text-align: center;">4</th>
+<th style="text-align: left;">Assignment</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Week Day</th>
+<th style="text-align: left;">Lab Leaders</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">p</td>
-<td style="text-align: center;">p</td>
-<td style="text-align: center;">l</td>
-<td style="text-align: center;">e</td>
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 16</td>
+<td style="text-align: left;">TUESDAY 10am</td>
+<td style="text-align: left;">Adriana Picoral</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 16</td>
+<td style="text-align: left;">TUESDAY 11am</td>
+<td style="text-align: left;">Adan Baca and Waldo Guzman</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 16</td>
+<td style="text-align: left;">TUESDAY 2pm</td>
+<td style="text-align: left;">Nees Abusaada and Mustafa Alnidawi</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 16</td>
+<td style="text-align: left;">TUESDAY 4pm</td>
+<td style="text-align: left;">Samarie Tavenner and Elias Zheng</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 17</td>
+<td style="text-align: left;">WEDNESDAY 11am</td>
+<td style="text-align: left;">Miro Vanek and Aidan Linder</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 17</td>
+<td style="text-align: left;">WEDNESDAY 4pm</td>
+<td style="text-align: left;">Pri Vaghela and Apurbo Barua</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 18</td>
+<td style="text-align: left;">THURSDAY 1pm</td>
+<td style="text-align: left;">Khojiakbar Yokubjonov and Taoseef Aziz</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 18</td>
+<td style="text-align: left;">THURSDAY 4pm</td>
+<td style="text-align: left;">Ethan Holley and Pearl McNabb</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 19</td>
+<td style="text-align: left;">FRIDAY 10am</td>
+<td style="text-align: left;">Owen Chambers and Garegin Mazmanyan</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 19</td>
+<td style="text-align: left;">FRIDAY 11am</td>
+<td style="text-align: left;">Owen Chambers and Garegin Mazmanyan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 19</td>
+<td style="text-align: left;">FRIDAY 12pm</td>
+<td style="text-align: left;">Cole Perry and Zachary Nicolosi</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 19</td>
+<td style="text-align: left;">FRIDAY 3pm</td>
+<td style="text-align: left;">Steven Truong and Ali Khan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 22</td>
+<td style="text-align: left;">MONDAY 11am</td>
+<td style="text-align: left;">Amyra White and Anthony Hsu</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 22</td>
+<td style="text-align: left;">MONDAY 12pm</td>
+<td style="text-align: left;">Caeden Motley and Gabriel Hernandez</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 01</td>
+<td style="text-align: left;">January 22</td>
+<td style="text-align: left;">MONDAY 4pm</td>
+<td style="text-align: left;">Maddie DeLeon and Emma Elliott</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 23</td>
+<td style="text-align: left;">TUESDAY 10am</td>
+<td style="text-align: left;">Adriana Picoral</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 23</td>
+<td style="text-align: left;">TUESDAY 11am</td>
+<td style="text-align: left;">Adan Baca and Waldo Guzman</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 23</td>
+<td style="text-align: left;">TUESDAY 2pm</td>
+<td style="text-align: left;">Nees Abusaada and Mustafa Alnidawi</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 23</td>
+<td style="text-align: left;">TUESDAY 4pm</td>
+<td style="text-align: left;">Samarie Tavenner and Elias Zheng</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 24</td>
+<td style="text-align: left;">WEDNESDAY 11am</td>
+<td style="text-align: left;">Miro Vanek and Aidan Linder</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 24</td>
+<td style="text-align: left;">WEDNESDAY 4pm</td>
+<td style="text-align: left;">Pri Vaghela and Apurbo Barua</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 25</td>
+<td style="text-align: left;">THURSDAY 1pm</td>
+<td style="text-align: left;">Khojiakbar Yokubjonov and Taoseef Aziz</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 25</td>
+<td style="text-align: left;">THURSDAY 4pm</td>
+<td style="text-align: left;">Ethan Holley and Pearl McNabb</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 26</td>
+<td style="text-align: left;">FRIDAY 10am</td>
+<td style="text-align: left;">Owen Chambers and Garegin Mazmanyan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 26</td>
+<td style="text-align: left;">FRIDAY 11am</td>
+<td style="text-align: left;">Owen Chambers and Garegin Mazmanyan</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 26</td>
+<td style="text-align: left;">FRIDAY 12pm</td>
+<td style="text-align: left;">Cole Perry and Zachary Nicolosi</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 26</td>
+<td style="text-align: left;">FRIDAY 3pm</td>
+<td style="text-align: left;">Steven Truong and Ali Khan</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 29</td>
+<td style="text-align: left;">MONDAY 11am</td>
+<td style="text-align: left;">Amyra White and Anthony Hsu</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 29</td>
+<td style="text-align: left;">MONDAY 12pm</td>
+<td style="text-align: left;">Caeden Motley and Gabriel Hernandez</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 02</td>
+<td style="text-align: left;">January 29</td>
+<td style="text-align: left;">MONDAY 4pm</td>
+<td style="text-align: left;">Maddie DeLeon and Emma Elliott</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">January 30</td>
+<td style="text-align: left;">TUESDAY 10am</td>
+<td style="text-align: left;">Adriana Picoral</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">January 30</td>
+<td style="text-align: left;">TUESDAY 11am</td>
+<td style="text-align: left;">Adan Baca and Waldo Guzman</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">January 30</td>
+<td style="text-align: left;">TUESDAY 2pm</td>
+<td style="text-align: left;">Nees Abusaada and Mustafa Alnidawi</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">January 30</td>
+<td style="text-align: left;">TUESDAY 4pm</td>
+<td style="text-align: left;">Samarie Tavenner and Elias Zheng</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">January 31</td>
+<td style="text-align: left;">WEDNESDAY 11am</td>
+<td style="text-align: left;">Miro Vanek and Aidan Linder</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">January 31</td>
+<td style="text-align: left;">WEDNESDAY 4pm</td>
+<td style="text-align: left;">Pri Vaghela and Apurbo Barua</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">February 01</td>
+<td style="text-align: left;">THURSDAY 1pm</td>
+<td style="text-align: left;">Khojiakbar Yokubjonov and Taoseef Aziz</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">February 01</td>
+<td style="text-align: left;">THURSDAY 4pm</td>
+<td style="text-align: left;">Ethan Holley and Pearl McNabb</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">February 01</td>
+<td style="text-align: left;">FRIDAY 10am</td>
+<td style="text-align: left;">Owen Chambers and Garegin Mazmanyan</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">February 01</td>
+<td style="text-align: left;">FRIDAY 11am</td>
+<td style="text-align: left;">Owen Chambers and Garegin Mazmanyan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">February 01</td>
+<td style="text-align: left;">FRIDAY 12pm</td>
+<td style="text-align: left;">Cole Perry and Zachary Nicolosi</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">February 01</td>
+<td style="text-align: left;">FRIDAY 3pm</td>
+<td style="text-align: left;">Steven Truong and Ali Khan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">February 04</td>
+<td style="text-align: left;">MONDAY 11am</td>
+<td style="text-align: left;">Amyra White and Anthony Hsu</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">February 04</td>
+<td style="text-align: left;">MONDAY 12pm</td>
+<td style="text-align: left;">Caeden Motley and Gabriel Hernandez</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Short Project 03</td>
+<td style="text-align: left;">February 04</td>
+<td style="text-align: left;">MONDAY 4pm</td>
+<td style="text-align: left;">Maddie DeLeon and Emma Elliott</td>
 </tr>
 </tbody>
 </table>
-<p>If we want to retrieve the fourth character in a string, we need to index it at 3:</p>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Suzanne"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>fourth_letter <span class="op">=</span> name[<span class="dv">3</span>]</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The fourth character in name is "</span> <span class="op">+</span> fourth_letter)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>The fourth character in name is a</code></pre>
-</div>
-</div>
-<p>We can also use membership tests using the operators <code>in</code> and <code>not in</code> with sequences.</p>
-<p>For example:</p>
-<div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> look_for_a(name):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="st">"a"</span> <span class="kw">in</span> name:</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">True</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">False</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  name <span class="op">=</span> <span class="st">"Adriana"</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> look_for_a(name):</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Name contains 'a'"</span>)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Name doesn't contain 'a'"</span>)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Name contains 'a'</code></pre>
 </div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
