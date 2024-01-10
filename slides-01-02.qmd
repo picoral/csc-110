@@ -109,6 +109,7 @@ Write a simple program that prints the following output to the python console:
 
 </pre>
 ```
+
 # Variables
 
 ## Variables and assignment
