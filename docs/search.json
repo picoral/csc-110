@@ -2146,14 +2146,14 @@
     "href": "tas.html#pm-section",
     "title": "TAs and Office Hours",
     "section": "1pm Section",
-    "text": "1pm Section\n\nTBA"
+    "text": "1pm Section\n\nElias Zheng\nGabriel Hernandez\nGaregin Mazmanyan\nMadeline DeLeon\nTaoseef Aziz\nSteven Truong\nWaldo Guzman Barrientos"
   },
   {
     "objectID": "tas.html#pm-section-1",
     "href": "tas.html#pm-section-1",
     "title": "TAs and Office Hours",
     "section": "2pm Section",
-    "text": "2pm Section\n\nTBA\n\nInterested in becoming a TA in the future? Check out more information about what TAs do and how to apply."
+    "text": "2pm Section\n\nAli Sartaz Khan\nMustafa Alnidawi\nNees Abusaada\nOwen Chambers\nPri Vaghela\nSamarie Tavenner\nZachary Nicolosi\n\nInterested in becoming a TA in the future? Check out more information about what TAs do and how to apply."
   },
   {
     "objectID": "slides-05-02.html#announcements",
@@ -3419,15 +3419,15 @@
     "objectID": "slides-01-02.html#announcements",
     "href": "slides-01-02.html#announcements",
     "title": "Python Basics (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nTrouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html"
+    "section": "",
+    "text": "Trouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html"
   },
   {
     "objectID": "slides-01-02.html#did-you-set-up-your-workspace",
     "href": "slides-01-02.html#did-you-set-up-your-workspace",
     "title": "Python Basics (class slides)",
-    "section": "Did you set up your workspace?",
-    "text": "Did you set up your workspace?\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
+    "section": "",
+    "text": "Did you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
   },
   {
     "objectID": "slides-01-02.html#the-print-function",
@@ -5227,5 +5227,12 @@
     "title": "Course Introduction (class slides)",
     "section": "How is the structure of this class designed to help you succeed?",
     "text": "How is the structure of this class designed to help you succeed?\n\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment"
+  },
+  {
+    "objectID": "slides-01-02.html",
+    "href": "slides-01-02.html",
+    "title": "Python Basics (class slides)",
+    "section": "",
+    "text": "Trouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html\n\n\n\n\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
   }
 ]
