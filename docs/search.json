@@ -1600,14 +1600,14 @@
     "href": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed",
     "title": "Course Introduction (class slides)",
     "section": "How is the structure of this class designed to help you succeed?",
-    "text": "How is the structure of this class designed to help you succeed?\n\nActive learning – you are expected to engage in the in-class activities\nDeep processing – I will elicit knowledge from you and help you make connections to new content\nSmall sequential steps – each week we build on top of the content of the previous week, make sure you are following along\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment"
+    "text": "How is the structure of this class designed to help you succeed?\n\nActive learning – you are expected to engage in the in-class activities\nDeep processing – I will elicit knowledge from you and help you make connections to new content\nSmall sequential steps – each week we build on top of the content of the previous week, make sure you are following along"
   },
   {
     "objectID": "slides-01-01.html#assessment-structure",
     "href": "slides-01-01.html#assessment-structure",
     "title": "Course Introduction (class slides)",
     "section": "Assessment structure",
-    "text": "Assessment structure\n\nProgramming Problems\nProjects\nExams and Quizzes"
+    "text": "Assessment structure\n\nProgramming Problems\nShort Projects\nProjects\nExams and Quizzes"
   },
   {
     "objectID": "slides-01-01.html#exams-and-quizzes",
@@ -1621,7 +1621,7 @@
     "href": "slides-01-01.html#exams-and-quizzes-1",
     "title": "Course Introduction (class slides)",
     "section": "Exams and Quizzes",
-    "text": "Exams and Quizzes\n\nMidterm exams and weekly quizzes are always on Wednesday (same room as our lectures)\nOur first quiz will be on this Wednesday (the day after tomorrow)\nNo preparation is required for this first quiz\nCompletion only grade for quiz 1"
+    "text": "Exams and Quizzes\n\nMidterm exams and weekly quizzes are always on Wednesday (same room as our lectures)\nOur first quiz will be on today\nNo preparation is required for this first quiz\nCompletion only grade for quiz 1"
   },
   {
     "objectID": "slides-01-01.html#syllabus-activity",
@@ -1635,7 +1635,7 @@
     "href": "slides-01-01.html#other-important-dates",
     "title": "Course Introduction (class slides)",
     "section": "Other Important Dates",
-    "text": "Other Important Dates\n\nLast day for students to add themselves to a course using UAccess is August 28\nLast day for students to drop without a grade of W (withdraw) is September 3"
+    "text": "Other Important Dates\n\nLast day for students to add themselves to a course using UAccess is January 17\nLast day for students to drop without a grade of W (withdraw) is January 23"
   },
   {
     "objectID": "slides-01-01.html#academic-integrity",
@@ -1649,7 +1649,7 @@
     "href": "slides-01-01.html#academic-integrity-1",
     "title": "Course Introduction (class slides)",
     "section": "Academic integrity",
-    "text": "Academic integrity\n\nTAs are not to give answers, but work with you\nRun things on their computer (it will help you with debugging)\nSharing code is cheating"
+    "text": "Academic integrity\n\nTAs are not to give answers, but work with you\nRun things on their computer (it will help you with debugging)\nSharing code is a break of the academic integrity code"
   },
   {
     "objectID": "slides-01-01.html#materials",
@@ -5213,5 +5213,19 @@
     "title": "Module 1 Programming Problems",
     "section": "",
     "text": "Programming Problems should be submitted to gradescope.\nIf you need instructions on how to submit your .py files to gradescope, watch the video at the end of this page.\n\nSurvey\nDue date: Friday, January 12, 2024 at 7pm\nhttps://uarizona.co1.qualtrics.com/jfe/form/SV_0q8KC0FwVhCiYD4\nThis is a survey to collect information on your expectations for CSc 110 Computer Programming I. The completion of this survey is required and will be used for grading purposes.\n\n\nProgramming Problem 1\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope (https://www.gradescope.com/courses/487587/assignments/2554285) gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences\n\n\nHow to submit to gradescope video"
+  },
+  {
+    "objectID": "slides-01-01.html#quiz-01",
+    "href": "slides-01-01.html#quiz-01",
+    "title": "Course Introduction (class slides)",
+    "section": "Quiz 01",
+    "text": "Quiz 01\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\nCompletion only (meaning no matter your performance you get 100% for it if you have your name on it)"
+  },
+  {
+    "objectID": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed-1",
+    "href": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed-1",
+    "title": "Course Introduction (class slides)",
+    "section": "How is the structure of this class designed to help you succeed?",
+    "text": "How is the structure of this class designed to help you succeed?\n\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment"
   }
 ]

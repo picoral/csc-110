@@ -20,11 +20,6 @@ slide-number: true
 -   Office: Gould-Simpson 829
 -   Email: adrianaps\@arizona.edu
 
-## Instructors
-
--   Xinchen Yu
--   Office: Gould-Simpson 854
--   Email: xinchenyu\@arizona.edu
 
 ## Who are the teaching assistants? (TAs)
 
@@ -101,12 +96,18 @@ A willingness to:
 -   Active learning -- you are expected to engage in the in-class activities
 -   Deep processing -- I will elicit knowledge from you and help you make connections to new content
 -   Small sequential steps -- each week we build on top of the content of the previous week, make sure you are following along
+
+
+## How is the structure of this class designed to help you succeed?
+
 -   Spaced repetition -- this is not the type of course you can cram for 2 hours before the exam
 -   Mastery checks -- frequent assessment
 
 ## Assessment structure
 
 -   Programming Problems
+
+-   Short Projects
 
 -   Projects
 
@@ -123,9 +124,20 @@ Exams are on paper. Why?
 ## Exams and Quizzes
 
 -   Midterm exams and weekly quizzes are always on Wednesday (same room as our lectures)
--   Our first quiz will be on this Wednesday (the day after tomorrow)
+-   Our first quiz will be on today
 -   No preparation is required for this first quiz
 -   Completion only grade for quiz 1
+
+## Quiz 01
+
+<center>
+<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+</center>
+
+You have 10 minutes to complete the quiz
+
+Completion only (meaning no matter your performance you get 100% for it if you have your name on it)
 
 ## Syllabus Activity
 
@@ -135,8 +147,8 @@ Exams are on paper. Why?
 
 ## Other Important Dates
 
--   Last day for students to add themselves to a course using UAccess is August 28
--   Last day for students to drop without a grade of W (withdraw) is September 3
+-   Last day for students to add themselves to a course using UAccess is January 17
+-   Last day for students to drop without a grade of W (withdraw) is January 23
 
 ## Academic integrity
 
@@ -152,7 +164,7 @@ Examples of breaches of academic integrity:
 
 -  TAs are not to give answers, but work with you
 -  Run things on their computer (it will help you with debugging)
--  Sharing code is cheating
+-  Sharing code is a break of the academic integrity code
 
 
 ## Materials
@@ -206,6 +218,4 @@ Also describe the steps you took to try to solve the problem yourself.
 
 # This is a difficult course, but we are here to help you succeed
 
-## Visitor
 
--   Advising
