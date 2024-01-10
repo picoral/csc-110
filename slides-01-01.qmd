@@ -17,7 +17,7 @@ slide-number: true
 ## Who am I?
 
 -   Adriana Picoral (you can call me Adriana or Dr. Picoral)
--   Office: Gould-Simpson 829
+-   Office: Gould-Simpson 811
 -   Email: adrianaps\@arizona.edu
 
 
