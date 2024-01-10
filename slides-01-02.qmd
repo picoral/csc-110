@@ -173,6 +173,7 @@ Try the following operators with the different types in python:
 
 </pre>
 ```
+
 ## Operations and Variable Assignments
 
 Variable assignments are not like math --- they can appear in equations that make no mathematical sense.
