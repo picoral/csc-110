@@ -7,13 +7,7 @@ df-print: kable
 
 # CSc 110 - for loops with range
 
-## Announcements
 
-* Problems 13 and 14 deadline pushed to tomorrow due to campus internet outage
-* Project 3 pushed to next Wednesday 7pm
-* Midterm 2 on October 25 (Wednesday), in this room (BRING PHOTO ID)
-* Review session on October 24 (Tuesday)
-* Last day to withdraw is October 29 (<https://registrar.arizona.edu/dates-and-deadlines>) -- you will have ~70% of your grade in by then
 
 ## Quiz 07
 
