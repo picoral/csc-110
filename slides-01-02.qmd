@@ -110,6 +110,13 @@ Write a simple program that prints the following output to the python console:
 </pre>
 ```
 
+# Attendance
+
+* As a group, write your answer to the previous exercise on a whiteboard
+* Write on the whiteboard the name of a TA
+* Submit your whiteboard answer to Gradescope (take a picture with a phone)
+
+
 # Variables
 
 ## Variables and assignment
