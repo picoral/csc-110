@@ -27,6 +27,8 @@ D     ||       <>    |------+
     \__/              \__/
 ```
 
+You can use [an online diff tool to see the differences](https://www.diffchecker.com/osXlvMhn/)
+
 # Short Project 02
 
 ```{python}
