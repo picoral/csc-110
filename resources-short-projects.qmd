@@ -16,6 +16,15 @@ D     ||  <>    |------+
 |  ______      /______ |
  \/ /..\ \_____/ /..\ \|
     \__/         \__/
+  
+
+.----------------.
+| ### ||  ########\
+| ### ||  #########\.
+D     ||       <>    |------+
+|  ______           /______ |
+ \/ /..\ \__________/ /..\ \|
+    \__/              \__/
 ```
 
 # Short Project 02
@@ -31,9 +40,11 @@ def main():
 
     message = calculate_area("trapezoid", 11, 25, 5)
     assert message == "The area of the trapezoid is 90.0"
+    print(message)
     
     message = calculate_area("circle", 4, 0, 0)
     assert message == "The area of the circle is 50.26"
+    print(message)
   
 main()
 ```
