@@ -3476,7 +3476,7 @@
     "href": "slides-01-02.html#dealing-with-special-characters",
     "title": "Python Basics (class slides)",
     "section": "Dealing with special characters",
-    "text": "Dealing with special characters\nWrite a simple program that prints the following output to the python console:\n\n   He said, \"What is up?\" \n   Joe's friend didn't reply."
+    "text": "Dealing with special characters\nWrite a simple program that prints the following output to the python console:\n\n   He said, \"What's up?\" \n   Joe's friend didn't reply."
   },
   {
     "objectID": "slides-01-02.html#variables-and-assignment",
