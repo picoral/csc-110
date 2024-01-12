@@ -34,7 +34,6 @@ Undergraduate Teaching Assistants (UGTAs) in the Department of Computer Science 
 ## 2pm Section
 
 -   Ali Sartaz Khan
--   Mustafa Alnidawi
 -   Nees Abusaada
 -   Owen Chambers
 -   Pri Vaghela
