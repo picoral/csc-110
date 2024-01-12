@@ -43,8 +43,8 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Class slides
 
--   [Course Introduction](slides-01-01.html) [(pdf)](slides-01-01-pdf)
--   [Python Basics](slides-01-02.html)
+-   [Course Introduction](slides-01-01.html) [(pdf)](slides-01-01.pdf)
+-   [Python Basics](slides-01-02.html) [(pdf)](slides-01-02.pdf)
 
 ## Assignments
 
