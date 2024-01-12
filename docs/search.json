@@ -1529,15 +1529,15 @@
     "objectID": "slides-01-01.html#welcome-to-csc-110",
     "href": "slides-01-01.html#welcome-to-csc-110",
     "title": "Course Introduction (class slides)",
-    "section": "Welcome to CSc 110",
-    "text": "Welcome to CSc 110\n\nThis is CSc 110, Introduction to Computer Programming I\nWant to learn how to program? . . . You’re in the right class!"
+    "section": "",
+    "text": "This is CSc 110, Introduction to Computer Programming I\nWant to learn how to program? . . . You’re in the right class!"
   },
   {
     "objectID": "slides-01-01.html#who-am-i",
     "href": "slides-01-01.html#who-am-i",
     "title": "Course Introduction (class slides)",
-    "section": "Who am I?",
-    "text": "Who am I?\n\nAdriana Picoral (you can call me Adriana or Dr. Picoral)\nOffice: Gould-Simpson 811\nEmail: adrianaps@arizona.edu"
+    "section": "",
+    "text": "Adriana Picoral (you can call me Adriana or Dr. Picoral)\nOffice: Gould-Simpson 811\nEmail: adrianaps@arizona.edu"
   },
   {
     "objectID": "slides-01-01.html#instructors",
@@ -1550,148 +1550,148 @@
     "objectID": "slides-01-01.html#who-are-the-teaching-assistants-tas",
     "href": "slides-01-01.html#who-are-the-teaching-assistants-tas",
     "title": "Course Introduction (class slides)",
-    "section": "Who are the teaching assistants? (TAs)",
-    "text": "Who are the teaching assistants? (TAs)\nIn this course we have course coordinators, senior TAs, and TAs.\nThe TAs are responsible for:\n\nHelping you, the students, succeed\nGrading assignments, quizzes, and exams\nHelping students on office hours\n\n. . . So get to know them!"
+    "section": "",
+    "text": "In this course we have course coordinators, senior TAs, and TAs.\nThe TAs are responsible for:\n\nHelping you, the students, succeed\nGrading assignments, quizzes, and exams\nHelping students on office hours\n\n. . . So get to know them!"
   },
   {
     "objectID": "slides-01-01.html#what-is-this-class-anyways",
     "href": "slides-01-01.html#what-is-this-class-anyways",
     "title": "Course Introduction (class slides)",
-    "section": "What is this class, anyways?",
-    "text": "What is this class, anyways?\n\nIn this class, you will learn how to program\nSpecifically, programming in Python (version 3)\nWill cover many of the basic principles and concepts that are common to a number of programming languages, such as\n\ninput/output\nconditionals and loops (control flow)\nfunctions\ndata structures\ndebugging and more!"
+    "section": "",
+    "text": "In this class, you will learn how to program\nSpecifically, programming in Python (version 3)\nWill cover many of the basic principles and concepts that are common to a number of programming languages, such as\n\ninput/output\nconditionals and loops (control flow)\nfunctions\ndata structures\ndebugging and more!"
   },
   {
     "objectID": "slides-01-01.html#the-intro-sequence",
     "href": "slides-01-01.html#the-intro-sequence",
     "title": "Course Introduction (class slides)",
-    "section": "The intro sequence",
-    "text": "The intro sequence\nThis is the intro course sequence for the CS department:\n\n\n\nCSc 101 - Intro to Computer Science\n\n\n\nCSc 110 - Intro to Computer Programming I\n\n\n\nCSc 120 - Intro to Computer Programming II"
+    "section": "",
+    "text": "This is the intro course sequence for the CS department:\n\n\n\nCSc 101 - Intro to Computer Science\n\n\n\nCSc 110 - Intro to Computer Programming I\n\n\n\nCSc 120 - Intro to Computer Programming II"
   },
   {
     "objectID": "slides-01-01.html#general-info",
     "href": "slides-01-01.html#general-info",
     "title": "Course Introduction (class slides)",
-    "section": "General Info",
-    "text": "General Info\n\nFor some, this is your very first CS course!\nPrerequisites: College Algebra or CSc 101 or appropriate math placement score"
+    "section": "",
+    "text": "For some, this is your very first CS course!\nPrerequisites: College Algebra or CSc 101 or appropriate math placement score"
   },
   {
     "objectID": "slides-01-01.html#get-to-know-each-other",
     "href": "slides-01-01.html#get-to-know-each-other",
     "title": "Course Introduction (class slides)",
-    "section": "Get to know each-other",
-    "text": "Get to know each-other\n\nIntroduce yourself!\nShare your\n\nName\nProgram/Major, declared or Intended (and why you chose that major)\nOne thing that you can do that took many hours of practice"
+    "section": "",
+    "text": "Introduce yourself!\nShare your\n\nName\nProgram/Major, declared or Intended (and why you chose that major)\nOne thing that you can do that took many hours of practice"
   },
   {
     "objectID": "slides-01-01.html#what-do-you-need-to-succeed-in-this-class",
     "href": "slides-01-01.html#what-do-you-need-to-succeed-in-this-class",
     "title": "Course Introduction (class slides)",
-    "section": "What do you need to succeed in this class?",
-    "text": "What do you need to succeed in this class?\n\nAccess to a computer with internet (you can get one from the library)\nInstall Python and an IDE/editor (Visual Studio Code is recommended)\nDo the readings, watch the videos, come to class, come to office hours, do the assignments yourself (you can work in groups, but do not copy work from others)"
+    "section": "",
+    "text": "Access to a computer with internet (you can get one from the library)\nInstall Python and an IDE/editor (Visual Studio Code is recommended)\nDo the readings, watch the videos, come to class, come to office hours, do the assignments yourself (you can work in groups, but do not copy work from others)"
   },
   {
     "objectID": "slides-01-01.html#what-do-you-need-to-succeed-in-this-class-1",
     "href": "slides-01-01.html#what-do-you-need-to-succeed-in-this-class-1",
     "title": "Course Introduction (class slides)",
-    "section": "What do you need to succeed in this class?",
-    "text": "What do you need to succeed in this class?\nA willingness to:\n\ntry and fail\nget frustrated and bored\nbe curious about how things work"
+    "section": "",
+    "text": "A willingness to:\n\ntry and fail\nget frustrated and bored\nbe curious about how things work"
   },
   {
     "objectID": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed",
     "href": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed",
     "title": "Course Introduction (class slides)",
-    "section": "How is the structure of this class designed to help you succeed?",
-    "text": "How is the structure of this class designed to help you succeed?\n\nActive learning – you are expected to engage in the in-class activities\nDeep processing – I will elicit knowledge from you and help you make connections to new content\nSmall sequential steps – each week we build on top of the content of the previous week, make sure you are following along"
+    "section": "",
+    "text": "Active learning – you are expected to engage in the in-class activities\nDeep processing – I will elicit knowledge from you and help you make connections to new content\nSmall sequential steps – each week we build on top of the content of the previous week, make sure you are following along"
   },
   {
     "objectID": "slides-01-01.html#assessment-structure",
     "href": "slides-01-01.html#assessment-structure",
     "title": "Course Introduction (class slides)",
-    "section": "Assessment structure",
-    "text": "Assessment structure\n\nProgramming Problems\nShort Projects (to be completed in the lab sessions)\nProjects\nExams and Quizzes"
+    "section": "",
+    "text": "Programming Problems\nShort Projects (to be completed in the lab sessions)\nProjects\nExams and Quizzes"
   },
   {
     "objectID": "slides-01-01.html#exams-and-quizzes",
     "href": "slides-01-01.html#exams-and-quizzes",
     "title": "Course Introduction (class slides)",
-    "section": "Exams and Quizzes",
-    "text": "Exams and Quizzes\nExams are on paper. Why?\n\nImportant skill to develop\nYou are able to show what you learned\nWhiteboard coding interviews are common"
+    "section": "",
+    "text": "Exams are on paper. Why?\n\nImportant skill to develop\nYou are able to show what you learned\nWhiteboard coding interviews are common"
   },
   {
     "objectID": "slides-01-01.html#exams-and-quizzes-1",
     "href": "slides-01-01.html#exams-and-quizzes-1",
     "title": "Course Introduction (class slides)",
-    "section": "Exams and Quizzes",
-    "text": "Exams and Quizzes\n\nMidterm exams and weekly quizzes are always on Wednesday (same room as our lectures)\nOur first quiz will be on today\nNo preparation is required for this first quiz\nCompletion only grade for quiz 1"
+    "section": "",
+    "text": "Midterm exams and weekly quizzes are always on Wednesday (same room as our lectures)\nOur first quiz will be on today\nNo preparation is required for this first quiz\nCompletion only grade for quiz 1"
   },
   {
     "objectID": "slides-01-01.html#syllabus-activity",
     "href": "slides-01-01.html#syllabus-activity",
     "title": "Course Introduction (class slides)",
-    "section": "Syllabus Activity",
-    "text": "Syllabus Activity\n\nWhat is the grade distribution for this class?\nHow many days you have for regrade requests?\nWhen are the exams?"
+    "section": "",
+    "text": "What is the grade distribution for this class?\nHow many days you have for regrade requests?\nWhen are the exams?"
   },
   {
     "objectID": "slides-01-01.html#other-important-dates",
     "href": "slides-01-01.html#other-important-dates",
     "title": "Course Introduction (class slides)",
-    "section": "Other Important Dates",
-    "text": "Other Important Dates\n\nLast day for students to add themselves to a course using UAccess is January 17\nLast day for students to drop without a grade of W (withdraw) is January 23"
+    "section": "",
+    "text": "Last day for students to add themselves to a course using UAccess is January 17\nLast day for students to drop without a grade of W (withdraw) is January 23"
   },
   {
     "objectID": "slides-01-01.html#academic-integrity",
     "href": "slides-01-01.html#academic-integrity",
     "title": "Course Introduction (class slides)",
-    "section": "Academic integrity",
-    "text": "Academic integrity\n\nYou yourself do the work\n\nExamples of breaches of academic integrity:\n\nHaving a friend do the assignments for you\nUsing generative AI (for example, ChatGPT) solve the assignments for you\nCopying a solution from the internet"
+    "section": "",
+    "text": "You yourself do the work\n\nExamples of breaches of academic integrity:\n\nHaving a friend do the assignments for you\nUsing generative AI (for example, ChatGPT) solve the assignments for you\nCopying a solution from the internet"
   },
   {
     "objectID": "slides-01-01.html#academic-integrity-1",
     "href": "slides-01-01.html#academic-integrity-1",
     "title": "Course Introduction (class slides)",
-    "section": "Academic integrity",
-    "text": "Academic integrity\n\nTAs are not to give answers, but work with you\nRun things on their computer (it will help you with debugging)\nSharing code is a break of the academic integrity code"
+    "section": "",
+    "text": "TAs are not to give answers, but work with you\nRun things on their computer (it will help you with debugging)\nSharing code is a break of the academic integrity code"
   },
   {
     "objectID": "slides-01-01.html#materials",
     "href": "slides-01-01.html#materials",
     "title": "Course Introduction (class slides)",
-    "section": "Materials",
-    "text": "Materials\n\nReadings, videos, exercises, slides, assignment instructions will be available on the website\nHOWEVER, you are still responsible for things said/announced in class"
+    "section": "",
+    "text": "Readings, videos, exercises, slides, assignment instructions will be available on the website\nHOWEVER, you are still responsible for things said/announced in class"
   },
   {
     "objectID": "slides-01-01.html#how-to-get-help",
     "href": "slides-01-01.html#how-to-get-help",
     "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\n\nCome to office hours!\n\nBut come prepared – do not expect the TAs to solve problems for you (you wouldn’t learn to solve them yourself if you are always asking other people to do it for you)\n\n1 point of extra credit if you show up to office hours (read the syllabus for specifics on this)"
+    "section": "",
+    "text": "Come to office hours!\n\nBut come prepared – do not expect the TAs to solve problems for you (you wouldn’t learn to solve them yourself if you are always asking other people to do it for you)\n\n1 point of extra credit if you show up to office hours (read the syllabus for specifics on this)"
   },
   {
     "objectID": "slides-01-01.html#how-to-get-help-1",
     "href": "slides-01-01.html#how-to-get-help-1",
     "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\nWe’ll see in this course that a key skill that you should develop as coder is the ability to find solutions to problems. Knowing how to get help is part of that skill."
+    "section": "",
+    "text": "We’ll see in this course that a key skill that you should develop as coder is the ability to find solutions to problems. Knowing how to get help is part of that skill."
   },
   {
     "objectID": "slides-01-01.html#how-to-get-help-2",
     "href": "slides-01-01.html#how-to-get-help-2",
     "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\nBefore you ask for help:\n\nCheck for typos (read your error messages)\nGoogle is your friend (use it wisely). Copy and paste the exact error message on a Google search. (this step also includes read the documentation on the functions you’re trying to use)."
+    "section": "",
+    "text": "Before you ask for help:\n\nCheck for typos (read your error messages)\nGoogle is your friend (use it wisely). Copy and paste the exact error message on a Google search. (this step also includes read the documentation on the functions you’re trying to use)."
   },
   {
     "objectID": "slides-01-01.html#how-to-get-help-3",
     "href": "slides-01-01.html#how-to-get-help-3",
     "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\nBefore you ask for help:\n\nIf you are still stuck, you an always try rubber duck debugging. Describe the problem aloud, explaining it line-by-line, to a rubber duck or another person (who might not have any experience with programming). This is also a good preparation step to asking other people for help (next section)."
+    "section": "",
+    "text": "Before you ask for help:\n\nIf you are still stuck, you an always try rubber duck debugging. Describe the problem aloud, explaining it line-by-line, to a rubber duck or another person (who might not have any experience with programming). This is also a good preparation step to asking other people for help (next section)."
   },
   {
     "objectID": "slides-01-01.html#how-to-get-help-4",
     "href": "slides-01-01.html#how-to-get-help-4",
     "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself."
+    "section": "",
+    "text": "Once you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself."
   },
   {
     "objectID": "slides-01-01.html#how-to-get-help-6",
@@ -3419,15 +3419,15 @@
     "objectID": "slides-01-02.html#announcements",
     "href": "slides-01-02.html#announcements",
     "title": "Python Basics (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nTrouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html"
+    "section": "",
+    "text": "Trouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html"
   },
   {
     "objectID": "slides-01-02.html#did-you-set-up-your-workspace",
     "href": "slides-01-02.html#did-you-set-up-your-workspace",
     "title": "Python Basics (class slides)",
-    "section": "Did you set up your workspace?",
-    "text": "Did you set up your workspace?\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
+    "section": "",
+    "text": "Did you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
   },
   {
     "objectID": "slides-01-02.html#the-print-function",
@@ -4238,57 +4238,57 @@
     "objectID": "slides-02-01.html#announcements",
     "href": "slides-02-01.html#announcements",
     "title": "Functions (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nCheck your D2L gradebook\nAccess your submissions and original grading on Gradescope"
+    "section": "",
+    "text": "Check your D2L gradebook\nAccess your submissions and original grading on Gradescope"
   },
   {
     "objectID": "slides-02-01.html#functions",
     "href": "slides-02-01.html#functions",
     "title": "Functions (class slides)",
-    "section": "Functions",
-    "text": "Functions\n\nFunctions are named operations that are available to do tasks\nSome functions are built-in functions that Python provides\nProgrammers can also define their own functions\nFunctions are called (or invoked)"
+    "section": "",
+    "text": "Functions are named operations that are available to do tasks\nSome functions are built-in functions that Python provides\nProgrammers can also define their own functions\nFunctions are called (or invoked)"
   },
   {
     "objectID": "slides-02-01.html#function-definitions",
     "href": "slides-02-01.html#function-definitions",
     "title": "Functions (class slides)",
-    "section": "Function definitions",
-    "text": "Function definitions\n\ndef two():\n  return 2\n\nThis function definition has many parts:\n\ntwo is the name of the function\n() is the parameter list (Here, it is empty)\nthe body (or content) of the function is indented\nreturn 2 is a statement that causes the function to cease and produce the value 2"
+    "section": "",
+    "text": "def two():\n  return 2\n\nThis function definition has many parts:\n\ntwo is the name of the function\n() is the parameter list (Here, it is empty)\nthe body (or content) of the function is indented\nreturn 2 is a statement that causes the function to cease and produce the value 2"
   },
   {
     "objectID": "slides-02-01.html#example-of-a-simple-function",
     "href": "slides-02-01.html#example-of-a-simple-function",
     "title": "Functions (class slides)",
-    "section": "Example of a simple function",
-    "text": "Example of a simple function\n\ndef add_one(n):\n  return n + 1\n\n\nadd_one is the name of the function\n(n) is the parameter list\nthe body (or content) of the function is indented\nreturn n + 1 is a statement that causes the function to cease and produce the value n + 1"
+    "section": "",
+    "text": "def add_one(n):\n  return n + 1\n\n\nadd_one is the name of the function\n(n) is the parameter list\nthe body (or content) of the function is indented\nreturn n + 1 is a statement that causes the function to cease and produce the value n + 1"
   },
   {
     "objectID": "slides-02-01.html#submit-simple-function-to-gradescope",
     "href": "slides-02-01.html#submit-simple-function-to-gradescope",
     "title": "Functions (class slides)",
-    "section": "Submit simple function to Gradescope",
-    "text": "Submit simple function to Gradescope\n\nName your python script with the add_one function first_function.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission"
+    "section": "",
+    "text": "Name your python script with the add_one function first_function.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission"
   },
   {
     "objectID": "slides-02-01.html#function-to-calculate-area-of-a-circle",
     "href": "slides-02-01.html#function-to-calculate-area-of-a-circle",
     "title": "Functions (class slides)",
-    "section": "Function to calculate area of a circle",
-    "text": "Function to calculate area of a circle\nRemember this from the last set of slides?\n\n# assign a radius value\nradius = 3\n# compute the area of a circle\narea = 3.1415 * radius ** 2\n\n\nCalculating the area of a circle is an abstraction.\nIn the code above, that is done by a variable assignment with a variable named area.\nLet’s create a function called area, that given a radius parameter, it returns the area of the circle."
+    "section": "",
+    "text": "Remember this from the last set of slides?\n\n# assign a radius value\nradius = 3\n# compute the area of a circle\narea = 3.1415 * radius ** 2\n\n\nCalculating the area of a circle is an abstraction.\nIn the code above, that is done by a variable assignment with a variable named area.\nLet’s create a function called area, that given a radius parameter, it returns the area of the circle."
   },
   {
     "objectID": "slides-02-01.html#function-to-calculate-the-volume-of-a-cylinder",
     "href": "slides-02-01.html#function-to-calculate-the-volume-of-a-cylinder",
     "title": "Functions (class slides)",
-    "section": "Function to calculate the volume of a cylinder",
-    "text": "Function to calculate the volume of a cylinder\nWrite a function that does the following:\n\nIts name is volume\nIt takes two integer arguments: radius and height\nIt calculates the volume of a cylinder, based on radius and height. Volume is area multiplied by height.\nIt returns the float value for calculated volume."
+    "section": "",
+    "text": "Write a function that does the following:\n\nIts name is volume\nIt takes two integer arguments: radius and height\nIt calculates the volume of a cylinder, based on radius and height. Volume is area multiplied by height.\nIt returns the float value for calculated volume."
   },
   {
     "objectID": "slides-02-01.html#function-to-calculate-the-volume-of-a-cylinder-1",
     "href": "slides-02-01.html#function-to-calculate-the-volume-of-a-cylinder-1",
     "title": "Functions (class slides)",
-    "section": "Function to calculate the volume of a cylinder",
-    "text": "Function to calculate the volume of a cylinder\n\ndef volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\nprint(volume(1, 2)) # 6.283\nprint(volume(6, 10)) # 1130.94\nprint(volume(5, 5)) # 392.68750000000006"
+    "section": "",
+    "text": "def volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\nprint(volume(1, 2)) # 6.283\nprint(volume(6, 10)) # 1130.94\nprint(volume(5, 5)) # 392.68750000000006"
   },
   {
     "objectID": "slides-02-01.html#pemdas",
@@ -4722,7 +4722,7 @@
     "href": "schedule.html#class-slides",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nCourse Introduction\nPython Basics"
+    "text": "Class slides\n\nCourse Introduction (pdf)\nPython Basics"
   },
   {
     "objectID": "schedule.html#assignments",
@@ -5218,15 +5218,15 @@
     "objectID": "slides-01-01.html#quiz-01",
     "href": "slides-01-01.html#quiz-01",
     "title": "Course Introduction (class slides)",
-    "section": "Quiz 01",
-    "text": "Quiz 01\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\nCompletion only (meaning no matter your performance you get 100% for it if you have your name on it)"
+    "section": "",
+    "text": "current time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\nCompletion only (meaning no matter your performance you get 100% for it if you have your name on it)"
   },
   {
     "objectID": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed-1",
     "href": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed-1",
     "title": "Course Introduction (class slides)",
-    "section": "How is the structure of this class designed to help you succeed?",
-    "text": "How is the structure of this class designed to help you succeed?\n\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment"
+    "section": "",
+    "text": "Spaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment"
   },
   {
     "objectID": "slides-01-02.html",
@@ -5234,5 +5234,19 @@
     "title": "Python Basics (class slides)",
     "section": "",
     "text": "Trouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html\n\n\n\n\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
+  },
+  {
+    "objectID": "slides-02-01.html",
+    "href": "slides-02-01.html",
+    "title": "Functions (class slides)",
+    "section": "",
+    "text": "Check your D2L gradebook\nAccess your submissions and original grading on Gradescope\n\n\n\n\n\nFunctions are named operations that are available to do tasks\nSome functions are built-in functions that Python provides\nProgrammers can also define their own functions\nFunctions are called (or invoked)\n\n\n\n\n\ndef two():\n  return 2\n\nThis function definition has many parts:\n\ntwo is the name of the function\n() is the parameter list (Here, it is empty)\nthe body (or content) of the function is indented\nreturn 2 is a statement that causes the function to cease and produce the value 2\n\n\n\n\n\ndef add_one(n):\n  return n + 1\n\n\nadd_one is the name of the function\n(n) is the parameter list\nthe body (or content) of the function is indented\nreturn n + 1 is a statement that causes the function to cease and produce the value n + 1\n\n\n\n\n\nName your python script with the add_one function first_function.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission\n\n\n\n\nRemember this from the last set of slides?\n\n# assign a radius value\nradius = 3\n# compute the area of a circle\narea = 3.1415 * radius ** 2\n\n\nCalculating the area of a circle is an abstraction.\nIn the code above, that is done by a variable assignment with a variable named area.\nLet’s create a function called area, that given a radius parameter, it returns the area of the circle.\n\n\n\nWrite a function that does the following:\n\nIts name is volume\nIt takes two integer arguments: radius and height\nIt calculates the volume of a cylinder, based on radius and height. Volume is area multiplied by height.\nIt returns the float value for calculated volume.\n\n\n\n\n\ndef volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\nprint(volume(1, 2)) # 6.283\nprint(volume(6, 10)) # 1130.94\nprint(volume(5, 5)) # 392.68750000000006"
+  },
+  {
+    "objectID": "slides-01-01.html",
+    "href": "slides-01-01.html",
+    "title": "Course Introduction (class slides)",
+    "section": "",
+    "text": "This is CSc 110, Introduction to Computer Programming I\nWant to learn how to program? . . . You’re in the right class!\n\n\n\n\n\nAdriana Picoral (you can call me Adriana or Dr. Picoral)\nOffice: Gould-Simpson 811\nEmail: adrianaps@arizona.edu\n\n\n\n\nIn this course we have course coordinators, senior TAs, and TAs.\nThe TAs are responsible for:\n\nHelping you, the students, succeed\nGrading assignments, quizzes, and exams\nHelping students on office hours\n\n. . . So get to know them!\n\n\n\n\nIn this class, you will learn how to program\nSpecifically, programming in Python (version 3)\nWill cover many of the basic principles and concepts that are common to a number of programming languages, such as\n\ninput/output\nconditionals and loops (control flow)\nfunctions\ndata structures\ndebugging and more!\n\n\n\n\n\nThis is the intro course sequence for the CS department:\n\n\n\nCSc 101 - Intro to Computer Science\n\n\n\nCSc 110 - Intro to Computer Programming I\n\n\n\nCSc 120 - Intro to Computer Programming II\n\n\n\n\n\n\nFor some, this is your very first CS course!\nPrerequisites: College Algebra or CSc 101 or appropriate math placement score\n\n\n\n\n\nIntroduce yourself!\nShare your\n\nName\nProgram/Major, declared or Intended (and why you chose that major)\nOne thing that you can do that took many hours of practice\n\n\n\n\n\n\nAccess to a computer with internet (you can get one from the library)\nInstall Python and an IDE/editor (Visual Studio Code is recommended)\nDo the readings, watch the videos, come to class, come to office hours, do the assignments yourself (you can work in groups, but do not copy work from others)\n\n\n\n\nA willingness to:\n\ntry and fail\nget frustrated and bored\nbe curious about how things work\n\n\n\n\n\nActive learning – you are expected to engage in the in-class activities\nDeep processing – I will elicit knowledge from you and help you make connections to new content\nSmall sequential steps – each week we build on top of the content of the previous week, make sure you are following along\n\n\n\n\n\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment\n\n\n\n\n\nProgramming Problems\nShort Projects (to be completed in the lab sessions)\nProjects\nExams and Quizzes\n\n\n\n\nExams are on paper. Why?\n\nImportant skill to develop\nYou are able to show what you learned\nWhiteboard coding interviews are common\n\n\n\n\n\nMidterm exams and weekly quizzes are always on Wednesday (same room as our lectures)\nOur first quiz will be on today\nNo preparation is required for this first quiz\nCompletion only grade for quiz 1\n\n\n\n\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\nCompletion only (meaning no matter your performance you get 100% for it if you have your name on it)\n\n\n\n\nWhat is the grade distribution for this class?\nHow many days you have for regrade requests?\nWhen are the exams?\n\n\n\n\n\nLast day for students to add themselves to a course using UAccess is January 17\nLast day for students to drop without a grade of W (withdraw) is January 23\n\n\n\n\n\nYou yourself do the work\n\nExamples of breaches of academic integrity:\n\nHaving a friend do the assignments for you\nUsing generative AI (for example, ChatGPT) solve the assignments for you\nCopying a solution from the internet\n\n\n\n\n\nTAs are not to give answers, but work with you\nRun things on their computer (it will help you with debugging)\nSharing code is a break of the academic integrity code\n\n\n\n\n\nReadings, videos, exercises, slides, assignment instructions will be available on the website\nHOWEVER, you are still responsible for things said/announced in class\n\n\n\n\n\nCome to office hours!\n\nBut come prepared – do not expect the TAs to solve problems for you (you wouldn’t learn to solve them yourself if you are always asking other people to do it for you)\n\n1 point of extra credit if you show up to office hours (read the syllabus for specifics on this)\n\n\n\n\nWe’ll see in this course that a key skill that you should develop as coder is the ability to find solutions to problems. Knowing how to get help is part of that skill.\n\n\n\nBefore you ask for help:\n\nCheck for typos (read your error messages)\nGoogle is your friend (use it wisely). Copy and paste the exact error message on a Google search. (this step also includes read the documentation on the functions you’re trying to use).\n\n\n\n\nBefore you ask for help:\n\nIf you are still stuck, you an always try rubber duck debugging. Describe the problem aloud, explaining it line-by-line, to a rubber duck or another person (who might not have any experience with programming). This is also a good preparation step to asking other people for help (next section).\n\n\n\n\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself."
   }
 ]
