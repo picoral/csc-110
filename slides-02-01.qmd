@@ -6,10 +6,6 @@ slide-number: true
 
 # CSc 110 Functions <br> <small> Adriana Picoral </small>
 
-## Announcements
-
--   Check your D2L gradebook
--   Access your submissions and original grading on Gradescope
 
 ## Functions
 
@@ -48,12 +44,6 @@ def add_one(n):
 -   the body (or content) of the function is indented
 -   `return n + 1` is a statement that causes the function to cease and produce the value n + 1
 
-## Submit simple function to Gradescope
-
--   Name your python script with the `add_one` function `first_function.py`
--   Go to [Gradescope](https://www.gradescope.com/courses/568720/assignments/3184749/configure_autograder) and submit your `.py` file
--   You can resubmit as many times as you need (up to the deadline)
--   You can look at your `Submission History` and activate a previous submission
 
 ## Function to calculate area of a circle
 
@@ -105,6 +95,13 @@ print(volume(1, 2)) # 6.283
 print(volume(6, 10)) # 1130.94
 print(volume(5, 5)) # 392.68750000000006
 ```
+
+## Submit to Gradescope
+
+-   Name your python script with the `volume` function `cylinder.py`
+-   Go to [Gradescope]() and submit your `.py` file
+-   You can resubmit as many times as you need (up to the deadline)
+-   You can look at your `Submission History` and activate a previous submission
 
 # Order of Operations
 
