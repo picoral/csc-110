@@ -5254,7 +5254,7 @@
     "href": "slides-01-02.html#quiz-02",
     "title": "Python Basics (class slides)",
     "section": "Quiz 02",
-    "text": "Quiz 02\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz"
+    "text": "Quiz 02\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nYour solution needs to print the exact characters shown in your quiz (there are different versions of the quiz) – changes to the characters (for example, not printing the quotes or apostrophe) will be considered as an incorrect solution (zero grade awarded)."
   },
   {
     "objectID": "slides-02-01.html#submit-to-gradescope",

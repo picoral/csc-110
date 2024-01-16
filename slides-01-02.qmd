@@ -187,7 +187,9 @@ Try the following operators with the different types in python:
 <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
 </center>
 
-You have 10 minutes to complete the quiz
+You have 10 minutes to complete the quiz.
+
+Your solution needs to print the exact characters shown in your quiz (there are different versions of the quiz) -- changes to the characters (for example, not printing the quotes or apostrophe) will be considered as an incorrect solution (zero grade awarded).
 
 ## Operations and Variable Assignments
 
