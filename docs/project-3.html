@@ -1004,7 +1004,7 @@ See the financial breakdown below, based on a salary of $50000
 <section id="calculating-the-values" class="level1">
 <h1>Calculating the values</h1>
 <p>The output provided above shows the kind of output this program should produce. Let’s talk a bit about how to compute these values.</p>
-<p>The basis for all of the percentages is the first input value - the annual income. All of the percentages are calculated based on this. The next two inputs, rent and bills, are monthly expense values. In order to get the total spend on these categories annually, these numbers must be multiplied by the number of months in a year. Then, you can use this result to calculate the percentage. The fourth value is a weekly expense, so this must instead be multiplied by the number of weeks in a year. The fifth value is already input as an annual value, so you don’t need to multiple by number of weeks or months.</p>
+<p>The basis for all of the percentages is the annual income argument. All of the percentages are calculated based on this. The next two arguments, rent and bills, are monthly expense values. In order to get the total spend on these categories annually, these numbers must be multiplied by the number of months in a year. Then, you can use this result to calculate the percentage. The fourth value is a weekly expense, so this must instead be multiplied by the number of weeks in a year. The fifth argument is already an annual value, so you don’t need to multiple by number of weeks or months.</p>
 <p>The tax percentage is dependent upon the amount of money a person make annually. The tax brackets are as follows:</p>
 <ul>
 <li>[$0, $15k] annually: 10% tax</li>
@@ -1037,8 +1037,6 @@ See the financial breakdown below, based on a salary of $40000
 |         extra | $  -7,400.00 | -18.5% |
 ------------------------------------------------------------------------------------------------------
 &gt;&gt;&gt; WARNING: DEFICIT &lt;&lt;&lt;
-Validation
-You are required to validate the inputs that your program accepts. You should use if-statements for the validation. For each numeric input, you should use the isnumeric function to check if is a positive integer before converting the value to an integer.
 </pre>
 </section>
 <section id="formatting-a-number" class="level1">
