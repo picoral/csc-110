@@ -3412,15 +3412,15 @@
     "objectID": "slides-01-02.html#announcements",
     "href": "slides-01-02.html#announcements",
     "title": "Python Basics (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nTrouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html"
+    "section": "",
+    "text": "Trouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html"
   },
   {
     "objectID": "slides-01-02.html#did-you-set-up-your-workspace",
     "href": "slides-01-02.html#did-you-set-up-your-workspace",
     "title": "Python Basics (class slides)",
-    "section": "Did you set up your workspace?",
-    "text": "Did you set up your workspace?\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
+    "section": "",
+    "text": "Did you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
   },
   {
     "objectID": "slides-01-02.html#the-print-function",
@@ -4238,50 +4238,50 @@
     "objectID": "slides-02-01.html#functions",
     "href": "slides-02-01.html#functions",
     "title": "Functions (class slides)",
-    "section": "Functions",
-    "text": "Functions\n\nFunctions are named operations that are available to do tasks\nSome functions are built-in functions that Python provides\nProgrammers can also define their own functions\nFunctions are called (or invoked)"
+    "section": "",
+    "text": "Functions are named operations that are available to do tasks\nSome functions are built-in functions that Python provides\nProgrammers can also define their own functions\nFunctions are called (or invoked)"
   },
   {
     "objectID": "slides-02-01.html#function-definitions",
     "href": "slides-02-01.html#function-definitions",
     "title": "Functions (class slides)",
-    "section": "Function definitions",
-    "text": "Function definitions\n\ndef two():\n  return 2\n\nThis function definition has many parts:\n\ntwo is the name of the function\n() is the parameter list (Here, it is empty)\nthe body (or content) of the function is indented\nreturn 2 is a statement that causes the function to cease and produce the value 2"
+    "section": "",
+    "text": "def two():\n  return 2\n\nThis function definition has many parts:\n\ntwo is the name of the function\n() is the parameter list (Here, it is empty)\nthe body (or content) of the function is indented\nreturn 2 is a statement that causes the function to cease and produce the value 2"
   },
   {
     "objectID": "slides-02-01.html#example-of-a-simple-function",
     "href": "slides-02-01.html#example-of-a-simple-function",
     "title": "Functions (class slides)",
-    "section": "Example of a simple function",
-    "text": "Example of a simple function\n\ndef add_one(n):\n  return n + 1\n\n\nadd_one is the name of the function\n(n) is the parameter list\nthe body (or content) of the function is indented\nreturn n + 1 is a statement that causes the function to cease and produce the value n + 1"
+    "section": "",
+    "text": "def add_one(n):\n  return n + 1\n\n\nadd_one is the name of the function\n(n) is the parameter list\nthe body (or content) of the function is indented\nreturn n + 1 is a statement that causes the function to cease and produce the value n + 1"
   },
   {
     "objectID": "slides-02-01.html#function-to-calculate-area-of-a-circle",
     "href": "slides-02-01.html#function-to-calculate-area-of-a-circle",
     "title": "Functions (class slides)",
-    "section": "Function to calculate area of a circle",
-    "text": "Function to calculate area of a circle\nRemember this from the last set of slides?\n\n# assign a radius value\nradius = 3\n# compute the area of a circle\narea = 3.1415 * radius ** 2\n\n\nCalculating the area of a circle is an abstraction.\nIn the code above, that is done by a variable assignment with a variable named area.\nLet’s create a function called area, that given a radius parameter, it returns the area of the circle."
+    "section": "",
+    "text": "Remember this from the last set of slides?\n\n# assign a radius value\nradius = 3\n# compute the area of a circle\narea = 3.1415 * radius ** 2\n\n\nCalculating the area of a circle is an abstraction.\nIn the code above, that is done by a variable assignment with a variable named area.\nLet’s create a function called area, that given a radius parameter, it returns the area of the circle."
   },
   {
     "objectID": "slides-02-01.html#function-to-calculate-the-volume-of-a-cylinder",
     "href": "slides-02-01.html#function-to-calculate-the-volume-of-a-cylinder",
     "title": "Functions (class slides)",
-    "section": "Function to calculate the volume of a cylinder",
-    "text": "Function to calculate the volume of a cylinder\nWrite a function that does the following:\n\nIts name is volume\nIt takes two integer arguments: radius and height\nIt calculates the volume of a cylinder, based on radius and height. Volume is area multiplied by height.\nIt returns the float value for calculated volume."
+    "section": "",
+    "text": "Write a function that does the following:\n\nIts name is volume\nIt takes two integer arguments: radius and height\nIt calculates the volume of a cylinder, based on radius and height. Volume is area multiplied by height.\nIt returns the float value for calculated volume."
   },
   {
     "objectID": "slides-02-01.html#function-to-calculate-the-volume-of-a-cylinder-1",
     "href": "slides-02-01.html#function-to-calculate-the-volume-of-a-cylinder-1",
     "title": "Functions (class slides)",
-    "section": "Function to calculate the volume of a cylinder",
-    "text": "Function to calculate the volume of a cylinder\n\ndef volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\nprint(volume(1, 2)) # 6.283\nprint(volume(6, 10)) # 1130.94\nprint(volume(5, 5)) # 392.68750000000006"
+    "section": "",
+    "text": "def volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\nprint(volume(1, 2)) # 6.283\nprint(volume(6, 10)) # 1130.94\nprint(volume(5, 5)) # 392.68750000000006"
   },
   {
     "objectID": "slides-02-01.html#submit-to-gradescope",
     "href": "slides-02-01.html#submit-to-gradescope",
     "title": "Functions (class slides)",
-    "section": "Submit to Gradescope",
-    "text": "Submit to Gradescope\n\nName your python script with the volume function cylinder.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission"
+    "section": "",
+    "text": "Name your python script with the volume function cylinder.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission"
   },
   {
     "objectID": "slides-02-01.html#pemdas",
@@ -4743,7 +4743,7 @@
     "href": "schedule.html#class-slides-1",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nFunctions\nMath in Python"
+    "text": "Class slides\n\nFunctions (pdf)\nMath in Python"
   },
   {
     "objectID": "schedule.html#assignments-1",
@@ -5206,5 +5206,19 @@
     "title": "Module 1 Programming Problems",
     "section": "",
     "text": "Programming Problems should be submitted to gradescope.\nIf you need instructions on how to submit your .py files to gradescope, watch the video at the end of this page.\n\nSurvey\nDue date: Friday, January 12, 2024 at 7pm\nhttps://uarizona.co1.qualtrics.com/jfe/form/SV_0q8KC0FwVhCiYD4\nThis is a survey to collect information on your expectations for CSc 110 Computer Programming I. The completion of this survey is required and will be used for grading purposes.\n\n\nProgramming Problem 1\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope (https://www.gradescope.com/courses/487587/assignments/2554285) gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences\n\n\nHow to submit to gradescope video"
+  },
+  {
+    "objectID": "slides-02-01.html",
+    "href": "slides-02-01.html",
+    "title": "Functions (class slides)",
+    "section": "",
+    "text": "Functions are named operations that are available to do tasks\nSome functions are built-in functions that Python provides\nProgrammers can also define their own functions\nFunctions are called (or invoked)\n\n\n\n\n\ndef two():\n  return 2\n\nThis function definition has many parts:\n\ntwo is the name of the function\n() is the parameter list (Here, it is empty)\nthe body (or content) of the function is indented\nreturn 2 is a statement that causes the function to cease and produce the value 2\n\n\n\n\n\ndef add_one(n):\n  return n + 1\n\n\nadd_one is the name of the function\n(n) is the parameter list\nthe body (or content) of the function is indented\nreturn n + 1 is a statement that causes the function to cease and produce the value n + 1\n\n\n\n\nRemember this from the last set of slides?\n\n# assign a radius value\nradius = 3\n# compute the area of a circle\narea = 3.1415 * radius ** 2\n\n\nCalculating the area of a circle is an abstraction.\nIn the code above, that is done by a variable assignment with a variable named area.\nLet’s create a function called area, that given a radius parameter, it returns the area of the circle.\n\n\n\nWrite a function that does the following:\n\nIts name is volume\nIt takes two integer arguments: radius and height\nIt calculates the volume of a cylinder, based on radius and height. Volume is area multiplied by height.\nIt returns the float value for calculated volume.\n\n\n\n\n\ndef volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\nprint(volume(1, 2)) # 6.283\nprint(volume(6, 10)) # 1130.94\nprint(volume(5, 5)) # 392.68750000000006\n\n\n\n\n\nName your python script with the volume function cylinder.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission"
+  },
+  {
+    "objectID": "slides-01-02.html",
+    "href": "slides-01-02.html",
+    "title": "Python Basics (class slides)",
+    "section": "",
+    "text": "Trouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html\n\n\n\n\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
   }
 ]
