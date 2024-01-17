@@ -103,11 +103,10 @@ Every semester, students enroll in introductory CS classes but do not submit any
 2.  January 10 quiz
 3.  Class presence on January 12
 4.  [Beginning of semester survey](https://uarizona.co1.qualtrics.com/jfe/form/SV_0q8KC0FwVhCiYD4)
-5.  Class presence on January 15
-6.  January 17 quiz
-7.  [Module 1 Programming Problem 1](https://adrianapicoral.com/csc-110/assignments-01.html)
-8.  [Module 1 Programming Problem 2](https://adrianapicoral.com/csc-110/assignments-02.html)
-9.  Class presence on January 19
+5.  January 17 quiz
+6.  [Module 1 Programming Problem 1](https://adrianapicoral.com/csc-110/assignments-01.html)
+7.  [Module 1 Programming Problem 2](https://adrianapicoral.com/csc-110/assignments-02.html)
+8.  Class presence on January 19
 
 In addition, to ensure your success in this course, and that you are on top of the work that is due every week, administrative drops will be in place throughout the semester. Students who miss coursework for two weeks or more often get an E at the end of the term in this course. After the second week of class, at any point during the semester if you fail to attend class and submit assignments for two consecutive weeks you will be administratively dropped.
 

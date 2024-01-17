@@ -1540,13 +1540,6 @@
     "text": "Who am I?\n\nAdriana Picoral (you can call me Adriana or Dr. Picoral)\nOffice: Gould-Simpson 811\nEmail: adrianaps@arizona.edu"
   },
   {
-    "objectID": "slides-01-01.html#instructors",
-    "href": "slides-01-01.html#instructors",
-    "title": "Course Introduction (class slides)",
-    "section": "Instructors",
-    "text": "Instructors\n\nXinchen Yu\nOffice: Gould-Simpson 854\nEmail: xinchenyu@arizona.edu"
-  },
-  {
     "objectID": "slides-01-01.html#who-are-the-teaching-assistants-tas",
     "href": "slides-01-01.html#who-are-the-teaching-assistants-tas",
     "title": "Course Introduction (class slides)",
@@ -1603,6 +1596,13 @@
     "text": "How is the structure of this class designed to help you succeed?\n\nActive learning – you are expected to engage in the in-class activities\nDeep processing – I will elicit knowledge from you and help you make connections to new content\nSmall sequential steps – each week we build on top of the content of the previous week, make sure you are following along"
   },
   {
+    "objectID": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed-1",
+    "href": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed-1",
+    "title": "Course Introduction (class slides)",
+    "section": "How is the structure of this class designed to help you succeed?",
+    "text": "How is the structure of this class designed to help you succeed?\n\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment"
+  },
+  {
     "objectID": "slides-01-01.html#assessment-structure",
     "href": "slides-01-01.html#assessment-structure",
     "title": "Course Introduction (class slides)",
@@ -1622,6 +1622,13 @@
     "title": "Course Introduction (class slides)",
     "section": "Exams and Quizzes",
     "text": "Exams and Quizzes\n\nMidterm exams and weekly quizzes are always on Wednesday (same room as our lectures)\nOur first quiz will be on today\nNo preparation is required for this first quiz\nCompletion only grade for quiz 1"
+  },
+  {
+    "objectID": "slides-01-01.html#quiz-01",
+    "href": "slides-01-01.html#quiz-01",
+    "title": "Course Introduction (class slides)",
+    "section": "Quiz 01",
+    "text": "Quiz 01\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\nCompletion only (meaning no matter your performance you get 100% for it if you have your name on it)"
   },
   {
     "objectID": "slides-01-01.html#syllabus-activity",
@@ -1699,13 +1706,6 @@
     "title": "Course Introduction (class slides)",
     "section": "How to get help?",
     "text": "How to get help?\n\nCome to office hours!\nJoin Discord and ask questions there\nDepartmental Tutors (free)\nEmail me (it will take longer than coming to office hours)"
-  },
-  {
-    "objectID": "slides-01-01.html#visitor",
-    "href": "slides-01-01.html#visitor",
-    "title": "Course Introduction (class slides)",
-    "section": "Visitor",
-    "text": "Visitor\n\nAdvising"
   },
   {
     "objectID": "slides-13-01.html#lists-are-mutable",
@@ -2062,7 +2062,7 @@
     "href": "slides-07-03.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nRemember to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.25799279454692636\n2"
+    "text": "random module\nRemember to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.7916024303847479\n6"
   },
   {
     "objectID": "slides-07-03.html#write-a-function",
@@ -2076,7 +2076,7 @@
     "href": "slides-07-03.html#write-a-function-solution",
     "title": "random (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune"
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan"
   },
   {
     "objectID": "slides-07-03.html#setting-a-seed",
@@ -2749,13 +2749,6 @@
     "title": "Mutability",
     "section": "List methods",
     "text": "List methods\nMutability is very useful with lists. There are a number of built-in list methods we can use:\n\n.append() adds an element at the end of the list: list.append(value)\n.insert() adds an element at the provided index: list.insert(index, value)\n.pop() removes a specific element at the provided index: list.pop(index)\n.remove() removes the first element with the provided value: list.remove(value)\n\nHere’s how .append() works:\n\nsongs = [\"Lavender Haze\", \"Calm Down\", \"As It Was\", \"About Damn Time\"]\nsongs\n\n['Lavender Haze', 'Calm Down', 'As It Was', 'About Damn Time']\n\n\n\nsongs.append(\"Flowers\")\nsongs\n\n['Lavender Haze', 'Calm Down', 'As It Was', 'About Damn Time', 'Flowers']\n\n\nHere’s how .insert() works:\n\nsongs = [\"Lavender Haze\", \"Calm Down\", \"As It Was\", \"About Damn Time\"]\nsongs\n\n['Lavender Haze', 'Calm Down', 'As It Was', 'About Damn Time']\n\n\n\nsongs.insert(0, \"Flowers\")\nsongs\n\n['Flowers', 'Lavender Haze', 'Calm Down', 'As It Was', 'About Damn Time']\n\n\nHere’s how .pop() works:\n\nsongs = [\"Lavender Haze\", \"Calm Down\", \"As It Was\", \"About Damn Time\"]\nsongs.pop(0)\n\n'Lavender Haze'\n\n\n\nsongs\n\n['Calm Down', 'As It Was', 'About Damn Time']\n\n\nHere’s how .remove() works:\n\nsongs = [\"Lavender Haze\", \"Calm Down\", \"As It Was\", \"About Damn Time\"]\nsongs.remove(\"Lavender Haze\")\n\n\nsongs\n\n['Calm Down', 'As It Was', 'About Damn Time']"
-  },
-  {
-    "objectID": "slides-07-02.html#announcements",
-    "href": "slides-07-02.html#announcements",
-    "title": "for loops with range (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nProblems 13 and 14 deadline pushed to tomorrow due to campus internet outage\nProject 3 pushed to next Wednesday 7pm\nMidterm 2 on October 25 (Wednesday), in this room (BRING PHOTO ID)\nReview session on October 24 (Tuesday)\nLast day to withdraw is October 29 (https://registrar.arizona.edu/dates-and-deadlines) – you will have ~70% of your grade in by then"
   },
   {
     "objectID": "slides-07-02.html#quiz-07",
@@ -3514,6 +3507,13 @@
     "text": "Operations\nTry the following operators with the different types in python:\n\n   +\n   -\n   *\n   /\n   //\n   %\n   **"
   },
   {
+    "objectID": "slides-01-02.html#quiz-02",
+    "href": "slides-01-02.html#quiz-02",
+    "title": "Python Basics (class slides)",
+    "section": "Quiz 02",
+    "text": "Quiz 02\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nYour solution needs to print the exact characters shown in your quiz (there are different versions of the quiz) – changes to the characters (for example, not printing the quotes or apostrophe) will be considered as an incorrect solution (zero grade awarded)."
+  },
+  {
     "objectID": "slides-01-02.html#operations-and-variable-assignments",
     "href": "slides-01-02.html#operations-and-variable-assignments",
     "title": "Python Basics (class slides)",
@@ -4235,13 +4235,6 @@
     "text": "Programming Problem 22\nDue date: Tuesday, April 09, 2024 at 7pm"
   },
   {
-    "objectID": "slides-02-01.html#announcements",
-    "href": "slides-02-01.html#announcements",
-    "title": "Functions (class slides)",
-    "section": "",
-    "text": "Check your D2L gradebook\nAccess your submissions and original grading on Gradescope"
-  },
-  {
     "objectID": "slides-02-01.html#functions",
     "href": "slides-02-01.html#functions",
     "title": "Functions (class slides)",
@@ -4263,13 +4256,6 @@
     "text": "Example of a simple function\n\ndef add_one(n):\n  return n + 1\n\n\nadd_one is the name of the function\n(n) is the parameter list\nthe body (or content) of the function is indented\nreturn n + 1 is a statement that causes the function to cease and produce the value n + 1"
   },
   {
-    "objectID": "slides-02-01.html#submit-simple-function-to-gradescope",
-    "href": "slides-02-01.html#submit-simple-function-to-gradescope",
-    "title": "Functions (class slides)",
-    "section": "Submit simple function to Gradescope",
-    "text": "Submit simple function to Gradescope\n\nName your python script with the add_one function first_function.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission"
-  },
-  {
     "objectID": "slides-02-01.html#function-to-calculate-area-of-a-circle",
     "href": "slides-02-01.html#function-to-calculate-area-of-a-circle",
     "title": "Functions (class slides)",
@@ -4289,6 +4275,13 @@
     "title": "Functions (class slides)",
     "section": "Function to calculate the volume of a cylinder",
     "text": "Function to calculate the volume of a cylinder\n\ndef volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\nprint(volume(1, 2)) # 6.283\nprint(volume(6, 10)) # 1130.94\nprint(volume(5, 5)) # 392.68750000000006"
+  },
+  {
+    "objectID": "slides-02-01.html#submit-to-gradescope",
+    "href": "slides-02-01.html#submit-to-gradescope",
+    "title": "Functions (class slides)",
+    "section": "Submit to Gradescope",
+    "text": "Submit to Gradescope\n\nName your python script with the volume function cylinder.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission"
   },
   {
     "objectID": "slides-02-01.html#pemdas",
@@ -5128,7 +5121,7 @@
     "href": "syllabus.html#administrative-drops",
     "title": "Syllabus",
     "section": "Administrative Drops",
-    "text": "Administrative Drops\nEvery semester, students enroll in introductory CS classes but do not submit any work, resulting in a grade of E at the end of the term. To prevent this, at the end of the second week (January 19), all students who have not submitted/completed five or more of the following will be administratively dropped:\n\nClass presence on January 10\nJanuary 10 quiz\nClass presence on January 12\nBeginning of semester survey\nClass presence on January 15\nJanuary 17 quiz\nModule 1 Programming Problem 1\nModule 1 Programming Problem 2\nClass presence on January 19\n\nIn addition, to ensure your success in this course, and that you are on top of the work that is due every week, administrative drops will be in place throughout the semester. Students who miss coursework for two weeks or more often get an E at the end of the term in this course. After the second week of class, at any point during the semester if you fail to attend class and submit assignments for two consecutive weeks you will be administratively dropped."
+    "text": "Administrative Drops\nEvery semester, students enroll in introductory CS classes but do not submit any work, resulting in a grade of E at the end of the term. To prevent this, at the end of the second week (January 19), all students who have not submitted/completed five or more of the following will be administratively dropped:\n\nClass presence on January 10\nJanuary 10 quiz\nClass presence on January 12\nBeginning of semester survey\nJanuary 17 quiz\nModule 1 Programming Problem 1\nModule 1 Programming Problem 2\nClass presence on January 19\n\nIn addition, to ensure your success in this course, and that you are on top of the work that is due every week, administrative drops will be in place throughout the semester. Students who miss coursework for two weeks or more often get an E at the end of the term in this course. After the second week of class, at any point during the semester if you fail to attend class and submit assignments for two consecutive weeks you will be administratively dropped."
   },
   {
     "objectID": "syllabus.html#illnesses-and-emergencies",
@@ -5213,54 +5206,5 @@
     "title": "Module 1 Programming Problems",
     "section": "",
     "text": "Programming Problems should be submitted to gradescope.\nIf you need instructions on how to submit your .py files to gradescope, watch the video at the end of this page.\n\nSurvey\nDue date: Friday, January 12, 2024 at 7pm\nhttps://uarizona.co1.qualtrics.com/jfe/form/SV_0q8KC0FwVhCiYD4\nThis is a survey to collect information on your expectations for CSc 110 Computer Programming I. The completion of this survey is required and will be used for grading purposes.\n\n\nProgramming Problem 1\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope (https://www.gradescope.com/courses/487587/assignments/2554285) gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences\n\n\nHow to submit to gradescope video"
-  },
-  {
-    "objectID": "slides-01-01.html#quiz-01",
-    "href": "slides-01-01.html#quiz-01",
-    "title": "Course Introduction (class slides)",
-    "section": "Quiz 01",
-    "text": "Quiz 01\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\nCompletion only (meaning no matter your performance you get 100% for it if you have your name on it)"
-  },
-  {
-    "objectID": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed-1",
-    "href": "slides-01-01.html#how-is-the-structure-of-this-class-designed-to-help-you-succeed-1",
-    "title": "Course Introduction (class slides)",
-    "section": "How is the structure of this class designed to help you succeed?",
-    "text": "How is the structure of this class designed to help you succeed?\n\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment"
-  },
-  {
-    "objectID": "slides-01-02.html",
-    "href": "slides-01-02.html",
-    "title": "Python Basics (class slides)",
-    "section": "",
-    "text": "Trouble accessing Gradescope? Use the link on D2L\nD2L grades are going to be used to calculate your final grade\nFull schedule for office hours can be found at adrianapicoral.com/csc-110/tas.html\n\n\n\n\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use replit.com"
-  },
-  {
-    "objectID": "slides-02-01.html",
-    "href": "slides-02-01.html",
-    "title": "Functions (class slides)",
-    "section": "",
-    "text": "Check your D2L gradebook\nAccess your submissions and original grading on Gradescope\n\n\n\n\n\nFunctions are named operations that are available to do tasks\nSome functions are built-in functions that Python provides\nProgrammers can also define their own functions\nFunctions are called (or invoked)\n\n\n\n\n\ndef two():\n  return 2\n\nThis function definition has many parts:\n\ntwo is the name of the function\n() is the parameter list (Here, it is empty)\nthe body (or content) of the function is indented\nreturn 2 is a statement that causes the function to cease and produce the value 2\n\n\n\n\n\ndef add_one(n):\n  return n + 1\n\n\nadd_one is the name of the function\n(n) is the parameter list\nthe body (or content) of the function is indented\nreturn n + 1 is a statement that causes the function to cease and produce the value n + 1\n\n\n\n\n\nName your python script with the add_one function first_function.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission\n\n\n\n\nRemember this from the last set of slides?\n\n# assign a radius value\nradius = 3\n# compute the area of a circle\narea = 3.1415 * radius ** 2\n\n\nCalculating the area of a circle is an abstraction.\nIn the code above, that is done by a variable assignment with a variable named area.\nLet’s create a function called area, that given a radius parameter, it returns the area of the circle.\n\n\n\nWrite a function that does the following:\n\nIts name is volume\nIt takes two integer arguments: radius and height\nIt calculates the volume of a cylinder, based on radius and height. Volume is area multiplied by height.\nIt returns the float value for calculated volume.\n\n\n\n\n\ndef volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\nprint(volume(1, 2)) # 6.283\nprint(volume(6, 10)) # 1130.94\nprint(volume(5, 5)) # 392.68750000000006"
-  },
-  {
-    "objectID": "slides-01-01.html",
-    "href": "slides-01-01.html",
-    "title": "Course Introduction (class slides)",
-    "section": "",
-    "text": "This is CSc 110, Introduction to Computer Programming I\nWant to learn how to program? . . . You’re in the right class!\n\n\n\n\n\nAdriana Picoral (you can call me Adriana or Dr. Picoral)\nOffice: Gould-Simpson 811\nEmail: adrianaps@arizona.edu\n\n\n\n\nIn this course we have course coordinators, senior TAs, and TAs.\nThe TAs are responsible for:\n\nHelping you, the students, succeed\nGrading assignments, quizzes, and exams\nHelping students on office hours\n\n. . . So get to know them!\n\n\n\n\nIn this class, you will learn how to program\nSpecifically, programming in Python (version 3)\nWill cover many of the basic principles and concepts that are common to a number of programming languages, such as\n\ninput/output\nconditionals and loops (control flow)\nfunctions\ndata structures\ndebugging and more!\n\n\n\n\n\nThis is the intro course sequence for the CS department:\n\n\n\nCSc 101 - Intro to Computer Science\n\n\n\nCSc 110 - Intro to Computer Programming I\n\n\n\nCSc 120 - Intro to Computer Programming II\n\n\n\n\n\n\nFor some, this is your very first CS course!\nPrerequisites: College Algebra or CSc 101 or appropriate math placement score\n\n\n\n\n\nIntroduce yourself!\nShare your\n\nName\nProgram/Major, declared or Intended (and why you chose that major)\nOne thing that you can do that took many hours of practice\n\n\n\n\n\n\nAccess to a computer with internet (you can get one from the library)\nInstall Python and an IDE/editor (Visual Studio Code is recommended)\nDo the readings, watch the videos, come to class, come to office hours, do the assignments yourself (you can work in groups, but do not copy work from others)\n\n\n\n\nA willingness to:\n\ntry and fail\nget frustrated and bored\nbe curious about how things work\n\n\n\n\n\nActive learning – you are expected to engage in the in-class activities\nDeep processing – I will elicit knowledge from you and help you make connections to new content\nSmall sequential steps – each week we build on top of the content of the previous week, make sure you are following along\n\n\n\n\n\nSpaced repetition – this is not the type of course you can cram for 2 hours before the exam\nMastery checks – frequent assessment\n\n\n\n\n\nProgramming Problems\nShort Projects (to be completed in the lab sessions)\nProjects\nExams and Quizzes\n\n\n\n\nExams are on paper. Why?\n\nImportant skill to develop\nYou are able to show what you learned\nWhiteboard coding interviews are common\n\n\n\n\n\nMidterm exams and weekly quizzes are always on Wednesday (same room as our lectures)\nOur first quiz will be on today\nNo preparation is required for this first quiz\nCompletion only grade for quiz 1\n\n\n\n\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\nCompletion only (meaning no matter your performance you get 100% for it if you have your name on it)\n\n\n\n\nWhat is the grade distribution for this class?\nHow many days you have for regrade requests?\nWhen are the exams?\n\n\n\n\n\nLast day for students to add themselves to a course using UAccess is January 17\nLast day for students to drop without a grade of W (withdraw) is January 23\n\n\n\n\n\nYou yourself do the work\n\nExamples of breaches of academic integrity:\n\nHaving a friend do the assignments for you\nUsing generative AI (for example, ChatGPT) solve the assignments for you\nCopying a solution from the internet\n\n\n\n\n\nTAs are not to give answers, but work with you\nRun things on their computer (it will help you with debugging)\nSharing code is a break of the academic integrity code\n\n\n\n\n\nReadings, videos, exercises, slides, assignment instructions will be available on the website\nHOWEVER, you are still responsible for things said/announced in class\n\n\n\n\n\nCome to office hours!\n\nBut come prepared – do not expect the TAs to solve problems for you (you wouldn’t learn to solve them yourself if you are always asking other people to do it for you)\n\n1 point of extra credit if you show up to office hours (read the syllabus for specifics on this)\n\n\n\n\nWe’ll see in this course that a key skill that you should develop as coder is the ability to find solutions to problems. Knowing how to get help is part of that skill.\n\n\n\nBefore you ask for help:\n\nCheck for typos (read your error messages)\nGoogle is your friend (use it wisely). Copy and paste the exact error message on a Google search. (this step also includes read the documentation on the functions you’re trying to use).\n\n\n\n\nBefore you ask for help:\n\nIf you are still stuck, you an always try rubber duck debugging. Describe the problem aloud, explaining it line-by-line, to a rubber duck or another person (who might not have any experience with programming). This is also a good preparation step to asking other people for help (next section).\n\n\n\n\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself."
-  },
-  {
-    "objectID": "slides-01-02.html#quiz-02",
-    "href": "slides-01-02.html#quiz-02",
-    "title": "Python Basics (class slides)",
-    "section": "Quiz 02",
-    "text": "Quiz 02\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nYour solution needs to print the exact characters shown in your quiz (there are different versions of the quiz) – changes to the characters (for example, not printing the quotes or apostrophe) will be considered as an incorrect solution (zero grade awarded)."
-  },
-  {
-    "objectID": "slides-02-01.html#submit-to-gradescope",
-    "href": "slides-02-01.html#submit-to-gradescope",
-    "title": "Functions (class slides)",
-    "section": "Submit to Gradescope",
-    "text": "Submit to Gradescope\n\nName your python script with the volume function cylinder.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission"
   }
 ]
