@@ -68,7 +68,7 @@ The output provided above shows the kind of output this program should produce. 
 
 The basis for all of the percentages is the annual income argument. All of the percentages are calculated based on this. The next two arguments, rent and bills, are monthly expense values. In order to get the total spend on these categories annually, these numbers must be multiplied by the number of months in a year. Then, you can use this result to calculate the percentage. The fourth value is a weekly expense, so this must instead be multiplied by the number of weeks in a year. The fifth argument is already an annual value, so you don’t need to multiple by number of weeks or months.
 
-The tax percentage is dependent upon the amount of money a person make annually. The tax brackets are as follows:
+You need to write a `calculate_tax` function to calculate taxes. The tax percentage is dependent upon the amount of money a person make annually. The tax brackets are as follows:
 
 * [$0, $15k] annually: 10% tax
 * ($15k, $75k] annually: 20% tax
@@ -82,6 +82,17 @@ You should use one or more if / elif / else statements in the code to determine 
 #| echo: true
 annual_salary * ( tax_percentage / 100.0)
 ```
+
+Here are some tests to verify you are calculating the taxes correctly:
+
+```{python}
+#| eval: false
+#| echo: true
+assert calculate_tax(40000) == 8000
+assert calculate_tax(10000) == 1000
+assert calculate_tax(20000) == 4000
+```
+
 
 After calculating all of these values programmatically, you should generate the output table.
 

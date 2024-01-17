@@ -1005,7 +1005,7 @@ See the financial breakdown below, based on a salary of $50000
 <h1>Calculating the values</h1>
 <p>The output provided above shows the kind of output this program should produce. Let’s talk a bit about how to compute these values.</p>
 <p>The basis for all of the percentages is the annual income argument. All of the percentages are calculated based on this. The next two arguments, rent and bills, are monthly expense values. In order to get the total spend on these categories annually, these numbers must be multiplied by the number of months in a year. Then, you can use this result to calculate the percentage. The fourth value is a weekly expense, so this must instead be multiplied by the number of weeks in a year. The fifth argument is already an annual value, so you don’t need to multiple by number of weeks or months.</p>
-<p>The tax percentage is dependent upon the amount of money a person make annually. The tax brackets are as follows:</p>
+<p>You need to write a <code>calculate_tax</code> function to calculate taxes. The tax percentage is dependent upon the amount of money a person make annually. The tax brackets are as follows:</p>
 <ul>
 <li>[$0, $15k] annually: 10% tax</li>
 <li>($15k, $75k] annually: 20% tax</li>
@@ -1016,6 +1016,12 @@ See the financial breakdown below, based on a salary of $50000
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>annual_salary <span class="op">*</span> ( tax_percentage <span class="op">/</span> <span class="fl">100.0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Here are some tests to verify you are calculating the taxes correctly:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> calculate_tax(<span class="dv">40000</span>) <span class="op">==</span> <span class="dv">8000</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> calculate_tax(<span class="dv">10000</span>) <span class="op">==</span> <span class="dv">1000</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> calculate_tax(<span class="dv">20000</span>) <span class="op">==</span> <span class="dv">4000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>After calculating all of these values programmatically, you should generate the output table.</p>
 <p>There is also a tax limit of <code>$75,000</code>. The tax should be capped at this value, and if the limit is reached, a message indicating this should be printed out after the chart. The message should say:</p>
 <pre>&gt;&gt;&gt; TAX LIMIT REACHED &lt;&lt;&lt;
@@ -1023,8 +1029,8 @@ Overspending
 What happens if the expenditures and taxes are more than the annual salary? This should be represented by negative values in the extra row. You should also print a warning after the chart. Below is an example of a financial situation in which the user spends more than they earn, resulting in a deficit in the extra row.
 </pre>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># arguments: salary, mortgage/rent, bills, food, travel</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>wheres_the_money(<span class="dv">40000</span>, <span class="dv">2000</span>, <span class="dv">300</span>, <span class="dv">150</span>, <span class="dv">4000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># arguments: salary, mortgage/rent, bills, food, travel</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>wheres_the_money(<span class="dv">40000</span>, <span class="dv">2000</span>, <span class="dv">300</span>, <span class="dv">150</span>, <span class="dv">4000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <pre>------------------------------------------------------------------------------------------------------
 See the financial breakdown below, based on a salary of $40000
@@ -1044,7 +1050,7 @@ See the financial breakdown below, based on a salary of $40000
 <p>Notice that the numbers are formatted in a particular way in the output table. You must match this formatting exactly. In order to do so, you can use the format() function. This function was mentioned in the <a href="https://adrianapicoral.com/csc-110/basics.html#the-format-method">Constants, variables, and comments reading</a>. Here’s an example of how you can use this function to match the formatting in the spec.</p>
 <p>Say we have a floating point number, like below:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="fl">134567.123</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="fl">134567.123</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Perhaps this is a result you get for one of the dollar values after doing the necessary computations. When printing, you’ll want to adjust the way it is printed in several ways.</p>
 <section id="add-a-comma" class="level2">
