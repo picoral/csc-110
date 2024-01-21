@@ -33,6 +33,14 @@ Test Failed: 'Hello World\n' != 'Hello World!\n'
 
 The first string is what was output by your code, the second is the expected output. This error message is indicating that the two strings are different (`!=`) and that the expected output has an extra character (the `!` at the end of the string).
 
+# Function does not return anything
+
+```{html}
+Test Failed: None != 'The output that was expected from the function!'
+```
+
+The `None` is the output from the function that was called -- meaning, the function is probably not returning anything. Usually this means that instead of a `return` statement, the function uses a `print` statement. Make sure your function has a `return` statement.
+
 # Conversion function error
 
 ```{html}

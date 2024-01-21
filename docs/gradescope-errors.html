@@ -903,6 +903,7 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
   <li><a href="#mismatch-in-file-name" id="toc-mismatch-in-file-name" class="nav-link active" data-scroll-target="#mismatch-in-file-name">Mismatch in file name</a></li>
   <li><a href="#mismatch-in-function-name" id="toc-mismatch-in-function-name" class="nav-link" data-scroll-target="#mismatch-in-function-name">Mismatch in function name</a></li>
   <li><a href="#mismatch-in-ouput-for-strings" id="toc-mismatch-in-ouput-for-strings" class="nav-link" data-scroll-target="#mismatch-in-ouput-for-strings">Mismatch in ouput (for strings)</a></li>
+  <li><a href="#function-does-not-return-anything" id="toc-function-does-not-return-anything" class="nav-link" data-scroll-target="#function-does-not-return-anything">Function does not return anything</a></li>
   <li><a href="#conversion-function-error" id="toc-conversion-function-error" class="nav-link" data-scroll-target="#conversion-function-error">Conversion function error</a></li>
   <li><a href="#eof-error" id="toc-eof-error" class="nav-link" data-scroll-target="#eof-error">EOF error</a></li>
   <li><a href="#infinite-loop" id="toc-infinite-loop" class="nav-link" data-scroll-target="#infinite-loop">Infinite loop</a></li>
@@ -948,6 +949,11 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
 + Hello World!
 ?            +</code></pre>
 <p>The first string is what was output by your code, the second is the expected output. This error message is indicating that the two strings are different (<code>!=</code>) and that the expected output has an extra character (the <code>!</code> at the end of the string).</p>
+</section>
+<section id="function-does-not-return-anything" class="level1">
+<h1>Function does not return anything</h1>
+<pre class="{html}"><code>Test Failed: None != 'The output that was expected from the function!'</code></pre>
+<p>The <code>None</code> is the output from the function that was called – meaning, the function is probably not returning anything. Usually this means that instead of a <code>return</code> statement, the function uses a <code>print</code> statement. Make sure your function has a <code>return</code> statement.</p>
 </section>
 <section id="conversion-function-error" class="level1">
 <h1>Conversion function error</h1>
