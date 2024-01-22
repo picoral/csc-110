@@ -76,8 +76,8 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Readings
 
--   [More on Functions](functions.html)
--   [Input from user](input.html)
+-   [More on Functions](functions.html) [(pdf)](slides-03-01.pdf)
+-   [Input from user](input.html) [(pdf)](slides-03-02.pdf)
 
 ## Class slides
 
