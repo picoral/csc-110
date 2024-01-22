@@ -91,7 +91,7 @@ In the same script, write `main()`:
 ## Announcements
 
 * Midterm 1 on February 14 (this room)
-* Modules 1-4 (practice problems on the website)
+* Modules 1-5 (practice problems on the website)
 * Review session TBA
 * BRING PHOTO ID TO THE EXAM
 
