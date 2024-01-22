@@ -76,13 +76,13 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Readings
 
--   [More on Functions](functions.html) [(pdf)](slides-03-01.pdf)
--   [Input from user](input.html) [(pdf)](slides-03-02.pdf)
+-   [More on Functions](functions.html)
+-   [Input from user](input.html)
 
 ## Class slides
 
--   [More on Functions](slides-03-01.html)
--   [Built-in Python Functions](slides-03-02.html)
+-   [More on Functions](slides-03-01.html)  [(pdf)](slides-03-01.pdf)
+-   [Built-in Python Functions](slides-03-02.html) [(pdf)](slides-03-02.pdf)
 
 ## Assignments
 
