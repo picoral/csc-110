@@ -90,11 +90,10 @@ In the same script, write `main()`:
 
 ## Announcements
 
-* Midterm 1 on September 20 (this room)
+* Midterm 1 on February 14 (this room)
 * Modules 1-4 (practice problems on the website)
 * Review session TBA
 * BRING PHOTO ID TO THE EXAM
-* BRING PHOTO ID TO QUIZ 04 (this Wednesday, Sept 13)
 
 
 ## `input()` function
