@@ -158,6 +158,14 @@ Using the comma as a thousands separator:
 '{:,}'.format(1234567890)
 ```
 
+Establishing numbers of digits to hold space for:
+
+```{python}
+#| eval: true
+#| echo: true
+'{:15,}'.format(10000)
+```
+
 Expressing floats with four decimals (the `4` is number of digits after the decimal point, the `f` means it's formatting a float):
 
 ```{python}
