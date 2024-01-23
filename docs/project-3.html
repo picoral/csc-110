@@ -940,6 +940,7 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
   <li><a href="#formatting-a-number" id="toc-formatting-a-number" class="nav-link" data-scroll-target="#formatting-a-number">Formatting a Number</a>
   <ul class="collapse">
   <li><a href="#add-a-comma" id="toc-add-a-comma" class="nav-link" data-scroll-target="#add-a-comma">Add a comma</a></li>
+  <li><a href="#examples-for-string-method-.format" id="toc-examples-for-string-method-.format" class="nav-link" data-scroll-target="#examples-for-string-method-.format">Examples for string method <code>.format()</code></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -1059,6 +1060,32 @@ See the financial breakdown below, based on a salary of $40000
 <li>Set to stop at two decimal points</li>
 <li>Add necessary spacing before the number, so that the table lines up</li>
 </ul>
+</section>
+<section id="examples-for-string-method-.format" class="level2">
+<h2 class="anchored" data-anchor-id="examples-for-string-method-.format">Examples for string method <code>.format()</code></h2>
+<p>Using the comma as a thousands separator:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">'{:,}'</span>.<span class="bu">format</span>(<span class="dv">1234567890</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'1,234,567,890'</code></pre>
+</div>
+</div>
+<p>Expressing floats with four decimals (the <code>4</code> is number of digits after the decimal point, the <code>f</code> means it’s formatting a float):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">'{:.4f}'</span>.<span class="bu">format</span>(<span class="fl">4.2353635234</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'4.2354'</code></pre>
+</div>
+</div>
+<p>Expressing a percentage with two decimals:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>points <span class="op">=</span> <span class="dv">19</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> <span class="dv">22</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">'Correct answers: {:.2%}'</span>.<span class="bu">format</span>(points<span class="op">/</span>total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'Correct answers: 86.36%'</code></pre>
+</div>
+</div>
 
 
 </section>

@@ -147,3 +147,33 @@ Perhaps this is a result you get for one of the dollar values after doing the ne
 
 * Set to stop at two decimal points
 * Add necessary spacing before the number, so that the table lines up
+
+## Examples for string method `.format()`
+
+Using the comma as a thousands separator:
+
+```{python}
+#| eval: true
+#| echo: true
+'{:,}'.format(1234567890)
+```
+
+Expressing floats with four decimals (the `4` is number of digits after the decimal point, the `f` means it's formatting a float):
+
+```{python}
+#| eval: true
+#| echo: true
+'{:.4f}'.format(4.2353635234)
+```
+
+
+Expressing a percentage with two decimals:
+
+```{python}
+#| eval: true
+#| echo: true
+points = 19
+total = 22
+'Correct answers: {:.2%}'.format(points/total)
+```
+
