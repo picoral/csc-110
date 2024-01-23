@@ -103,6 +103,8 @@ gtag('js', new Date());
 gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -935,7 +937,13 @@ gtag('config', 'G-X5E6TNHNQ5', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#short-project-01" id="toc-short-project-01" class="nav-link active" data-scroll-target="#short-project-01">Short Project 01</a></li>
-  <li><a href="#short-project-02" id="toc-short-project-02" class="nav-link" data-scroll-target="#short-project-02">Short Project 02</a></li>
+  <li><a href="#short-project-02" id="toc-short-project-02" class="nav-link" data-scroll-target="#short-project-02">Short Project 02</a>
+  <ul class="collapse">
+  <li><a href="#rectangle_area" id="toc-rectangle_area" class="nav-link" data-scroll-target="#rectangle_area"><code>rectangle_area</code></a></li>
+  <li><a href="#triangle_area" id="toc-triangle_area" class="nav-link" data-scroll-target="#triangle_area"><code>triangle_area</code></a></li>
+  <li><a href="#trapezoid_area" id="toc-trapezoid_area" class="nav-link" data-scroll-target="#trapezoid_area"><code>trapezoid_area</code></a></li>
+  <li><a href="#circle_area" id="toc-circle_area" class="nav-link" data-scroll-target="#circle_area"><code>circle_area</code></a></li>
+  </ul></li>
   <li><a href="#short-project-03" id="toc-short-project-03" class="nav-link" data-scroll-target="#short-project-03">Short Project 03</a></li>
   </ul>
 </nav>
@@ -985,6 +993,32 @@ D     ||       &lt;&gt;    |------+
 </section>
 <section id="short-project-02" class="level1">
 <h1>Short Project 02</h1>
+<section id="rectangle_area" class="level2">
+<h2 class="anchored" data-anchor-id="rectangle_area"><code>rectangle_area</code></h2>
+<p><span class="math display">\[
+area = base \cdot height
+\]</span></p>
+</section>
+<section id="triangle_area" class="level2">
+<h2 class="anchored" data-anchor-id="triangle_area"><code>triangle_area</code></h2>
+<p>Heron’s formula:</p>
+<p><span class="math display">\[
+s = (a + b + c) / 2
+\]</span> <span class="math display">\[
+area = \sqrt{s \cdot (s-a) \cdot (s-b) \cdot (s-c)}
+\]</span></p>
+</section>
+<section id="trapezoid_area" class="level2">
+<h2 class="anchored" data-anchor-id="trapezoid_area"><code>trapezoid_area</code></h2>
+<p><span class="math display">\[
+area = {1/2} \cdot (base_1 + base_2) \cdot height
+\]</span></p>
+</section>
+<section id="circle_area" class="level2">
+<h2 class="anchored" data-anchor-id="circle_area"><code>circle_area</code></h2>
+<p><span class="math display">\[
+area = \pi \cdot radius^2
+\]</span></p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> rectangle_area(<span class="dv">4</span>, <span class="fl">4.5</span>) <span class="op">==</span> <span class="fl">18.0</span></span>
@@ -1002,6 +1036,7 @@ D     ||       &lt;&gt;    |------+
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
 </section>
 <section id="short-project-03" class="level1">
 <h1>Short Project 03</h1>

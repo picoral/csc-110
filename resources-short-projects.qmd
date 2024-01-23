@@ -33,6 +33,37 @@ You can use [an online diff tool to see the differences](https://www.diffchecker
 
 # Short Project 02
 
+
+## `rectangle_area`
+
+$$
+area = base \cdot height
+$$
+
+## `triangle_area`
+
+Heron's formula:
+
+$$
+s = (a + b + c) / 2 
+$$
+$$
+area = \sqrt{s \cdot (s-a) \cdot (s-b) \cdot (s-c)}
+$$
+
+## `trapezoid_area`
+
+$$
+area = {1/2} \cdot (base_1 + base_2) \cdot height
+$$
+
+## `circle_area`
+
+
+$$
+area = \pi \cdot radius^2
+$$
+
 ```{python}
 #| echo: true
 #| eval: false
