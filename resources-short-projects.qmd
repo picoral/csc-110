@@ -29,6 +29,8 @@ D     ||       <>    |------+
 
 You can use [an online diff tool to see the differences](https://www.diffchecker.com/osXlvMhn/)
 
+[Instructions for Short Project 01](https://adrianapicoral.com/csc-110/Hn8N68xZ5n.html)
+
 # Short Project 02
 
 ```{python}
