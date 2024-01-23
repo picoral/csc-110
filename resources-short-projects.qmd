@@ -82,6 +82,8 @@ def main():
 main()
 ```
 
+[Instructions for Short Project 02](https://adrianapicoral.com/csc-110/G5xX56zeMl.html)
+
 # Short Project 03
 
 The program should return one of 4 strings:
