@@ -3035,7 +3035,7 @@
     "href": "slides-03-02.html#reading-the-documentation",
     "title": "Built-in Python Functions (class slides)",
     "section": "Reading the documentation",
-    "text": "Reading the documentation\nAccess the Python 3.11 documentation and read the definitions for print(), round(), input(), len(), int(), and str().\nWith your table members, write a short definition for each of the built-in functions above on a white board."
+    "text": "Reading the documentation\nAccess the Python 3.11 documentation and read the definitions for print(), round(), input(), len(), int(), float(), str().\nWith your table members, write a short definition for each of the built-in functions above on a white board."
   },
   {
     "objectID": "slides-03-02.html#len-function",

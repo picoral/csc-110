@@ -34,7 +34,7 @@ Your formula in your function should be Python code (in other words, do not just
 
 ## Reading the documentation
 
-Access the [Python 3.11 documentation](https://docs.python.org/3.11/library/functions.html#built-in-functions) and read the definitions for `print()`, `round()`, `input()`, `len()`, `int()`, and `str()`.
+Access the [Python 3.11 documentation](https://docs.python.org/3.11/library/functions.html#built-in-functions) and read the definitions for `print()`, `round()`, `input()`, `len()`, `int()`, `float()`, `str()`.
 
 With your table members, write a short definition for each of the built-in functions above on a white board.
  
