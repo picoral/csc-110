@@ -3105,7 +3105,7 @@
     "href": "slides-03-02.html#write-a-function-3",
     "title": "Built-in Python Functions (class slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is calculate_year_born, with no parameters\nIt prompts user to enter their age input()\nIt converts user’s age to integer (since input() always returns a string)\nIt calculates (imperfectly) the year a person of age was born by subtracting age from 2023\nIt returns an integer representing the approximate year person of age was born\n\n\nprint( calculate_year_born() ) # user enters 42, function returns 1981"
+    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is calculate_year_born, with no parameters\nIt prompts user to enter their age input()\nIt converts user’s age to integer (since input() always returns a string)\nIt calculates (imperfectly) the year a person of age was born by subtracting age from 2024\nIt returns an integer representing the approximate year person of age was born\n\n\nprint( calculate_year_born() ) # user enters 42, function returns 1981"
   },
   {
     "objectID": "slides-03-02.html#organizing-your-code",
@@ -5283,5 +5283,12 @@
     "title": "If statements (class slides)",
     "section": "Quiz 04",
     "text": "Quiz 04\nYou have 10 minutes to complete the quiz\n\nNo need for comments\nNo need for a main()\nNo need to print test cases\nJust write your function and what’s inside the function\n\nBuilt-in functions you can use: round(), input(), float(), str(), int() — you don’t have to use these at all"
+  },
+  {
+    "objectID": "slides-03-02.html#attendance",
+    "href": "slides-03-02.html#attendance",
+    "title": "Built-in Python Functions (class slides)",
+    "section": "Attendance",
+    "text": "Attendance\nSubmit your calculate_year_born solution as attendance on Gradescope.\nName your file get_input.py"
   }
 ]
