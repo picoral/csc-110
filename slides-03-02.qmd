@@ -151,7 +151,7 @@ Write a Python function that does the following:
 ```{python}
 #| echo: true
 #| eval: false
-print( calculate_year_born() ) # user enters 42, function returns 1981
+print( calculate_year_born() ) # user enters 43, function returns 1981
 ```
 
 ## Attendance
