@@ -97,13 +97,6 @@ print( absolute(-4) ) # 4
 print( absolute(0) ) # 0
 ```
 
-# Submit code for attendance
-
-**One submission per group, add your TA's name in a comment**
-
-Submit your `absolute` function to Gradescope for attendance.
-
-Name your file `absolute.py`
 
 ## Write a function
 
