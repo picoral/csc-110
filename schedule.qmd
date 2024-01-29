@@ -102,9 +102,9 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Class slides
 
--   [More expressions](slides-04-01.html)
--   [If statements](slides-04-02.html)
--   [if elif else](slides-04-03.html)
+-   [More expressions](slides-04-01.html)  [(pdf)](slides-04-01.pdf)
+-   [If statements](slides-04-02.html)  [(pdf)](slides-04-02.pdf)
+-   [if elif else](slides-04-03.html)  [(pdf)](slides-04-03.pdf)
 
 ## Assignments
 
