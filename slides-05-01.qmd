@@ -6,14 +6,6 @@ slide-number: true
 
 # CSc 110 - String Manipulation
 
-## Announcements
-
-* Midterm grades will be published Monday morning
-* Project 2 due Wednesday (September 27)
-* Quiz 05 is about Module 4
-
-![Midterm 1 Bonus Question](images/midterm1bonus.gif)
-
 ## String indexing
 
 -   Strings are sequences in Python
