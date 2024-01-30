@@ -123,8 +123,8 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Class slides
 
--   [string manipulation](slides-05-01.html)
--   [while loops](slides-05-02.html)
+-   [while loop intro](slides-05-01.html)
+-   [loops + string](slides-05-02.html)
 -   [while loop aggregation](slides-05-03)
 
 ## Assignments
