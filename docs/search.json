@@ -1397,7 +1397,7 @@
     "href": "slides-04-02.html#quiz-04",
     "title": "If statements (class slides)",
     "section": "Quiz 04",
-    "text": "Quiz 04\nYou have 10 minutes to complete the quiz\n\nNo need for comments\nNo need for a main()\nNo need to print test cases\nJust write your function and what’s inside the function\n\nBuilt-in functions you can use: round(), input(), float(), str(), int() — you don’t have to use these at all"
+    "text": "Quiz 04\nYou have 10 minutes to complete the quiz\n\nNo need for comments\nNo need for a main()\nNo need to print test cases\nJust write your function and what’s inside the function\n\nBuilt-in functions you can use: round(), input(), float(), str(), int() — you don’t have to use all of these"
   },
   {
     "objectID": "index.html",
