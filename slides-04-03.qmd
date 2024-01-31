@@ -10,6 +10,7 @@ slide-number: true
 
 * Check grades on D2L and your submission on gradescope
 * Office hours are now in GS 856 (same floor, the other side of the building)
+* Midterm 1 on February 14 (in class, bring PHOTO ID)
 
 ## if elif else
 

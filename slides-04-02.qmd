@@ -250,6 +250,7 @@ def main():
   '''
   age = input('How old are you?\n')
   if validate_age(age):
+    age = int(age)
     print(age_milestones(age))
   else:
     print("Invalid age entered")

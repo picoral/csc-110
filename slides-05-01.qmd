@@ -112,3 +112,95 @@ def main():
   
 main()
 ```
+
+## Age milestones
+
+Modify the code below to use a `while` loop to request a valid input from the user.
+
+```{python}
+#| eval: false
+#| echo: true
+def age_milestones(age):
+  '''
+  This function prints an informative message based on,
+  a person's age.
+  Args:
+    age: integer representing a person's age
+  Returns:
+    A string with a message to the user
+  '''
+  message = ""
+  if age >= 18:
+      message += 'You may apply to join the military'
+     
+  if age >= 21:
+      message += 'You may drink'
+     
+  if age > 35:
+      message += 'You may run for president'
+      
+  return message
+
+def validate_age(age):
+  return age.isnumeric()
+     
+def main():
+  '''
+  This functions takes input from the user and calls the
+  check_age() functiont to print a message
+  '''
+  age = input('How old are you?\n')
+  if validate_age(age):
+    age = int(age)
+    print(age_milestones(age))
+  else:
+    print("Invalid age entered")
+ 
+main()
+```
+
+## Age milestones -- solution
+
+Modify the code below to use a `while` loop to request a valid input from the user.
+
+```{python}
+#| eval: false
+#| echo: true
+def age_milestones(age):
+  '''
+  This function prints an informative message based on,
+  a person's age.
+  Args:
+    age: integer representing a person's age
+  Returns:
+    A string with a message to the user
+  '''
+  message = ""
+  if age >= 18:
+      message += 'You may apply to join the military'
+     
+  if age >= 21:
+      message += 'You may drink'
+     
+  if age > 35:
+      message += 'You may run for president'
+      
+  return message
+
+def validate_age(age):
+  return age.isnumeric()
+     
+def main():
+  '''
+  This functions takes input from the user and calls the
+  check_age() functiont to print a message
+  '''
+  age = input('How old are you?\n')
+  while validate_age(age) == False:
+    print("Invalid age entered. Please enter a valid age.")
+    age = input('How old are you?\n')
+  age = int(age)
+  print(age_milestones(age))
+  
+main()
+```
