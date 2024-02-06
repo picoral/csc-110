@@ -123,9 +123,9 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Class slides
 
--   [while loop intro](slides-05-01.html)
--   [loops + string](slides-05-02.html)
--   [while loop aggregation](slides-05-03)
+-   [while loop intro](slides-05-01.html)  [(pdf)](slides-05-01.pdf)
+-   [loops + string](slides-05-02.html) [(pdf)](slides-05-02.pdf)
+-   [while loop aggregation](slides-05-03) [(pdf)](slides-05-03.pdf)
 
 ## Assignments
 
