@@ -4652,14 +4652,14 @@
     "href": "short-projects.html#lab-07",
     "title": "What are Short Projects?",
     "section": "Lab 07",
-    "text": "Lab 07\nMarch 4 to March 8 – work on one previous short project (optional lab)"
+    "text": "Lab 07\nMarch 11 to March 15 – work on Short Project 07"
   },
   {
     "objectID": "short-projects.html#lab-08",
     "href": "short-projects.html#lab-08",
     "title": "What are Short Projects?",
     "section": "Lab 08",
-    "text": "Lab 08\nMarch 11 to March 15 – work on Short Project 07"
+    "text": "Lab 08\nMarch 18 to March 22 – work on one previous short project (optional lab)"
   },
   {
     "objectID": "short-projects.html#lab-09",
@@ -4673,28 +4673,28 @@
     "href": "short-projects.html#lab-10",
     "title": "What are Short Projects?",
     "section": "Lab 10",
-    "text": "Lab 10\nMarch 15 to March 29 – work on Short Project 08"
+    "text": "Lab 10\nApril 1 to April 5 – work on Short Project 09"
   },
   {
     "objectID": "short-projects.html#lab-11",
     "href": "short-projects.html#lab-11",
     "title": "What are Short Projects?",
     "section": "Lab 11",
-    "text": "Lab 11\nApril 1 to April 5 – work on Short Project 09"
+    "text": "Lab 11\nApril 8 to April 12 – work on Short Project 10"
   },
   {
     "objectID": "short-projects.html#lab-12",
     "href": "short-projects.html#lab-12",
     "title": "What are Short Projects?",
     "section": "Lab 12",
-    "text": "Lab 12\nApril 8 to April 12 – work on Short Project 10"
+    "text": "Lab 12\nApril 15 to April 19 – work on one previous short project (optional lab)"
   },
   {
     "objectID": "short-projects.html#lab-13",
     "href": "short-projects.html#lab-13",
     "title": "What are Short Projects?",
     "section": "Lab 13",
-    "text": "Lab 13\nApril 15 to April 19 – work on one previous short project (optional lab)"
+    "text": "Lab 13\nApril 22 to April 26 – work on Short Project 11"
   },
   {
     "objectID": "short-projects.html#lab-14",
@@ -5360,5 +5360,12 @@
     "title": "Module 1 Programming Problems",
     "section": "",
     "text": "Programming Problems should be submitted to gradescope.\nIf you need instructions on how to submit your .py files to gradescope, watch the video at the end of this page.\n\nSurvey\nDue date: Friday, January 12, 2024 at 7pm\nhttps://uarizona.co1.qualtrics.com/jfe/form/SV_0q8KC0FwVhCiYD4\nThis is a survey to collect information on your expectations for CSc 110 Computer Programming I. The completion of this survey is required and will be used for grading purposes.\n\n\nProgramming Problem 1\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope (https://www.gradescope.com/courses/487587/assignments/2554285) gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences\n\n\nHow to submit to gradescope video"
+  },
+  {
+    "objectID": "short-projects.html#lab-9",
+    "href": "short-projects.html#lab-9",
+    "title": "What are Short Projects?",
+    "section": "Lab 9",
+    "text": "Lab 9\nMarch 15 to March 29 – work on Short Project 08"
   }
 ]
