@@ -1859,7 +1859,7 @@
     "href": "project-6.html",
     "title": "Programming Project 6",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Thursday, February 29, 2024 at 7pm\nThis programming project is an adaptation of Ben Dicken’s Encrypter / Decrypter Programming Assignment."
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Thursday, March 07, 2024 at 7pm\nThis programming project is an adaptation of Ben Dicken’s Encrypter / Decrypter Programming Assignment."
   },
   {
     "objectID": "project-6.html#encrypter",
@@ -1908,7 +1908,7 @@
     "href": "project-5.html",
     "title": "Programming Project 5",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Thursday, February 22, 2024 at 7pm\nIn this programming project you will implement a number of Python functions to implement a simplified version of chess. Make sure you follow the provided style guide (you will be graded on it!).\nName your program one_d_chess.py to submit to gradescope. Make sure that gradescope gives you the points for passing the test cases.\nThis programming project is an adaptation of Ben Dicken’s 1 Dimensional Chess Programming Assignment.\nIn this programming project, you will be implementing a simpler variant of chess: 1D Chess! 1D chess is a variant of the game that is played on a board that has only one column of spaces, rather than a grid of spaces, as in typical chess. There are actually multiple variants of 1D chess. In this PA, you should implement a custom variant of 1D chess, which I’ll refer to as “110 1D chess”."
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Thursday, February 29, 2024 at 7pm\nIn this programming project you will implement a number of Python functions to implement a simplified version of chess. Make sure you follow the provided style guide (you will be graded on it!).\nName your program one_d_chess.py to submit to gradescope. Make sure that gradescope gives you the points for passing the test cases.\nThis programming project is an adaptation of Ben Dicken’s 1 Dimensional Chess Programming Assignment.\nIn this programming project, you will be implementing a simpler variant of chess: 1D Chess! 1D chess is a variant of the game that is played on a board that has only one column of spaces, rather than a grid of spaces, as in typical chess. There are actually multiple variants of 1D chess. In this PA, you should implement a custom variant of 1D chess, which I’ll refer to as “110 1D chess”."
   },
   {
     "objectID": "project-5.html#d-chess-rules",
@@ -2062,7 +2062,7 @@
     "href": "slides-07-03.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nRemember to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.8366219982537426\n8"
+    "text": "random module\nRemember to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.015680900197748482\n6"
   },
   {
     "objectID": "slides-07-03.html#write-a-function",
@@ -2076,7 +2076,7 @@
     "href": "slides-07-03.html#write-a-function-solution",
     "title": "random (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan"
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary"
   },
   {
     "objectID": "slides-07-03.html#setting-a-seed",
@@ -2154,6 +2154,13 @@
     "title": "TAs and Office Hours",
     "section": "2pm Section",
     "text": "2pm Section\n\nAli Sartaz Khan\nChitrangada Juneja\nNees Abusaada\nOwen Chambers\nPri Vaghela\nSamarie Tavenner\nZachary Nicolosi\n\nInterested in becoming a TA in the future? Check out more information about what TAs do and how to apply."
+  },
+  {
+    "objectID": "slides-05-02.html#announcements",
+    "href": "slides-05-02.html#announcements",
+    "title": "loops + strings (class slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nMidterm 1 February 14 – BRING PHOTO ID\nModules 1 to 5 – study guide under practice problems page on website\nReview session:\n\nFebruary 13, 5pm to 7pm\nCMNS 105 (Highland Commons, The Commons on 6th street)"
   },
   {
     "objectID": "slides-05-02.html#string-indexing",
@@ -5009,7 +5016,7 @@
     "href": "schedule.html#assignments-5",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Tuesday, February 20, 2024 at 7pm\nProgramming Project 5 – Due date: Thursday, February 22, 2024 at 7pm"
+    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Tuesday, February 20, 2024 at 7pm\nProgramming Project 5 – Due date: Thursday, February 29, 2024 at 7pm"
   },
   {
     "objectID": "schedule.html#quiz-06-wednesday-february-21-2024",
@@ -5037,7 +5044,7 @@
     "href": "schedule.html#assignments-6",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Tuesday, February 27, 2024 at 7pm\nProgramming Project 6 – Due date: Thursday, February 29, 2024 at 7pm"
+    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Tuesday, February 27, 2024 at 7pm\nProgramming Project 6 – Due date: Thursday, March 07, 2024 at 7pm"
   },
   {
     "objectID": "schedule.html#quiz-07-wednesday-february-28-2024",
@@ -5317,7 +5324,7 @@
     "href": "syllabus.html#assignment-due-dates",
     "title": "Syllabus",
     "section": "Assignment due dates",
-    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, January 10, 2024\nin class\n\n\nSurvey\nFriday, January 12, 2024\n7pm\n\n\nQuiz 02\nWednesday, January 17, 2024\nin class\n\n\nModule 1 Programming Problems\nThursday, January 18, 2024\n7pm\n\n\nModule 2 Programming Problems\nTuesday, January 23, 2024\n7pm\n\n\nShort Programming Project 1\nTuesday, January 23, 2024\n7pm\n\n\nQuiz 03\nWednesday, January 24, 2024\nin class\n\n\nProgramming Project 1\nThursday, January 25, 2024\n7pm\n\n\nModule 3 Programming Problems\nTuesday, January 30, 2024\n7pm\n\n\nShort Programming Project 2\nTuesday, January 30, 2024\n7pm\n\n\nQuiz 04\nWednesday, January 31, 2024\nin class\n\n\nProgramming Project 2\nThursday, February 01, 2024\n7pm\n\n\nModule 4 Programming Problems\nTuesday, February 06, 2024\n7pm\n\n\nShort Programming Project 3\nTuesday, February 06, 2024\n7pm\n\n\nQuiz 05\nWednesday, February 07, 2024\nin class\n\n\nProgramming Project 3\nThursday, February 08, 2024\n7pm\n\n\nMidterm 1\nWednesday, February 14, 2024\nin class\n\n\nModule 5 Programming Problems\nFriday, February 16, 2024\n7pm\n\n\nShort Programming Project 4\nFriday, February 16, 2024\n7pm\n\n\nProgramming Project 4\nMonday, February 19, 2024\n7pm\n\n\nModule 6 Programming Problems\nTuesday, February 20, 2024\n7pm\n\n\nShort Programming Project 5\nTuesday, February 20, 2024\n7pm\n\n\nQuiz 06\nWednesday, February 21, 2024\nin class\n\n\nProgramming Project 5\nThursday, February 22, 2024\n7pm\n\n\nModule 7 Programming Problems\nTuesday, February 27, 2024\n7pm\n\n\nShort Programming Project 6\nTuesday, February 27, 2024\n7pm\n\n\nQuiz 07\nWednesday, February 28, 2024\nin class\n\n\nProgramming Project 6\nThursday, February 29, 2024\n7pm\n\n\nModule 8 Programming Problems\nTuesday, March 19, 2024\n7pm\n\n\nShort Programming Project 7\nTuesday, March 19, 2024\n7pm\n\n\nQuiz 08\nWednesday, March 20, 2024\nin class\n\n\nProgramming Project 7\nThursday, March 21, 2024\n7pm\n\n\nMidterm 2\nWednesday, March 27, 2024\nin class\n\n\nModule 9 Programming Problems\nThursday, March 28, 2024\n7pm\n\n\nModule 10 Programming Problems\nTuesday, April 02, 2024\n7pm\n\n\nShort Programming Project 8\nTuesday, April 02, 2024\n7pm\n\n\nQuiz 09\nWednesday, April 03, 2024\nin class\n\n\nProgramming Project 8\nThursday, April 04, 2024\n7pm\n\n\nModule 11 Programming Problems\nTuesday, April 09, 2024\n7pm\n\n\nShort Programming Project 9\nTuesday, April 09, 2024\n7pm\n\n\nQuiz 10\nWednesday, April 10, 2024\nin class\n\n\nProgramming Project 9\nThursday, April 11, 2024\n7pm\n\n\nModule 12 Programming Problems\nTuesday, April 16, 2024\n7pm\n\n\nShort Programming Project 10\nTuesday, April 16, 2024\n7pm\n\n\nQuiz 11\nWednesday, April 17, 2024\nin class\n\n\nProgramming Project 10\nThursday, April 18, 2024\n7pm\n\n\nMidterm 3\nWednesday, April 24, 2024\nin class\n\n\nModule 13 Programming Problems\nThursday, April 25, 2024\n7pm\n\n\nModule 14 Programming Problems\nTuesday, April 30, 2024\n7pm\n\n\nShort Programming Project 11\nTuesday, April 30, 2024\n7pm\n\n\nQuiz 12\nWednesday, May 01, 2024\nin class\n\n\nProgramming Project 11\nWednesday, May 01, 2024\n7pm\n\n\nFinal Exam\nFriday, May 03, 2024\nTBA"
+    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, January 10, 2024\nin class\n\n\nSurvey\nFriday, January 12, 2024\n7pm\n\n\nQuiz 02\nWednesday, January 17, 2024\nin class\n\n\nModule 1 Programming Problems\nThursday, January 18, 2024\n7pm\n\n\nModule 2 Programming Problems\nTuesday, January 23, 2024\n7pm\n\n\nShort Programming Project 1\nTuesday, January 23, 2024\n7pm\n\n\nQuiz 03\nWednesday, January 24, 2024\nin class\n\n\nProgramming Project 1\nThursday, January 25, 2024\n7pm\n\n\nModule 3 Programming Problems\nTuesday, January 30, 2024\n7pm\n\n\nShort Programming Project 2\nTuesday, January 30, 2024\n7pm\n\n\nQuiz 04\nWednesday, January 31, 2024\nin class\n\n\nProgramming Project 2\nThursday, February 01, 2024\n7pm\n\n\nModule 4 Programming Problems\nTuesday, February 06, 2024\n7pm\n\n\nShort Programming Project 3\nTuesday, February 06, 2024\n7pm\n\n\nQuiz 05\nWednesday, February 07, 2024\nin class\n\n\nProgramming Project 3\nThursday, February 08, 2024\n7pm\n\n\nMidterm 1\nWednesday, February 14, 2024\nin class\n\n\nModule 5 Programming Problems\nFriday, February 16, 2024\n7pm\n\n\nShort Programming Project 4\nFriday, February 16, 2024\n7pm\n\n\nProgramming Project 4\nMonday, February 19, 2024\n7pm\n\n\nModule 6 Programming Problems\nTuesday, February 20, 2024\n7pm\n\n\nQuiz 06\nWednesday, February 21, 2024\nin class\n\n\nModule 7 Programming Problems\nTuesday, February 27, 2024\n7pm\n\n\nShort Programming Project 5\nTuesday, February 27, 2024\n7pm\n\n\nQuiz 07\nWednesday, February 28, 2024\nin class\n\n\nProgramming Project 5\nThursday, February 29, 2024\n7pm\n\n\nShort Programming Project 6\nTuesday, March 05, 2024\n7pm\n\n\nProgramming Project 6\nThursday, March 07, 2024\n7pm\n\n\nModule 8 Programming Problems\nTuesday, March 19, 2024\n7pm\n\n\nShort Programming Project 7\nTuesday, March 19, 2024\n7pm\n\n\nQuiz 08\nWednesday, March 20, 2024\nin class\n\n\nProgramming Project 7\nThursday, March 21, 2024\n7pm\n\n\nMidterm 2\nWednesday, March 27, 2024\nin class\n\n\nModule 9 Programming Problems\nThursday, March 28, 2024\n7pm\n\n\nModule 10 Programming Problems\nTuesday, April 02, 2024\n7pm\n\n\nShort Programming Project 8\nTuesday, April 02, 2024\n7pm\n\n\nQuiz 09\nWednesday, April 03, 2024\nin class\n\n\nProgramming Project 8\nThursday, April 04, 2024\n7pm\n\n\nModule 11 Programming Problems\nTuesday, April 09, 2024\n7pm\n\n\nShort Programming Project 9\nTuesday, April 09, 2024\n7pm\n\n\nQuiz 10\nWednesday, April 10, 2024\nin class\n\n\nProgramming Project 9\nThursday, April 11, 2024\n7pm\n\n\nModule 12 Programming Problems\nTuesday, April 16, 2024\n7pm\n\n\nShort Programming Project 10\nTuesday, April 16, 2024\n7pm\n\n\nQuiz 11\nWednesday, April 17, 2024\nin class\n\n\nProgramming Project 10\nThursday, April 18, 2024\n7pm\n\n\nMidterm 3\nWednesday, April 24, 2024\nin class\n\n\nModule 13 Programming Problems\nThursday, April 25, 2024\n7pm\n\n\nModule 14 Programming Problems\nTuesday, April 30, 2024\n7pm\n\n\nShort Programming Project 11\nTuesday, April 30, 2024\n7pm\n\n\nQuiz 12\nWednesday, May 01, 2024\nin class\n\n\nProgramming Project 11\nWednesday, May 01, 2024\n7pm\n\n\nFinal Exam\nFriday, May 03, 2024\nTBA"
   },
   {
     "objectID": "discord.html",
@@ -5345,7 +5352,7 @@
     "href": "assignments-14.html#programming-problem-28",
     "title": "Module 14 Assignments",
     "section": "Programming Problem 28",
-    "text": "Programming Problem 28\nDue date: Tuesday, February 20, 2024 at 7pm\nWrite a Python function that does the following:\n\nIts name is get_elements\nIt two arguments: a dictionary with strings as keys and integers as values, and an integer n\nIt returns a list containing all of the values who fall into at least one of these three categories:\n\nThe corresponding key starts with an upper-case letter\nThe corresponding key ends with an upper-case letter\nThe value is greater than or equal to the second parameter integer\n\n\nTest cases:\n\ndata = {'Alpha':10, 'bravo':25, 'charliE':15, 'dELTa':2}\nprint( get_elements(data, 12) ) # [10, 25, 15]\n\nName the program get_specific.py. Make sure that gradescope gives you the points for passing the test case."
+    "text": "Programming Problem 28\nDue date: Wednesday, February 21, 2024 at 7pm\nWrite a Python function that does the following:\n\nIts name is get_elements\nIt two arguments: a dictionary with strings as keys and integers as values, and an integer n\nIt returns a list containing all of the values who fall into at least one of these three categories:\n\nThe corresponding key starts with an upper-case letter\nThe corresponding key ends with an upper-case letter\nThe value is greater than or equal to the second parameter integer\n\n\nTest cases:\n\ndata = {'Alpha':10, 'bravo':25, 'charliE':15, 'dELTa':2}\nprint( get_elements(data, 12) ) # [10, 25, 15]\n\nName the program get_specific.py. Make sure that gradescope gives you the points for passing the test case."
   },
   {
     "objectID": "assignments-01.html",
@@ -5353,12 +5360,5 @@
     "title": "Module 1 Programming Problems",
     "section": "",
     "text": "Programming Problems should be submitted to gradescope.\nIf you need instructions on how to submit your .py files to gradescope, watch the video at the end of this page.\n\nSurvey\nDue date: Friday, January 12, 2024 at 7pm\nhttps://uarizona.co1.qualtrics.com/jfe/form/SV_0q8KC0FwVhCiYD4\nThis is a survey to collect information on your expectations for CSc 110 Computer Programming I. The completion of this survey is required and will be used for grading purposes.\n\n\nProgramming Problem 1\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope (https://www.gradescope.com/courses/487587/assignments/2554285) gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences\n\n\nHow to submit to gradescope video"
-  },
-  {
-    "objectID": "slides-05-02.html#announcements",
-    "href": "slides-05-02.html#announcements",
-    "title": "loops + strings (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nMidterm 1 February 14 – BRING PHOTO ID\nModules 1 to 5 – study guide under practice problems page on website\nReview session:\n\nFebruary 13, 5pm to 7pm\nCMNS 105 (Highland Commons, The Commons on 6th street)"
   }
 ]
