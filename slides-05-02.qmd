@@ -12,7 +12,7 @@ slide-number: true
 * Modules 1 to 5 -- study guide under practice problems page on website
 * Review session:
   * February 13, 5pm to 7pm
-  * CMNS 105 (Highland Commons, The Commons on 6th street)
+  * CMNS 105
 
 # String Manipulation
 
