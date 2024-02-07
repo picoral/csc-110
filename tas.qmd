@@ -15,6 +15,10 @@ Course coordinators are experienced UGTAs that assist the instructor with course
 -   Miro Vanek
 -   Pearl McNabb
 
+# Senior TA
+
+-   Taoseef Aziz
+
 
 # TAs
 
@@ -34,6 +38,7 @@ Undergraduate Teaching Assistants (UGTAs) in the Department of Computer Science 
 ## 2pm Section
 
 -   Ali Sartaz Khan
+-   Chitrangada Juneja
 -   Nees Abusaada
 -   Owen Chambers
 -   Pri Vaghela
