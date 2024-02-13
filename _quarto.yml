@@ -33,6 +33,7 @@ website:
         - project-9.qmd
         - project-10.qmd
         - project-11.qmd
+        - project-12.qmd
       - section: "Short Projects"
         contents: 
         - short-projects.qmd
