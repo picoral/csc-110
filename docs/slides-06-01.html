@@ -892,8 +892,41 @@
 <li>How to get the min instead?</li>
 </ul>
 </section>
-<section id="removing-last-item-in-a-list" class="slide level2">
-<h2>Removing last item in a list</h2>
+<section id="write-a-function-1" class="slide level2">
+<h2>Write a function</h2>
+<ol type="1">
+<li>Its name is <code>double</code></li>
+<li>It takes a list of numeric variables as argument</li>
+<li>It iterates over the list (use <code>while</code>) doubling (multiplying by two) each value in the list</li>
+<li>It returns the modified list</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1"></a><span class="cf">assert</span> double([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]) <span class="op">==</span> [<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="write-a-function-solution-1" class="slide level2">
+<h2>Write a function – solution</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1"></a><span class="kw">def</span> double(numbers):</span>
+<span id="cb29-2"><a href="#cb29-2"></a>  index <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb29-3"><a href="#cb29-3"></a>  <span class="cf">while</span> index <span class="op">&lt;</span> <span class="bu">len</span>(numbers):</span>
+<span id="cb29-4"><a href="#cb29-4"></a>    numbers[index] <span class="op">*=</span> <span class="dv">2</span></span>
+<span id="cb29-5"><a href="#cb29-5"></a>    index <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb29-6"><a href="#cb29-6"></a>  <span class="cf">return</span> numbers</span>
+<span id="cb29-7"><a href="#cb29-7"></a></span>
+<span id="cb29-8"><a href="#cb29-8"></a><span class="kw">def</span> main():</span>
+<span id="cb29-9"><a href="#cb29-9"></a>  original_list <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb29-10"><a href="#cb29-10"></a>  new_list <span class="op">=</span> double(original_list)</span>
+<span id="cb29-11"><a href="#cb29-11"></a>  <span class="cf">assert</span> original_list <span class="op">==</span> new_list</span>
+<span id="cb29-12"><a href="#cb29-12"></a>  <span class="cf">assert</span> original_list <span class="op">==</span> [<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>]</span>
+<span id="cb29-13"><a href="#cb29-13"></a>  </span>
+<span id="cb29-14"><a href="#cb29-14"></a>  <span class="bu">print</span>(<span class="st">"Passed all tests"</span>)</span>
+<span id="cb29-15"><a href="#cb29-15"></a>  </span>
+<span id="cb29-16"><a href="#cb29-16"></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="slicing-lists" class="slide level2">
+<h2>Slicing lists</h2>
 <ul>
 <li>Range – <code>list[2:4]</code></li>
 <li>Whole list – <code>list[:]</code></li>

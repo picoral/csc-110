@@ -334,7 +334,44 @@ data.frame(index = c(1:4),
 -   What about empty lists?
 -   How to get the min instead?
 
-## Removing last item in a list
+## Write a function
+
+1. Its name is `double`
+1. It takes a list of numeric variables as argument
+1. It iterates over the list (use `while`) doubling (multiplying by two) each value in the list
+1. It returns the modified list
+
+```{python}
+#| eval: false
+#| echo: true
+assert double([0, 1, 2, 3]) == [0, 2, 4, 6]
+```
+
+## Write a function -- solution
+
+```{python}
+#| eval: false
+#| echo: true
+def double(numbers):
+  index = 0
+  while index < len(numbers):
+    numbers[index] *= 2
+    index += 1
+  return numbers
+
+def main():
+  original_list = [0, 1, 2, 3]
+  new_list = double(original_list)
+  assert original_list == new_list
+  assert original_list == [0, 2, 4, 6]
+  
+  print("Passed all tests")
+  
+main()
+```
+
+
+## Slicing lists
 
 * Range -- `list[2:4]`
 * Whole list -- `list[:]`
