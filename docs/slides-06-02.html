@@ -409,12 +409,9 @@
 <h1>CSC 110 – Generating Random Numbers and Other Important Functions and Methods</h1>
 
 </section>
-<section id="announcements" class="slide level2">
-<h2>Announcements</h2>
-</section>
 <section id="random-module" class="slide level2">
 <h2>random module</h2>
-<p>Remember to <code>import</code> the module <code>random</code></p>
+<p>We need to <code>import</code> the module <code>random</code></p>
 <p>What do the functions <code>.random()</code> and <code>.randint()</code> return?</p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> random</span>
@@ -425,8 +422,8 @@
 <span id="cb1-6"><a href="#cb1-6"></a>n <span class="op">=</span> random.randint(<span class="dv">0</span>, <span class="dv">9</span>)</span>
 <span id="cb1-7"><a href="#cb1-7"></a><span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>0.7464381251817909
-0</code></pre>
+<pre><code>0.27502931836911926
+3</code></pre>
 </div>
 </div>
 </section>
@@ -478,96 +475,6 @@
 <pre><code>Peter</code></pre>
 </div>
 </div>
-</section>
-<section id="write-a-function-1" class="slide level2">
-<h2>Write a function</h2>
-<ol type="1">
-<li>Function name is <code>pick_winners</code></li>
-<li>It takes a list as argument</li>
-<li>It generates <code>n-2</code> random indices, and returns a new list with the items at those positions in the original argument list – make sure to remove names that have already been selected</li>
-</ol>
-<div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>winner <span class="op">=</span> pick_winners([<span class="st">"Peter"</span>, <span class="st">"Joan"</span>, <span class="st">"Mary"</span>, <span class="st">"June"</span>])</span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="bu">print</span>(winner) <span class="co"># it prints out a list of two items</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="write-a-function-solution-1" class="slide level2">
-<h2>Write a function – solution</h2>
-<div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="im">import</span> random</span>
-<span id="cb9-2"><a href="#cb9-2"></a></span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="kw">def</span> pick_winners(names):</span>
-<span id="cb9-4"><a href="#cb9-4"></a>  new_list <span class="op">=</span> []</span>
-<span id="cb9-5"><a href="#cb9-5"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(names)<span class="op">-</span><span class="dv">2</span>): <span class="co"># note how i here just controls how many iterations</span></span>
-<span id="cb9-6"><a href="#cb9-6"></a>    index <span class="op">=</span> random.randint(<span class="dv">0</span>, <span class="bu">len</span>(names) <span class="op">-</span> <span class="dv">1</span>)</span>
-<span id="cb9-7"><a href="#cb9-7"></a>    new_list.append(names[index])</span>
-<span id="cb9-8"><a href="#cb9-8"></a>    names.pop(index)</span>
-<span id="cb9-9"><a href="#cb9-9"></a>  <span class="cf">return</span> new_list</span>
-<span id="cb9-10"><a href="#cb9-10"></a></span>
-<span id="cb9-11"><a href="#cb9-11"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
-<span id="cb9-12"><a href="#cb9-12"></a>  random.seed(<span class="dv">42</span>)</span>
-<span id="cb9-13"><a href="#cb9-13"></a>  winners <span class="op">=</span> pick_winners([<span class="st">"Peter"</span>, <span class="st">"Joan"</span>, <span class="st">"Mary"</span>, <span class="st">"June"</span>])</span>
-<span id="cb9-14"><a href="#cb9-14"></a>  <span class="bu">print</span>(winners)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>['Peter', 'Joan']</code></pre>
-</div>
-</div>
-</section>
-<section id="ascii" class="slide level2">
-<h2>ASCII</h2>
-<p>ASCII stands for American Standard Code for Information Interchange, and it represents all characters in English. Nowadays we usually use <code>UTF-8</code> encoding instead os ASCII because we use more characters (emojis, for example).</p>
-<p>Check the <a href="ascii-table.html">ascii table</a> that contains the main characters in English.</p>
-</section>
-<section id="ord-function" class="slide level2">
-<h2><code>ord()</code> function</h2>
-<p>You can use the <code>ord()</code> function with a single character (that is, a string of length 1) to get the decimal value of that character. Check the <a href="ascii-table.html">ascii table</a> that contains the main characters in English.</p>
-<div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="bu">ord</span>(<span class="st">"A"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
-<pre><code>65</code></pre>
-</div>
-</div>
-</section>
-<section id="write-a-function-2" class="slide level2">
-<h2>Write a function</h2>
-<ol type="1">
-<li>Function name is <code>pick_winners</code></li>
-<li>It takes a list as argument</li>
-<li>It generates <code>n-2</code> random indices, and returns a new list with the items at those positions in the original argument list – make sure to remove names that have already been selected</li>
-<li>It only selects names that start with a lowercase character (use the built-in function <code>ord()</code>).</li>
-</ol>
-<div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a>winner <span class="op">=</span> pick_winners([<span class="st">"peter"</span>, <span class="st">"Joan"</span>, <span class="st">"mary"</span>, <span class="st">"June"</span>, <span class="st">"john"</span>])</span>
-<span id="cb13-2"><a href="#cb13-2"></a><span class="bu">print</span>(winner) <span class="co"># it prints out a list of two items</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="write-a-function-solution-2" class="slide level2">
-<h2>Write a function – solution</h2>
-<div class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="im">import</span> random</span>
-<span id="cb14-2"><a href="#cb14-2"></a></span>
-<span id="cb14-3"><a href="#cb14-3"></a><span class="kw">def</span> pick_winners(names):</span>
-<span id="cb14-4"><a href="#cb14-4"></a>  new_list <span class="op">=</span> []</span>
-<span id="cb14-5"><a href="#cb14-5"></a>  <span class="cf">while</span> <span class="bu">len</span>(new_list) <span class="op">&lt;</span> <span class="dv">2</span> <span class="kw">and</span> <span class="bu">len</span>(names) <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb14-6"><a href="#cb14-6"></a>    index <span class="op">=</span> random.randint(<span class="dv">0</span>, <span class="bu">len</span>(names) <span class="op">-</span> <span class="dv">1</span>)</span>
-<span id="cb14-7"><a href="#cb14-7"></a>    <span class="cf">if</span> <span class="dv">97</span> <span class="op">&lt;=</span> <span class="bu">ord</span>(names[index][<span class="dv">0</span>]) <span class="op">&lt;=</span> <span class="dv">122</span>:</span>
-<span id="cb14-8"><a href="#cb14-8"></a>      new_list.append(names[index])</span>
-<span id="cb14-9"><a href="#cb14-9"></a>    names.pop(index)</span>
-<span id="cb14-10"><a href="#cb14-10"></a>  <span class="cf">return</span> new_list</span>
-<span id="cb14-11"><a href="#cb14-11"></a></span>
-<span id="cb14-12"><a href="#cb14-12"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
-<span id="cb14-13"><a href="#cb14-13"></a>  random.seed(<span class="dv">42</span>)</span>
-<span id="cb14-14"><a href="#cb14-14"></a>  winners <span class="op">=</span> pick_winners([<span class="st">"peter"</span>, <span class="st">"Joan"</span>, <span class="st">"mary"</span>, <span class="st">"June"</span>, <span class="st">"john"</span>])</span>
-<span id="cb14-15"><a href="#cb14-15"></a>  <span class="bu">print</span>(winners)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>['peter', 'john']</code></pre>
-</div>
-</div>
-</section>
-<section id="isupper-and-.islower-string-methods" class="slide level2">
-<h2><code>.isupper()</code> and <code>.islower()</code> string methods</h2>
-<p><code>.isupper()</code> is a string method that returns <code>True</code> if all the characters in the string are in upper case, otherwise it returns <code>False</code>.</p>
-<p><code>.islower()</code> is checks for lowercase</p>
 
 <div class="footer footer-default">
 
