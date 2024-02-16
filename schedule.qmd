@@ -167,7 +167,6 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 -   [mutability](slides-07-01.html)
 -   [for loops with range](slides-07-02.html)
--   [module random](slides-07-03.html)
 
 ## Assignments
 
