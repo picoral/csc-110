@@ -144,8 +144,8 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Class slides
 
--   [Lists](slides-06-01.html) [pdf](slides-06-01.pdf)
--   [random](slides-06-02.html) [pdf](slides-06-02.pdf)
+-   [Lists](slides-06-01.html) [(pdf)](slides-06-01.pdf)
+-   [random](slides-06-02.html) [(pdf)](slides-06-02.pdf)
 
 ## Assignments
 
