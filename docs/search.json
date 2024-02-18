@@ -711,7 +711,7 @@
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.25487510868026875\n5"
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.10770023493843905\n0"
   },
   {
     "objectID": "slides-06-02.html#write-a-function",
@@ -725,7 +725,7 @@
     "href": "slides-06-02.html#write-a-function-solution",
     "title": "random (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan"
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune"
   },
   {
     "objectID": "slides-06-02.html#setting-a-seed",
@@ -5430,5 +5430,12 @@
     "title": "lists (class slides)",
     "section": "Announcements",
     "text": "Announcements\n\nProblems 9 and 10, and Short Project 04 due today\nProject 04 due Monday"
+  },
+  {
+    "objectID": "slides-06-02.html#quiz-06",
+    "href": "slides-06-02.html#quiz-06",
+    "title": "random (class slides)",
+    "section": "Quiz 06",
+    "text": "Quiz 06\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no test cases\nJust write your function and what’s inside the function\nUSE A WHILE LOOP\n\nBuilt-in functions you can use: round(), input(), float(), str(), int(), len() — you don’t have to use all of these"
   }
 ]
