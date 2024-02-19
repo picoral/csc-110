@@ -7,6 +7,12 @@ df-print: kable
 
 # CSC 110 -- Generating Random Numbers and Other Important Functions and Methods
 
+## Announcements
+
+* Check D2L and gradescope for grades
+* 41% of your grade is in at this point in the semester
+
+
 
 ## random module
 

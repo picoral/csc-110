@@ -704,14 +704,14 @@
     "href": "slides-06-02.html#announcements",
     "title": "random (class slides)",
     "section": "Announcements",
-    "text": "Announcements"
+    "text": "Announcements\n\nCheck D2L and gradescope for grades\n41% of your grade is in at this point in the semester"
   },
   {
     "objectID": "slides-06-02.html#random-module",
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.671536420966068\n0"
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.7052628184368367\n6"
   },
   {
     "objectID": "slides-06-02.html#write-a-function",
