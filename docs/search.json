@@ -5437,5 +5437,12 @@
     "title": "random (class slides)",
     "section": "Quiz 06",
     "text": "Quiz 06\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no test cases\nJust write your function and what’s inside the function\nUSE A WHILE LOOP\n\nBuilt-in functions you can use: round(), input(), float(), str(), int(), len() — you don’t have to use all of these"
+  },
+  {
+    "objectID": "slides-07-01.html#quiz-06",
+    "href": "slides-07-01.html#quiz-06",
+    "title": "mutability (class slides)",
+    "section": "Quiz 06",
+    "text": "Quiz 06\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no test cases\nJust write your function and what’s inside the function\nUSE A WHILE LOOP\n\nBuilt-in functions you can use: round(), input(), float(), str(), int(), len() — you don’t have to use all of these"
   }
 ]
