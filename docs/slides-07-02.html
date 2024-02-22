@@ -501,6 +501,12 @@
 <span id="cb9-13"><a href="#cb9-13"></a></span>
 <span id="cb9-14"><a href="#cb9-14"></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section></section>
+<section>
+<section id="submit-code-for-attendance" class="title-slide slide level1 center">
+<h1>Submit code for attendance</h1>
+<p>Submit your <code>indices_of_vowels</code> functions to Gradescope for attendance.</p>
+<p>Name your file <code>indices_of_vowels.py</code></p>
 </section>
 <section id="more-on-how-to-use-range" class="slide level2">
 <h2>More on how to use <code>range()</code></h2>
@@ -576,16 +582,35 @@
 <span id="cb17-10"><a href="#cb17-10"></a>  </span>
 <span id="cb17-11"><a href="#cb17-11"></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section></section>
-<section id="submit-code-for-attendance" class="title-slide slide level1 center">
-<h1>Submit code for attendance</h1>
-<p>Submit your <code>every_two_together</code> functions to Gradescope for attendance.</p>
-<p>Name your file <code>even_indices_string.py</code></p>
+</section>
+<section id="write-a-function-3" class="slide level2">
+<h2>Write a function</h2>
+<p>Test cases:</p>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a>my_numbers <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">0</span>]</span>
+<span id="cb18-2"><a href="#cb18-2"></a><span class="cf">assert</span> add_every_two(my_numbers) <span class="op">==</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="write-a-function-solution-3" class="slide level2">
+<h2>Write a function – solution</h2>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"></a><span class="kw">def</span> add_every_two(numbers):</span>
+<span id="cb19-2"><a href="#cb19-2"></a>  result <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb19-3"><a href="#cb19-3"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(numbers), <span class="dv">2</span>):</span>
+<span id="cb19-4"><a href="#cb19-4"></a>    result <span class="op">+=</span> numbers[i]</span>
+<span id="cb19-5"><a href="#cb19-5"></a>  <span class="cf">return</span> result</span>
+<span id="cb19-6"><a href="#cb19-6"></a></span>
+<span id="cb19-7"><a href="#cb19-7"></a><span class="kw">def</span> main():</span>
+<span id="cb19-8"><a href="#cb19-8"></a>  my_numbers <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">0</span>]</span>
+<span id="cb19-9"><a href="#cb19-9"></a>  <span class="cf">assert</span> add_every_two(my_numbers) <span class="op">==</span> <span class="dv">0</span></span>
+<span id="cb19-10"><a href="#cb19-10"></a>  </span>
+<span id="cb19-11"><a href="#cb19-11"></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 <div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

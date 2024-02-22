@@ -101,6 +101,11 @@ def main():
 main()
 ```
 
+# Submit code for attendance
+
+Submit your `indices_of_vowels` functions to Gradescope for attendance.
+
+Name your file `indices_of_vowels.py`
 
 ## More on how to use `range()`
 
@@ -170,8 +175,32 @@ def main():
 main()
 ```
 
-# Submit code for attendance
+## Write a function
 
-Submit your `every_two_together` functions to Gradescope for attendance.
+Test cases:
 
-Name your file `even_indices_string.py`
+```{python}
+#| eval: false
+#| echo: true
+my_numbers = [0, 1, 0, 3, 0]
+assert add_every_two(my_numbers) == 0
+```
+
+## Write a function -- solution
+
+```{python}
+#| eval: true
+#| echo: true
+def add_every_two(numbers):
+  result = 0
+  for i in range(0, len(numbers), 2):
+    result += numbers[i]
+  return result
+
+def main():
+  my_numbers = [0, 1, 0, 3, 0]
+  assert add_every_two(my_numbers) == 0
+  
+main()
+```
+
