@@ -9,12 +9,7 @@ df-print: kable
 
 ## Announcements
 
-* Midterm 2 on October 25 (Wednesday), in this room (BRING PHOTO ID)
-  * Content of Midterm 2: modules 1-7
-* Review session on October 24 (Tuesday), in this room
-* Last day to withdraw is October 29 (<https://registrar.arizona.edu/dates-and-deadlines>) -- you will have ~70% of your grade in by then
-* Check grades on D2L
-* Quiz 9-12, Nov 1, Nov 8, Nov 29, Dec 6
+* No lab next week Tuesday to Friday (the last lab for short project 06 is Monday)
 
 
 # Dictionaries
