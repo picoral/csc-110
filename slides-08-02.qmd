@@ -284,8 +284,3 @@ def main():
 main()
 ```
 
-# Submit code for attendance
-
-Submit your `merge_dictionaries` functions to Gradescope for attendance.
-
-Name your file `two_dictionaries.py`
