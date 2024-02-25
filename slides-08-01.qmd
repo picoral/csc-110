@@ -9,7 +9,7 @@ df-print: kable
 
 ## Announcements
 
-* No lab next week Tuesday to Friday (the last lab for short project 06 is Monday)
+* Last lab for short project 06 is Today -- no lab for the rest of the week, we re-start lab sessions Monday March 11
 
 
 # Dictionaries
@@ -36,13 +36,13 @@ df-print: kable
 
 ## Mapping
 
--   Lists (sort of) map **keys** to **values** too!
+-   Lists map **keys** to **values** too!
 
-    -   Indexes **of** the list are the **keys**
+    -   Indices **of** the list are the **keys**
 
     -   Elements **in** the list are the **values**
 
--   Keys (indexes) are used to accessing or modifying the elements in the list
+-   Keys (indices) are used to acess or modify the elements in the list
 
 ![](images/list_key_value.png)
 
@@ -56,7 +56,7 @@ numbers = [12, 49, -2, 26, 5, 17, -6]
 
 -   What are the keys?
 -   What are the values?
--   Which keys "map" to which values?
+-   Which keys map to which values?
 
 ## Mapping and Lists
 
@@ -222,7 +222,7 @@ scores['B'] = 20     # Changes value associated with a key
 
 scores['C']    # Retrieves a value, given a key
 
-del scores['E']      # Removes a key/value pair
+scores.pop('E')      # Removes a key/value pair
 ```
 
 ## The `in` operator
@@ -258,7 +258,7 @@ word_count = {"and": 324, "why": 134, "cannot": 76, "Sanded": 13}
 1.  Its name is `count_vowels`
 2.  It takes a `string` argument
 3.  It creates a `dictionary`
-4.  It returns the `dictionary` with the count of every lowercase vowel in `string`
+4.  It returns the `dictionary` with the count of every lowercase vowel in `string` (iterate over the string with a for loop)
 
 ```{python}
 #| eval: false
@@ -286,12 +286,6 @@ def main():
   
 main()
 ```
-
-# Submit code for attendance
-
-Submit your `count_vowels` function to Gradescope for attendance.
-
-Name your file `count_vowel_dict.py`
 
 ## Write a function
 

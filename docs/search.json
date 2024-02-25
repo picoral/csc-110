@@ -3742,7 +3742,7 @@
     "href": "slides-08-01.html#announcements",
     "title": "intro to dictionaries (class slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nNo lab next week Tuesday to Friday (the last lab for short project 06 is Monday)"
+    "text": "Announcements\n\nLast lab for short project 06 is Today – no lab for the rest of the week, we re-start lab sessions Monday March 11"
   },
   {
     "objectID": "slides-08-01.html#data-structure",
@@ -3763,14 +3763,14 @@
     "href": "slides-08-01.html#mapping-1",
     "title": "intro to dictionaries (class slides)",
     "section": "Mapping",
-    "text": "Mapping\n\nLists (sort of) map keys to values too!\n\nIndexes of the list are the keys\nElements in the list are the values\n\nKeys (indexes) are used to accessing or modifying the elements in the list"
+    "text": "Mapping\n\nLists map keys to values too!\n\nIndices of the list are the keys\nElements in the list are the values\n\nKeys (indices) are used to acess or modify the elements in the list"
   },
   {
     "objectID": "slides-08-01.html#mapping-and-lists",
     "href": "slides-08-01.html#mapping-and-lists",
     "title": "intro to dictionaries (class slides)",
     "section": "Mapping and Lists",
-    "text": "Mapping and Lists\n\nnumbers = [12, 49, -2, 26, 5, 17, -6]\n\n\nWhat are the keys?\nWhat are the values?\nWhich keys “map” to which values?"
+    "text": "Mapping and Lists\n\nnumbers = [12, 49, -2, 26, 5, 17, -6]\n\n\nWhat are the keys?\nWhat are the values?\nWhich keys map to which values?"
   },
   {
     "objectID": "slides-08-01.html#mapping-and-lists-1",
@@ -3840,7 +3840,7 @@
     "href": "slides-08-01.html#dictionary-operations",
     "title": "intro to dictionaries (class slides)",
     "section": "Dictionary operations",
-    "text": "Dictionary operations\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10, 'E': 5}\n \nscores['A+'] = 7     # Adds a key/value pair\n\nscores['B'] = 20     # Changes value associated with a key\n\nscores['C']    # Retrieves a value, given a key\n\ndel scores['E']      # Removes a key/value pair"
+    "text": "Dictionary operations\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10, 'E': 5}\n \nscores['A+'] = 7     # Adds a key/value pair\n\nscores['B'] = 20     # Changes value associated with a key\n\nscores['C']    # Retrieves a value, given a key\n\nscores.pop('E')      # Removes a key/value pair"
   },
   {
     "objectID": "slides-08-01.html#the-in-operator",
@@ -3854,7 +3854,7 @@
     "href": "slides-08-01.html#write-a-function",
     "title": "intro to dictionaries (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is count_vowels\nIt takes a string argument\nIt creates a dictionary\nIt returns the dictionary with the count of every lowercase vowel in string\n\n\nprint( count_vowels(\"\") ) # {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0}\nprint( count_vowels(\"pineapple\") ) # {\"a\": 1, \"e\": 2, \"i\": 1, \"o\": 0, \"u\": 0}"
+    "text": "Write a function\n\nIts name is count_vowels\nIt takes a string argument\nIt creates a dictionary\nIt returns the dictionary with the count of every lowercase vowel in string (iterate over the string with a for loop)\n\n\nprint( count_vowels(\"\") ) # {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0}\nprint( count_vowels(\"pineapple\") ) # {\"a\": 1, \"e\": 2, \"i\": 1, \"o\": 0, \"u\": 0}"
   },
   {
     "objectID": "slides-08-01.html#write-a-function-solution",
