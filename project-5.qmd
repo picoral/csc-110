@@ -235,7 +235,7 @@ print( printable_board(board) )
 
 ## Game over
 
-This function should be named `is_game_over` and it takes the board list as its only parameter, and should determine if the game is over or not. If the white king does not exist on the board, then the game is over, and black wins. In this case, the function should print the board, print `Black wins!` and return `True`. If the black king does not exist on the board, then the game is over, and white wins. In this case, the function should print the board, print `White wins!` and return `True`. If both kings are still in the board list, then the function should print nothing, and return `False`.
+This function should be named `is_game_over` and it takes the board list as its only parameter, and should determine if the game is over or not. If the white king does not exist on the board, then the game is over, and black wins. In this case, the function should print the board, print `Black wins!` and return `True`. If the black king does not exist on the board, then the game is over, and white wins. In this case, the function should print `White wins!` and return `True`. If both kings are still in the board list, then the function should print nothing, and return `False`.
 
 Test case:
 
