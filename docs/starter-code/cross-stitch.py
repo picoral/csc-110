@@ -1,5 +1,11 @@
 import random
 
+random.seed(123)
+SYMBOLS = [" ◎ ", " △ ", " ▞ ", " ● ", " ▣ ", 
+           " ▤ ", " ▲ ", " ▼ ", " * ", " < ",
+           " > ", " = ", " ≡ ", " ☼ ", " ♦ ",
+           " ◭ ", " ► ", " ◘ ", " ◓ ", " ▌ "]
+
 
 def print_pattern(pattern):
     width = len(pattern[0])  - 1
@@ -17,11 +23,6 @@ def print_pattern(pattern):
 
 
 if __name__ == "__main__":
-    random.seed(123)
-    SYMBOLS = [" ◎ ", " △ ", " ▞ ", " ● ", " ▣ ", 
-               " ▤ ", " ▲ ", " ▼ ", " * ", " < ",
-               " > ", " = ", " ≡ ", " ☼ ", " ♦ ",
-               " ◭ ", " ► ", " ◘ ", " ◓ ", " ▌ "]
     pattern = create_background(15, 10, 2)
     pattern = add_h_stripe(pattern, 6, 4, 6)
     pattern = add_square(pattern, 6, 4, 4, 3)
