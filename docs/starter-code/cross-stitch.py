@@ -6,6 +6,7 @@ SYMBOLS = [" ◎ ", " △ ", " ▞ ", " ● ", " ▣ ",
            " > ", " = ", " ≡ ", " ☼ ", " ♦ ",
            " ◭ ", " ► ", " ◘ ", " ◓ ", " ▌ "]
 
+
 def print_pattern(pattern):
     width = len(pattern[0])  - 1
     top_line = "┌" + "───┬" * width + "───┐"
