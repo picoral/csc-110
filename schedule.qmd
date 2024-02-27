@@ -184,8 +184,8 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Class slides
 
--   [intro to dictionaries](slides-08-01.html)
--   [`for x in list` loops](slides-08-02.html)
+-   [intro to dictionaries](slides-08-01.html)  [(pdf)](slides-08-01.pdf)
+-   [`for x in list` loops](slides-08-02.html)  [(pdf)](slides-08-02.pdf)
 
 ## Assignments
 
