@@ -5402,5 +5402,12 @@
     "title": "intro to dictionaries (class slides)",
     "section": "Quiz 07",
     "text": "Quiz 07\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no test cases\nJust write your function and what’s inside the function\nyour choice of loop (for or while)\n\nBuilt-in functions you can use: round(), input(), float(), str(), int(), len() — you don’t have to use all of these"
+  },
+  {
+    "objectID": "slides-08-02.html#attendance",
+    "href": "slides-08-02.html#attendance",
+    "title": "for loops – iterating over items (class slides)",
+    "section": "Attendance",
+    "text": "Attendance\nSubmit your tally_negatives function to Gradescope for attendance.\nName your file tally_negatives.py"
   }
 ]

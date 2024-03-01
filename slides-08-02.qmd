@@ -143,6 +143,12 @@ def main():
 main()
 ```
 
+## Attendance
+
+Submit your `tally_negatives` function to Gradescope for attendance.
+
+Name your file `tally_negatives.py`
+
 ## What happens when we do `for k in dictionary:`
 
 ```{python}
