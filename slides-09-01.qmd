@@ -7,6 +7,10 @@ df-print: kable
 
 # CSc 110 - files
 
+## Announcements
+
+* TA office hours in GS 813 now
+
 ## Files and file systems
 
 -   On (at least most of) our computers, there is a **file system** via which we can create, save, modify, and remove files
