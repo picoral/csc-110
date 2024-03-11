@@ -711,7 +711,7 @@
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.6024825629044012\n9"
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.4104545244947244\n5"
   },
   {
     "objectID": "slides-06-02.html#write-a-function",
@@ -2063,13 +2063,6 @@
     "title": "FizzBuzz Problem",
     "section": "",
     "text": "The FizzBuzz Problem is a common coding problem given during interviews where candidates are asked to write a solution to the problem. The problem states the following:\n\nAn integer divisible by 3 should be labeled “Fizz”\nAn integer divisible by 5 should be labeled “Buzz”\nAn integer divisible by both 3 and 5 should be labeled “FizzBuzz”\n\nYou should try to solve this on your own, before watching my solution:"
-  },
-  {
-    "objectID": "slides-09-02.html#announcements",
-    "href": "slides-09-02.html#announcements",
-    "title": "files and strings (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nCheck grades on D2L\nProject 5 due this Wednesday (Nov 8)\nNo class Friday November 10\nMidterm 3 on Wednesday November 15\n\ncontent: Midterm 2 + dictionaries + files + tuples (Modules 1-11)\n\nContact your TA if you want to go over your Midterm 2 answers (no extra credit for meetings anymore)"
   },
   {
     "objectID": "slides-09-02.html#string-methods",
@@ -3626,6 +3619,13 @@
     "text": "Write a function – solution\n\ndef tally_negatives(numbers):\n  tally = {}\n  for n in numbers:\n    if n &lt; 0:\n      if n not in tally:\n        tally[n] = 0\n      tally[n] += 1\n  return tally\n\ndef main():\n  assert  tally_negatives([1, -2, 0, -4, -2]) == {-2: 2, -4: 1}\n  assert tally_negatives([]) == {}\n  print(\"Passed all tests.\")\n  \nmain()\n\nPassed all tests."
   },
   {
+    "objectID": "slides-08-02.html#attendance",
+    "href": "slides-08-02.html#attendance",
+    "title": "for loops – iterating over items (class slides)",
+    "section": "Attendance",
+    "text": "Attendance\nSubmit your tally_negatives function to Gradescope for attendance.\nName your file tally_negatives.py"
+  },
+  {
     "objectID": "slides-08-02.html#what-happens-when-we-do-for-k-in-dictionary",
     "href": "slides-08-02.html#what-happens-when-we-do-for-k-in-dictionary",
     "title": "for loops – iterating over items (class slides)",
@@ -3883,6 +3883,13 @@
     "title": "intro to dictionaries (class slides)",
     "section": "Write a function – solution",
     "text": "Write a function – solution\n\ndef count_chars(string):\n  counts = {}\n  for i in range(len(string)):\n    char = string[i]\n    if char in counts:\n      counts[char] += 1\n    else:\n      counts[char] = 1\n      \n  return counts\n\ndef main():\n  print( count_chars(\"\") ) # {}\n  print( count_chars(\"banana\") ) # {\"b\": 1, \"a\": 3, \"n\": 2}\n\nmain()\n\n{}\n{'b': 1, 'a': 3, 'n': 2}"
+  },
+  {
+    "objectID": "slides-08-01.html#quiz-07",
+    "href": "slides-08-01.html#quiz-07",
+    "title": "intro to dictionaries (class slides)",
+    "section": "Quiz 07",
+    "text": "Quiz 07\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no test cases\nJust write your function and what’s inside the function\nyour choice of loop (for or while)\n\nBuilt-in functions you can use: round(), input(), float(), str(), int(), len() — you don’t have to use all of these"
   },
   {
     "objectID": "slides-14-01.html#announcements",
@@ -5110,11 +5117,11 @@
     "text": "Assignments\n\nModule 8 Programming Problems – Due date: Tuesday, March 19, 2024 at 7pm\nProgramming Project 7 – Due date: Thursday, March 21, 2024 at 7pm"
   },
   {
-    "objectID": "schedule.html#quiz-08-wednesday-march-20-2024",
-    "href": "schedule.html#quiz-08-wednesday-march-20-2024",
+    "objectID": "schedule.html#quiz-08-wednesday-march-13-2024",
+    "href": "schedule.html#quiz-08-wednesday-march-13-2024",
     "title": "Schedule",
-    "section": "Quiz 08 (Wednesday, March 20, 2024)",
-    "text": "Quiz 08 (Wednesday, March 20, 2024)"
+    "section": "Quiz 08 (Wednesday, March 13, 2024)",
+    "text": "Quiz 08 (Wednesday, March 13, 2024)"
   },
   {
     "objectID": "schedule.html#readings-7",
@@ -5166,11 +5173,11 @@
     "text": "Assignments\n\nModule 10 Programming Problems – Due date: Tuesday, April 02, 2024 at 7pm\nProgramming Project 8 – Due date: Thursday, April 04, 2024 at 7pm"
   },
   {
-    "objectID": "schedule.html#quiz-09-wednesday-april-03-2024",
-    "href": "schedule.html#quiz-09-wednesday-april-03-2024",
+    "objectID": "schedule.html#quiz-09-wednesday-march-20-2024",
+    "href": "schedule.html#quiz-09-wednesday-march-20-2024",
     "title": "Schedule",
-    "section": "Quiz 09 (Wednesday, April 03, 2024)",
-    "text": "Quiz 09 (Wednesday, April 03, 2024)"
+    "section": "Quiz 09 (Wednesday, March 20, 2024)",
+    "text": "Quiz 09 (Wednesday, March 20, 2024)"
   },
   {
     "objectID": "schedule.html#readings-9",
@@ -5194,11 +5201,11 @@
     "text": "Assignments\n\nModule 11 Programming Problems – Due date: Tuesday, April 09, 2024 at 7pm\nProgramming Project 9 – Due date: Thursday, April 11, 2024 at 7pm"
   },
   {
-    "objectID": "schedule.html#quiz-10-wednesday-april-10-2024",
-    "href": "schedule.html#quiz-10-wednesday-april-10-2024",
+    "objectID": "schedule.html#quiz-10-wednesday-april-03-2024",
+    "href": "schedule.html#quiz-10-wednesday-april-03-2024",
     "title": "Schedule",
-    "section": "Quiz 10 (Wednesday, April 10, 2024)",
-    "text": "Quiz 10 (Wednesday, April 10, 2024)"
+    "section": "Quiz 10 (Wednesday, April 03, 2024)",
+    "text": "Quiz 10 (Wednesday, April 03, 2024)"
   },
   {
     "objectID": "schedule.html#readings-10",
@@ -5222,11 +5229,11 @@
     "text": "Assignments\n\nModule 12 Programming Problems – Due date: Tuesday, April 16, 2024 at 7pm\nProgramming Project 10 – Due date: Thursday, April 18, 2024 at 7pm"
   },
   {
-    "objectID": "schedule.html#quiz-11-wednesday-april-17-2024",
-    "href": "schedule.html#quiz-11-wednesday-april-17-2024",
+    "objectID": "schedule.html#quiz-11-wednesday-april-10-2024",
+    "href": "schedule.html#quiz-11-wednesday-april-10-2024",
     "title": "Schedule",
-    "section": "Quiz 11 (Wednesday, April 17, 2024)",
-    "text": "Quiz 11 (Wednesday, April 17, 2024)"
+    "section": "Quiz 11 (Wednesday, April 10, 2024)",
+    "text": "Quiz 11 (Wednesday, April 10, 2024)"
   },
   {
     "objectID": "schedule.html#readings-11",
@@ -5250,11 +5257,11 @@
     "text": "Assignments\n\nModule 13 Programming Problems – Due date: Thursday, April 25, 2024 at 7pm\nProgramming Project 11 – Due date: Wednesday, May 01, 2024 at 7pm"
   },
   {
-    "objectID": "schedule.html#quiz-12-wednesday-may-01-2024",
-    "href": "schedule.html#quiz-12-wednesday-may-01-2024",
+    "objectID": "schedule.html#quiz-12-wednesday-april-17-2024",
+    "href": "schedule.html#quiz-12-wednesday-april-17-2024",
     "title": "Schedule",
-    "section": "Quiz 12 (Wednesday, May 01, 2024)",
-    "text": "Quiz 12 (Wednesday, May 01, 2024)"
+    "section": "Quiz 12 (Wednesday, April 17, 2024)",
+    "text": "Quiz 12 (Wednesday, April 17, 2024)"
   },
   {
     "objectID": "schedule.html#class-slides-13",
@@ -5359,7 +5366,7 @@
     "href": "syllabus.html#assignment-due-dates",
     "title": "Syllabus",
     "section": "Assignment due dates",
-    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, January 10, 2024\nin class\n\n\nSurvey\nFriday, January 12, 2024\n7pm\n\n\nQuiz 02\nWednesday, January 17, 2024\nin class\n\n\nModule 1 Programming Problems\nThursday, January 18, 2024\n7pm\n\n\nModule 2 Programming Problems\nTuesday, January 23, 2024\n7pm\n\n\nShort Programming Project 1\nTuesday, January 23, 2024\n7pm\n\n\nQuiz 03\nWednesday, January 24, 2024\nin class\n\n\nProgramming Project 1\nThursday, January 25, 2024\n7pm\n\n\nModule 3 Programming Problems\nTuesday, January 30, 2024\n7pm\n\n\nShort Programming Project 2\nTuesday, January 30, 2024\n7pm\n\n\nQuiz 04\nWednesday, January 31, 2024\nin class\n\n\nProgramming Project 2\nThursday, February 01, 2024\n7pm\n\n\nModule 4 Programming Problems\nTuesday, February 06, 2024\n7pm\n\n\nShort Programming Project 3\nTuesday, February 06, 2024\n7pm\n\n\nQuiz 05\nWednesday, February 07, 2024\nin class\n\n\nProgramming Project 3\nThursday, February 08, 2024\n7pm\n\n\nMidterm 1\nWednesday, February 14, 2024\nin class\n\n\nModule 5 Programming Problems\nFriday, February 16, 2024\n7pm\n\n\nShort Programming Project 4\nFriday, February 16, 2024\n7pm\n\n\nProgramming Project 4\nMonday, February 19, 2024\n7pm\n\n\nModule 6 Programming Problems\nTuesday, February 20, 2024\n7pm\n\n\nQuiz 06\nWednesday, February 21, 2024\nin class\n\n\nModule 7 Programming Problems\nTuesday, February 27, 2024\n7pm\n\n\nShort Programming Project 5\nTuesday, February 27, 2024\n7pm\n\n\nQuiz 07\nWednesday, February 28, 2024\nin class\n\n\nProgramming Project 5\nThursday, February 29, 2024\n7pm\n\n\nShort Programming Project 6\nTuesday, March 12, 2024\n7pm\n\n\nProgramming Project 6\nThursday, March 14, 2024\n7pm\n\n\nModule 8 Programming Problems\nTuesday, March 19, 2024\n7pm\n\n\nShort Programming Project 7\nTuesday, March 19, 2024\n7pm\n\n\nQuiz 08\nWednesday, March 20, 2024\nin class\n\n\nProgramming Project 7\nThursday, March 21, 2024\n7pm\n\n\nMidterm 2\nWednesday, March 27, 2024\nin class\n\n\nModule 9 Programming Problems\nThursday, March 28, 2024\n7pm\n\n\nModule 10 Programming Problems\nTuesday, April 02, 2024\n7pm\n\n\nShort Programming Project 8\nTuesday, April 02, 2024\n7pm\n\n\nQuiz 09\nWednesday, April 03, 2024\nin class\n\n\nProgramming Project 8\nThursday, April 04, 2024\n7pm\n\n\nModule 11 Programming Problems\nTuesday, April 09, 2024\n7pm\n\n\nShort Programming Project 9\nTuesday, April 09, 2024\n7pm\n\n\nQuiz 10\nWednesday, April 10, 2024\nin class\n\n\nProgramming Project 9\nThursday, April 11, 2024\n7pm\n\n\nModule 12 Programming Problems\nTuesday, April 16, 2024\n7pm\n\n\nShort Programming Project 10\nTuesday, April 16, 2024\n7pm\n\n\nQuiz 11\nWednesday, April 17, 2024\nin class\n\n\nProgramming Project 10\nThursday, April 18, 2024\n7pm\n\n\nMidterm 3\nWednesday, April 24, 2024\nin class\n\n\nModule 13 Programming Problems\nThursday, April 25, 2024\n7pm\n\n\nModule 14 Programming Problems\nTuesday, April 30, 2024\n7pm\n\n\nShort Programming Project 11\nTuesday, April 30, 2024\n7pm\n\n\nQuiz 12\nWednesday, May 01, 2024\nin class\n\n\nProgramming Project 11\nWednesday, May 01, 2024\n7pm\n\n\nFinal Exam\nFriday, May 03, 2024\nENR2 N120"
+    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, January 10, 2024\nin class\n\n\nSurvey\nFriday, January 12, 2024\n7pm\n\n\nQuiz 02\nWednesday, January 17, 2024\nin class\n\n\nModule 1 Programming Problems\nThursday, January 18, 2024\n7pm\n\n\nModule 2 Programming Problems\nTuesday, January 23, 2024\n7pm\n\n\nShort Programming Project 1\nTuesday, January 23, 2024\n7pm\n\n\nQuiz 03\nWednesday, January 24, 2024\nin class\n\n\nProgramming Project 1\nThursday, January 25, 2024\n7pm\n\n\nModule 3 Programming Problems\nTuesday, January 30, 2024\n7pm\n\n\nShort Programming Project 2\nTuesday, January 30, 2024\n7pm\n\n\nQuiz 04\nWednesday, January 31, 2024\nin class\n\n\nProgramming Project 2\nThursday, February 01, 2024\n7pm\n\n\nModule 4 Programming Problems\nTuesday, February 06, 2024\n7pm\n\n\nShort Programming Project 3\nTuesday, February 06, 2024\n7pm\n\n\nQuiz 05\nWednesday, February 07, 2024\nin class\n\n\nProgramming Project 3\nThursday, February 08, 2024\n7pm\n\n\nMidterm 1\nWednesday, February 14, 2024\nin class\n\n\nModule 5 Programming Problems\nFriday, February 16, 2024\n7pm\n\n\nShort Programming Project 4\nFriday, February 16, 2024\n7pm\n\n\nProgramming Project 4\nMonday, February 19, 2024\n7pm\n\n\nModule 6 Programming Problems\nTuesday, February 20, 2024\n7pm\n\n\nQuiz 06\nWednesday, February 21, 2024\nin class\n\n\nModule 7 Programming Problems\nTuesday, February 27, 2024\n7pm\n\n\nShort Programming Project 5\nTuesday, February 27, 2024\n7pm\n\n\nQuiz 07\nWednesday, February 28, 2024\nin class\n\n\nProgramming Project 5\nThursday, February 29, 2024\n7pm\n\n\nShort Programming Project 6\nTuesday, March 12, 2024\n7pm\n\n\nProgramming Project 6\nThursday, March 14, 2024\n7pm\n\n\nModule 8 Programming Problems\nTuesday, March 19, 2024\n7pm\n\n\nShort Programming Project 7\nTuesday, March 19, 2024\n7pm\n\n\nQuiz 08\nWednesday, March 13, 2024\nin class\n\n\nProgramming Project 7\nThursday, March 21, 2024\n7pm\n\n\nMidterm 2\nWednesday, March 27, 2024\nin class\n\n\nModule 9 Programming Problems\nThursday, March 28, 2024\n7pm\n\n\nModule 10 Programming Problems\nTuesday, April 02, 2024\n7pm\n\n\nShort Programming Project 8\nTuesday, April 02, 2024\n7pm\n\n\nQuiz 09\nWednesday, March 20, 2024\nin class\n\n\nProgramming Project 8\nThursday, April 04, 2024\n7pm\n\n\nModule 11 Programming Problems\nTuesday, April 09, 2024\n7pm\n\n\nShort Programming Project 9\nTuesday, April 09, 2024\n7pm\n\n\nQuiz 10\nWednesday, April 03, 2024\nin class\n\n\nProgramming Project 9\nThursday, April 11, 2024\n7pm\n\n\nModule 12 Programming Problems\nTuesday, April 16, 2024\n7pm\n\n\nShort Programming Project 10\nTuesday, April 16, 2024\n7pm\n\n\nQuiz 11\nWednesday, April 10, 2024\nin class\n\n\nProgramming Project 10\nThursday, April 18, 2024\n7pm\n\n\nMidterm 3\nWednesday, April 24, 2024\nin class\n\n\nModule 13 Programming Problems\nThursday, April 25, 2024\n7pm\n\n\nModule 14 Programming Problems\nTuesday, April 30, 2024\n7pm\n\n\nShort Programming Project 11\nTuesday, April 30, 2024\n7pm\n\n\nQuiz 12\nWednesday, April 17, 2024\nin class\n\n\nProgramming Project 11\nWednesday, May 01, 2024\n7pm\n\n\nFinal Exam\nFriday, May 03, 2024\nENR2 N120"
   },
   {
     "objectID": "discord.html",
@@ -5395,26 +5402,5 @@
     "title": "Module 1 Programming Problems",
     "section": "",
     "text": "Programming Problems should be submitted to gradescope.\nIf you need instructions on how to submit your .py files to gradescope, watch the video at the end of this page.\n\nSurvey\nDue date: Friday, January 12, 2024 at 7pm\nhttps://uarizona.co1.qualtrics.com/jfe/form/SV_0q8KC0FwVhCiYD4\nThis is a survey to collect information on your expectations for CSc 110 Computer Programming I. The completion of this survey is required and will be used for grading purposes.\n\n\nProgramming Problem 1\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope (https://www.gradescope.com/courses/487587/assignments/2554285) gives you the points for passing the test case.\n\n\nProgramming Problem 2\nDue date: Thursday, January 18, 2024 at 7pm\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences\n\n\nHow to submit to gradescope video"
-  },
-  {
-    "objectID": "slides-08-01.html#quiz-07",
-    "href": "slides-08-01.html#quiz-07",
-    "title": "intro to dictionaries (class slides)",
-    "section": "Quiz 07",
-    "text": "Quiz 07\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no test cases\nJust write your function and what’s inside the function\nyour choice of loop (for or while)\n\nBuilt-in functions you can use: round(), input(), float(), str(), int(), len() — you don’t have to use all of these"
-  },
-  {
-    "objectID": "slides-08-02.html#attendance",
-    "href": "slides-08-02.html#attendance",
-    "title": "for loops – iterating over items (class slides)",
-    "section": "Attendance",
-    "text": "Attendance\nSubmit your tally_negatives function to Gradescope for attendance.\nName your file tally_negatives.py"
-  },
-  {
-    "objectID": "slides-08-01.html",
-    "href": "slides-08-01.html",
-    "title": "intro to dictionaries (class slides)",
-    "section": "",
-    "text": "Last lab for short project 06 is Today – no lab for the rest of the week, we re-start lab sessions Monday March 11"
   }
 ]
