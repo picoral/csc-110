@@ -32,7 +32,7 @@ This assignment has [starter code](starter-code/cross_stitch.py), which contains
 
 ## Create the random background
 
-The first function you should write is the `create_background` function, which takes a width (how wide the pattern will be in number of stitches), a length (how many rows the pattern has), and number of colors (how many colors the pattern should have).
+The first function you should write is the `create_background` function, which takes a width (how wide the pattern will be in number of stitches), a length (how many rows the pattern has), and number of colors (how many symbols the pattern should have).
 
 ```{python}
 #| echo: true
