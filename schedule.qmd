@@ -213,8 +213,7 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 # Week 10 (`r schedule %>% filter(week_number == 10 & term == "spring 2024") %>% pull(formatted_start)`)
 
-## Midterm 2 (`r assignments %>% filter(assessment == "Midterm 2") %>% pull(formatted_date)`)
-
+## Quiz 09 (`r assignments %>% filter(assessment == "Quiz 09") %>% pull(formatted_date)`)
 
 ## Readings
 
@@ -231,7 +230,7 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 # Week 11 (`r schedule %>% filter(week_number == 11 & term == "spring 2024") %>% pull(formatted_start)`)
 
-## Quiz 09 (`r assignments %>% filter(assessment == "Quiz 09") %>% pull(formatted_date)`)
+## Midterm 2 (`r assignments %>% filter(assessment == "Midterm 2") %>% pull(formatted_date)`)
 
 
 ## Readings
