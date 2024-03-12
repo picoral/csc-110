@@ -232,6 +232,7 @@ schedule %>%
 
 ```{r}
 assignments %>% 
+  arrange(due_date) %>% 
   select(assessment, formatted_date, due_time) %>% 
   kable(col.names = c("Assessment", "Date", "Time/Location"))
 ```
