@@ -144,6 +144,19 @@ The other thing you should determine is if the data follows Benford's Law. For t
 | 8     | 5%                |
 | 9     | 4%                |
 
+```{python}
+#| eval: false
+#| echo: true
+list_of_numbers = csv_to_list("places.csv")
+assert list_of_numbers == ["1234", "145", "10", "1700", "1729", "1711", "219", \
+                           "231", "20001", "301", "3879", "404", "40123", "505",\
+                           "502", "601", "712", "81231", "91231"]
+counts = count_start_digits(list_of_numbers)
+percentages = digit_percentages(counts)
+assert check_benfords_law(percentages) == True
+```
+
+
 ### Test cases
 
 -   [populations.csv](data/populations.csv) does follow Benford's Law
