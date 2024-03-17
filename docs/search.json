@@ -2093,70 +2093,110 @@
     "href": "slides-09-02.html#string-methods",
     "title": "files and strings (class slides)",
     "section": "String methods",
-    "text": "String methods\n\nstring.strip(chars) – removes any of the characters in chars from the beginning or end of string, returns a string\nstring.split(chars) – splits string at the chars, returns a list\nstring.lower(string) – forces all characters to lowercase, returns a string"
+    "text": "String methods\n\nstring.strip(chars) – removes any of the characters in chars from the beginning or end of string, returns a string\nstring.split(chars) – splits string at the chars, returns a list\nstring.lower(string) – forces all characters to lowercase, returns a string",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function",
     "href": "slides-09-02.html#write-a-function",
     "title": "files and strings (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is sum_all\nIt takes a string file_name as argument\nIt reads the file with file_name in read mode\nIt iterates over each line in the file, stripping the line breaks, casting each line as integer (assume each line is a single number), summing each number to a total variable\nReturn the total\nDownload the text file for the test case below\n\n\nassert sum_all(\"numbers.txt\") == 15"
+    "text": "Write a function\n\nIts name is sum_all\nIt takes a string file_name as argument\nIt reads the file with file_name in read mode\nIt iterates over each line in the file, stripping the line breaks, casting each line as integer (assume each line is a single number), summing each number to a total variable\nReturn the total\nDownload the text file for the test case below\n\n\nassert sum_all(\"numbers.txt\") == 15",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution",
     "href": "slides-09-02.html#write-a-function-solution",
     "title": "files and strings (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef sum_all(file_name):\n  total = 0\n  for line in open(file_name, \"r\"):\n    number = int(line.strip(\"\\n\"))\n    total += number\n  return total\n\ndef main():\n  assert sum_all(\"numbers.txt\") == 15\n\nmain()"
+    "text": "Write a function – solution\n\ndef sum_all(file_name):\n  total = 0\n  for line in open(file_name, \"r\"):\n    number = int(line.strip(\"\\n\"))\n    total += number\n  return total\n\ndef main():\n  assert sum_all(\"numbers.txt\") == 15\n\nmain()",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#modes",
     "href": "slides-09-02.html#modes",
     "title": "files and strings (class slides)",
     "section": "Modes",
-    "text": "Modes\n\nTo read a file:\n\nUse ‘r’ for reading the contents of a file\n\nTo write to a file: use\n\nUse ‘a’ to append to the existing file content\nUse ‘w’ to write to a file, and replace existing content"
+    "text": "Modes\n\nTo read a file:\n\nUse ‘r’ for reading the contents of a file\n\nTo write to a file: use\n\nUse ‘a’ to append to the existing file content\nUse ‘w’ to write to a file, and replace existing content",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#writing-to-a-file",
     "href": "slides-09-02.html#writing-to-a-file",
     "title": "files and strings (class slides)",
     "section": "Writing to a file",
-    "text": "Writing to a file\n\nAfter you have opened the file in either ‘a’ or ‘w’ mode\na_file = open(file_name, mode)\nUse the write function to write text content to the file\na_file.write('put this content in a file')\nWhen finished writing, close the file a_file.close()"
+    "text": "Writing to a file\n\nAfter you have opened the file in either ‘a’ or ‘w’ mode\na_file = open(file_name, mode)\nUse the write function to write text content to the file\na_file.write('put this content in a file')\nWhen finished writing, close the file a_file.close()",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#evaluate-the-code",
     "href": "slides-09-02.html#evaluate-the-code",
     "title": "files and strings (class slides)",
     "section": "Evaluate the code",
-    "text": "Evaluate the code\n\nwords = open('words.txt', 'w')\nwords.write('The slow wolf')\nwords.write('jumped over')\nwords.write('the bear')\nwords.close()"
+    "text": "Evaluate the code\n\nwords = open('words.txt', 'w')\nwords.write('The slow wolf')\nwords.write('jumped over')\nwords.write('the bear')\nwords.close()",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#evaluate-the-code-1",
     "href": "slides-09-02.html#evaluate-the-code-1",
     "title": "files and strings (class slides)",
     "section": "Evaluate the code",
-    "text": "Evaluate the code\n\nwords = open('words.txt', 'w')\nwords.write('The slow wolf\\n')\nwords.write('jumped over\\n')\nwords.write('the bear\\n')\nwords.close()"
+    "text": "Evaluate the code\n\nwords = open('words.txt', 'w')\nwords.write('The slow wolf\\n')\nwords.write('jumped over\\n')\nwords.write('the bear\\n')\nwords.close()",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#evaluate-the-code-2",
     "href": "slides-09-02.html#evaluate-the-code-2",
     "title": "files and strings (class slides)",
     "section": "Evaluate the code",
-    "text": "Evaluate the code\n\nwords = open('words.txt', 'a')\nwords.write('The slow wolf\\n')\nwords.write('jumped over\\n')\nwords.write('the bear\\n')\nwords.close()"
+    "text": "Evaluate the code\n\nwords = open('words.txt', 'a')\nwords.write('The slow wolf\\n')\nwords.write('jumped over\\n')\nwords.write('the bear\\n')\nwords.close()",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-1",
     "href": "slides-09-02.html#write-a-function-1",
     "title": "files and strings (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is write_word_count\nIt takes a string file_name as argument, it opens the file in read mode\nIt writes a comma separated file (“out_” + original filename), with the lowercase word as first value and count second\nDownload test file\n\nTest case:\n\nwrite_word_count(\"alien.txt\")\n# writes out out_alien.txt with word counts"
+    "text": "Write a function\n\nIts name is write_word_count\nIt takes a string file_name as argument, it opens the file in read mode\nIt writes a comma separated file (“out_” + original filename), with the lowercase word as first value and count second\nDownload test file\n\nTest case:\n\nwrite_word_count(\"alien.txt\")\n# writes out out_alien.txt with word counts",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution-1",
     "href": "slides-09-02.html#write-a-function-solution-1",
     "title": "files and strings (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef count_words(file_name):\n  f = open(file_name, \"r\")\n  counts = {}\n  for line in f:\n    words = line.strip(\"\\n\").split(\" \")\n    for w in words:\n      lower_case_w = w.lower()\n      if lower_case_w not in counts:\n        counts[lower_case_w] = 1\n      else:\n        counts[lower_case_w] += 1\n  return counts\n\ndef write_word_count(file_name):\n  count_dict = count_words(file_name)\n  output_file = open(\"out_\" + file_name, \"w\")\n  for key, value in count_dict.items():\n    output_file.write(key + \",\" + str(value) + \"\\n\")\n  output_file.close()\n  \ndef main(): \n  write_word_count(\"alien.txt\")\n  \nmain()"
+    "text": "Write a function – solution\n\ndef count_words(file_name):\n  f = open(file_name, \"r\")\n  counts = {}\n  for line in f:\n    words = line.strip(\"\\n\").split(\" \")\n    for w in words:\n      lower_case_w = w.lower()\n      if lower_case_w not in counts:\n        counts[lower_case_w] = 1\n      else:\n        counts[lower_case_w] += 1\n  return counts\n\ndef write_word_count(file_name):\n  count_dict = count_words(file_name)\n  output_file = open(\"out_\" + file_name, \"w\")\n  for key, value in count_dict.items():\n    output_file.write(key + \",\" + str(value) + \"\\n\")\n  output_file.close()\n  \ndef main(): \n  write_word_count(\"alien.txt\")\n  \nmain()",
+    "crumbs": [
+      "Module 9 - Reading and Writing Text Files",
+      "files and strings (class slides)"
+    ]
   },
   {
     "objectID": "basics.html",
