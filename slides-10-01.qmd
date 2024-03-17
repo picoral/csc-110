@@ -121,11 +121,6 @@ def main():
 main()
 ```
 
-# Submit code for attendance
-
-Submit your `low_high` functions to Gradescope for attendance.
-
-Name your file `low_high.py`
 
 ## Write a function
 
