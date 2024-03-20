@@ -5529,5 +5529,16 @@
       "Module 10 - Data Structures (tuples)",
       "tuples (class slides)"
     ]
+  },
+  {
+    "objectID": "slides-10-01.html#quiz-9",
+    "href": "slides-10-01.html#quiz-9",
+    "title": "returning tuples (class slides)",
+    "section": "Quiz 9",
+    "text": "Quiz 9\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no need for test cases\n\nAllowed built-in functions: round(), input(), float(), str(), int(), len(), range(), open()",
+    "crumbs": [
+      "Module 10 - Data Structures (tuples)",
+      "returning tuples (class slides)"
+    ]
   }
 ]
