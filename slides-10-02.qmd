@@ -113,3 +113,7 @@ def main():
   
 main()
 ```
+
+# Submit attendance
+
+Submit the `min_max` function to gradescope for attendance. Name your file `min_max_tuple.py`
