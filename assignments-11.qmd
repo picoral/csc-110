@@ -29,7 +29,7 @@ Programming Problems should be submitted to [gradescope](https://www.gradescope.
 
 **Due date: `r assignments %>% filter(assessment == "Module 11 Programming Problems") %>% pull(formatted_date)` at 7pm**
 
-Write a `remove_zero_sides` function that given a 2D list as argument, it **mutates** and returns the list removing any first and last values that are equal to zero. 
+Write a `remove_zero_sides` function that given a 2D list as argument, it **mutates** and returns the list removing any first and last values that are equal to zero. Name your file `filer.py`.
 
 Test cases:
 ```{python}
@@ -48,7 +48,7 @@ assert remove_zero_sides(more_numbers) == [[], [], [], [1], [2]]
 
 **Due date: `r assignments %>% filter(assessment == "Module 11 Programming Problems") %>% pull(formatted_date)` at 7pm**
 
-Write a `lowercase_items` function that given a 2D list of strings as argument, it **mutates** and returns the list lowercasing all strings in each sublist. You can assume all items in the lists are strings. You can use the `.lower()` string method.
+Write a `lowercase_items` function that given a 2D list of strings as argument, it **mutates** and returns the list lowercasing all strings in each sublist. You can assume all items in the lists are strings. You can use the `.lower()` string method. Name your file `lowercasing.py`
 
 Test cases:
 ```{python}
