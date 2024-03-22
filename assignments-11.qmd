@@ -29,7 +29,7 @@ Programming Problems should be submitted to [gradescope](https://www.gradescope.
 
 **Due date: `r assignments %>% filter(assessment == "Module 11 Programming Problems") %>% pull(formatted_date)` at 7pm**
 
-Write a `remove_zero_sides` function that given a 2D list as argument, it **mutates** and returns the list removing any first and last values that are equal to zero. Name your file `filer.py`.
+Write a `remove_zero_sides` function that given a 2D list as argument, it **mutates** and returns the list removing any first and last values that are equal to zero. Name your file `filter.py`.
 
 Test cases:
 ```{python}
