@@ -5436,7 +5436,7 @@
     "href": "schedule.html#readings-8",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings",
+    "text": "Readings\n\nTuples",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5447,7 +5447,7 @@
     "href": "schedule.html#class-slides-9",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\n2D lists and nested for loops\nnested for loops",
+    "text": "Class slides\n\nreturning tuples\ntuple as argument",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5480,7 +5480,7 @@
     "href": "schedule.html#readings-9",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nTuples",
+    "text": "Readings",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5491,7 +5491,7 @@
     "href": "schedule.html#class-slides-10",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nreturning tuples\ntuples",
+    "text": "Class slides\n\n2D lists\nnested for loops",
     "crumbs": [
       "Start Here",
       "Schedule"
