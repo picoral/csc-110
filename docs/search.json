@@ -4405,21 +4405,33 @@
     "href": "assignments-11.html",
     "title": "Module 11 Assignments",
     "section": "",
-    "text": "Due date: Tuesday, April 09, 2024 at 7pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet."
+    "text": "Due date: Tuesday, April 09, 2024 at 7pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet.",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "Module 11 Assignments"
+    ]
   },
   {
     "objectID": "assignments-11.html#programming-problem-21",
     "href": "assignments-11.html#programming-problem-21",
     "title": "Module 11 Assignments",
     "section": "Programming Problem 21",
-    "text": "Programming Problem 21\nDue date: Tuesday, April 09, 2024 at 7pm"
+    "text": "Programming Problem 21\nDue date: Tuesday, April 09, 2024 at 7pm\nWrite a remove_zero_sides function that given a 2D list as argument, it mutates and returns the list removing any first and last values that are equal to zero. Name your file filter.py.\nTest cases:\n\nnumbers = [[0, 1, 2], [0], [], [2, 4, 0], [0, 0], [0, 20, 3, 10, 0]]\nremove_zero_sides(numbers)\nassert numbers ==  [[1, 2], [], [], [2, 4], [], [20, 3, 10]]\n\nmore_numbers = [[0], [], [0, 0], [0, 1], [2, 0]]\nassert remove_zero_sides(more_numbers) == [[], [], [], [1], [2]]",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "Module 11 Assignments"
+    ]
   },
   {
     "objectID": "assignments-11.html#programming-problem-22",
     "href": "assignments-11.html#programming-problem-22",
     "title": "Module 11 Assignments",
     "section": "Programming Problem 22",
-    "text": "Programming Problem 22\nDue date: Tuesday, April 09, 2024 at 7pm"
+    "text": "Programming Problem 22\nDue date: Tuesday, April 09, 2024 at 7pm\nWrite a lowercase_items function that given a 2D list of strings as argument, it mutates and returns the list lowercasing all strings in each sublist. You can assume all items in the lists are strings. You can use the .lower() string method. Name your file lowercasing.py\nTest cases:\n\nwords = [[\"A\", \"B\", \"C\"], [], [\"BANANA\", \"Apple\", \"pineapple\"]]\nlowercase_items(words)\nassert words == [[\"a\", \"b\", \"c\"], [], [\"banana\", \"apple\", \"pineapple\"]]\n\nmore_words = [[\"A\"], [\"Monica\"]]\nassert lowercase_items(more_words) == [[\"a\"], [\"monica\"]]",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "Module 11 Assignments"
+    ]
   },
   {
     "objectID": "slides-02-01.html#functions",
@@ -5006,420 +5018,660 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, February 14, 2024\nMidterm Exam 2 - Wednesday, March 27, 2024\nMidterm Exam 3 - Wednesday, April 24, 2024\n\nThe final exam (pencil and paper format) for all sections will be on:\n\nFriday, May 03, 2024 – 6:00pm - 8:00pm in ENR2 N120\n\nAll assignments that are submitted on Gradescope are due at 7pm."
+    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, February 14, 2024\nMidterm Exam 2 - Wednesday, March 27, 2024\nMidterm Exam 3 - Wednesday, April 24, 2024\n\nThe final exam (pencil and paper format) for all sections will be on:\n\nFriday, May 03, 2024 – 6:00pm - 8:00pm in ENR2 N120\n\nAll assignments that are submitted on Gradescope are due at 7pm.",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-01-wednesday-january-10-2024",
     "href": "schedule.html#quiz-01-wednesday-january-10-2024",
     "title": "Schedule",
     "section": "Quiz 01 (Wednesday, January 10, 2024)",
-    "text": "Quiz 01 (Wednesday, January 10, 2024)"
+    "text": "Quiz 01 (Wednesday, January 10, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings",
     "href": "schedule.html#readings",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nHello World!\nConstants, Variables, and comments"
+    "text": "Readings\n\nHello World!\nConstants, Variables, and comments",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides",
     "href": "schedule.html#class-slides",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nCourse Introduction (pdf)\nPython Basics (pdf)"
+    "text": "Class slides\n\nCourse Introduction (pdf)\nPython Basics (pdf)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments",
     "href": "schedule.html#assignments",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nSurvey – Due date: Friday, January 12, 2024 at 7pm\nModule 1 Programming Problems – Due date: Thursday, January 18, 2024 at 7pm"
+    "text": "Assignments\n\nSurvey – Due date: Friday, January 12, 2024 at 7pm\nModule 1 Programming Problems – Due date: Thursday, January 18, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-02-wednesday-january-17-2024",
     "href": "schedule.html#quiz-02-wednesday-january-17-2024",
     "title": "Schedule",
     "section": "Quiz 02 (Wednesday, January 17, 2024)",
-    "text": "Quiz 02 (Wednesday, January 17, 2024)"
+    "text": "Quiz 02 (Wednesday, January 17, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-1",
     "href": "schedule.html#readings-1",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nIntro to Functions\nOperators and Expressions"
+    "text": "Readings\n\nIntro to Functions\nOperators and Expressions",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-1",
     "href": "schedule.html#class-slides-1",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nFunctions (pdf)\nMath in Python (pdf)"
+    "text": "Class slides\n\nFunctions (pdf)\nMath in Python (pdf)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-1",
     "href": "schedule.html#assignments-1",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 2 Programming Problems – Due date: Tuesday, January 23, 2024 at 7pm\nProgramming Project 1 – Due date: Thursday, January 25, 2024 at 7pm"
+    "text": "Assignments\n\nModule 2 Programming Problems – Due date: Tuesday, January 23, 2024 at 7pm\nProgramming Project 1 – Due date: Thursday, January 25, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-03-wednesday-january-24-2024",
     "href": "schedule.html#quiz-03-wednesday-january-24-2024",
     "title": "Schedule",
     "section": "Quiz 03 (Wednesday, January 24, 2024)",
-    "text": "Quiz 03 (Wednesday, January 24, 2024)"
+    "text": "Quiz 03 (Wednesday, January 24, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-2",
     "href": "schedule.html#readings-2",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nMore on Functions\nInput from user"
+    "text": "Readings\n\nMore on Functions\nInput from user",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-2",
     "href": "schedule.html#class-slides-2",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nMore on Functions (pdf)\nBuilt-in Python Functions (pdf)"
+    "text": "Class slides\n\nMore on Functions (pdf)\nBuilt-in Python Functions (pdf)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-2",
     "href": "schedule.html#assignments-2",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 3 Programming Problems – Due date: Tuesday, January 30, 2024 at 7pm\nProgramming Project 2 – Due date: Thursday, February 01, 2024 at 7pm"
+    "text": "Assignments\n\nModule 3 Programming Problems – Due date: Tuesday, January 30, 2024 at 7pm\nProgramming Project 2 – Due date: Thursday, February 01, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-04-wednesday-january-31-2024",
     "href": "schedule.html#quiz-04-wednesday-january-31-2024",
     "title": "Schedule",
     "section": "Quiz 04 (Wednesday, January 31, 2024)",
-    "text": "Quiz 04 (Wednesday, January 31, 2024)"
+    "text": "Quiz 04 (Wednesday, January 31, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readingsvideo",
     "href": "schedule.html#readingsvideo",
     "title": "Schedule",
     "section": "Readings/Video",
-    "text": "Readings/Video\n\nMore on Operators and Expressions\nIf statements\nFizzBuzz problem"
+    "text": "Readings/Video\n\nMore on Operators and Expressions\nIf statements\nFizzBuzz problem",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-3",
     "href": "schedule.html#class-slides-3",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nMore expressions (pdf)\nIf statements (pdf)\nif elif else (pdf)"
+    "text": "Class slides\n\nMore expressions (pdf)\nIf statements (pdf)\nif elif else (pdf)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-3",
     "href": "schedule.html#assignments-3",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 4 Programming Problems – Due date: Tuesday, February 06, 2024 at 7pm\nProgramming Project 3 – Due date: Thursday, February 08, 2024 at 7pm"
+    "text": "Assignments\n\nModule 4 Programming Problems – Due date: Tuesday, February 06, 2024 at 7pm\nProgramming Project 3 – Due date: Thursday, February 08, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-05-wednesday-february-07-2024",
     "href": "schedule.html#quiz-05-wednesday-february-07-2024",
     "title": "Schedule",
     "section": "Quiz 05 (Wednesday, February 07, 2024)",
-    "text": "Quiz 05 (Wednesday, February 07, 2024)"
+    "text": "Quiz 05 (Wednesday, February 07, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-3",
     "href": "schedule.html#readings-3",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nString Manipulations\nWhile loops"
+    "text": "Readings\n\nString Manipulations\nWhile loops",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-4",
     "href": "schedule.html#class-slides-4",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nwhile loop intro (pdf)\nloops + string (pdf)\nwhile loop aggregation (pdf)"
+    "text": "Class slides\n\nwhile loop intro (pdf)\nloops + string (pdf)\nwhile loop aggregation (pdf)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-4",
     "href": "schedule.html#assignments-4",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 5 Programming Problems – Due date: Friday, February 16, 2024 at 7pm\nProgramming Project 4 – Due date: Monday, February 19, 2024 at 7pm"
+    "text": "Assignments\n\nModule 5 Programming Problems – Due date: Friday, February 16, 2024 at 7pm\nProgramming Project 4 – Due date: Monday, February 19, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#midterm-1-wednesday-february-14-2024",
     "href": "schedule.html#midterm-1-wednesday-february-14-2024",
     "title": "Schedule",
     "section": "Midterm 1 (Wednesday, February 14, 2024)",
-    "text": "Midterm 1 (Wednesday, February 14, 2024)"
+    "text": "Midterm 1 (Wednesday, February 14, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-4",
     "href": "schedule.html#readings-4",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nLists"
+    "text": "Readings\n\nLists",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-5",
     "href": "schedule.html#class-slides-5",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nLists (pdf)\nrandom (pdf)"
+    "text": "Class slides\n\nLists (pdf)\nrandom (pdf)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-5",
     "href": "schedule.html#assignments-5",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Tuesday, February 20, 2024 at 7pm\nProgramming Project 5 – Due date: Thursday, February 29, 2024 at 7pm"
+    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Tuesday, February 20, 2024 at 7pm\nProgramming Project 5 – Due date: Thursday, February 29, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-06-wednesday-february-21-2024",
     "href": "schedule.html#quiz-06-wednesday-february-21-2024",
     "title": "Schedule",
     "section": "Quiz 06 (Wednesday, February 21, 2024)",
-    "text": "Quiz 06 (Wednesday, February 21, 2024)"
+    "text": "Quiz 06 (Wednesday, February 21, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-5",
     "href": "schedule.html#readings-5",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nMutability\nFor loops"
+    "text": "Readings\n\nMutability\nFor loops",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-6",
     "href": "schedule.html#class-slides-6",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nmutability (pdf)\nfor loops with range (pdf)"
+    "text": "Class slides\n\nmutability (pdf)\nfor loops with range (pdf)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-6",
     "href": "schedule.html#assignments-6",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Tuesday, February 27, 2024 at 7pm\nProgramming Project 6 – Due date: Thursday, March 14, 2024 at 7pm"
+    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Tuesday, February 27, 2024 at 7pm\nProgramming Project 6 – Due date: Thursday, March 14, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-07-wednesday-february-28-2024",
     "href": "schedule.html#quiz-07-wednesday-february-28-2024",
     "title": "Schedule",
     "section": "Quiz 07 (Wednesday, February 28, 2024)",
-    "text": "Quiz 07 (Wednesday, February 28, 2024)"
+    "text": "Quiz 07 (Wednesday, February 28, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-6",
     "href": "schedule.html#readings-6",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nDictionaries"
+    "text": "Readings\n\nDictionaries",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-7",
     "href": "schedule.html#class-slides-7",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nintro to dictionaries (pdf)\nfor x in list loops (pdf)"
+    "text": "Class slides\n\nintro to dictionaries (pdf)\nfor x in list loops (pdf)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-7",
     "href": "schedule.html#assignments-7",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 8 Programming Problems – Due date: Tuesday, March 19, 2024 at 7pm\nProgramming Project 7 – Due date: Thursday, March 21, 2024 at 7pm"
+    "text": "Assignments\n\nModule 8 Programming Problems – Due date: Tuesday, March 19, 2024 at 7pm\nProgramming Project 7 – Due date: Thursday, March 21, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-08-wednesday-march-13-2024",
     "href": "schedule.html#quiz-08-wednesday-march-13-2024",
     "title": "Schedule",
     "section": "Quiz 08 (Wednesday, March 13, 2024)",
-    "text": "Quiz 08 (Wednesday, March 13, 2024)"
+    "text": "Quiz 08 (Wednesday, March 13, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-7",
     "href": "schedule.html#readings-7",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nFile Reading and Writing"
+    "text": "Readings\n\nFile Reading and Writing",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-8",
     "href": "schedule.html#class-slides-8",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nfiles\nfiles and strings"
+    "text": "Class slides\n\nfiles\nfiles and strings",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-8",
     "href": "schedule.html#assignments-8",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 9 Programming Problems – Due date: Thursday, March 28, 2024 at 7pm"
+    "text": "Assignments\n\nModule 9 Programming Problems – Due date: Thursday, March 28, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-09-wednesday-march-20-2024",
     "href": "schedule.html#quiz-09-wednesday-march-20-2024",
     "title": "Schedule",
     "section": "Quiz 09 (Wednesday, March 20, 2024)",
-    "text": "Quiz 09 (Wednesday, March 20, 2024)"
+    "text": "Quiz 09 (Wednesday, March 20, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-8",
     "href": "schedule.html#readings-8",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings"
+    "text": "Readings",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-9",
     "href": "schedule.html#class-slides-9",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\n2D lists and nested for loops\nnested for loops"
+    "text": "Class slides\n\n2D lists and nested for loops\nnested for loops",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-9",
     "href": "schedule.html#assignments-9",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 10 Programming Problems – Due date: Tuesday, April 02, 2024 at 7pm\nProgramming Project 8 – Due date: Thursday, April 04, 2024 at 7pm"
+    "text": "Assignments\n\nModule 10 Programming Problems – Due date: Tuesday, April 02, 2024 at 7pm\nProgramming Project 8 – Due date: Thursday, April 04, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#midterm-2-wednesday-march-27-2024",
     "href": "schedule.html#midterm-2-wednesday-march-27-2024",
     "title": "Schedule",
     "section": "Midterm 2 (Wednesday, March 27, 2024)",
-    "text": "Midterm 2 (Wednesday, March 27, 2024)"
+    "text": "Midterm 2 (Wednesday, March 27, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-9",
     "href": "schedule.html#readings-9",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nTuples"
+    "text": "Readings\n\nTuples",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-10",
     "href": "schedule.html#class-slides-10",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nreturning tuples\ntuples"
+    "text": "Class slides\n\nreturning tuples\ntuples",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-10",
     "href": "schedule.html#assignments-10",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 11 Programming Problems – Due date: Tuesday, April 09, 2024 at 7pm\nProgramming Project 9 – Due date: Thursday, April 11, 2024 at 7pm"
+    "text": "Assignments\n\nModule 11 Programming Problems – Due date: Tuesday, April 09, 2024 at 7pm\nProgramming Project 9 – Due date: Thursday, April 11, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-10-wednesday-april-03-2024",
     "href": "schedule.html#quiz-10-wednesday-april-03-2024",
     "title": "Schedule",
     "section": "Quiz 10 (Wednesday, April 03, 2024)",
-    "text": "Quiz 10 (Wednesday, April 03, 2024)"
+    "text": "Quiz 10 (Wednesday, April 03, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-10",
     "href": "schedule.html#readings-10",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nSets"
+    "text": "Readings\n\nSets",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-11",
     "href": "schedule.html#class-slides-11",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\ndata structures – review\nintro to sets\nsets"
+    "text": "Class slides\n\ndata structures – review\nintro to sets\nsets",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-11",
     "href": "schedule.html#assignments-11",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 12 Programming Problems – Due date: Tuesday, April 16, 2024 at 7pm\nProgramming Project 10 – Due date: Thursday, April 18, 2024 at 7pm"
+    "text": "Assignments\n\nModule 12 Programming Problems – Due date: Tuesday, April 16, 2024 at 7pm\nProgramming Project 10 – Due date: Thursday, April 18, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-11-wednesday-april-10-2024",
     "href": "schedule.html#quiz-11-wednesday-april-10-2024",
     "title": "Schedule",
     "section": "Quiz 11 (Wednesday, April 10, 2024)",
-    "text": "Quiz 11 (Wednesday, April 10, 2024)"
+    "text": "Quiz 11 (Wednesday, April 10, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-11",
     "href": "schedule.html#readings-11",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nReview of Data Structures"
+    "text": "Readings\n\nReview of Data Structures",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-12",
     "href": "schedule.html#class-slides-12",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nmutating lists\nmutating dictionaries"
+    "text": "Class slides\n\nmutating lists\nmutating dictionaries",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-12",
     "href": "schedule.html#assignments-12",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 13 Programming Problems – Due date: Thursday, April 25, 2024 at 7pm\nProgramming Project 11 – Due date: Wednesday, May 01, 2024 at 7pm"
+    "text": "Assignments\n\nModule 13 Programming Problems – Due date: Thursday, April 25, 2024 at 7pm\nProgramming Project 11 – Due date: Wednesday, May 01, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#quiz-12-wednesday-april-17-2024",
     "href": "schedule.html#quiz-12-wednesday-april-17-2024",
     "title": "Schedule",
     "section": "Quiz 12 (Wednesday, April 17, 2024)",
-    "text": "Quiz 12 (Wednesday, April 17, 2024)"
+    "text": "Quiz 12 (Wednesday, April 17, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-13",
     "href": "schedule.html#class-slides-13",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nmore on lists\nsorting"
+    "text": "Class slides\n\nmore on lists\nsorting",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-13",
     "href": "schedule.html#assignments-13",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 14 Programming Problems – Due date: Tuesday, April 30, 2024 at 7pm"
+    "text": "Assignments\n\nModule 14 Programming Problems – Due date: Tuesday, April 30, 2024 at 7pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#midterm-3-wednesday-april-24-2024",
     "href": "schedule.html#midterm-3-wednesday-april-24-2024",
     "title": "Schedule",
     "section": "Midterm 3 (Wednesday, April 24, 2024)",
-    "text": "Midterm 3 (Wednesday, April 24, 2024)"
+    "text": "Midterm 3 (Wednesday, April 24, 2024)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#readings-12",
     "href": "schedule.html#readings-12",
     "title": "Schedule",
     "section": "Readings",
-    "text": "Readings\n\nHandling Exceptions"
+    "text": "Readings\n\nHandling Exceptions",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#class-slides-14",
     "href": "schedule.html#class-slides-14",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nhandling exceptions"
+    "text": "Class slides\n\nhandling exceptions",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "schedule.html#assignments-14",
     "href": "schedule.html#assignments-14",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments"
+    "text": "Assignments",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
   },
   {
     "objectID": "syllabus.html",
