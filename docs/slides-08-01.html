@@ -8,7 +8,7 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.4.551">
 
   <title>CSc 110 Computer Programming I - intro to dictionaries (class slides)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -30,7 +30,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -229,7 +229,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -455,8 +456,8 @@
 <img data-src="images/list_key_value.png" class="r-stretch"></section>
 <section id="mapping-and-lists" class="slide level2">
 <h2>Mapping and Lists</h2>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>numbers <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">49</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">26</span>, <span class="dv">5</span>, <span class="dv">17</span>, <span class="op">-</span><span class="dv">6</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="574679b5" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>numbers <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">49</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">26</span>, <span class="dv">5</span>, <span class="dv">17</span>, <span class="op">-</span><span class="dv">6</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>What are the keys?</li>
@@ -466,16 +467,16 @@
 </section>
 <section id="mapping-and-lists-1" class="slide level2">
 <h2>Mapping and Lists</h2>
-<div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>numbers <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">49</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">26</span>, <span class="dv">5</span>, <span class="dv">17</span>, <span class="op">-</span><span class="dv">6</span>]</span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co"># Using the key 3 to lookup the associated value of 26</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="co"># and then save the value into variable</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a>new <span class="op">=</span> numbers[<span class="dv">3</span>]</span>
-<span id="cb2-6"><a href="#cb2-6"></a></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="co"># Modifying the list so that the key 5 now maps to 77</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="co"># instead of 17</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a>numbers[<span class="dv">5</span>] <span class="op">=</span> <span class="dv">77</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="53511fbc" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>numbers <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">49</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">26</span>, <span class="dv">5</span>, <span class="dv">17</span>, <span class="op">-</span><span class="dv">6</span>]</span>
+<span id="cb2-2"><a></a></span>
+<span id="cb2-3"><a></a><span class="co"># Using the key 3 to lookup the associated value of 26</span></span>
+<span id="cb2-4"><a></a><span class="co"># and then save the value into variable</span></span>
+<span id="cb2-5"><a></a>new <span class="op">=</span> numbers[<span class="dv">3</span>]</span>
+<span id="cb2-6"><a></a></span>
+<span id="cb2-7"><a></a><span class="co"># Modifying the list so that the key 5 now maps to 77</span></span>
+<span id="cb2-8"><a></a><span class="co"># instead of 17</span></span>
+<span id="cb2-9"><a></a>numbers[<span class="dv">5</span>] <span class="op">=</span> <span class="dv">77</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="dictionary" class="slide level2">
@@ -495,58 +496,58 @@
 <section id="dictionary-1" class="slide level2">
 <h2>Dictionary</h2>
 <p>Example (mapping strings to integers)</p>
-<div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>players <span class="op">=</span> { <span class="st">"Lebron James"</span>: <span class="dv">38</span>,</span>
-<span id="cb3-2"><a href="#cb3-2"></a>            <span class="st">"Steph Curry"</span>:  <span class="dv">35</span>,</span>
-<span id="cb3-3"><a href="#cb3-3"></a>            <span class="st">"Devin Booker"</span>:  <span class="dv">12</span> }</span>
-<span id="cb3-4"><a href="#cb3-4"></a>            </span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="co"># Using the key "Lebron James" </span></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="co"># to lookup the number 38</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a>players[<span class="st">"Lebron James"</span>]</span>
-<span id="cb3-8"><a href="#cb3-8"></a></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="co"># Modifying the number associated with </span></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="co"># "Devin Booker" from 12 to 26</span></span>
-<span id="cb3-11"><a href="#cb3-11"></a>players[<span class="st">"Devin Booker"</span>] <span class="op">=</span> <span class="dv">26</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="58b7a3f2" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>players <span class="op">=</span> { <span class="st">"Lebron James"</span>: <span class="dv">38</span>,</span>
+<span id="cb3-2"><a></a>            <span class="st">"Steph Curry"</span>:  <span class="dv">35</span>,</span>
+<span id="cb3-3"><a></a>            <span class="st">"Devin Booker"</span>:  <span class="dv">12</span> }</span>
+<span id="cb3-4"><a></a>            </span>
+<span id="cb3-5"><a></a><span class="co"># Using the key "Lebron James" </span></span>
+<span id="cb3-6"><a></a><span class="co"># to lookup the number 38</span></span>
+<span id="cb3-7"><a></a>players[<span class="st">"Lebron James"</span>]</span>
+<span id="cb3-8"><a></a></span>
+<span id="cb3-9"><a></a><span class="co"># Modifying the number associated with </span></span>
+<span id="cb3-10"><a></a><span class="co"># "Devin Booker" from 12 to 26</span></span>
+<span id="cb3-11"><a></a>players[<span class="st">"Devin Booker"</span>] <span class="op">=</span> <span class="dv">26</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="evaluate-the-expressions" class="slide level2">
 <h2>Evaluate the expressions</h2>
-<div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>word_count <span class="op">=</span> {<span class="st">"and"</span>: <span class="dv">324</span>, <span class="st">"why"</span>: <span class="dv">134</span>, <span class="st">"cannot"</span>: <span class="dv">76</span>, <span class="st">"sanded"</span>: <span class="dv">13</span>}</span>
-<span id="cb4-2"><a href="#cb4-2"></a>word_count[<span class="st">"cannot"</span>] <span class="op">=</span> <span class="dv">90</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a>word_count[<span class="st">"and"</span>] <span class="op">=</span> <span class="dv">110</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a>word_count[<span class="st">"foot"</span>] <span class="op">=</span> <span class="st">"feet"</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a>word_count[<span class="st">"and"</span>] <span class="op">+=</span> <span class="dv">10</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="co"># what will these evaluate to?</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a>word_count[<span class="st">"and"</span>] </span>
-<span id="cb4-9"><a href="#cb4-9"></a>word_count[<span class="st">"cannot"</span>]</span>
-<span id="cb4-10"><a href="#cb4-10"></a>word_count[<span class="st">"foot"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="43ca84a5" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a>word_count <span class="op">=</span> {<span class="st">"and"</span>: <span class="dv">324</span>, <span class="st">"why"</span>: <span class="dv">134</span>, <span class="st">"cannot"</span>: <span class="dv">76</span>, <span class="st">"sanded"</span>: <span class="dv">13</span>}</span>
+<span id="cb4-2"><a></a>word_count[<span class="st">"cannot"</span>] <span class="op">=</span> <span class="dv">90</span></span>
+<span id="cb4-3"><a></a>word_count[<span class="st">"and"</span>] <span class="op">=</span> <span class="dv">110</span></span>
+<span id="cb4-4"><a></a>word_count[<span class="st">"foot"</span>] <span class="op">=</span> <span class="st">"feet"</span></span>
+<span id="cb4-5"><a></a>word_count[<span class="st">"and"</span>] <span class="op">+=</span> <span class="dv">10</span></span>
+<span id="cb4-6"><a></a></span>
+<span id="cb4-7"><a></a><span class="co"># what will these evaluate to?</span></span>
+<span id="cb4-8"><a></a>word_count[<span class="st">"and"</span>] </span>
+<span id="cb4-9"><a></a>word_count[<span class="st">"cannot"</span>]</span>
+<span id="cb4-10"><a></a>word_count[<span class="st">"foot"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="evaluate-the-expressions-1" class="slide level2">
 <h2>Evaluate the expressions</h2>
-<div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>word_count <span class="op">=</span> {<span class="st">"and"</span>: <span class="dv">324</span>, <span class="st">"why"</span>: <span class="dv">134</span>, <span class="st">"cannot"</span>: <span class="dv">76</span>, <span class="st">"sanded"</span>: <span class="dv">13</span>}</span>
-<span id="cb5-2"><a href="#cb5-2"></a>word_count[<span class="st">"cannot"</span>] <span class="op">=</span> <span class="dv">90</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a>word_count[<span class="st">"and"</span>] <span class="op">=</span> <span class="dv">110</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a>word_count[<span class="st">"foot"</span>] <span class="op">=</span> <span class="st">"feet"</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a>word_count[<span class="st">"and"</span>] <span class="op">+=</span> <span class="dv">10</span></span>
-<span id="cb5-6"><a href="#cb5-6"></a></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="co"># what will these evaluate to?</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a>word_count[<span class="st">"and"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="4145dc35" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>word_count <span class="op">=</span> {<span class="st">"and"</span>: <span class="dv">324</span>, <span class="st">"why"</span>: <span class="dv">134</span>, <span class="st">"cannot"</span>: <span class="dv">76</span>, <span class="st">"sanded"</span>: <span class="dv">13</span>}</span>
+<span id="cb5-2"><a></a>word_count[<span class="st">"cannot"</span>] <span class="op">=</span> <span class="dv">90</span></span>
+<span id="cb5-3"><a></a>word_count[<span class="st">"and"</span>] <span class="op">=</span> <span class="dv">110</span></span>
+<span id="cb5-4"><a></a>word_count[<span class="st">"foot"</span>] <span class="op">=</span> <span class="st">"feet"</span></span>
+<span id="cb5-5"><a></a>word_count[<span class="st">"and"</span>] <span class="op">+=</span> <span class="dv">10</span></span>
+<span id="cb5-6"><a></a></span>
+<span id="cb5-7"><a></a><span class="co"># what will these evaluate to?</span></span>
+<span id="cb5-8"><a></a>word_count[<span class="st">"and"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="1">
 <pre><code>120</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>word_count[<span class="st">"cannot"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="70d3d95f" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a>word_count[<span class="st">"cannot"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>90</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>word_count[<span class="st">"foot"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="f80ec3af" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a>word_count[<span class="st">"foot"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>'feet'</code></pre>
 </div>
@@ -554,49 +555,49 @@
 </section>
 <section id="evaluate-the-expressions-2" class="slide level2">
 <h2>Evaluate the expressions</h2>
-<div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>num_to_player <span class="op">=</span> {}   <span class="co"># A valid, but empty dictionary</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>num_to_player[<span class="dv">13</span>] <span class="op">=</span> <span class="st">"Paul George"</span></span>
-<span id="cb11-3"><a href="#cb11-3"></a>num_to_player[<span class="dv">3</span>]  <span class="op">=</span> <span class="st">"Chris Paul"</span></span>
-<span id="cb11-4"><a href="#cb11-4"></a>num_to_player[<span class="dv">23</span>] <span class="op">=</span> <span class="st">"Lebron James"</span></span>
-<span id="cb11-5"><a href="#cb11-5"></a>num_to_player[<span class="dv">13</span>] <span class="op">=</span> <span class="st">"James Harden"</span></span>
-<span id="cb11-6"><a href="#cb11-6"></a></span>
-<span id="cb11-7"><a href="#cb11-7"></a><span class="co"># what will these evaluate to?</span></span>
-<span id="cb11-8"><a href="#cb11-8"></a>num_to_player[<span class="dv">23</span>] </span>
-<span id="cb11-9"><a href="#cb11-9"></a>num_to_player[<span class="dv">3</span>]</span>
-<span id="cb11-10"><a href="#cb11-10"></a>num_to_player[<span class="dv">13</span>]</span>
-<span id="cb11-11"><a href="#cb11-11"></a>num_to_player</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="34fa70cc" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a>num_to_player <span class="op">=</span> {}   <span class="co"># A valid, but empty dictionary</span></span>
+<span id="cb11-2"><a></a>num_to_player[<span class="dv">13</span>] <span class="op">=</span> <span class="st">"Paul George"</span></span>
+<span id="cb11-3"><a></a>num_to_player[<span class="dv">3</span>]  <span class="op">=</span> <span class="st">"Chris Paul"</span></span>
+<span id="cb11-4"><a></a>num_to_player[<span class="dv">23</span>] <span class="op">=</span> <span class="st">"Lebron James"</span></span>
+<span id="cb11-5"><a></a>num_to_player[<span class="dv">13</span>] <span class="op">=</span> <span class="st">"James Harden"</span></span>
+<span id="cb11-6"><a></a></span>
+<span id="cb11-7"><a></a><span class="co"># what will these evaluate to?</span></span>
+<span id="cb11-8"><a></a>num_to_player[<span class="dv">23</span>] </span>
+<span id="cb11-9"><a></a>num_to_player[<span class="dv">3</span>]</span>
+<span id="cb11-10"><a></a>num_to_player[<span class="dv">13</span>]</span>
+<span id="cb11-11"><a></a>num_to_player</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="evaluate-the-expressions-3" class="slide level2">
 <h2>Evaluate the expressions</h2>
-<div class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>num_to_player <span class="op">=</span> {}   <span class="co"># A valid, but empty dictionary</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a>num_to_player[<span class="dv">13</span>] <span class="op">=</span> <span class="st">"Paul George"</span></span>
-<span id="cb12-3"><a href="#cb12-3"></a>num_to_player[<span class="dv">3</span>]  <span class="op">=</span> <span class="st">"Chris Paul"</span></span>
-<span id="cb12-4"><a href="#cb12-4"></a>num_to_player[<span class="dv">23</span>] <span class="op">=</span> <span class="st">"Lebron James"</span></span>
-<span id="cb12-5"><a href="#cb12-5"></a>num_to_player[<span class="dv">13</span>] <span class="op">=</span> <span class="st">"James Harden"</span></span>
-<span id="cb12-6"><a href="#cb12-6"></a></span>
-<span id="cb12-7"><a href="#cb12-7"></a><span class="co"># what will these evaluate to?</span></span>
-<span id="cb12-8"><a href="#cb12-8"></a>num_to_player[<span class="dv">23</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="e2128a35" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a>num_to_player <span class="op">=</span> {}   <span class="co"># A valid, but empty dictionary</span></span>
+<span id="cb12-2"><a></a>num_to_player[<span class="dv">13</span>] <span class="op">=</span> <span class="st">"Paul George"</span></span>
+<span id="cb12-3"><a></a>num_to_player[<span class="dv">3</span>]  <span class="op">=</span> <span class="st">"Chris Paul"</span></span>
+<span id="cb12-4"><a></a>num_to_player[<span class="dv">23</span>] <span class="op">=</span> <span class="st">"Lebron James"</span></span>
+<span id="cb12-5"><a></a>num_to_player[<span class="dv">13</span>] <span class="op">=</span> <span class="st">"James Harden"</span></span>
+<span id="cb12-6"><a></a></span>
+<span id="cb12-7"><a></a><span class="co"># what will these evaluate to?</span></span>
+<span id="cb12-8"><a></a>num_to_player[<span class="dv">23</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>'Lebron James'</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a>num_to_player[<span class="dv">3</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="8d706c39" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a>num_to_player[<span class="dv">3</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>'Chris Paul'</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a>num_to_player[<span class="dv">13</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="780f6796" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a>num_to_player[<span class="dv">13</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>'James Harden'</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a>num_to_player</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b61815dc" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a>num_to_player</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>{13: 'James Harden', 3: 'Chris Paul', 23: 'Lebron James'}</code></pre>
 </div>
@@ -616,38 +617,38 @@
 </section>
 <section id="dictionary-operations" class="slide level2">
 <h2>Dictionary operations</h2>
-<div class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1"></a>scores <span class="op">=</span> {<span class="st">'A'</span>: <span class="dv">10</span>, <span class="st">'B'</span>: <span class="dv">25</span>, <span class="st">'C'</span>: <span class="dv">27</span>, <span class="st">'D'</span>: <span class="dv">10</span>, <span class="st">'E'</span>: <span class="dv">5</span>}</span>
-<span id="cb20-2"><a href="#cb20-2"></a> </span>
-<span id="cb20-3"><a href="#cb20-3"></a>scores[<span class="st">'A+'</span>] <span class="op">=</span> <span class="dv">7</span>     <span class="co"># Adds a key/value pair</span></span>
-<span id="cb20-4"><a href="#cb20-4"></a></span>
-<span id="cb20-5"><a href="#cb20-5"></a>scores[<span class="st">'B'</span>] <span class="op">=</span> <span class="dv">20</span>     <span class="co"># Changes value associated with a key</span></span>
-<span id="cb20-6"><a href="#cb20-6"></a></span>
-<span id="cb20-7"><a href="#cb20-7"></a>scores[<span class="st">'C'</span>]    <span class="co"># Retrieves a value, given a key</span></span>
-<span id="cb20-8"><a href="#cb20-8"></a></span>
-<span id="cb20-9"><a href="#cb20-9"></a>scores.pop(<span class="st">'E'</span>)      <span class="co"># Removes a key/value pair</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="7d996237" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a></a>scores <span class="op">=</span> {<span class="st">'A'</span>: <span class="dv">10</span>, <span class="st">'B'</span>: <span class="dv">25</span>, <span class="st">'C'</span>: <span class="dv">27</span>, <span class="st">'D'</span>: <span class="dv">10</span>, <span class="st">'E'</span>: <span class="dv">5</span>}</span>
+<span id="cb20-2"><a></a> </span>
+<span id="cb20-3"><a></a>scores[<span class="st">'A+'</span>] <span class="op">=</span> <span class="dv">7</span>     <span class="co"># Adds a key/value pair</span></span>
+<span id="cb20-4"><a></a></span>
+<span id="cb20-5"><a></a>scores[<span class="st">'B'</span>] <span class="op">=</span> <span class="dv">20</span>     <span class="co"># Changes value associated with a key</span></span>
+<span id="cb20-6"><a></a></span>
+<span id="cb20-7"><a></a>scores[<span class="st">'C'</span>]    <span class="co"># Retrieves a value, given a key</span></span>
+<span id="cb20-8"><a></a></span>
+<span id="cb20-9"><a></a>scores.pop(<span class="st">'E'</span>)      <span class="co"># Removes a key/value pair</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="the-in-operator" class="slide level2">
 <h2>The <code>in</code> operator</h2>
 <p>With strings:</p>
-<div class="cell" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">"a"</span> <span class="kw">in</span> <span class="st">"aeiou"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="507252f2" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a></a><span class="co">"a"</span> <span class="kw">in</span> <span class="st">"aeiou"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>True</code></pre>
 </div>
 </div>
 <p>With lists:</p>
-<div class="cell" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1"></a><span class="dv">1</span> <span class="kw">in</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="d44f1cd7" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a></a><span class="dv">1</span> <span class="kw">in</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>True</code></pre>
 </div>
 </div>
 <p>And dictionary keys:</p>
-<div class="cell" data-execution_count="16">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1"></a>word_count <span class="op">=</span> {<span class="st">"and"</span>: <span class="dv">324</span>, <span class="st">"why"</span>: <span class="dv">134</span>, <span class="st">"cannot"</span>: <span class="dv">76</span>, <span class="st">"Sanded"</span>: <span class="dv">13</span>}</span>
-<span id="cb25-2"><a href="#cb25-2"></a><span class="co">"why"</span> <span class="kw">in</span> word_count</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="92611538" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a></a>word_count <span class="op">=</span> {<span class="st">"and"</span>: <span class="dv">324</span>, <span class="st">"why"</span>: <span class="dv">134</span>, <span class="st">"cannot"</span>: <span class="dv">76</span>, <span class="st">"Sanded"</span>: <span class="dv">13</span>}</span>
+<span id="cb25-2"><a></a><span class="co">"why"</span> <span class="kw">in</span> word_count</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>True</code></pre>
 </div>
@@ -661,27 +662,27 @@
 <li>It creates a <code>dictionary</code></li>
 <li>It returns the <code>dictionary</code> with the count of every lowercase vowel in <code>string</code> (iterate over the string with a for loop)</li>
 </ol>
-<div class="cell" data-execution_count="17">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1"></a><span class="bu">print</span>( count_vowels(<span class="st">""</span>) ) <span class="co"># {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0}</span></span>
-<span id="cb27-2"><a href="#cb27-2"></a><span class="bu">print</span>( count_vowels(<span class="st">"pineapple"</span>) ) <span class="co"># {"a": 1, "e": 2, "i": 1, "o": 0, "u": 0}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="d980a648" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a></a><span class="bu">print</span>( count_vowels(<span class="st">""</span>) ) <span class="co"># {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0}</span></span>
+<span id="cb27-2"><a></a><span class="bu">print</span>( count_vowels(<span class="st">"pineapple"</span>) ) <span class="co"># {"a": 1, "e": 2, "i": 1, "o": 0, "u": 0}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div class="cell" data-execution_count="18">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1"></a><span class="kw">def</span> count_vowels(string):</span>
-<span id="cb28-2"><a href="#cb28-2"></a>  counts <span class="op">=</span> {<span class="st">"a"</span>: <span class="dv">0</span>, <span class="st">"e"</span>: <span class="dv">0</span>, <span class="st">"i"</span>: <span class="dv">0</span>, <span class="st">"o"</span>: <span class="dv">0</span>, <span class="st">"u"</span>: <span class="dv">0</span>}</span>
-<span id="cb28-3"><a href="#cb28-3"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(string)):</span>
-<span id="cb28-4"><a href="#cb28-4"></a>    char <span class="op">=</span> string[i]</span>
-<span id="cb28-5"><a href="#cb28-5"></a>    <span class="cf">if</span> char <span class="kw">in</span> counts:</span>
-<span id="cb28-6"><a href="#cb28-6"></a>      counts[char] <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb28-7"><a href="#cb28-7"></a>  <span class="cf">return</span> counts</span>
-<span id="cb28-8"><a href="#cb28-8"></a></span>
-<span id="cb28-9"><a href="#cb28-9"></a><span class="kw">def</span> main():</span>
-<span id="cb28-10"><a href="#cb28-10"></a>  <span class="bu">print</span>( count_vowels(<span class="st">""</span>) ) <span class="co"># {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0}</span></span>
-<span id="cb28-11"><a href="#cb28-11"></a>  <span class="bu">print</span>( count_vowels(<span class="st">"pineapple"</span>) ) <span class="co"># {"a": 1, "e": 2, "i": 1, "o": 0, "u": 0}</span></span>
-<span id="cb28-12"><a href="#cb28-12"></a>  </span>
-<span id="cb28-13"><a href="#cb28-13"></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="34428a0c" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a></a><span class="kw">def</span> count_vowels(string):</span>
+<span id="cb28-2"><a></a>  counts <span class="op">=</span> {<span class="st">"a"</span>: <span class="dv">0</span>, <span class="st">"e"</span>: <span class="dv">0</span>, <span class="st">"i"</span>: <span class="dv">0</span>, <span class="st">"o"</span>: <span class="dv">0</span>, <span class="st">"u"</span>: <span class="dv">0</span>}</span>
+<span id="cb28-3"><a></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(string)):</span>
+<span id="cb28-4"><a></a>    char <span class="op">=</span> string[i]</span>
+<span id="cb28-5"><a></a>    <span class="cf">if</span> char <span class="kw">in</span> counts:</span>
+<span id="cb28-6"><a></a>      counts[char] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb28-7"><a></a>  <span class="cf">return</span> counts</span>
+<span id="cb28-8"><a></a></span>
+<span id="cb28-9"><a></a><span class="kw">def</span> main():</span>
+<span id="cb28-10"><a></a>  <span class="bu">print</span>( count_vowels(<span class="st">""</span>) ) <span class="co"># {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0}</span></span>
+<span id="cb28-11"><a></a>  <span class="bu">print</span>( count_vowels(<span class="st">"pineapple"</span>) ) <span class="co"># {"a": 1, "e": 2, "i": 1, "o": 0, "u": 0}</span></span>
+<span id="cb28-12"><a></a>  </span>
+<span id="cb28-13"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>{'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
 {'a': 1, 'e': 2, 'i': 1, 'o': 0, 'u': 0}</code></pre>
@@ -696,30 +697,30 @@
 <li>It creates a <code>dictionary</code></li>
 <li>It returns the <code>dictionary</code> with the count of every characters in <code>string</code></li>
 </ol>
-<div class="cell" data-execution_count="19">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1"></a><span class="bu">print</span>( count_chars(<span class="st">""</span>) ) <span class="co"># {}</span></span>
-<span id="cb30-2"><a href="#cb30-2"></a><span class="bu">print</span>( count_chars(<span class="st">"banana"</span>) ) <span class="co"># {"b": 1, "a": 3, "n": 2}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="2a0f5754" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a></a><span class="bu">print</span>( count_chars(<span class="st">""</span>) ) <span class="co"># {}</span></span>
+<span id="cb30-2"><a></a><span class="bu">print</span>( count_chars(<span class="st">"banana"</span>) ) <span class="co"># {"b": 1, "a": 3, "n": 2}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution-1" class="slide level2">
 <h2>Write a function – solution</h2>
-<div class="cell" data-execution_count="20">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1"></a><span class="kw">def</span> count_chars(string):</span>
-<span id="cb31-2"><a href="#cb31-2"></a>  counts <span class="op">=</span> {}</span>
-<span id="cb31-3"><a href="#cb31-3"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(string)):</span>
-<span id="cb31-4"><a href="#cb31-4"></a>    char <span class="op">=</span> string[i]</span>
-<span id="cb31-5"><a href="#cb31-5"></a>    <span class="cf">if</span> char <span class="kw">in</span> counts:</span>
-<span id="cb31-6"><a href="#cb31-6"></a>      counts[char] <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb31-7"><a href="#cb31-7"></a>    <span class="cf">else</span>:</span>
-<span id="cb31-8"><a href="#cb31-8"></a>      counts[char] <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb31-9"><a href="#cb31-9"></a>      </span>
-<span id="cb31-10"><a href="#cb31-10"></a>  <span class="cf">return</span> counts</span>
-<span id="cb31-11"><a href="#cb31-11"></a></span>
-<span id="cb31-12"><a href="#cb31-12"></a><span class="kw">def</span> main():</span>
-<span id="cb31-13"><a href="#cb31-13"></a>  <span class="bu">print</span>( count_chars(<span class="st">""</span>) ) <span class="co"># {}</span></span>
-<span id="cb31-14"><a href="#cb31-14"></a>  <span class="bu">print</span>( count_chars(<span class="st">"banana"</span>) ) <span class="co"># {"b": 1, "a": 3, "n": 2}</span></span>
-<span id="cb31-15"><a href="#cb31-15"></a></span>
-<span id="cb31-16"><a href="#cb31-16"></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="64a9862b" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a></a><span class="kw">def</span> count_chars(string):</span>
+<span id="cb31-2"><a></a>  counts <span class="op">=</span> {}</span>
+<span id="cb31-3"><a></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(string)):</span>
+<span id="cb31-4"><a></a>    char <span class="op">=</span> string[i]</span>
+<span id="cb31-5"><a></a>    <span class="cf">if</span> char <span class="kw">in</span> counts:</span>
+<span id="cb31-6"><a></a>      counts[char] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb31-7"><a></a>    <span class="cf">else</span>:</span>
+<span id="cb31-8"><a></a>      counts[char] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb31-9"><a></a>      </span>
+<span id="cb31-10"><a></a>  <span class="cf">return</span> counts</span>
+<span id="cb31-11"><a></a></span>
+<span id="cb31-12"><a></a><span class="kw">def</span> main():</span>
+<span id="cb31-13"><a></a>  <span class="bu">print</span>( count_chars(<span class="st">""</span>) ) <span class="co"># {}</span></span>
+<span id="cb31-14"><a></a>  <span class="bu">print</span>( count_chars(<span class="st">"banana"</span>) ) <span class="co"># {"b": 1, "a": 3, "n": 2}</span></span>
+<span id="cb31-15"><a></a></span>
+<span id="cb31-16"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>{}
 {'b': 1, 'a': 3, 'n': 2}</code></pre>
@@ -745,8 +746,10 @@
 </ul>
 <p>Built-in functions you can use: <code>round()</code>, <code>input()</code>, <code>float()</code>, <code>str()</code>, <code>int()</code>, <code>len()</code> — you don’t have to use all of these</p>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section></section>
     </div>
@@ -775,7 +778,6 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1036,10 +1038,27 @@
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1049,8 +1068,17 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1064,7 +1092,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

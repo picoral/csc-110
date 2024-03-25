@@ -8,7 +8,7 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.4.551">
 
   <title>CSc 110 Computer Programming I - Functions (class slides)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -30,7 +30,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -229,7 +229,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -420,9 +421,9 @@
 </section>
 <section id="function-definitions" class="slide level2">
 <h2>Function definitions</h2>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">def</span> two():</span>
-<span id="cb1-2"><a href="#cb1-2"></a>  <span class="cf">return</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="d793049f" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="kw">def</span> two():</span>
+<span id="cb1-2"><a></a>  <span class="cf">return</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This function definition has many parts:</p>
 <ul>
@@ -434,9 +435,9 @@
 </section>
 <section id="example-of-a-simple-function" class="slide level2">
 <h2>Example of a simple function</h2>
-<div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">def</span> add_one(n):</span>
-<span id="cb2-2"><a href="#cb2-2"></a>  <span class="cf">return</span> n <span class="op">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="e103b647" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="kw">def</span> add_one(n):</span>
+<span id="cb2-2"><a></a>  <span class="cf">return</span> n <span class="op">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><code>add_one</code> is the name of the function</li>
@@ -448,11 +449,11 @@
 <section id="function-to-calculate-area-of-a-circle" class="slide level2">
 <h2>Function to calculate area of a circle</h2>
 <p>Remember this from the last set of slides?</p>
-<div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># assign a radius value</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>radius <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="co"># compute the area of a circle</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a>area <span class="op">=</span> <span class="fl">3.1415</span> <span class="op">*</span> radius <span class="op">**</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="986185c3" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="co"># assign a radius value</span></span>
+<span id="cb3-2"><a></a>radius <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb3-3"><a></a><span class="co"># compute the area of a circle</span></span>
+<span id="cb3-4"><a></a>area <span class="op">=</span> <span class="fl">3.1415</span> <span class="op">*</span> radius <span class="op">**</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <p>Calculating the <code>area</code> of a circle is an <code>abstraction</code>.</p>
@@ -471,21 +472,21 @@
 </section>
 <section id="function-to-calculate-the-volume-of-a-cylinder-1" class="slide level2">
 <h2>Function to calculate the volume of a cylinder</h2>
-<div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">def</span> volume(radius, height):</span>
-<span id="cb4-2"><a href="#cb4-2"></a>  <span class="co"># calculate the area first</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a>  area <span class="op">=</span> <span class="fl">3.1415</span> <span class="op">*</span> radius <span class="op">**</span> <span class="dv">2</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a>  </span>
-<span id="cb4-5"><a href="#cb4-5"></a>  <span class="co"># multiply area by height</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>  vol <span class="op">=</span> area <span class="op">*</span> height</span>
-<span id="cb4-7"><a href="#cb4-7"></a>  </span>
-<span id="cb4-8"><a href="#cb4-8"></a>  <span class="co"># return calculated volume</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a>  <span class="cf">return</span> vol</span>
-<span id="cb4-10"><a href="#cb4-10"></a></span>
-<span id="cb4-11"><a href="#cb4-11"></a></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="bu">print</span>(volume(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="co"># 6.283</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a><span class="bu">print</span>(volume(<span class="dv">6</span>, <span class="dv">10</span>)) <span class="co"># 1130.94</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="bu">print</span>(volume(<span class="dv">5</span>, <span class="dv">5</span>)) <span class="co"># 392.68750000000006</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="0d85b79e" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="kw">def</span> volume(radius, height):</span>
+<span id="cb4-2"><a></a>  <span class="co"># calculate the area first</span></span>
+<span id="cb4-3"><a></a>  area <span class="op">=</span> <span class="fl">3.1415</span> <span class="op">*</span> radius <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb4-4"><a></a>  </span>
+<span id="cb4-5"><a></a>  <span class="co"># multiply area by height</span></span>
+<span id="cb4-6"><a></a>  vol <span class="op">=</span> area <span class="op">*</span> height</span>
+<span id="cb4-7"><a></a>  </span>
+<span id="cb4-8"><a></a>  <span class="co"># return calculated volume</span></span>
+<span id="cb4-9"><a></a>  <span class="cf">return</span> vol</span>
+<span id="cb4-10"><a></a></span>
+<span id="cb4-11"><a></a></span>
+<span id="cb4-12"><a></a><span class="bu">print</span>(volume(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="co"># 6.283</span></span>
+<span id="cb4-13"><a></a><span class="bu">print</span>(volume(<span class="dv">6</span>, <span class="dv">10</span>)) <span class="co"># 1130.94</span></span>
+<span id="cb4-14"><a></a><span class="bu">print</span>(volume(<span class="dv">5</span>, <span class="dv">5</span>)) <span class="co"># 392.68750000000006</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="submit-to-gradescope" class="slide level2">
@@ -529,19 +530,19 @@ c = (3 // (4 // 5)) + 1
 </section>
 <section id="pemdas-answer" class="slide level2">
 <h2>PEMDAS – answer</h2>
-<div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>a1 <span class="op">=</span> <span class="dv">5</span> <span class="op">/</span>  <span class="dv">5</span> <span class="op">*</span> <span class="dv">10</span>  <span class="op">*</span> <span class="dv">5</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>a2 <span class="op">=</span> <span class="dv">5</span> <span class="op">/</span> (<span class="dv">5</span> <span class="op">*</span> <span class="dv">10</span>) <span class="op">*</span> <span class="dv">5</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a></span>
-<span id="cb5-4"><a href="#cb5-4"></a>b1 <span class="op">=</span> <span class="dv">5</span> <span class="op">*</span>  <span class="dv">10</span> <span class="op">-</span> <span class="dv">2</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a>b2 <span class="op">=</span> <span class="dv">5</span> <span class="op">*</span> (<span class="dv">10</span> <span class="op">-</span> <span class="dv">2</span>)</span>
-<span id="cb5-6"><a href="#cb5-6"></a></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="co"># c = (3 // (4 // 5)) + 1 ERROR -- Zero Division</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a></span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="bu">print</span>(a1)</span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="bu">print</span>(a2)</span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="bu">print</span>(b1)</span>
-<span id="cb5-12"><a href="#cb5-12"></a><span class="bu">print</span>(b2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="01fcf383" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>a1 <span class="op">=</span> <span class="dv">5</span> <span class="op">/</span>  <span class="dv">5</span> <span class="op">*</span> <span class="dv">10</span>  <span class="op">*</span> <span class="dv">5</span></span>
+<span id="cb5-2"><a></a>a2 <span class="op">=</span> <span class="dv">5</span> <span class="op">/</span> (<span class="dv">5</span> <span class="op">*</span> <span class="dv">10</span>) <span class="op">*</span> <span class="dv">5</span></span>
+<span id="cb5-3"><a></a></span>
+<span id="cb5-4"><a></a>b1 <span class="op">=</span> <span class="dv">5</span> <span class="op">*</span>  <span class="dv">10</span> <span class="op">-</span> <span class="dv">2</span></span>
+<span id="cb5-5"><a></a>b2 <span class="op">=</span> <span class="dv">5</span> <span class="op">*</span> (<span class="dv">10</span> <span class="op">-</span> <span class="dv">2</span>)</span>
+<span id="cb5-6"><a></a></span>
+<span id="cb5-7"><a></a><span class="co"># c = (3 // (4 // 5)) + 1 ERROR -- Zero Division</span></span>
+<span id="cb5-8"><a></a></span>
+<span id="cb5-9"><a></a><span class="bu">print</span>(a1)</span>
+<span id="cb5-10"><a></a><span class="bu">print</span>(a2)</span>
+<span id="cb5-11"><a></a><span class="bu">print</span>(b1)</span>
+<span id="cb5-12"><a></a><span class="bu">print</span>(b2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>50.0
 0.5
@@ -551,8 +552,10 @@ c = (3 // (4 // 5)) + 1
 </div>
 <p>Note that the division operator returns a float even when both numerator and denominator are integers</p>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section></section>
     </div>
@@ -581,7 +584,6 @@ c = (3 // (4 // 5)) + 1
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -842,10 +844,27 @@ c = (3 // (4 // 5)) + 1
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -855,8 +874,17 @@ c = (3 // (4 // 5)) + 1
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -870,7 +898,11 @@ c = (3 // (4 // 5)) + 1
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

@@ -8,7 +8,7 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.4.551">
 
   <title>CSc 110 Computer Programming I - Built-in Python Functions (class slides)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -30,7 +30,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -229,7 +229,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -417,8 +418,8 @@
 <li>It takes two arguments, <code>first_name</code> and <code>last_name</code></li>
 <li>It returns a string with a greeting using <code>first_name</code> and <code>last_name</code></li>
 </ol>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">print</span>( greeting(<span class="st">"Adriana"</span>, <span class="st">"Picoral"</span>) ) <span class="co"># Hello, Adriana Picoral!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="ce5139df" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>( greeting(<span class="st">"Adriana"</span>, <span class="st">"Picoral"</span>) ) <span class="co"># Hello, Adriana Picoral!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="quiz-03" class="slide level2">
@@ -446,9 +447,9 @@
 <li>The <code>len()</code> function can be used with many types – we will be using it with <code>string</code> for now</li>
 <li>It returns the number of characters in a string</li>
 </ul>
-<div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>character_count <span class="op">=</span> <span class="bu">len</span>(<span class="st">"Adriana"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="bu">print</span>(character_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="8757b4d5" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>character_count <span class="op">=</span> <span class="bu">len</span>(<span class="st">"Adriana"</span>)</span>
+<span id="cb2-2"><a></a><span class="bu">print</span>(character_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>7</code></pre>
 </div>
@@ -462,11 +463,11 @@
 <li>It takes a string argument, <code>name</code></li>
 <li>It returns the total number of characters in <code>name</code></li>
 </ol>
-<div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="bu">print</span>( count_characters(<span class="st">"Adriana"</span>) ) <span class="co"># 7</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="bu">print</span>( count_characters(<span class="st">""</span>) ) <span class="co"># 0</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="bu">print</span>( count_characters(<span class="st">" "</span>) ) <span class="co"># 1</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="bu">print</span>( count_characters(<span class="st">"10"</span>) ) <span class="co"># 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fb62afbd" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="bu">print</span>( count_characters(<span class="st">"Adriana"</span>) ) <span class="co"># 7</span></span>
+<span id="cb4-2"><a></a><span class="bu">print</span>( count_characters(<span class="st">""</span>) ) <span class="co"># 0</span></span>
+<span id="cb4-3"><a></a><span class="bu">print</span>( count_characters(<span class="st">" "</span>) ) <span class="co"># 1</span></span>
+<span id="cb4-4"><a></a><span class="bu">print</span>( count_characters(<span class="st">"10"</span>) ) <span class="co"># 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="input-function" class="slide level2">
@@ -477,8 +478,8 @@
 <li>The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that</li>
 <li><code>input()</code> always returns a string</li>
 </ul>
-<div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="bu">input</span>(<span class="st">"What's your name?</span><span class="ch">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="59c1704a" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="bu">input</span>(<span class="st">"What's your name?</span><span class="ch">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-main" class="slide level2">
@@ -516,10 +517,10 @@
 <li>The <code>int()</code> function can be used to convert a string to an integer type</li>
 <li>It only works if the string only contains digits</li>
 </ul>
-<div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>age <span class="op">=</span> <span class="st">'35'</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>age_int <span class="op">=</span> <span class="bu">int</span>(age)</span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="bu">print</span>(<span class="bu">type</span>(age), <span class="bu">type</span>(age_int))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="67bdf0d0" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a>age <span class="op">=</span> <span class="st">'35'</span></span>
+<span id="cb6-2"><a></a>age_int <span class="op">=</span> <span class="bu">int</span>(age)</span>
+<span id="cb6-3"><a></a><span class="bu">print</span>(<span class="bu">type</span>(age), <span class="bu">type</span>(age_int))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'str'&gt; &lt;class 'int'&gt;</code></pre>
 </div>
@@ -531,10 +532,10 @@
 <li>The <code>float()</code> function can be used to convert a string to a float type</li>
 <li>It only works if the string only contains digits and optionally a decimal point</li>
 </ul>
-<div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>age <span class="op">=</span> <span class="st">'35'</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a>age_float <span class="op">=</span> <span class="bu">float</span>(age)</span>
-<span id="cb8-3"><a href="#cb8-3"></a><span class="bu">print</span>(<span class="bu">type</span>(age), <span class="bu">type</span>(age_float))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="362659a3" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a>age <span class="op">=</span> <span class="st">'35'</span></span>
+<span id="cb8-2"><a></a>age_float <span class="op">=</span> <span class="bu">float</span>(age)</span>
+<span id="cb8-3"><a></a><span class="bu">print</span>(<span class="bu">type</span>(age), <span class="bu">type</span>(age_float))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'str'&gt; &lt;class 'float'&gt;</code></pre>
 </div>
@@ -550,8 +551,8 @@
 <li>It calculates (imperfectly) the year a person of <code>age</code> was born by subtracting <code>age</code> from <code>2024</code></li>
 <li>It returns an integer representing the approximate year person of <code>age</code> was born</li>
 </ol>
-<div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="bu">print</span>( calculate_year_born() ) <span class="co"># user enters 43, function returns 1981</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="83ed4624" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="bu">print</span>( calculate_year_born() ) <span class="co"># user enters 43, function returns 1981</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="attendance" class="slide level2">
@@ -567,8 +568,10 @@
 <li>For gradescope, submit only your script with all of your functions</li>
 </ul>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section></section>
     </div>
@@ -597,7 +600,6 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -858,10 +860,27 @@
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -871,8 +890,17 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -886,7 +914,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
