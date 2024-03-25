@@ -1806,70 +1806,110 @@
     "href": "slides-11-01.html#lists-within-lists",
     "title": "more on for loops (class slides)",
     "section": "lists within lists",
-    "text": "lists within lists\nWe’ve worked with lists of integers, list of strings, and lists of floats – but we can also have lists of lists:\n\nlists = [[9,  8,  7,  8],\n         [10, 20, 30, 4],\n         [5,  50, 55, 4]]\nlists[0]\n\n[9, 8, 7, 8]\n\n\n\nlists[0][0]\n\n9"
+    "text": "lists within lists\nWe’ve worked with lists of integers, list of strings, and lists of floats – but we can also have lists of lists:\n\nlists = [[9,  8,  7,  8],\n         [10, 20, 30, 4],\n         [5,  50, 55, 4]]\nlists[0]\n\n[9, 8, 7, 8]\n\n\n\nlists[0][0]\n\n9",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#d-lists",
     "href": "slides-11-01.html#d-lists",
     "title": "more on for loops (class slides)",
     "section": "2D lists",
-    "text": "2D lists\n\nThe “first dimension” is the outer list\nThe “second dimension” are the inner lists\n\n\nlists = [[9,  8,  7,  8], # index 0 of outer list\n         [10, 20, 30, 4], # index 1 of outer list\n         [5,  50, 55, 4]] # index 2 of outer list"
+    "text": "2D lists\n\nThe “first dimension” is the outer list\nThe “second dimension” are the inner lists\n\n\nlists = [[9,  8,  7,  8], # index 0 of outer list\n         [10, 20, 30, 4], # index 1 of outer list\n         [5,  50, 55, 4]] # index 2 of outer list",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#evaluate-the-expressions",
     "href": "slides-11-01.html#evaluate-the-expressions",
     "title": "more on for loops (class slides)",
     "section": "Evaluate the Expressions",
-    "text": "Evaluate the Expressions\n\nnumbers = [[4, 2, 3],\n           [0, 2, 5]]\nnumbers[1][2]   \n\nitems = [[9, 7, 8],\n         [1, 2, 3, 4, 5, 6],\n         [5],\n         [10, 20, 30]]\nitems[1][5]\nitems[2][5]\nitems[3][2]"
+    "text": "Evaluate the Expressions\n\nnumbers = [[4, 2, 3],\n           [0, 2, 5]]\nnumbers[1][2]   \n\nitems = [[9, 7, 8],\n         [1, 2, 3, 4, 5, 6],\n         [5],\n         [10, 20, 30]]\nitems[1][5]\nitems[2][5]\nitems[3][2]",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#evaluate-the-expressions-1",
     "href": "slides-11-01.html#evaluate-the-expressions-1",
     "title": "more on for loops (class slides)",
     "section": "Evaluate the Expressions",
-    "text": "Evaluate the Expressions\n\nnumbers = [[4, 2, 3],\n           [0, 2, 5]]\nnumbers[1][2]\n\n5\n\n\n\nitems = [[9, 7, 8],\n         [1, 2, 3, 4, 5, 6],\n         [5],\n         [10, 20, 30]]\nitems[1][5]\n\n6\n\n\n\nitems[2][5] # will throw error\n\n\nitems[3][2]\n\n30"
+    "text": "Evaluate the Expressions\n\nnumbers = [[4, 2, 3],\n           [0, 2, 5]]\nnumbers[1][2]\n\n5\n\n\n\nitems = [[9, 7, 8],\n         [1, 2, 3, 4, 5, 6],\n         [5],\n         [10, 20, 30]]\nitems[1][5]\n\n6\n\n\n\nitems[2][5] # will throw error\n\n\nitems[3][2]\n\n30",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#for-loops-with-lists-of-lists",
     "href": "slides-11-01.html#for-loops-with-lists-of-lists",
     "title": "more on for loops (class slides)",
     "section": "for loops with lists of lists",
-    "text": "for loops with lists of lists\n\nitems = [[9, 7, 8],\n         [5],\n         [10, 20, 30]]\n         \nfor i in range(len(items)):\n  for j in range(len(items[i])):\n    print( items[i][j] )\n\n9\n7\n8\n5\n10\n20\n30"
+    "text": "for loops with lists of lists\n\nitems = [[9, 7, 8],\n         [5],\n         [10, 20, 30]]\n         \nfor i in range(len(items)):\n  for j in range(len(items[i])):\n    print( items[i][j] )\n\n9\n7\n8\n5\n10\n20\n30",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function",
     "href": "slides-11-01.html#write-a-function",
     "title": "more on for loops (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is flatten\nIt takes one parameter, which is a list of lists of integers: numbers\nIt returns a single list that flattens that list of lists into a single list that contains exactly the same values\nDo not use any list methods besides .append()\n\n\nassert flatten([]) == []\nassert flatten([[1, 2, 3], [4, 5, 6]]) == [1, 2, 3, 4, 5, 6]\nassert flatten([[1, 2, 3], [4]]) == [1, 2, 3, 4]"
+    "text": "Write a function\n\nIts name is flatten\nIt takes one parameter, which is a list of lists of integers: numbers\nIt returns a single list that flattens that list of lists into a single list that contains exactly the same values\nDo not use any list methods besides .append()\n\n\nassert flatten([]) == []\nassert flatten([[1, 2, 3], [4, 5, 6]]) == [1, 2, 3, 4, 5, 6]\nassert flatten([[1, 2, 3], [4]]) == [1, 2, 3, 4]",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-solution",
     "href": "slides-11-01.html#write-a-function-solution",
     "title": "more on for loops (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef flatten(numbers):\n  new_list = []\n  for i in range(len(numbers)):\n    for j in range(len(numbers[i])):\n      new_list.append(numbers[i][j])\n  return new_list\n\ndef main():\n  assert flatten([]) == []\n  assert flatten([[1, 2, 3], [4, 5, 6]]) == [1, 2, 3, 4, 5, 6]\n  assert flatten([[1, 2, 3], [4]]) == [1, 2, 3, 4]\n\nmain()"
+    "text": "Write a function – solution\n\ndef flatten(numbers):\n  new_list = []\n  for i in range(len(numbers)):\n    for j in range(len(numbers[i])):\n      new_list.append(numbers[i][j])\n  return new_list\n\ndef main():\n  assert flatten([]) == []\n  assert flatten([[1, 2, 3], [4, 5, 6]]) == [1, 2, 3, 4, 5, 6]\n  assert flatten([[1, 2, 3], [4]]) == [1, 2, 3, 4]\n\nmain()",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-1",
     "href": "slides-11-01.html#write-a-function-1",
     "title": "more on for loops (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is get_highest_average\nIt takes an argument, lists, which is a 2D list of numbers (floats or integers)\nIt calculates the mean of each sublist, and returns the highest average\n\n\nassert get_highest_average([[1, 1, 1], [2, 2]]) == 2"
+    "text": "Write a function\n\nIts name is get_highest_average\nIt takes an argument, lists, which is a 2D list of numbers (floats or integers)\nIt calculates the mean of each sublist, and returns the highest average\n\n\nassert get_highest_average([[1, 1, 1], [2, 2]]) == 2",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-2",
     "href": "slides-11-01.html#write-a-function-2",
     "title": "more on for loops (class slides)",
     "section": "Write a function",
-    "text": "Write a function\nAn illustration:\n\n\n\n\nflowchart LR\n  A[\"[[ ],  &lt;br&gt;  [2, 3, 7], &lt;br&gt; [15, 21, 3, 24], &lt;br&gt; [6, 4] ]\"] --&gt; B(\"len([]) &gt; 0 ?\") \n  A --&gt; SS(\"len([2, 3, 7]) &gt; 0 ?\") --&gt; K[\"[2, 3, 7]\"]\n  A --&gt; SSS(\"len([15, 2, 3, 8]) &gt; 0 ?\") --&gt; S[\"[15, 2, 3, 8]\"]\n  A --&gt; SSSS(\"len([6, 4]) &gt; 0 ?\") --&gt; F[\"[6, 4]\"]\n  K --&gt;id1[calculate mean: 4]\n  S --&gt; id2[calculate mean: 7]\n  F --&gt; id3[calculate mean: 5]\n  id1 --&gt; E[\"[4, 7, 5]\"]\n  id2 --&gt; E\n  id3 --&gt; E\n  \n  L(\"len([4, 7, 5]) &gt; 0 ?\") --&gt; id4[calculate highest mean: 7]\n  \n\n  style id1 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id2 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id3 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id4 fill:#feffad,stroke:#333,stroke-width:2px"
+    "text": "Write a function\nAn illustration:\n\n\n\n\n\nflowchart LR\n  A[\"[[ ],  &lt;br&gt;  [2, 3, 7], &lt;br&gt; [15, 21, 3, 24], &lt;br&gt; [6, 4] ]\"] --&gt; B(\"len([]) &gt; 0 ?\") \n  A --&gt; SS(\"len([2, 3, 7]) &gt; 0 ?\") --&gt; K[\"[2, 3, 7]\"]\n  A --&gt; SSS(\"len([15, 2, 3, 8]) &gt; 0 ?\") --&gt; S[\"[15, 2, 3, 8]\"]\n  A --&gt; SSSS(\"len([6, 4]) &gt; 0 ?\") --&gt; F[\"[6, 4]\"]\n  K --&gt;id1[calculate mean: 4]\n  S --&gt; id2[calculate mean: 7]\n  F --&gt; id3[calculate mean: 5]\n  id1 --&gt; E[\"[4, 7, 5]\"]\n  id2 --&gt; E\n  id3 --&gt; E\n  \n  L(\"len([4, 7, 5]) &gt; 0 ?\") --&gt; id4[calculate highest mean: 7]\n  \n\n  style id1 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id2 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id3 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id4 fill:#feffad,stroke:#333,stroke-width:2px",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-solution-1",
     "href": "slides-11-01.html#write-a-function-solution-1",
     "title": "more on for loops (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef get_highest_average(numbers):\n  means = []\n  for i in range(len(numbers)):\n    if len(numbers[i]) &gt; 0:\n      total_sublist = 0\n      for j in range(len(numbers[i])):\n        total_sublist += numbers[i][j]\n      mean_sublist = total_sublist / len(numbers[i])\n      means.append(mean_sublist)\n  \n  if len(means) &gt; 0:\n    highest_mean = means[0]\n    for i in range(len(means)):\n      if means[i] &gt; highest_mean:\n        highest_mean = means[i]\n        \n    return highest_mean\n\ndef main():\n  assert get_highest_average([[1, 1, 1], [2, 2]]) == 2\n  assert get_highest_average([[1, 1, 1], []]) == 1\n  assert get_highest_average([[], []]) == None\n  assert get_highest_average([]) == None\n  \n  weeks = [ [100, 100, 105, 105, 102, 102, 100],\n            [70, 71, 75, 72, 81, 80, 74],\n            [78, 72, 74, 71, 70, 70, 70],\n            [30, 32, 40, 38, 31, 32, 30] ]\n  average = get_highest_average(weeks)\n  assert average == 102\n  \nmain()"
+    "text": "Write a function – solution\n\ndef get_highest_average(numbers):\n  means = []\n  for i in range(len(numbers)):\n    if len(numbers[i]) &gt; 0:\n      total_sublist = 0\n      for j in range(len(numbers[i])):\n        total_sublist += numbers[i][j]\n      mean_sublist = total_sublist / len(numbers[i])\n      means.append(mean_sublist)\n  \n  if len(means) &gt; 0:\n    highest_mean = means[0]\n    for i in range(len(means)):\n      if means[i] &gt; highest_mean:\n        highest_mean = means[i]\n        \n    return highest_mean\n\ndef main():\n  assert get_highest_average([[1, 1, 1], [2, 2]]) == 2\n  assert get_highest_average([[1, 1, 1], []]) == 1\n  assert get_highest_average([[], []]) == None\n  assert get_highest_average([]) == None\n  \n  weeks = [ [100, 100, 105, 105, 102, 102, 100],\n            [70, 71, 75, 72, 81, 80, 74],\n            [78, 72, 74, 71, 70, 70, 70],\n            [30, 32, 40, 38, 31, 32, 30] ]\n  average = get_highest_average(weeks)\n  assert average == 102\n  \nmain()",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "more on for loops (class slides)"
+    ]
   },
   {
     "objectID": "project-6.html",
@@ -3173,133 +3213,209 @@
     "href": "slides-11-02.html#d-lists",
     "title": "nested for loops (class slides)",
     "section": "2D lists",
-    "text": "2D lists\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n\nHow to retrieve first name \"Ana\"?\nHow to retrieve first name \"Peter\"?\nHow to retrieve integer 23?"
+    "text": "2D lists\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n\nHow to retrieve first name \"Ana\"?\nHow to retrieve first name \"Peter\"?\nHow to retrieve integer 23?",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#d-lists-1",
     "href": "slides-11-02.html#d-lists-1",
     "title": "nested for loops (class slides)",
     "section": "2D lists",
-    "text": "2D lists\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n\nHow to retrieve first name \"Ana\"?\n\npeople[0][0]\n\n'Ana'\n\n\nHow to retrieve first name \"Peter\"?\n\npeople[1][0]\n\n'Peter'\n\n\nHow to retrieve integer 23?\n\npeople[1][1]\n\n23"
+    "text": "2D lists\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n\nHow to retrieve first name \"Ana\"?\n\npeople[0][0]\n\n'Ana'\n\n\nHow to retrieve first name \"Peter\"?\n\npeople[1][0]\n\n'Peter'\n\n\nHow to retrieve integer 23?\n\npeople[1][1]\n\n23",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#nested-for-loops",
     "href": "slides-11-02.html#nested-for-loops",
     "title": "nested for loops (class slides)",
     "section": "Nested for loops",
-    "text": "Nested for loops\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n          \nfor i in range(len(people)):\n  for j in range(len(people[i])):\n    print(people[i][j])\n\nAna\n34\nB\nPeter\n23\nA"
+    "text": "Nested for loops\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n          \nfor i in range(len(people)):\n  for j in range(len(people[i])):\n    print(people[i][j])\n\nAna\n34\nB\nPeter\n23\nA",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function",
     "href": "slides-11-02.html#write-a-function",
     "title": "nested for loops (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nFunction name is nested_max\nIt takes a 2D list of numbers as argument\nIt iterates over every item in each sublist to find the highest number\nIt returns the highest number in all lists\n\nTest cases\n\nassert nested_max([[], []]) == None\nassert nested_max([[1, 2, 3, 2, 1],\n                   [2, 3, 2, 1, 5],\n                   [0, 1]]) == 5"
+    "text": "Write a function\n\nFunction name is nested_max\nIt takes a 2D list of numbers as argument\nIt iterates over every item in each sublist to find the highest number\nIt returns the highest number in all lists\n\nTest cases\n\nassert nested_max([[], []]) == None\nassert nested_max([[1, 2, 3, 2, 1],\n                   [2, 3, 2, 1, 5],\n                   [0, 1]]) == 5",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-solution-1",
     "href": "slides-11-02.html#write-a-function-solution-1",
     "title": "nested for loops (class slides)",
     "section": "Write a function – solution 1",
-    "text": "Write a function – solution 1\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if max == None or lists[i][j] &gt; max:\n        max = lists[i][j]\n  return max\n\ndef main():\n  assert nested_max([[], []]) == None\n  assert nested_max([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 5\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests"
+    "text": "Write a function – solution 1\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if max == None or lists[i][j] &gt; max:\n        max = lists[i][j]\n  return max\n\ndef main():\n  assert nested_max([[], []]) == None\n  assert nested_max([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 5\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-solution-2",
     "href": "slides-11-02.html#write-a-function-solution-2",
     "title": "nested for loops (class slides)",
     "section": "Write a function – solution 2",
-    "text": "Write a function – solution 2\n\ndef max_list(numbers):\n  max = None\n  for i in range(len(numbers)):\n    if max == None or numbers[i] &gt; max:\n      max = numbers[i]\n  return max\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    max_of_sublist = max_list(lists[i])\n    if max == None or  max_of_sublist&gt; max:\n      max = max_of_sublist\n  return max\n\ndef main():\n  assert nested_max([[], []]) == None\n  assert nested_max([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 5\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests"
+    "text": "Write a function – solution 2\n\ndef max_list(numbers):\n  max = None\n  for i in range(len(numbers)):\n    if max == None or numbers[i] &gt; max:\n      max = numbers[i]\n  return max\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    max_of_sublist = max_list(lists[i])\n    if max == None or  max_of_sublist&gt; max:\n      max = max_of_sublist\n  return max\n\ndef main():\n  assert nested_max([[], []]) == None\n  assert nested_max([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 5\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-1",
     "href": "slides-11-02.html#write-a-function-1",
     "title": "nested for loops (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nFunction name is nested_min\nIt takes a 2D list of numbers as argument\nIt iterates over every item in each sublist to find the lowest number\nIt returns the lowest number in all lists\n\nTest cases\n\nassert nested_min([[], []]) == None\nassert nested_min([[1, 2, 3, 2, 1],\n                   [2, 3, 2, 1, 5],\n                   [0, 1]]) == 0"
+    "text": "Write a function\n\nFunction name is nested_min\nIt takes a 2D list of numbers as argument\nIt iterates over every item in each sublist to find the lowest number\nIt returns the lowest number in all lists\n\nTest cases\n\nassert nested_min([[], []]) == None\nassert nested_min([[1, 2, 3, 2, 1],\n                   [2, 3, 2, 1, 5],\n                   [0, 1]]) == 0",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-solution",
     "href": "slides-11-02.html#write-a-function-solution",
     "title": "nested for loops (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef nested_min(lists):\n  min = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if min == None or lists[i][j] &lt; min:\n        min = lists[i][j]\n  return min\n\ndef main():\n  assert nested_min([[], []]) == None\n  assert nested_min([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 0\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests"
+    "text": "Write a function – solution\n\ndef nested_min(lists):\n  min = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if min == None or lists[i][j] &lt; min:\n        min = lists[i][j]\n  return min\n\ndef main():\n  assert nested_min([[], []]) == None\n  assert nested_min([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 0\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#mutate-nested-lists",
     "href": "slides-11-02.html#mutate-nested-lists",
     "title": "nested for loops (class slides)",
     "section": "Mutate nested lists",
-    "text": "Mutate nested lists\nIn addition to retrieving a value from nested lists, we can also mutate a value in a sublist.\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\npeople\n\n[['Ana', 34, 'B'], ['Peter', 23, 'A']]\n\n\n\npeople[0][1] = 24\npeople\n\n[['Ana', 24, 'B'], ['Peter', 23, 'A']]"
+    "text": "Mutate nested lists\nIn addition to retrieving a value from nested lists, we can also mutate a value in a sublist.\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\npeople\n\n[['Ana', 34, 'B'], ['Peter', 23, 'A']]\n\n\n\npeople[0][1] = 24\npeople\n\n[['Ana', 24, 'B'], ['Peter', 23, 'A']]",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-2",
     "href": "slides-11-02.html#write-a-function-2",
     "title": "nested for loops (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nFunction name is double_nested\nIt takes a 2D list of numbers as argument\nIt mutates the sublist items by multiplying each number in each sublist by 2\nIt returns the argument list\n\nTest cases\n\nassert double_nested([[], []]) == [[], []]\nassert double_nested([[1, 2, 3, 2, 1],\n                     [0, 1]]) == [[2, 4, 6, 4, 2],\n                                  [0, 2]]"
+    "text": "Write a function\n\nFunction name is double_nested\nIt takes a 2D list of numbers as argument\nIt mutates the sublist items by multiplying each number in each sublist by 2\nIt returns the argument list\n\nTest cases\n\nassert double_nested([[], []]) == [[], []]\nassert double_nested([[1, 2, 3, 2, 1],\n                     [0, 1]]) == [[2, 4, 6, 4, 2],\n                                  [0, 2]]",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-solution-3",
     "href": "slides-11-02.html#write-a-function-solution-3",
     "title": "nested for loops (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef double_nested(lists):\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      lists[i][j] *= 2\n  return lists\n\ndef main():\n  assert double_nested([[], []]) == [[], []]\n  assert double_nested([[1, 2, 3, 2, 1],\n                        [0, 1]]) == [[2, 4, 6, 4, 2],\n                                     [0, 2]]\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests"
+    "text": "Write a function – solution\n\ndef double_nested(lists):\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      lists[i][j] *= 2\n  return lists\n\ndef main():\n  assert double_nested([[], []]) == [[], []]\n  assert double_nested([[1, 2, 3, 2, 1],\n                        [0, 1]]) == [[2, 4, 6, 4, 2],\n                                     [0, 2]]\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#quiz-08",
     "href": "slides-11-02.html#quiz-08",
     "title": "nested for loops (class slides)",
     "section": "Quiz 08",
-    "text": "Quiz 08\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no need for test cases\n\nAllowed built-in functions: round(), input(), float(), str(), int(), len()"
+    "text": "Quiz 08\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no need for test cases\n\nAllowed built-in functions: round(), input(), float(), str(), int(), len()",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-3",
     "href": "slides-11-02.html#write-a-function-3",
     "title": "nested for loops (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nFunction name is len_strings_nested\nIt takes a 2D list of strings as argument\nIt mutates the sublist items by replacing each string with its length\nIt returns the argument list\n\nTest cases:\n\nassert len_strings_nested([[\"desserts\", \"raw\", \"live\"],\n                            [\"smart\", \"knits\"]]) == [[8, 3, 4], [5, 5]]"
+    "text": "Write a function\n\nFunction name is len_strings_nested\nIt takes a 2D list of strings as argument\nIt mutates the sublist items by replacing each string with its length\nIt returns the argument list\n\nTest cases:\n\nassert len_strings_nested([[\"desserts\", \"raw\", \"live\"],\n                            [\"smart\", \"knits\"]]) == [[8, 3, 4], [5, 5]]",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-solution-4",
     "href": "slides-11-02.html#write-a-function-solution-4",
     "title": "nested for loops (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef len_strings_nested(strings):\n  for i in range(len(strings)):\n    for j in range(len(strings[i])):\n      strings[i][j] = len(strings[i][j])\n  return strings\n\ndef main():\n  original_list = [[\"desserts\", \"raw\", \"live\"],\n                               [\"smart\", \"knits\"]]\n  assert len_strings_nested(original_list) == [[8, 3, 4], [5, 5]]\n  print(original_list)\n  \nmain()\n\n[[8, 3, 4], [5, 5]]"
+    "text": "Write a function – solution\n\ndef len_strings_nested(strings):\n  for i in range(len(strings)):\n    for j in range(len(strings[i])):\n      strings[i][j] = len(strings[i][j])\n  return strings\n\ndef main():\n  original_list = [[\"desserts\", \"raw\", \"live\"],\n                               [\"smart\", \"knits\"]]\n  assert len_strings_nested(original_list) == [[8, 3, 4], [5, 5]]\n  print(original_list)\n  \nmain()\n\n[[8, 3, 4], [5, 5]]",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-4",
     "href": "slides-11-02.html#write-a-function-4",
     "title": "nested for loops (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nFunction name is reverse_strings_nested\nIt takes a 2D list of strings as argument\nIt mutates the sublist items by reversing each string (you can use string[::-1] to reverse it)\nIt returns the argument list\n\nTest cases:\n\nassert reverse_strings_nested([[\"desserts\", \"raw\", \"live\"],\n                               [\"smart\", \"knits\"]]) == [[\"stressed\", \"war\", \"evil\"],\n                                                        [\"trams\", \"stink\"]]"
+    "text": "Write a function\n\nFunction name is reverse_strings_nested\nIt takes a 2D list of strings as argument\nIt mutates the sublist items by reversing each string (you can use string[::-1] to reverse it)\nIt returns the argument list\n\nTest cases:\n\nassert reverse_strings_nested([[\"desserts\", \"raw\", \"live\"],\n                               [\"smart\", \"knits\"]]) == [[\"stressed\", \"war\", \"evil\"],\n                                                        [\"trams\", \"stink\"]]",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#write-a-function-solution-5",
     "href": "slides-11-02.html#write-a-function-solution-5",
     "title": "nested for loops (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef reverse_strings_nested(strings):\n  for i in range(len(strings)):\n    for j in range(len(strings[i])):\n      strings[i][j] = strings[i][j][::-1]\n  return strings\n\ndef main():\n  original_strings = [[\"desserts\", \"raw\", \"live\"],\n                      [\"smart\", \"knits\"]]\n  reverse_strings_nested(original_strings)   \n  assert  original_strings == [[\"stressed\", \"war\", \"evil\"],\n                               [\"trams\", \"stink\"]]\n  \n  print(original_strings)\n  print(\"Passed test\")\n  \nmain()\n\n[['stressed', 'war', 'evil'], ['trams', 'stink']]\nPassed test"
+    "text": "Write a function – solution\n\ndef reverse_strings_nested(strings):\n  for i in range(len(strings)):\n    for j in range(len(strings[i])):\n      strings[i][j] = strings[i][j][::-1]\n  return strings\n\ndef main():\n  original_strings = [[\"desserts\", \"raw\", \"live\"],\n                      [\"smart\", \"knits\"]]\n  reverse_strings_nested(original_strings)   \n  assert  original_strings == [[\"stressed\", \"war\", \"evil\"],\n                               [\"trams\", \"stink\"]]\n  \n  print(original_strings)\n  print(\"Passed test\")\n  \nmain()\n\n[['stressed', 'war', 'evil'], ['trams', 'stink']]\nPassed test",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#extra-activity-loop-table",
     "href": "slides-11-02.html#extra-activity-loop-table",
     "title": "nested for loops (class slides)",
     "section": "Extra Activity – Loop Table",
-    "text": "Extra Activity – Loop Table\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if max == None or lists[i][j] &gt; max:\n        max = lists[i][j]\n  return max\n\nmax_nested([[], [], [2, 1], [0, 5, 2], [3]])\n\nDraw a loop table with:\n\nvalue of max before loop, and in each iteration of the nested loops\nvalues of i, j, and lists[i][j] for each nested loop iteration"
+    "text": "Extra Activity – Loop Table\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if max == None or lists[i][j] &gt; max:\n        max = lists[i][j]\n  return max\n\nmax_nested([[], [], [2, 1], [0, 5, 2], [3]])\n\nDraw a loop table with:\n\nvalue of max before loop, and in each iteration of the nested loops\nvalues of i, j, and lists[i][j] for each nested loop iteration",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#loop-table-solution-part-1",
     "href": "slides-11-02.html#loop-table-solution-part-1",
     "title": "nested for loops (class slides)",
     "section": "Loop table – solution part 1",
-    "text": "Loop table – solution part 1\n\n\n\n\n\ni\nj\nlen(lists[i])\nlists[i][j]\nmax\n\n\n0\n-\n0\n-\nNone\n\n\n1\n-\n0\n-\nNone\n\n\n2\n0\n2\n2\n2\n\n\n2\n1\n2\n1\n2\n\n\n3\n0\n3\n0\n2\n\n\n3\n1\n3\n5\n5\n\n\n3\n2\n3\n2\n5"
+    "text": "Loop table – solution part 1\n\n\n\n\n\n\ni\nj\nlen(lists[i])\nlists[i][j]\nmax\n\n\n0\n-\n0\n-\nNone\n\n\n1\n-\n0\n-\nNone\n\n\n2\n0\n2\n2\n2\n\n\n2\n1\n2\n1\n2\n\n\n3\n0\n3\n0\n2\n\n\n3\n1\n3\n5\n5\n\n\n3\n2\n3\n2\n5",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-11-02.html#loop-table-solution-part-2",
     "href": "slides-11-02.html#loop-table-solution-part-2",
     "title": "nested for loops (class slides)",
     "section": "Loop table – solution part 2",
-    "text": "Loop table – solution part 2\n\n\n\n\n\ni\nj\nlen(lists[i])\nlists[i][j]\nmax\n\n\n4\n0\n1\n3\n5"
+    "text": "Loop table – solution part 2\n\n\n\n\n\n\ni\nj\nlen(lists[i])\nlists[i][j]\nmax\n\n\n4\n0\n1\n3\n5",
+    "crumbs": [
+      "Module 11 - Data Structures (2D lists)",
+      "nested for loops (class slides)"
+    ]
   },
   {
     "objectID": "slides-03-01.html#function-comments",
