@@ -226,7 +226,7 @@ Name your file `set_names.py`
 
 1. Its name is `has_duplicates`
 1. It takes a variable number of arguments: `*values`
-1. It returns `True` if there are repeated elements in `*values`, `False` otherwise
+1. It returns `True` if there are repeated elements in `values`, `False` otherwise
 
 ```{python}
 #| eval: false
@@ -235,8 +235,28 @@ assert has_duplicates(3, 2, 1, 2, 3) == True
 assert has_duplicates(3, 20, 1, 2, 13) == False
 ```
 
-
 ## Write a function -- solution
+
+```{python}
+#| eval: true
+#| echo: true
+def has_duplicates(*values):
+  unique_values = set()
+  for v in values:
+    if v not in unique_values:
+      unique_values.add(v)
+    else:
+      return True
+  return False
+
+def main():
+  assert has_duplicates(3, 2, 1, 2, 3) == True
+  assert has_duplicates(3, 20, 1, 2, 13) == False
+  
+main()
+```
+
+## Write a function -- solution 2
 
 ```{python}
 #| eval: true
