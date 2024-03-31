@@ -182,6 +182,10 @@ numbers_set.discard(1)
 numbers_set # evaluate this line
 ```
 
+# Submit attendance
+
+Go to gradescope and evaluate the code for today's attendance question
+
 ## Write a function
 
 1.  Its name is `count_names`
@@ -214,12 +218,6 @@ def main():
   
 main()
 ```
-
-# Submit code for attendance
-
-Submit your `count_names` functions to Gradescope for attendance.
-
-Name your file `set_names.py`
 
 
 ## Write a function
