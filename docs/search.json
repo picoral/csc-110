@@ -7403,7 +7403,7 @@
     "href": "slides-12-02.html#sets",
     "title": "intro to sets (class slides)",
     "section": "Sets",
-    "text": "Sets\n\nA set is (another) data structure\nHelpful ways of thinking about it\n\nA dictionary without the values\nA “bag” of elements",
+    "text": "Sets\n\nA set is (another) data structure\nHelpful ways of thinking about it\n\nA “bag” of elements",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7414,7 +7414,7 @@
     "href": "slides-12-02.html#sets-1",
     "title": "intro to sets (class slides)",
     "section": "Sets",
-    "text": "Sets\n\nDo not store items in the order you created them\nDo not allow repeated items to be stored\nCannot use square brackets to retrieve an item\nUse set() to initiate an empty set\nUse for x in set to iterate over the elements in a set",
+    "text": "Sets\n\nDo not store items in the order you created them\nDo not allow repeated items to be stored\nCannot use square brackets to retrieve an item\nUse set() to initiate an empty set\nUse len() to get number of items\nUse for x in set to iterate over the elements in a set",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"

@@ -48,8 +48,6 @@ df-print: kable
 
 -   Helpful ways of thinking about it
 
-    -   A dictionary without the values
-
     -   A "bag" of elements
 
 ## Sets
@@ -61,6 +59,8 @@ df-print: kable
 -   **Cannot** use square brackets to retrieve an item
 
 -   Use `set()` to initiate an empty set
+
+-   Use `len()` to get number of items
 
 -   Use `for x in set` to iterate over the elements in a set
 
