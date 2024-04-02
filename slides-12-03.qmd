@@ -7,6 +7,11 @@ df-print: kable
 
 # CSc 110 - Sets
 
+## Announcements
+
+* If you submitted your solution to short project 09 before today, check gradescope -- there was a special character that was removed for the test file
+* Midterm 3 on April 24 -- up to module 14
+
 ## Set methods
 
 -   `.add(value)` adds an element to the set
