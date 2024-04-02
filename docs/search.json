@@ -6392,7 +6392,7 @@
     "href": "project-9.html#writing-the-information-file",
     "title": "Programming Project 9",
     "section": "(6) Writing the information file",
-    "text": "(6) Writing the information file\nYou should write a text file with three sections on the information you compiled. Here’s an example of what the file should look like for the contents of the file in section (1).\n\nTotal number of unique words: 8\nMost frequent words by size:\n* Small: one\n* Medium: knife.\n* Large: glasses.\n\nLength:\n* Small: 3 (37.5%)\n* Medium: 4 (50.0%)\n* Large: 1 (12.5%)\n###################%%%%%%%%%%%%%%%%%%%%%%%%%******\n\nCapitalization:\n* Capitalized: 0 (0.0%)\n* Non-capitalized: 8 (100.0%)\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\nPunctuation:\n* Punctuated: 5 (62.5%)\n* Non-punctuated: 3 (37.5%)\n###############################%%%%%%%%%%%%%%%%%%%\n\nTo calculate how many characters in each bar use the formula:\n\n(category_item_count/total_item_count) * 50",
+    "text": "(6) Writing the information file\nYou should write a text file with three sections on the information you compiled. Here’s an example of what the file should look like for the contents of the file in section (1).\nYour output file name should be the original file name plus \"_result\" – for example, if the file name is \"foo.txt\" the output file you create should be names \"foo_result.txt\"\n\nTotal number of unique words: 8\nMost frequent words by size:\n* Small: one\n* Medium: knife.\n* Large: glasses.\n\nLength:\n* Small: 3 (37.5%)\n* Medium: 4 (50.0%)\n* Large: 1 (12.5%)\n###################%%%%%%%%%%%%%%%%%%%%%%%%%******\n\nCapitalization:\n* Capitalized: 0 (0.0%)\n* Non-capitalized: 8 (100.0%)\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\nPunctuation:\n* Punctuated: 5 (62.5%)\n* Non-punctuated: 3 (37.5%)\n###############################%%%%%%%%%%%%%%%%%%%\n\nTo calculate how many characters in each bar use the formula:\n\n(category_item_count/total_item_count) * 50",
     "crumbs": [
       "Programming Projects",
       "Programming Project 9"
@@ -7358,8 +7358,8 @@
     "objectID": "slides-12-02.html#data-structures-in-python",
     "href": "slides-12-02.html#data-structures-in-python",
     "title": "intro to sets (class slides)",
-    "section": "Data Structures in Python",
-    "text": "Data Structures in Python\n\nlists (mutable)\ndictionaries (mutable)\ntuples (immutable)\nsets (mutable)",
+    "section": "",
+    "text": "lists (mutable)\ndictionaries (mutable)\ntuples (immutable)\nsets (mutable)",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7369,8 +7369,8 @@
     "objectID": "slides-12-02.html#lists",
     "href": "slides-12-02.html#lists",
     "title": "intro to sets (class slides)",
-    "section": "Lists",
-    "text": "Lists\n\nstore:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse square brackets ([]) syntax for creating a list\nallow indexing (integers starting at 0) with square brackets ([]) as well\nare mutable",
+    "section": "",
+    "text": "store:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse square brackets ([]) syntax for creating a list\nallow indexing (integers starting at 0) with square brackets ([]) as well\nare mutable",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7380,8 +7380,8 @@
     "objectID": "slides-12-02.html#tuples",
     "href": "slides-12-02.html#tuples",
     "title": "intro to sets (class slides)",
-    "section": "Tuples",
-    "text": "Tuples\n\nstore:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse parentheses (()) syntax for creating a tuple\nallow indexing (integers starting at 0) with square brackets ([])\nare immutable",
+    "section": "",
+    "text": "store:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse parentheses (()) syntax for creating a tuple\nallow indexing (integers starting at 0) with square brackets ([])\nare immutable",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7391,8 +7391,8 @@
     "objectID": "slides-12-02.html#dictionaries",
     "href": "slides-12-02.html#dictionaries",
     "title": "intro to sets (class slides)",
-    "section": "Dictionaries",
-    "text": "Dictionaries\n\nstore pairs of items key: value\nkeys have to be unique (no repeated keys allowed)\nuse curly brackets ({}) with key and value separated by colon (:)\nallow value retrieval through key with square brackets ([])\nare mutable",
+    "section": "",
+    "text": "store pairs of items key: value\nkeys have to be unique (no repeated keys allowed)\nuse curly brackets ({}) with key and value separated by colon (:)\nallow value retrieval through key with square brackets ([])\nare mutable",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7402,8 +7402,8 @@
     "objectID": "slides-12-02.html#sets",
     "href": "slides-12-02.html#sets",
     "title": "intro to sets (class slides)",
-    "section": "Sets",
-    "text": "Sets\n\nA set is (another) data structure\nHelpful ways of thinking about it\n\nA “bag” of elements",
+    "section": "",
+    "text": "A set is (another) data structure\nHelpful ways of thinking about it\n\nA “bag” of elements",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7413,8 +7413,8 @@
     "objectID": "slides-12-02.html#sets-1",
     "href": "slides-12-02.html#sets-1",
     "title": "intro to sets (class slides)",
-    "section": "Sets",
-    "text": "Sets\n\nDo not store items in the order you created them\nDo not allow repeated items to be stored\nCannot use square brackets to retrieve an item\nUse set() to initiate an empty set\nUse len() to get number of items\nUse for x in set to iterate over the elements in a set",
+    "section": "",
+    "text": "Do not store items in the order you created them\nDo not allow repeated items to be stored\nCannot use square brackets to retrieve an item\nUse set() to initiate an empty set\nUse len() to get number of items\nUse for x in set to iterate over the elements in a set",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7424,8 +7424,8 @@
     "objectID": "slides-12-02.html#set-methods",
     "href": "slides-12-02.html#set-methods",
     "title": "intro to sets (class slides)",
-    "section": "Set methods",
-    "text": "Set methods\n\n.add(value) adds an element to the set\n.discard(value) discards the specified value\n\nYou can also use the operator in and the function len() with sets\nUse the function set() to convert a list to a set, and list() to convert a set into a list",
+    "section": "",
+    "text": ".add(value) adds an element to the set\n.discard(value) discards the specified value\n\nYou can also use the operator in and the function len() with sets\nUse the function set() to convert a list to a set, and list() to convert a set into a list",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7435,8 +7435,8 @@
     "objectID": "slides-12-02.html#evaluate-the-code",
     "href": "slides-12-02.html#evaluate-the-code",
     "title": "intro to sets (class slides)",
-    "section": "Evaluate the code",
-    "text": "Evaluate the code\n\nnumbers = {5, 7, 100, 5, 3, 5, 9, 8, 20, 5}\nnumbers  # evaluate what this set holds at this point\n\nnumbers.add(30)\nnumbers  # evaluate what this set holds at this point\n\nnumbers.discard(10)\nnumbers  # evaluate what this set holds at this point",
+    "section": "",
+    "text": "numbers = {5, 7, 100, 5, 3, 5, 9, 8, 20, 5}\nnumbers  # evaluate what this set holds at this point\n\nnumbers.add(30)\nnumbers  # evaluate what this set holds at this point\n\nnumbers.discard(10)\nnumbers  # evaluate what this set holds at this point",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7446,8 +7446,8 @@
     "objectID": "slides-12-02.html#evaluate-the-code-1",
     "href": "slides-12-02.html#evaluate-the-code-1",
     "title": "intro to sets (class slides)",
-    "section": "Evaluate the code",
-    "text": "Evaluate the code\n\nnumbers = {5, 7, 100, 5, 3, 5, 9, 8, 20, 5}\nnumbers\n\n{3, 5, 7, 8, 9, 20, 100}\n\n\n\nnumbers.add(30)\nnumbers\n\n{3, 5, 7, 8, 9, 20, 30, 100}\n\n\n\nnumbers.discard(10)\nnumbers\n\n{3, 5, 7, 8, 9, 20, 30, 100}",
+    "section": "",
+    "text": "numbers = {5, 7, 100, 5, 3, 5, 9, 8, 20, 5}\nnumbers\n\n{3, 5, 7, 8, 9, 20, 100}\n\n\n\nnumbers.add(30)\nnumbers\n\n{3, 5, 7, 8, 9, 20, 30, 100}\n\n\n\nnumbers.discard(10)\nnumbers\n\n{3, 5, 7, 8, 9, 20, 30, 100}",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7457,8 +7457,8 @@
     "objectID": "slides-12-02.html#evaluate-the-code-2",
     "href": "slides-12-02.html#evaluate-the-code-2",
     "title": "intro to sets (class slides)",
-    "section": "Evaluate the code",
-    "text": "Evaluate the code\n\nnumbers_list = [2, -1, -2, 1, 3, 4, 1, 2]\nnumbers_list # evaluate this line\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line",
+    "section": "",
+    "text": "numbers_list = [2, -1, -2, 1, 3, 4, 1, 2]\nnumbers_list # evaluate this line\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -7468,8 +7468,8 @@
     "objectID": "slides-12-02.html#evaluate-the-code-3",
     "href": "slides-12-02.html#evaluate-the-code-3",
     "title": "intro to sets (class slides)",
-    "section": "Evaluate the code",
-    "text": "Evaluate the code\n\nnumbers_list = [2, -1, -2, 1, 3, 4, 1, 2]\nnumbers_list # evaluate this line\n\n[2, -1, -2, 1, 3, 4, 1, 2]\n\n\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\n{-2, -1, 1, 2, 3, 4}\n\n\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\n{-2, -1, 1, 2, 3, 4}\n\n\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\n{-2, -1, 1, 2, 3, 4, 5}\n\n\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line\n\n{-2, -1, 2, 3, 4, 5}",
+    "section": "",
+    "text": "numbers_list = [2, -1, -2, 1, 3, 4, 1, 2]\nnumbers_list # evaluate this line\n\n[2, -1, -2, 1, 3, 4, 1, 2]\n\n\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\n{-2, -1, 1, 2, 3, 4}\n\n\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\n{-2, -1, 1, 2, 3, 4}\n\n\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\n{-2, -1, 1, 2, 3, 4, 5}\n\n\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line\n\n{-2, -1, 2, 3, 4, 5}",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
@@ -8339,6 +8339,17 @@
     "title": "intro to sets (class slides)",
     "section": "Write a function – solution 2",
     "text": "Write a function – solution 2\n\ndef has_duplicates(*values):\n  values_set = set(values)\n  return len(values) &gt; len(values_set)\n\ndef main():\n  assert has_duplicates(3, 2, 1, 2, 3) == True\n  assert has_duplicates(3, 20, 1, 2, 13) == False\n  \nmain()",
+    "crumbs": [
+      "Module 12 - Data Structures (sets)",
+      "intro to sets (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-12-02.html",
+    "href": "slides-12-02.html",
+    "title": "intro to sets (class slides)",
+    "section": "",
+    "text": "lists (mutable)\ndictionaries (mutable)\ntuples (immutable)\nsets (mutable)\n\n\n\n\n\nstore:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse square brackets ([]) syntax for creating a list\nallow indexing (integers starting at 0) with square brackets ([]) as well\nare mutable\n\n\n\n\n\nstore:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse parentheses (()) syntax for creating a tuple\nallow indexing (integers starting at 0) with square brackets ([])\nare immutable\n\n\n\n\n\nstore pairs of items key: value\nkeys have to be unique (no repeated keys allowed)\nuse curly brackets ({}) with key and value separated by colon (:)\nallow value retrieval through key with square brackets ([])\nare mutable\n\n\n\n\n\nA set is (another) data structure\nHelpful ways of thinking about it\n\nA “bag” of elements\n\n\n\n\n\n\nDo not store items in the order you created them\nDo not allow repeated items to be stored\nCannot use square brackets to retrieve an item\nUse set() to initiate an empty set\nUse len() to get number of items\nUse for x in set to iterate over the elements in a set\n\n\n\n\n\n.add(value) adds an element to the set\n.discard(value) discards the specified value\n\nYou can also use the operator in and the function len() with sets\nUse the function set() to convert a list to a set, and list() to convert a set into a list\n\n\n\n\nnumbers = {5, 7, 100, 5, 3, 5, 9, 8, 20, 5}\nnumbers  # evaluate what this set holds at this point\n\nnumbers.add(30)\nnumbers  # evaluate what this set holds at this point\n\nnumbers.discard(10)\nnumbers  # evaluate what this set holds at this point\n\n\n\n\n\nnumbers = {5, 7, 100, 5, 3, 5, 9, 8, 20, 5}\nnumbers\n\n{3, 5, 7, 8, 9, 20, 100}\n\n\n\nnumbers.add(30)\nnumbers\n\n{3, 5, 7, 8, 9, 20, 30, 100}\n\n\n\nnumbers.discard(10)\nnumbers\n\n{3, 5, 7, 8, 9, 20, 30, 100}\n\n\n\n\n\n\nnumbers_list = [2, -1, -2, 1, 3, 4, 1, 2]\nnumbers_list # evaluate this line\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line\n\n\n\n\n\nnumbers_list = [2, -1, -2, 1, 3, 4, 1, 2]\nnumbers_list # evaluate this line\n\n[2, -1, -2, 1, 3, 4, 1, 2]\n\n\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\n{-2, -1, 1, 2, 3, 4}\n\n\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\n{-2, -1, 1, 2, 3, 4}\n\n\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\n{-2, -1, 1, 2, 3, 4, 5}\n\n\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line\n\n{-2, -1, 2, 3, 4, 5}",
     "crumbs": [
       "Module 12 - Data Structures (sets)",
       "intro to sets (class slides)"
