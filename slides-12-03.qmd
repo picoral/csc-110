@@ -10,7 +10,9 @@ df-print: kable
 ## Announcements
 
 * If you submitted your solution to short project 09 before today, check gradescope -- there was a special character that was removed for the test file
+* Go to lab to work on short projects -- I will instruct TAs not to help students with short projects during office hours
 * Midterm 3 on April 24 -- up to module 14
+* Final exam on May 3, 6pm to 8pm, in ENR2 120N
 
 ## Set methods
 
@@ -115,12 +117,6 @@ if __name__ == "__main__":
   assert common_values({1, 2, 3}, {30, 40, 50}) == False
   print("Passed tests.")
 ```
-
-# Submit code for attendance
-
-Submit your `common_values` function to Gradescope for attendance.
-
-Name your file `common_values.py`
 
 ## Write a function
 
