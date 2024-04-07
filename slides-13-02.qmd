@@ -59,6 +59,10 @@ main()
     
 ```
 
+# Attendance
+
+Submit your solution as `sales_tax.py` for attendance on gradescope
+
 ## Write a function
 
 1.  Its name is `sales_tax`
