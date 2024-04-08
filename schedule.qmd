@@ -279,6 +279,7 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 -   [mutating lists](slides-13-01.html)
 -   [mutating dictionaries](slides-13-02.html)
+-   [more on lists](slides-13-03.html)
 
 ## Assignments
 
@@ -292,7 +293,7 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Class slides
 
--   [more on lists](slides-14-01.html)
+-   [combining data structures](slides-14-01.html)
 -   [sorting](slides-14-02.html)
 
 ## Assignments
