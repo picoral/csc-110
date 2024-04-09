@@ -8345,5 +8345,27 @@
       "Module 1 - Basics",
       "Module 1 Programming Problems"
     ]
+  },
+  {
+    "objectID": "slides-13-02.html#announcements",
+    "href": "slides-13-02.html#announcements",
+    "title": "mutating dictionaries (class slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nFill out SCS at (scsonline.ucatt.arizona.edu)[https://scsonline.ucatt.arizona.edu/index.php]\nIf 80% of students complete the survey, I’ll drop a third quiz grade\nMidterm 3 on April 24, Final exam on May 3",
+    "crumbs": [
+      "Module 13 - Control Flow with different Data Structures",
+      "mutating dictionaries (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-13-02.html#quiz-11",
+    "href": "slides-13-02.html#quiz-11",
+    "title": "mutating dictionaries (class slides)",
+    "section": "Quiz 11",
+    "text": "Quiz 11\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no test cases\n\nBuilt-in functions you can use: round(), input(), float(), str(), int(), len(), range(), set(), list() — you don’t have to use all of these",
+    "crumbs": [
+      "Module 13 - Control Flow with different Data Structures",
+      "mutating dictionaries (class slides)"
+    ]
   }
 ]
