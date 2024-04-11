@@ -3246,7 +3246,7 @@
     "href": "practice-01.html",
     "title": "Practice Problems",
     "section": "",
-    "text": "I’ve created a Google colab notebook with practice exercises, and test cases. Here are the instructions to use the notebook:\n\nAccess notebook on google colab – you need to be signed in with a google account\nIf a black screen shows up, click on the “open with Google colab” at the top of the screen\nRun the first chunk of code. No need to change it, just make sure you run it by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nScroll down and follow the instructions to write different functions. Make sure you run your code by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nRun the following chunk with the testing (the one that calls the pass_or_fail function)\n\nNotebooks:\n\nPractice Problems Module 2\nPractice Problems Module 3\nPractice Problems Module 4\nPractice Problems Module 5\nPractice Problems Module 6\nPractice Problems Module 7 I\nPractice Problems Module 7 II\nExtra Practice Problems\nPractice Problems Module 7\nPractice Problems Module 8 I\nPractice Problems Module 8 II\nPractice Problems Module 9\nPractice Problems Module 10\nPractice Problems Module 11\nPractice Problems Module 11\nPractice Problems Module 12 (Quiz 11)\nPractice Problems Module 13\nPractice problems Module 13 II\nPractice Problems Module 14\n\n\nMidterm study guides\n\nMidterm 1 Study Guide\nMidterm 2 Study Guide\n\n\n\nVideo demonstration\n\n\n\nSolutions\nI highly recommend you do not look at the solutions before you try writing the practice functions yourself. Once you wrote your functions, you can compare yours with my solutions:\n\nSolutions for practice problems Module 2\nSolutions for practice problems Module 3\nSolutions for practice problems Module 4\nSolutions for practice problems Module 5\nSolutions for practice problems Module 6\nSolutions for practice problems Module 7 I\nSolutions for practice problems Module 7 II\nSolutions for practice problems\nSolutions for practice problems Module 7 III\nSolutions for practice problems Module 8 I\nSolutions for practice problems Module 8 II\nSolutions for practice problems Module 9\nSolutions for practice problems Module 10\nSolutions for practice problems Module 11\nSolutions for practice problems Module 11\n[Solutions for practice problems Module 12\nSolutions for practice problems Module 13\nSolutions for practice problems Module 13 II\nSolutions for practice problems Module 14",
+    "text": "I’ve created a Google colab notebook with practice exercises, and test cases. Here are the instructions to use the notebook:\n\nAccess notebook on google colab – you need to be signed in with a google account\nIf a black screen shows up, click on the “open with Google colab” at the top of the screen\nRun the first chunk of code. No need to change it, just make sure you run it by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nScroll down and follow the instructions to write different functions. Make sure you run your code by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nRun the following chunk with the testing (the one that calls the pass_or_fail function)\n\nNotebooks:\n\nPractice Problems Module 2\nPractice Problems Module 3\nPractice Problems Module 4\nPractice Problems Module 5\nPractice Problems Module 6\nPractice Problems Module 7 I\nPractice Problems Module 7 II\nExtra Practice Problems\nPractice Problems Module 7\nPractice Problems Module 8 I\nPractice Problems Module 8 II\nPractice Problems Module 9\nPractice Problems Module 10\nPractice Problems Module 11\nPractice Problems Module 11\nPractice Problems Module 12 (Quiz 11)\nPractice Problems Module 13\nPractice problems Module 13 II (Quiz 12)\nPractice Problems Module 14\n\n\nMidterm study guides\n\nMidterm 1 Study Guide\nMidterm 2 Study Guide\n\n\n\nVideo demonstration\n\n\n\nSolutions\nI highly recommend you do not look at the solutions before you try writing the practice functions yourself. Once you wrote your functions, you can compare yours with my solutions:\n\nSolutions for practice problems Module 2\nSolutions for practice problems Module 3\nSolutions for practice problems Module 4\nSolutions for practice problems Module 5\nSolutions for practice problems Module 6\nSolutions for practice problems Module 7 I\nSolutions for practice problems Module 7 II\nSolutions for practice problems\nSolutions for practice problems Module 7 III\nSolutions for practice problems Module 8 I\nSolutions for practice problems Module 8 II\nSolutions for practice problems Module 9\nSolutions for practice problems Module 10\nSolutions for practice problems Module 11\nSolutions for practice problems Module 11\n[Solutions for practice problems Module 12\nSolutions for practice problems Module 13\nSolutions for practice problems Module 13 II\nSolutions for practice problems Module 14",
     "crumbs": [
       "Extra Resources",
       "Practice Problems"
@@ -6108,8 +6108,8 @@
     "objectID": "slides-14-01.html#tuples-as-dictionary-keys",
     "href": "slides-14-01.html#tuples-as-dictionary-keys",
     "title": "combining data structures (class slides)",
-    "section": "Tuples as dictionary keys",
-    "text": "Tuples as dictionary keys\n\nWe can only use immutable types as dictionary keys (strings, integers, and tuples)\nValues in a dictionary can be of any type",
+    "section": "",
+    "text": "We can only use immutable types as dictionary keys (strings, integers, and tuples)\nValues in a dictionary can be of any type",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
@@ -6119,8 +6119,8 @@
     "objectID": "slides-14-01.html#tuples-as-dictionary-keys-1",
     "href": "slides-14-01.html#tuples-as-dictionary-keys-1",
     "title": "combining data structures (class slides)",
-    "section": "Tuples as dictionary keys",
-    "text": "Tuples as dictionary keys\nTuples are useful as keys since keys need to be unique (no repeated key is allowed)\n\ncourse_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n\n\nHow would you retrieve the room where CSC 144, section 1 takes place?\nHow would you retrieve all rooms for CSC 120?",
+    "section": "",
+    "text": "Tuples are useful as keys since keys need to be unique (no repeated key is allowed)\n\ncourse_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n\n\nHow would you retrieve the room where CSC 144, section 1 takes place?\nHow would you retrieve all rooms for CSC 120?",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
@@ -6130,8 +6130,8 @@
     "objectID": "slides-14-01.html#write-a-function",
     "href": "slides-14-01.html#write-a-function",
     "title": "combining data structures (class slides)",
-    "section": "Write a function",
-    "text": "Write a function\n\nIts name is retrieve_room\nIt takes three arguments: a dictionary with course information, a string for course code and number (e.g., \"CSC 110\") and a string for section (e.g., \"section 1\")\nIt returns a string with the building and room numbers (concatenated)\n\n\nprint( retrieve_room(course_schedule, \"CSC 110\", \"section 1\") ) \n# \"Gittings 129b\"",
+    "section": "",
+    "text": "Its name is retrieve_room\nIt takes three arguments: a dictionary with course information, a string for course code and number (e.g., \"CSC 110\") and a string for section (e.g., \"section 1\")\nIt returns a string with the building and room numbers (concatenated)\n\n\nprint( retrieve_room(course_schedule, \"CSC 110\", \"section 1\") ) \n# \"Gittings 129b\"",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
@@ -6141,8 +6141,8 @@
     "objectID": "slides-14-01.html#write-a-function-solution",
     "href": "slides-14-01.html#write-a-function-solution",
     "title": "combining data structures (class slides)",
-    "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef retrieve_room(course_dict, course, section):\n  c, s =  course_dict[(course, section)]\n  return c + \" \" + s\n\ndef main():\n  course_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n  print( retrieve_room(course_schedule, \n                       \"CSC 110\", \"section 1\")) # \"Gittings 129b\"\n  \nmain()\n\nGittings 129b",
+    "section": "",
+    "text": "def retrieve_room(course_dict, course, section):\n  c, s =  course_dict[(course, section)]\n  return c + \" \" + s\n\ndef main():\n  course_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n  print( retrieve_room(course_schedule, \n                       \"CSC 110\", \"section 1\")) # \"Gittings 129b\"\n  \nmain()\n\nGittings 129b",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
@@ -6152,8 +6152,8 @@
     "objectID": "slides-14-01.html#dictionaries-as-values",
     "href": "slides-14-01.html#dictionaries-as-values",
     "title": "combining data structures (class slides)",
-    "section": "Dictionaries as values",
-    "text": "Dictionaries as values\n\ncourse_schedule = { \"CSC 110\": \n                      {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                       2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 120\":\n                       {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                        2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 144\":\n                       {1: {\"building\": \"Social Sciences\", \"room\": \"100\"}}}\n                       \ncourse_schedule[\"CSC 110\"][1][\"building\"]\n\n'Gittings'\n\n\n\nHow would you retrieve the room for the section 1 of CSC 120?",
+    "section": "",
+    "text": "course_schedule = { \"CSC 110\": \n                      {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                       2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 120\":\n                       {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                        2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 144\":\n                       {1: {\"building\": \"Social Sciences\", \"room\": \"100\"}}}\n                       \ncourse_schedule[\"CSC 110\"][1][\"building\"]\n\n'Gittings'\n\n\n\nHow would you retrieve the room for the section 1 of CSC 120?",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
@@ -8377,6 +8377,17 @@
     "crumbs": [
       "Module 1 - Basics",
       "Module 1 Programming Problems"
+    ]
+  },
+  {
+    "objectID": "slides-14-01.html",
+    "href": "slides-14-01.html",
+    "title": "combining data structures (class slides)",
+    "section": "",
+    "text": "We can only use immutable types as dictionary keys (strings, integers, and tuples)\nValues in a dictionary can be of any type\n\n\n\n\nTuples are useful as keys since keys need to be unique (no repeated key is allowed)\n\ncourse_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n\n\nHow would you retrieve the room where CSC 144, section 1 takes place?\nHow would you retrieve all rooms for CSC 120?\n\n\n\n\n\nIts name is retrieve_room\nIt takes three arguments: a dictionary with course information, a string for course code and number (e.g., \"CSC 110\") and a string for section (e.g., \"section 1\")\nIt returns a string with the building and room numbers (concatenated)\n\n\nprint( retrieve_room(course_schedule, \"CSC 110\", \"section 1\") ) \n# \"Gittings 129b\"\n\n\n\n\n\ndef retrieve_room(course_dict, course, section):\n  c, s =  course_dict[(course, section)]\n  return c + \" \" + s\n\ndef main():\n  course_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n  print( retrieve_room(course_schedule, \n                       \"CSC 110\", \"section 1\")) # \"Gittings 129b\"\n  \nmain()\n\nGittings 129b\n\n\n\n\n\n\ncourse_schedule = { \"CSC 110\": \n                      {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                       2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 120\":\n                       {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                        2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 144\":\n                       {1: {\"building\": \"Social Sciences\", \"room\": \"100\"}}}\n                       \ncourse_schedule[\"CSC 110\"][1][\"building\"]\n\n'Gittings'\n\n\n\nHow would you retrieve the room for the section 1 of CSC 120?",
+    "crumbs": [
+      "Module 14 - Combining Data Structures and Sorting Lists",
+      "combining data structures (class slides)"
     ]
   }
 ]
