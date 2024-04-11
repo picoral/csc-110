@@ -16,6 +16,7 @@ website:
         - schedule.qmd
         - tas.qmd
         - discord.qmd
+        - how-to-study.qmd
         - academic-integrity.qmd
         - about.qmd
         - about_python.md
