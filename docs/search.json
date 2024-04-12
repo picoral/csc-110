@@ -6108,8 +6108,8 @@
     "objectID": "slides-14-01.html#tuples-as-dictionary-keys",
     "href": "slides-14-01.html#tuples-as-dictionary-keys",
     "title": "combining data structures (class slides)",
-    "section": "",
-    "text": "We can only use immutable types as dictionary keys (strings, integers, and tuples)\nValues in a dictionary can be of any type",
+    "section": "Tuples as dictionary keys",
+    "text": "Tuples as dictionary keys\n\nWe can only use immutable types as dictionary keys (strings, integers, and tuples)\nValues in a dictionary can be of any type",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
@@ -6119,8 +6119,8 @@
     "objectID": "slides-14-01.html#tuples-as-dictionary-keys-1",
     "href": "slides-14-01.html#tuples-as-dictionary-keys-1",
     "title": "combining data structures (class slides)",
-    "section": "",
-    "text": "Tuples are useful as keys since keys need to be unique (no repeated key is allowed)\n\ncourse_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n\n\nHow would you retrieve the room where CSC 144, section 1 takes place?\nHow would you retrieve all rooms for CSC 120?",
+    "section": "Tuples as dictionary keys",
+    "text": "Tuples as dictionary keys\nTuples are useful as keys since keys need to be unique (no repeated key is allowed)\n\ncourse_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n\n\nHow would you retrieve the room where CSC 144, section 1 takes place?\nHow would you retrieve all rooms for CSC 120?",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
@@ -6130,8 +6130,8 @@
     "objectID": "slides-14-01.html#write-a-function",
     "href": "slides-14-01.html#write-a-function",
     "title": "combining data structures (class slides)",
-    "section": "",
-    "text": "Its name is retrieve_room\nIt takes three arguments: a dictionary with course information, a string for course code and number (e.g., \"CSC 110\") and a string for section (e.g., \"section 1\")\nIt returns a string with the building and room numbers (concatenated)\n\n\nprint( retrieve_room(course_schedule, \"CSC 110\", \"section 1\") ) \n# \"Gittings 129b\"",
+    "section": "Write a function",
+    "text": "Write a function\n\nIts name is retrieve_room\nIt takes three arguments: a dictionary with course information, a string for course code and number (e.g., \"CSC 110\") and a string for section (e.g., \"section 1\")\nIt returns a string with the building and room numbers (concatenated)\n\n\nprint( retrieve_room(course_schedule, \"CSC 110\", \"section 1\") ) \n# \"Gittings 129b\"",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
@@ -6141,8 +6141,8 @@
     "objectID": "slides-14-01.html#write-a-function-solution",
     "href": "slides-14-01.html#write-a-function-solution",
     "title": "combining data structures (class slides)",
-    "section": "",
-    "text": "def retrieve_room(course_dict, course, section):\n  c, s =  course_dict[(course, section)]\n  return c + \" \" + s\n\ndef main():\n  course_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n  print( retrieve_room(course_schedule, \n                       \"CSC 110\", \"section 1\")) # \"Gittings 129b\"\n  \nmain()\n\nGittings 129b",
+    "section": "Write a function – solution",
+    "text": "Write a function – solution\n\ndef retrieve_room(course_dict, course, section):\n  c, s =  course_dict[(course, section)]\n  return c + \" \" + s\n\ndef main():\n  course_schedule = { (\"CSC 110\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 110\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 1\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 120\", \"section 2\") : (\"Gittings\", \"129b\"),\n                    (\"CSC 144\", \"section 1\") : (\"Social Sciences\", \"100\"),\n                    (\"CSC 210\", \"section 1\") : (\"Gittings\", \"129b\")}\n  print( retrieve_room(course_schedule, \n                       \"CSC 110\", \"section 1\")) # \"Gittings 129b\"\n  \nmain()\n\nGittings 129b",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
@@ -6152,8 +6152,8 @@
     "objectID": "slides-14-01.html#dictionaries-as-values",
     "href": "slides-14-01.html#dictionaries-as-values",
     "title": "combining data structures (class slides)",
-    "section": "",
-    "text": "course_schedule = { \"CSC 110\": \n                      {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                       2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 120\":\n                       {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                        2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 144\":\n                       {1: {\"building\": \"Social Sciences\", \"room\": \"100\"}}}\n                       \ncourse_schedule[\"CSC 110\"][1][\"building\"]\n\n'Gittings'\n\n\n\nHow would you retrieve the room for the section 1 of CSC 120?",
+    "section": "Dictionaries as values",
+    "text": "Dictionaries as values\n\ncourse_schedule = { \"CSC 110\": \n                      {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                       2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 120\":\n                       {1: {\"building\": \"Gittings\", \"room\": \"129b\"},\n                        2: {\"building\": \"Gittings\", \"room\": \"129b\"} },\n                    \"CSC 144\":\n                       {1: {\"building\": \"Social Sciences\", \"room\": \"100\"}}}\n                       \ncourse_schedule[\"CSC 110\"][1][\"building\"]\n\n'Gittings'\n\n\n\nHow would you retrieve the room for the section 1 of CSC 120?",
     "crumbs": [
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
