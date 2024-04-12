@@ -8389,5 +8389,38 @@
       "Module 14 - Combining Data Structures and Sorting Lists",
       "combining data structures (class slides)"
     ]
+  },
+  {
+    "objectID": "slides-13-03.html#write-python-code",
+    "href": "slides-13-03.html#write-python-code",
+    "title": "more on lists (class slides)",
+    "section": "Write python code",
+    "text": "Write python code\nWrite python code that determines if a number is prime or not.",
+    "crumbs": [
+      "Module 13 - Control Flow with different Data Structures",
+      "more on lists (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-13-03.html#write-python-code-1",
+    "href": "slides-13-03.html#write-python-code-1",
+    "title": "more on lists (class slides)",
+    "section": "Write python code",
+    "text": "Write python code\nA number n is NOT prime if it is divisible by any number between 2 and n / 2.\nThe integer 1 is not a prime number.\nYour code should have different functions to deal with lists of numbers in different ways (see test cases on next slide)",
+    "crumbs": [
+      "Module 13 - Control Flow with different Data Structures",
+      "more on lists (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-13-03.html#write-python-code-2",
+    "href": "slides-13-03.html#write-python-code-2",
+    "title": "more on lists (class slides)",
+    "section": "Write python code",
+    "text": "Write python code\nTest cases:\n\nif __name__ == \"__main__\":\n    original_list = [1, 2, 453, 3, 32, 5, 7]\n    result = create_dictionary(original_list)\n    assert result == {1: False, 2: True, 453: False, 3: True, 32: False, 5: True, 7: True}\n\n    original_list = [102, 250, 509, 345, 2, 4, 547, 563]\n    result = create_dictionary(original_list)\n    assert result == {102: False, 250: False, 509: True, 345: False, 2: True,\n                      4: False, 547: True, 563: True}\n\n    original_list = [102, 250, 509, 345, 2, 4, 547, 563]\n    mutate_list(original_list)\n    assert original_list == [False, False, True, False, True, False, True, True]\n\n    original_list = [102, 250, 509, 345, 2, 4, 547, 563]\n    remove_primes(original_list)\n    assert original_list == [102, 250, 345, 4]",
+    "crumbs": [
+      "Module 13 - Control Flow with different Data Structures",
+      "more on lists (class slides)"
+    ]
   }
 ]
