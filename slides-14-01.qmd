@@ -7,6 +7,12 @@ df-print: kable
 
 # CSC 110 -- Combining data structures
 
+## Announcements
+
+* Fill out SCS at [scsonline.ucatt.arizona.edu](https://scsonline.ucatt.arizona.edu/index.php)
+* If 80% of students complete the survey, I'll drop a third quiz grade
+* Midterm 3 on April 24, Final exam on May 3
+
 ## Tuples as dictionary keys
 
 -   We can only use immutable types as dictionary keys (strings, integers, and tuples)
@@ -29,6 +35,10 @@ course_schedule = { ("CSC 110", "section 1") : ("Gittings", "129b"),
 
 -   How would you retrieve the room where CSC 144, section 1 takes place?
 -   How would you retrieve all rooms for CSC 120?
+
+# Attendance
+
+Go to gradescope and answer today's attendance question
 
 ## Write a function
 

@@ -7,11 +7,6 @@ df-print: kable
 
 # CSC 110 -- Sorting
 
-## Announcements
-
-* Final exams (BRING PHOTO ID):
-* Study guide on the practice problems page
-
 ## Sorting
 
 -   A number of reasons to want sorted data
