@@ -1559,7 +1559,7 @@
     "href": "project-12.html#test-cases",
     "title": "Programming Project 12 (BONUS)",
     "section": "Test cases",
-    "text": "Test cases\n\nsample.txt\npoem.txt\nfew-steps.txt\nmany-steps.txt\n\nCall for encrypter.py:\n\nif __name__ == \"__main__\":\n    encrypt_file(\"sample.txt\")\n\nCall for decrypter.py:\n\nif __name__ == \"__main__\":\n    decrypt_file()",
+    "text": "Test cases\n\nsample.txt\npoem.txt\nfew-steps.txt\nmany-steps.txt\n\nCall for encrypter.py:\n\nif __name__ == \"__main__\":\n    encrypt_file(\"sample.txt\")\n\nCall for decrypter.py:\n\nif __name__ == \"__main__\":\n    decrypt_file(\"encrypted.txt\", \"index.txt\")",
     "crumbs": [
       "Programming Projects",
       "Programming Project 12 (BONUS)"
