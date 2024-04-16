@@ -30,7 +30,7 @@ Practicing is not having your friend/AI tell you how to solve a problem. If you 
 
 Use a calendar and block out 45-60 minutes a day to practice your coding skills. 
 
-The university expectation is that you will spend 2-3 hours on out-of-class work for **every 1 credit unit** -- so you are expected to spend 8-12 hours working on homework and studying for CSC 110 and addition to attending lectures and your weekly lab session.
+The university expectation is that you will spend 2-3 hours on out-of-class work for **every 1 credit unit** -- so you are expected to spend 8-12 hours working on homework and studying for CSC 110 in addition to attending lectures, actively engaging in in-class-activities, and coming to your weekly lab session.
 
 Solve assignments, quizzes, exams, and practice problems again and again on paper and time yourself.
 
