@@ -34,4 +34,15 @@ The university expectation is that you will spend 2-3 hours on out-of-class work
 
 Solve assignments, quizzes, exams, and practice problems again and again on paper and time yourself.
 
+# Take breaks often
 
+Do not expect to put in 10 hours of work on one day to get your code to work. That's not how coding works. You often need to allow your brain to process things across multiple days. Working at a problem for 5+ hours straight will get you frustrated, and you won't be able to see where the bug is.
+
+If you are feeling frustrated, take a break, walk away from the problem for a few hours. Ideally, go back to the problem after getting some sleep.
+
+That is why it is important to start working on assignments early on.
+
+# What is the role of the TAs?
+
+* The TAs are not responsible for debugging your code extensively with you, they are to give you some direction if you get stuck.
+* The TAs can go over concepts covered in class if you have specific questions. It is okay for you to ask TAs: "Can you explain the different between a for loop to get the indices in a list and a for loop to get the items from a list?" -- It is not okay for you to ask TAs to go over an entire lecture with you. They are not private tutors.
