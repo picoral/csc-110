@@ -192,6 +192,11 @@ numbers = [ 3, 1, 7, 2, 4, 8, 5 ]
 
 6 sweeps, 6 swaps
 
+
+# Attendance
+
+Go to gradescope and answer today's attendance question
+
 ## Bubble sort
 
 -   **Bubble Sort:** another sorting algorithm
