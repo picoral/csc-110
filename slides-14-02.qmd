@@ -346,6 +346,10 @@ numbers = [ 3, 1, 7, 2, 4, 8, 5 ]
 
 > \[ 1, 2, 3, 4, 5, 7, 8 \] third sweep
 
+# Attendance
+
+Go to gradescope and answer today's attendance question
+
 ## Lots of algorithms
 
 -   There are many sorting algorithms
