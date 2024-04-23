@@ -8,7 +8,7 @@ format: revealjs
 <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
 </center>
 
-This exam starts at 2:00pm and it ends at 2:50pm
+This exam starts at 1:00pm and it ends at 1:50pm
 
 <font color="red">No breaks during the exam.</font>
 
@@ -18,7 +18,7 @@ This exam starts at 2:00pm and it ends at 2:50pm
 
 ## Exam Instructions
 
-This exam starts at 2:00pm and it ends at 2:50pm
+This exam starts at 1:00pm and it ends at 1:50pm
 
 <font color="red">No breaks during the exam. Use the restroom now.</font>
 
