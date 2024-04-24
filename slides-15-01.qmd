@@ -98,3 +98,8 @@ def main():
 main()
 ```
 
+## Please fill out survey
+
+https://bit.ly/ua-ta-students
+
+![](images/survey-qr-code.png)
