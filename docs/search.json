@@ -8461,5 +8461,27 @@
       "Module 15 - Handling Exceptions",
       "handling exceptions (class slides)"
     ]
+  },
+  {
+    "objectID": "slides-15-01.html#write-a-function-solution-2",
+    "href": "slides-15-01.html#write-a-function-solution-2",
+    "title": "handling exceptions (class slides)",
+    "section": "Write a function – solution 2",
+    "text": "Write a function – solution 2\n\ndef read_numbers(file_name):\n  floats = []\n  not_floats = []\n  f = open(file_name, \"r\")\n  for line in f:\n    words = line.strip().split(\" \")\n    for w in words:\n      try:\n        floats.append(float(w))\n      except Exception as err:\n        not_floats.append(w)\n        print(err)\n      else:\n        print(\"coverted\", w, \"successfully\")\n  f.close()\n  return floats\n\ndef main():\n  print( read_numbers(\"weather.txt\") ) # [89.5, 50.2, 93.4, 69.0]\n  \nmain()\n\ncould not convert string to float: 'Tucson'\ncould not convert string to float: '--'\ncould not convert string to float: 'high'\ncould not convert string to float: 'temperature:'\ncoverted 89.5 successfully\ncould not convert string to float: 'Tucson'\ncould not convert string to float: '--'\ncould not convert string to float: 'low'\ncould not convert string to float: 'temperature:'\ncoverted 50.2 successfully\ncould not convert string to float: 'Phoenix'\ncould not convert string to float: '--'\ncould not convert string to float: 'high'\ncould not convert string to float: 'temperature:'\ncoverted 93.4 successfully\ncould not convert string to float: 'Phoenix'\ncould not convert string to float: '--'\ncould not convert string to float: 'low'\ncould not convert string to float: 'temperature:'\ncoverted 69.0 successfully\n[89.5, 50.2, 93.4, 69.0]",
+    "crumbs": [
+      "Module 15 - Handling Exceptions",
+      "handling exceptions (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-15-01.html#attendance",
+    "href": "slides-15-01.html#attendance",
+    "title": "handling exceptions (class slides)",
+    "section": "Attendance",
+    "text": "Attendance\nWrite a python function called valid_input that takes a string as argument and returns False if the string is not a year (check if the length is 4, and if the string is an integer).\nName your file year_validation.py",
+    "crumbs": [
+      "Module 15 - Handling Exceptions",
+      "handling exceptions (class slides)"
+    ]
   }
 ]

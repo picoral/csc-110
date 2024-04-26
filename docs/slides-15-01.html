@@ -420,7 +420,7 @@
 </section>
 <section id="try-and-except-1" class="slide level2">
 <h2><code>try:</code> and <code>except:</code></h2>
-<div id="b855fc44" class="cell" data-execution_count="1">
+<div id="f532ae25" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>ages <span class="op">=</span> [<span class="dv">35</span>, <span class="dv">35</span>, <span class="dv">23</span>, <span class="dv">18</span>, <span class="dv">45</span>, <span class="dv">18</span>, <span class="dv">72</span>]</span>
 <span id="cb1-2"><a></a><span class="cf">try</span>:</span>
 <span id="cb1-3"><a></a>    <span class="bu">print</span>(ages[<span class="dv">0</span>] <span class="op">+</span> ages[<span class="dv">4</span>])</span>
@@ -430,7 +430,7 @@
 <pre><code>80</code></pre>
 </div>
 </div>
-<div id="d78111ce" class="cell" data-execution_count="2">
+<div id="24c9f562" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>ages <span class="op">=</span> [<span class="dv">35</span>, <span class="dv">35</span>, <span class="dv">23</span>, <span class="dv">18</span>, <span class="dv">45</span>, <span class="dv">18</span>, <span class="dv">72</span>]</span>
 <span id="cb3-2"><a></a><span class="cf">try</span>:</span>
 <span id="cb3-3"><a></a>    <span class="bu">print</span>(ages[<span class="dv">0</span>] <span class="op">+</span> ages[<span class="dv">7</span>])</span>
@@ -443,7 +443,7 @@
 </section>
 <section id="try-and-except-2" class="slide level2">
 <h2><code>try:</code> and <code>except:</code></h2>
-<div id="618f20b8" class="cell" data-execution_count="3">
+<div id="3568d9d5" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>ages <span class="op">=</span> [<span class="dv">35</span>, <span class="dv">35</span>, <span class="dv">23</span>, <span class="dv">18</span>, <span class="dv">45</span>, <span class="dv">18</span>, <span class="dv">72</span>]</span>
 <span id="cb5-2"><a></a><span class="cf">try</span>:</span>
 <span id="cb5-3"><a></a>    <span class="bu">print</span>(ages[<span class="dv">0</span>] <span class="op">+</span> ages[<span class="dv">7</span>])</span>
@@ -455,12 +455,17 @@
 Tried to get a value from an index that does not exist in the list</code></pre>
 </div>
 </div>
-<div id="6d1c20c5" class="cell" data-execution_count="4">
+<div id="1d708928" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a>ages <span class="op">=</span> [<span class="dv">35</span>, <span class="dv">35</span>, <span class="dv">23</span>, <span class="dv">18</span>, <span class="dv">45</span>, <span class="dv">18</span>, <span class="dv">72</span>]</span>
 <span id="cb7-2"><a></a><span class="bu">print</span>(ages[<span class="dv">0</span>] <span class="op">+</span> ages[<span class="dv">7</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>IndexError: list index out of range</p>
 </section>
+<section id="please-fill-out-survey" class="slide level2">
+<h2>Please fill out survey</h2>
+<p>https://bit.ly/ua-ta-students</p>
+
+<img data-src="images/survey-qr-code.png" class="r-stretch"></section>
 <section id="write-a-function" class="slide level2">
 <h2>Write a function</h2>
 <ol type="1">
@@ -470,13 +475,13 @@ Tried to get a value from an index that does not exist in the list</code></pre>
 <li>It returns a list with all float numbers in the file</li>
 <li><a href="data/weather.txt">Download test file</a></li>
 </ol>
-<div id="aa377cce" class="cell" data-execution_count="5">
+<div id="c2aff711" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="bu">print</span>( read_numbers(<span class="st">"weather.txt"</span>) ) <span class="co"># [89.5, 50.2, 93.4, 69.0]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="36dc0e95" class="cell" data-execution_count="6">
+<div id="c51d1db9" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="kw">def</span> read_numbers(file_name):</span>
 <span id="cb9-2"><a></a>  floats <span class="op">=</span> []</span>
 <span id="cb9-3"><a></a>  not_floats <span class="op">=</span> []</span>
@@ -500,12 +505,61 @@ Tried to get a value from an index that does not exist in the list</code></pre>
 </div>
 </div>
 </section>
-<section id="please-fill-out-survey" class="slide level2">
-<h2>Please fill out survey</h2>
-<p>https://bit.ly/ua-ta-students</p>
+<section id="write-a-function-solution-2" class="slide level2">
+<h2>Write a function – solution 2</h2>
+<div id="e6314c47" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="kw">def</span> read_numbers(file_name):</span>
+<span id="cb11-2"><a></a>  floats <span class="op">=</span> []</span>
+<span id="cb11-3"><a></a>  not_floats <span class="op">=</span> []</span>
+<span id="cb11-4"><a></a>  f <span class="op">=</span> <span class="bu">open</span>(file_name, <span class="st">"r"</span>)</span>
+<span id="cb11-5"><a></a>  <span class="cf">for</span> line <span class="kw">in</span> f:</span>
+<span id="cb11-6"><a></a>    words <span class="op">=</span> line.strip().split(<span class="st">" "</span>)</span>
+<span id="cb11-7"><a></a>    <span class="cf">for</span> w <span class="kw">in</span> words:</span>
+<span id="cb11-8"><a></a>      <span class="cf">try</span>:</span>
+<span id="cb11-9"><a></a>        floats.append(<span class="bu">float</span>(w))</span>
+<span id="cb11-10"><a></a>      <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> err:</span>
+<span id="cb11-11"><a></a>        not_floats.append(w)</span>
+<span id="cb11-12"><a></a>        <span class="bu">print</span>(err)</span>
+<span id="cb11-13"><a></a>      <span class="cf">else</span>:</span>
+<span id="cb11-14"><a></a>        <span class="bu">print</span>(<span class="st">"coverted"</span>, w, <span class="st">"successfully"</span>)</span>
+<span id="cb11-15"><a></a>  f.close()</span>
+<span id="cb11-16"><a></a>  <span class="cf">return</span> floats</span>
+<span id="cb11-17"><a></a></span>
+<span id="cb11-18"><a></a><span class="kw">def</span> main():</span>
+<span id="cb11-19"><a></a>  <span class="bu">print</span>( read_numbers(<span class="st">"weather.txt"</span>) ) <span class="co"># [89.5, 50.2, 93.4, 69.0]</span></span>
+<span id="cb11-20"><a></a>  </span>
+<span id="cb11-21"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>could not convert string to float: 'Tucson'
+could not convert string to float: '--'
+could not convert string to float: 'high'
+could not convert string to float: 'temperature:'
+coverted 89.5 successfully
+could not convert string to float: 'Tucson'
+could not convert string to float: '--'
+could not convert string to float: 'low'
+could not convert string to float: 'temperature:'
+coverted 50.2 successfully
+could not convert string to float: 'Phoenix'
+could not convert string to float: '--'
+could not convert string to float: 'high'
+could not convert string to float: 'temperature:'
+coverted 93.4 successfully
+could not convert string to float: 'Phoenix'
+could not convert string to float: '--'
+could not convert string to float: 'low'
+could not convert string to float: 'temperature:'
+coverted 69.0 successfully
+[89.5, 50.2, 93.4, 69.0]</code></pre>
+</div>
+</div>
+</section>
+<section id="attendance" class="slide level2">
+<h2>Attendance</h2>
+<p>Write a python function called <code>valid_input</code> that takes a string as argument and returns False if the string is not a year (check if the length is 4, and if the string is an integer).</p>
+<p>Name your file <code>year_validation.py</code></p>
 
-
-<img data-src="images/survey-qr-code.png" class="r-stretch"><div class="quarto-auto-generated-content">
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
