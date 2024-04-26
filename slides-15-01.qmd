@@ -64,6 +64,12 @@ https://bit.ly/ua-ta-students
 
 ![](images/survey-qr-code.png)
 
+## Attendance
+
+Write a python function called `valid_input` that takes a string as argument and returns False if the string is not a year (check if the length is 4, and if the string is an integer). 
+
+Name your file `year_validation.py`
+
 
 ## Write a function
 
@@ -135,8 +141,3 @@ main()
 ```
 
 
-## Attendance
-
-Write a python function called `valid_input` that takes a string as argument and returns False if the string is not a year (check if the length is 4, and if the string is an integer). 
-
-Name your file `year_validation.py`
