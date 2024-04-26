@@ -60,7 +60,7 @@ IndexError: list index out of range
 
 ## Please fill out survey
 
-https://bit.ly/ua-ta-students
+[https://bit.ly/ua-ta-students](https://bit.ly/ua-ta-students)
 
 ![](images/survey-qr-code.png)
 
