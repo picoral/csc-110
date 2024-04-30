@@ -7085,7 +7085,7 @@
     "href": "exam-instructions.html#exam-instructions",
     "title": "Exam Instructions",
     "section": "Exam Instructions",
-    "text": "Exam Instructions\nThis exam starts at 2:00pm and it ends at 2:50pm\nNo breaks during the exam. Use the restroom now.\n\nHave your photo ID handy\nPut away phones, laptops, calculators, smart watches, etc. Please remove headphones/earbuds and either turn hats or remove.\nTWO STUDENTS PER TABLE (sit diagonally to each other – not side-by-side, not in front of each other)"
+    "text": "Exam Instructions\nThis exam starts at 6:00pm and it ends at 8:00pm\nNo breaks during the exam. Use the restroom now.\n\nHave your photo ID handy\nPut away phones, laptops, calculators, smart watches, etc. Please remove headphones/earbuds and either turn hats or remove.\nLeave an empty seat between you and both your neighbors (if there’s no more room in the back, sit in the front)"
   },
   {
     "objectID": "slides-02-02.html#the-mathematical-operators",
@@ -8483,5 +8483,12 @@
       "Module 15 - Handling Exceptions",
       "handling exceptions (class slides)"
     ]
+  },
+  {
+    "objectID": "exam-instructions.html#exam-instructions-1",
+    "href": "exam-instructions.html#exam-instructions-1",
+    "title": "Exam Instructions",
+    "section": "Exam Instructions",
+    "text": "Exam Instructions\n\nTWO STUDENTS PER TABLE (sit diagonally to each other – not side-by-side, not in front of each other)"
   }
 ]
