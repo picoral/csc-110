@@ -4294,6 +4294,28 @@
     ]
   },
   {
+    "objectID": "slides-15-01.html#please-fill-out-survey",
+    "href": "slides-15-01.html#please-fill-out-survey",
+    "title": "handling exceptions (class slides)",
+    "section": "Please fill out survey",
+    "text": "Please fill out survey\nhttps://bit.ly/ua-ta-students",
+    "crumbs": [
+      "Module 15 - Handling Exceptions",
+      "handling exceptions (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-15-01.html#attendance",
+    "href": "slides-15-01.html#attendance",
+    "title": "handling exceptions (class slides)",
+    "section": "Attendance",
+    "text": "Attendance\nWrite a python function called valid_input that takes a string as argument and returns False if the string is not a year (check if the length is 4, and if the string is an integer).\nName your file year_validation.py",
+    "crumbs": [
+      "Module 15 - Handling Exceptions",
+      "handling exceptions (class slides)"
+    ]
+  },
+  {
     "objectID": "slides-15-01.html#write-a-function",
     "href": "slides-15-01.html#write-a-function",
     "title": "handling exceptions (class slides)",
@@ -4310,6 +4332,17 @@
     "title": "handling exceptions (class slides)",
     "section": "Write a function – solution",
     "text": "Write a function – solution\n\ndef read_numbers(file_name):\n  floats = []\n  not_floats = []\n  f = open(file_name, \"r\")\n  for line in f:\n    words = line.strip().split(\" \")\n    for w in words:\n      try:\n        floats.append(float(w))\n      except:\n        not_floats.append(w)\n  f.close()\n  return floats\n\ndef main():\n  print( read_numbers(\"weather.txt\") ) # [89.5, 50.2, 93.4, 69.0]\n  \nmain()\n\n[89.5, 50.2, 93.4, 69.0]",
+    "crumbs": [
+      "Module 15 - Handling Exceptions",
+      "handling exceptions (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-15-01.html#write-a-function-solution-2",
+    "href": "slides-15-01.html#write-a-function-solution-2",
+    "title": "handling exceptions (class slides)",
+    "section": "Write a function – solution 2",
+    "text": "Write a function – solution 2\n\ndef read_numbers(file_name):\n  floats = []\n  not_floats = []\n  f = open(file_name, \"r\")\n  for line in f:\n    words = line.strip().split(\" \")\n    for w in words:\n      try:\n        floats.append(float(w))\n      except Exception as err:\n        not_floats.append(w)\n        print(err)\n      else:\n        print(\"coverted\", w, \"successfully\")\n  f.close()\n  return floats\n\ndef main():\n  print( read_numbers(\"weather.txt\") ) # [89.5, 50.2, 93.4, 69.0]\n  \nmain()\n\ncould not convert string to float: 'Tucson'\ncould not convert string to float: '--'\ncould not convert string to float: 'high'\ncould not convert string to float: 'temperature:'\ncoverted 89.5 successfully\ncould not convert string to float: 'Tucson'\ncould not convert string to float: '--'\ncould not convert string to float: 'low'\ncould not convert string to float: 'temperature:'\ncoverted 50.2 successfully\ncould not convert string to float: 'Phoenix'\ncould not convert string to float: '--'\ncould not convert string to float: 'high'\ncould not convert string to float: 'temperature:'\ncoverted 93.4 successfully\ncould not convert string to float: 'Phoenix'\ncould not convert string to float: '--'\ncould not convert string to float: 'low'\ncould not convert string to float: 'temperature:'\ncoverted 69.0 successfully\n[89.5, 50.2, 93.4, 69.0]",
     "crumbs": [
       "Module 15 - Handling Exceptions",
       "handling exceptions (class slides)"
@@ -4914,7 +4947,7 @@
     "href": "slides-11-02.html#loop-table-solution-part-1",
     "title": "nested for loops (class slides)",
     "section": "Loop table – solution part 1",
-    "text": "Loop table – solution part 1\n\n\n\n\n\n\ni\nj\nlen(lists[i])\nlists[i][j]\nmax\n\n\n0\n-\n0\n-\nNone\n\n\n1\n-\n0\n-\nNone\n\n\n2\n0\n2\n2\n2\n\n\n2\n1\n2\n1\n2\n\n\n3\n0\n3\n0\n2\n\n\n3\n1\n3\n5\n5\n\n\n3\n2\n3\n2\n5",
+    "text": "Loop table – solution part 1\n\n\n\n\nijlen(lists[i])lists[i][j]max\n\n0-0-None\n\n1-0-None\n\n20222\n\n21212\n\n30302\n\n31355\n\n32325",
     "crumbs": [
       "Module 11 - Data Structures (2D lists)",
       "nested for loops (class slides)"
@@ -4925,7 +4958,7 @@
     "href": "slides-11-02.html#loop-table-solution-part-2",
     "title": "nested for loops (class slides)",
     "section": "Loop table – solution part 2",
-    "text": "Loop table – solution part 2\n\n\n\n\n\n\ni\nj\nlen(lists[i])\nlists[i][j]\nmax\n\n\n4\n0\n1\n3\n5",
+    "text": "Loop table – solution part 2\n\n\n\n\nijlen(lists[i])lists[i][j]max\n\n40135",
     "crumbs": [
       "Module 11 - Data Structures (2D lists)",
       "nested for loops (class slides)"
@@ -6458,7 +6491,7 @@
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.1420040101201081\n3",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.5167036823762114\n2",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -7088,6 +7121,13 @@
     "text": "Exam Instructions\nThis exam starts at 6:00pm and it ends at 8:00pm\nNo breaks during the exam. Use the restroom now.\n\nHave your photo ID handy\nPut away phones, laptops, calculators, smart watches, etc. Please remove headphones/earbuds and either turn hats or remove.\nLeave an empty seat between you and both your neighbors (if there’s no more room in the back, sit in the front)"
   },
   {
+    "objectID": "exam-instructions.html#exam-instructions-1",
+    "href": "exam-instructions.html#exam-instructions-1",
+    "title": "Exam Instructions",
+    "section": "Exam Instructions",
+    "text": "Exam Instructions\n\nTWO STUDENTS PER TABLE (sit diagonally to each other – not side-by-side, not in front of each other)"
+  },
+  {
     "objectID": "slides-02-02.html#the-mathematical-operators",
     "href": "slides-02-02.html#the-mathematical-operators",
     "title": "Math in Python (class slides)",
@@ -7642,7 +7682,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, February 14, 2024\nMidterm Exam 2 - Wednesday, March 27, 2024\nMidterm Exam 3 - Wednesday, April 24, 2024\n\nThe final exam (pencil and paper format) for all sections will be on:\n\nFriday, May 03, 2024 – 6:00pm - 8:00pm in ENR2 N120\n\nAll assignments that are submitted on Gradescope are due at 7pm.",
+    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, February 14, 2024\nMidterm Exam 2 - Wednesday, March 27, 2024\nMidterm Exam 3 - Wednesday, April 24, 2024\n\nThe final exam (pencil and paper format) for all sections will be on:\n\nFriday, May 03, 2024 – 6:00pm - 8:00pm in CESL 102 and 103\n\nAll assignments that are submitted on Gradescope are due at 7pm.",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8357,7 +8397,7 @@
     "href": "syllabus.html#final-examination",
     "title": "Syllabus",
     "section": "Final Examination",
-    "text": "Final Examination\nThe final exam is worth 15%.\nThe final exam will be on:\n\nFri, May 03 – 6:00pm - 8:00pm in ENR2 N120\n\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nSee also Final Exam Regulations and Schedule: https://registrar.arizona.edu/finals",
+    "text": "Final Examination\nThe final exam is worth 15%.\nThe final exam will be on:\n\nFri, May 03 – 6:00pm - 8:00pm in CESL 102 and 103\n\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nSee also Final Exam Regulations and Schedule: https://registrar.arizona.edu/finals",
     "crumbs": [
       "Start Here",
       "Syllabus"
@@ -8390,7 +8430,7 @@
     "href": "syllabus.html#assignment-due-dates",
     "title": "Syllabus",
     "section": "Assignment due dates",
-    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, January 10, 2024\nin class\n\n\nSurvey\nFriday, January 12, 2024\n7pm\n\n\nQuiz 02\nWednesday, January 17, 2024\nin class\n\n\nModule 1 Programming Problems\nThursday, January 18, 2024\n7pm\n\n\nModule 2 Programming Problems\nTuesday, January 23, 2024\n7pm\n\n\nShort Programming Project 1\nTuesday, January 23, 2024\n7pm\n\n\nQuiz 03\nWednesday, January 24, 2024\nin class\n\n\nProgramming Project 1\nThursday, January 25, 2024\n7pm\n\n\nModule 3 Programming Problems\nTuesday, January 30, 2024\n7pm\n\n\nShort Programming Project 2\nTuesday, January 30, 2024\n7pm\n\n\nQuiz 04\nWednesday, January 31, 2024\nin class\n\n\nProgramming Project 2\nThursday, February 01, 2024\n7pm\n\n\nModule 4 Programming Problems\nTuesday, February 06, 2024\n7pm\n\n\nShort Programming Project 3\nTuesday, February 06, 2024\n7pm\n\n\nQuiz 05\nWednesday, February 07, 2024\nin class\n\n\nProgramming Project 3\nThursday, February 08, 2024\n7pm\n\n\nMidterm 1\nWednesday, February 14, 2024\nin class\n\n\nModule 5 Programming Problems\nFriday, February 16, 2024\n7pm\n\n\nShort Programming Project 4\nFriday, February 16, 2024\n7pm\n\n\nProgramming Project 4\nMonday, February 19, 2024\n7pm\n\n\nModule 6 Programming Problems\nTuesday, February 20, 2024\n7pm\n\n\nQuiz 06\nWednesday, February 21, 2024\nin class\n\n\nModule 7 Programming Problems\nTuesday, February 27, 2024\n7pm\n\n\nShort Programming Project 5\nTuesday, February 27, 2024\n7pm\n\n\nQuiz 07\nWednesday, February 28, 2024\nin class\n\n\nProgramming Project 5\nThursday, February 29, 2024\n7pm\n\n\nShort Programming Project 6\nTuesday, March 12, 2024\n7pm\n\n\nQuiz 08\nWednesday, March 13, 2024\nin class\n\n\nProgramming Project 6\nThursday, March 14, 2024\n7pm\n\n\nModule 8 Programming Problems\nTuesday, March 19, 2024\n7pm\n\n\nShort Programming Project 7\nTuesday, March 19, 2024\n7pm\n\n\nQuiz 09\nWednesday, March 20, 2024\nin class\n\n\nProgramming Project 7\nThursday, March 21, 2024\n7pm\n\n\nMidterm 2\nWednesday, March 27, 2024\nin class\n\n\nModule 9 Programming Problems\nThursday, March 28, 2024\n7pm\n\n\nModule 10 Programming Problems\nTuesday, April 02, 2024\n7pm\n\n\nShort Programming Project 8\nTuesday, April 02, 2024\n7pm\n\n\nQuiz 10\nWednesday, April 03, 2024\nin class\n\n\nProgramming Project 8\nThursday, April 04, 2024\n7pm\n\n\nModule 11 Programming Problems\nTuesday, April 09, 2024\n7pm\n\n\nShort Programming Project 9\nTuesday, April 09, 2024\n7pm\n\n\nQuiz 11\nWednesday, April 10, 2024\nin class\n\n\nProgramming Project 9\nThursday, April 11, 2024\n7pm\n\n\nModule 12 Programming Problems\nTuesday, April 16, 2024\n7pm\n\n\nShort Programming Project 10\nTuesday, April 16, 2024\n7pm\n\n\nQuiz 12\nWednesday, April 17, 2024\nin class\n\n\nProgramming Project 10\nThursday, April 18, 2024\n7pm\n\n\nMidterm 3\nWednesday, April 24, 2024\nin class\n\n\nModule 13 Programming Problems\nThursday, April 25, 2024\n7pm\n\n\nModule 14 Programming Problems\nTuesday, April 30, 2024\n7pm\n\n\nShort Programming Project 11\nTuesday, April 30, 2024\n7pm\n\n\nProgramming Project 11\nWednesday, May 01, 2024\n7pm\n\n\nFinal Exam\nFriday, May 03, 2024\nENR2 N120",
+    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, January 10, 2024\nin class\n\n\nSurvey\nFriday, January 12, 2024\n7pm\n\n\nQuiz 02\nWednesday, January 17, 2024\nin class\n\n\nModule 1 Programming Problems\nThursday, January 18, 2024\n7pm\n\n\nModule 2 Programming Problems\nTuesday, January 23, 2024\n7pm\n\n\nShort Programming Project 1\nTuesday, January 23, 2024\n7pm\n\n\nQuiz 03\nWednesday, January 24, 2024\nin class\n\n\nProgramming Project 1\nThursday, January 25, 2024\n7pm\n\n\nModule 3 Programming Problems\nTuesday, January 30, 2024\n7pm\n\n\nShort Programming Project 2\nTuesday, January 30, 2024\n7pm\n\n\nQuiz 04\nWednesday, January 31, 2024\nin class\n\n\nProgramming Project 2\nThursday, February 01, 2024\n7pm\n\n\nModule 4 Programming Problems\nTuesday, February 06, 2024\n7pm\n\n\nShort Programming Project 3\nTuesday, February 06, 2024\n7pm\n\n\nQuiz 05\nWednesday, February 07, 2024\nin class\n\n\nProgramming Project 3\nThursday, February 08, 2024\n7pm\n\n\nMidterm 1\nWednesday, February 14, 2024\nin class\n\n\nModule 5 Programming Problems\nFriday, February 16, 2024\n7pm\n\n\nShort Programming Project 4\nFriday, February 16, 2024\n7pm\n\n\nProgramming Project 4\nMonday, February 19, 2024\n7pm\n\n\nModule 6 Programming Problems\nTuesday, February 20, 2024\n7pm\n\n\nQuiz 06\nWednesday, February 21, 2024\nin class\n\n\nModule 7 Programming Problems\nTuesday, February 27, 2024\n7pm\n\n\nShort Programming Project 5\nTuesday, February 27, 2024\n7pm\n\n\nQuiz 07\nWednesday, February 28, 2024\nin class\n\n\nProgramming Project 5\nThursday, February 29, 2024\n7pm\n\n\nShort Programming Project 6\nTuesday, March 12, 2024\n7pm\n\n\nQuiz 08\nWednesday, March 13, 2024\nin class\n\n\nProgramming Project 6\nThursday, March 14, 2024\n7pm\n\n\nModule 8 Programming Problems\nTuesday, March 19, 2024\n7pm\n\n\nShort Programming Project 7\nTuesday, March 19, 2024\n7pm\n\n\nQuiz 09\nWednesday, March 20, 2024\nin class\n\n\nProgramming Project 7\nThursday, March 21, 2024\n7pm\n\n\nMidterm 2\nWednesday, March 27, 2024\nin class\n\n\nModule 9 Programming Problems\nThursday, March 28, 2024\n7pm\n\n\nModule 10 Programming Problems\nTuesday, April 02, 2024\n7pm\n\n\nShort Programming Project 8\nTuesday, April 02, 2024\n7pm\n\n\nQuiz 10\nWednesday, April 03, 2024\nin class\n\n\nProgramming Project 8\nThursday, April 04, 2024\n7pm\n\n\nModule 11 Programming Problems\nTuesday, April 09, 2024\n7pm\n\n\nShort Programming Project 9\nTuesday, April 09, 2024\n7pm\n\n\nQuiz 11\nWednesday, April 10, 2024\nin class\n\n\nProgramming Project 9\nThursday, April 11, 2024\n7pm\n\n\nModule 12 Programming Problems\nTuesday, April 16, 2024\n7pm\n\n\nShort Programming Project 10\nTuesday, April 16, 2024\n7pm\n\n\nQuiz 12\nWednesday, April 17, 2024\nin class\n\n\nProgramming Project 10\nThursday, April 18, 2024\n7pm\n\n\nMidterm 3\nWednesday, April 24, 2024\nin class\n\n\nModule 13 Programming Problems\nThursday, April 25, 2024\n7pm\n\n\nModule 14 Programming Problems\nTuesday, April 30, 2024\n7pm\n\n\nShort Programming Project 11\nTuesday, April 30, 2024\n7pm\n\n\nProgramming Project 11\nWednesday, May 01, 2024\n7pm\n\n\nFinal Exam\nFriday, May 03, 2024\nCESL 102 and 103",
     "crumbs": [
       "Start Here",
       "Syllabus"
@@ -8450,45 +8490,5 @@
       "Module 1 - Basics",
       "Module 1 Programming Problems"
     ]
-  },
-  {
-    "objectID": "slides-15-01.html#please-fill-out-survey",
-    "href": "slides-15-01.html#please-fill-out-survey",
-    "title": "handling exceptions (class slides)",
-    "section": "Please fill out survey",
-    "text": "Please fill out survey\nhttps://bit.ly/ua-ta-students",
-    "crumbs": [
-      "Module 15 - Handling Exceptions",
-      "handling exceptions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-15-01.html#write-a-function-solution-2",
-    "href": "slides-15-01.html#write-a-function-solution-2",
-    "title": "handling exceptions (class slides)",
-    "section": "Write a function – solution 2",
-    "text": "Write a function – solution 2\n\ndef read_numbers(file_name):\n  floats = []\n  not_floats = []\n  f = open(file_name, \"r\")\n  for line in f:\n    words = line.strip().split(\" \")\n    for w in words:\n      try:\n        floats.append(float(w))\n      except Exception as err:\n        not_floats.append(w)\n        print(err)\n      else:\n        print(\"coverted\", w, \"successfully\")\n  f.close()\n  return floats\n\ndef main():\n  print( read_numbers(\"weather.txt\") ) # [89.5, 50.2, 93.4, 69.0]\n  \nmain()\n\ncould not convert string to float: 'Tucson'\ncould not convert string to float: '--'\ncould not convert string to float: 'high'\ncould not convert string to float: 'temperature:'\ncoverted 89.5 successfully\ncould not convert string to float: 'Tucson'\ncould not convert string to float: '--'\ncould not convert string to float: 'low'\ncould not convert string to float: 'temperature:'\ncoverted 50.2 successfully\ncould not convert string to float: 'Phoenix'\ncould not convert string to float: '--'\ncould not convert string to float: 'high'\ncould not convert string to float: 'temperature:'\ncoverted 93.4 successfully\ncould not convert string to float: 'Phoenix'\ncould not convert string to float: '--'\ncould not convert string to float: 'low'\ncould not convert string to float: 'temperature:'\ncoverted 69.0 successfully\n[89.5, 50.2, 93.4, 69.0]",
-    "crumbs": [
-      "Module 15 - Handling Exceptions",
-      "handling exceptions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-15-01.html#attendance",
-    "href": "slides-15-01.html#attendance",
-    "title": "handling exceptions (class slides)",
-    "section": "Attendance",
-    "text": "Attendance\nWrite a python function called valid_input that takes a string as argument and returns False if the string is not a year (check if the length is 4, and if the string is an integer).\nName your file year_validation.py",
-    "crumbs": [
-      "Module 15 - Handling Exceptions",
-      "handling exceptions (class slides)"
-    ]
-  },
-  {
-    "objectID": "exam-instructions.html#exam-instructions-1",
-    "href": "exam-instructions.html#exam-instructions-1",
-    "title": "Exam Instructions",
-    "section": "Exam Instructions",
-    "text": "Exam Instructions\n\nTWO STUDENTS PER TABLE (sit diagonally to each other – not side-by-side, not in front of each other)"
   }
 ]
