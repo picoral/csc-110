@@ -10,7 +10,7 @@ title: "Module 12 Assignments"
 library(tidyverse)
 library(readxl)
 assignments <- read_excel("assessment_schedule.xlsx") %>% 
-  mutate(formatted_date = format(due_date, "%A, %B %d, %Y"))
+  mutate(formatted_date = format(due_date))
 ```
 
 # Short Project 10

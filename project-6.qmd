@@ -9,7 +9,7 @@ title: "Programming Project 6"
 library(tidyverse)
 library(readxl)
 assignments <- read_excel("assessment_schedule.xlsx") %>% 
-  mutate(formatted_date = format(due_date, "%A, %B %d, %Y"))
+  mutate(formatted_date = format(due_date))
 ```
 
 Programming Projects are to be submitted to [gradescope](https://www.gradescope.com/courses/676322).

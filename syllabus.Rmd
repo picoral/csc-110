@@ -1,7 +1,7 @@
 ---
 title: "Syllabus"
 author: "Adriana Picoral (she/her/hers)"
-date: "Spring 2024"
+date: "Fall 2024"
 output:
   pdf_document: default
   html_document: default
@@ -13,11 +13,11 @@ library(tidyverse)
 library(readxl)
 library(knitr)
 schedule <- read_excel("schedule.xlsx") %>% 
-  mutate(formatted_date = format(date, "%a, %b %d"),
+  mutate(formatted_date = format(date),
          formatted_start = format(week_start, "%b %d"))
 
 assignments <- read_excel("assessment_schedule.xlsx") %>% 
-  mutate(formatted_date = format(due_date, "%A, %B %d, %Y"))
+  mutate(formatted_date = format(due_date))
 
 opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
@@ -147,9 +147,9 @@ There will be four exams throughout the course (including the final), for a tota
 
 The midterm exams will be on:
 
--   Midterm Exam 1 - `r schedule %>% filter(exam == "Midterm 1" & term == "spring 2024") %>% pull(formatted_date)`
--   Midterm Exam 2 - `r schedule %>% filter(exam == "Midterm 2" & term == "spring 2024") %>% pull(formatted_date)`
--   Midterm Exam 3 - `r schedule %>% filter(exam == "Midterm 3" & term == "spring 2024") %>% pull(formatted_date)`
+-   Midterm Exam 1 - `r schedule %>% filter(exam == "Midterm 1" & term == "fall 2024") %>% pull(formatted_date)`
+-   Midterm Exam 2 - `r schedule %>% filter(exam == "Midterm 2" & term == "fall 2024") %>% pull(formatted_date)`
+-   Midterm Exam 3 - `r schedule %>% filter(exam == "Midterm 3" & term == "fall 2024") %>% pull(formatted_date)`
 
 You must keep theses dates available. Do not schedule any flights, travel plans, or other conflicts with these exams.
 
@@ -177,7 +177,7 @@ The final exam is worth 15%.
 
 The final exam will be on:
 
--   `r schedule %>% filter(exam == "Final Exam" & term == "spring 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "spring 2024") %>% pull(time)`  in [CESL 102 and 103](https://maps.app.goo.gl/kBverpH54iz4URAQ6)
+-   `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(time)`  in [room TBA]()
 
 You must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.
 
@@ -210,7 +210,7 @@ List topics in logical units in a weekly/daily schedule, including assignment du
 
 ```{r}
 schedule %>% 
-  filter(term == "spring 2024") %>% 
+  filter(term == "fall 2024") %>% 
   select(week_number, formatted_start, topic) %>% 
   kable(col.names = c("Week", "Start Date", "Topic"))
 ```
@@ -223,7 +223,7 @@ We won't have classes due to university-wide holidays on the following dates:
 
 ```{r}
 schedule %>% 
-  filter(!is.na(holiday) & term == "spring 2024") %>% 
+  filter(!is.na(holiday) & term == "fall 2024") %>% 
   select(week_number, formatted_date, holiday) %>% 
   kable(col.names = c("Week", "Date", "Holiday"))
 ```

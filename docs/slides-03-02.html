@@ -418,7 +418,7 @@
 <li>It takes two arguments, <code>first_name</code> and <code>last_name</code></li>
 <li>It returns a string with a greeting using <code>first_name</code> and <code>last_name</code></li>
 </ol>
-<div id="bb8567fb" class="cell" data-execution_count="1">
+<div id="6997298e" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>( greeting(<span class="st">"Adriana"</span>, <span class="st">"Picoral"</span>) ) <span class="co"># Hello, Adriana Picoral!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -447,7 +447,7 @@
 <li>The <code>len()</code> function can be used with many types – we will be using it with <code>string</code> for now</li>
 <li>It returns the number of characters in a string</li>
 </ul>
-<div id="e603b910" class="cell" data-execution_count="2">
+<div id="070247e7" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>character_count <span class="op">=</span> <span class="bu">len</span>(<span class="st">"Adriana"</span>)</span>
 <span id="cb2-2"><a></a><span class="bu">print</span>(character_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -463,7 +463,7 @@
 <li>It takes a string argument, <code>name</code></li>
 <li>It returns the total number of characters in <code>name</code></li>
 </ol>
-<div id="5f28f8e9" class="cell" data-execution_count="3">
+<div id="a0d96b62" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="bu">print</span>( count_characters(<span class="st">"Adriana"</span>) ) <span class="co"># 7</span></span>
 <span id="cb4-2"><a></a><span class="bu">print</span>( count_characters(<span class="st">""</span>) ) <span class="co"># 0</span></span>
 <span id="cb4-3"><a></a><span class="bu">print</span>( count_characters(<span class="st">" "</span>) ) <span class="co"># 1</span></span>
@@ -478,7 +478,7 @@
 <li>The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that</li>
 <li><code>input()</code> always returns a string</li>
 </ul>
-<div id="59073459" class="cell" data-execution_count="4">
+<div id="cb0be307" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="bu">input</span>(<span class="st">"What's your name?</span><span class="ch">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -517,7 +517,7 @@
 <li>The <code>int()</code> function can be used to convert a string to an integer type</li>
 <li>It only works if the string only contains digits</li>
 </ul>
-<div id="0d7a5e8d" class="cell" data-execution_count="5">
+<div id="acb5db21" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a>age <span class="op">=</span> <span class="st">'35'</span></span>
 <span id="cb6-2"><a></a>age_int <span class="op">=</span> <span class="bu">int</span>(age)</span>
 <span id="cb6-3"><a></a><span class="bu">print</span>(<span class="bu">type</span>(age), <span class="bu">type</span>(age_int))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -532,7 +532,7 @@
 <li>The <code>float()</code> function can be used to convert a string to a float type</li>
 <li>It only works if the string only contains digits and optionally a decimal point</li>
 </ul>
-<div id="500ab81e" class="cell" data-execution_count="6">
+<div id="e2837e98" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a>age <span class="op">=</span> <span class="st">'35'</span></span>
 <span id="cb8-2"><a></a>age_float <span class="op">=</span> <span class="bu">float</span>(age)</span>
 <span id="cb8-3"><a></a><span class="bu">print</span>(<span class="bu">type</span>(age), <span class="bu">type</span>(age_float))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -551,7 +551,7 @@
 <li>It calculates (imperfectly) the year a person of <code>age</code> was born by subtracting <code>age</code> from <code>2024</code></li>
 <li>It returns an integer representing the approximate year person of <code>age</code> was born</li>
 </ol>
-<div id="25641d03" class="cell" data-execution_count="7">
+<div id="3bc8cbdd" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="bu">print</span>( calculate_year_born() ) <span class="co"># user enters 43, function returns 1981</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
