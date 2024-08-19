@@ -413,13 +413,13 @@
 <section id="combining-lists" class="slide level2">
 <h2>Combining lists</h2>
 <p>What will happen? Run this code on your computer and on <a href="https://pythontutor.com/visualize.html">Python Tutor</a></p>
-<div id="5c7f5bea" class="cell" data-execution_count="1">
+<div id="0f051e9c" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>vegetables <span class="op">=</span> [<span class="st">"kale"</span>, <span class="st">"carrot"</span>, <span class="st">"peas"</span>, <span class="st">"celery"</span>]</span>
 <span id="cb1-2"><a></a>fruits <span class="op">=</span> [<span class="st">"banana"</span>, <span class="st">"tomato"</span>, <span class="st">"pear"</span>]</span>
 <span id="cb1-3"><a></a>vegetables <span class="op">+</span> fruits</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>What will happen below? Will vegetables be mutated?</p>
-<div id="7efd8cbf" class="cell" data-execution_count="2">
+<div id="aa044e07" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="kw">def</span> combine_lists(list_1, list_2):</span>
 <span id="cb2-2"><a></a>  list_1 <span class="op">=</span> list_1 <span class="op">+</span> list_2</span>
 <span id="cb2-3"><a></a>  <span class="cf">return</span> list_1</span>
@@ -434,7 +434,7 @@
 <section id="combining-lists-1" class="slide level2">
 <h2>Combining lists</h2>
 <p>What will happen? Run this code on your computer and on <a href="https://pythontutor.com/visualize.html">Python Tutor</a> the difference between the two chunks of code (the one above and the one below)?</p>
-<div id="6a30e896" class="cell" data-execution_count="3">
+<div id="82d4f2fb" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">def</span> combine_lists(list_1, list_2):</span>
 <span id="cb3-2"><a></a>  <span class="cf">for</span> item <span class="kw">in</span> list_2:</span>
 <span id="cb3-3"><a></a>    list_1.append(item)</span>
@@ -453,7 +453,7 @@
 <section id="combining-lists-2" class="slide level2">
 <h2>Combining lists</h2>
 <p>What will happen? Run this code on your computer and on <a href="https://pythontutor.com/visualize.html">Python Tutor</a> the difference between the two chunks of code (the one above and the one below)?</p>
-<div id="33062167" class="cell" data-execution_count="4">
+<div id="de4c7aca" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> combine_lists(list_1, list_2):</span>
 <span id="cb5-2"><a></a>  list_1.extend(list_2)</span>
 <span id="cb5-3"><a></a>  <span class="cf">return</span> list_1</span>
@@ -481,7 +481,7 @@
 <section id="evaluate-the-code" class="slide level2">
 <h2>Evaluate the code</h2>
 <p>Indicate when an <strong>error</strong> occurs.</p>
-<div id="79aa95dd" class="cell" data-execution_count="5">
+<div id="18bf594f" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">31</span>, <span class="dv">0</span>, <span class="dv">2</span>]</span>
 <span id="cb7-2"><a></a>numbers.append(<span class="dv">40</span>)</span>
 <span id="cb7-3"><a></a>numbers <span class="co"># evaluate this at this point</span></span>
@@ -502,7 +502,7 @@
 </section>
 <section id="evaluate-the-code-solution" class="slide level2">
 <h2>Evaluate the code – solution</h2>
-<div id="2039f28a" class="cell" data-execution_count="6">
+<div id="8d57b9b1" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">31</span>, <span class="dv">0</span>, <span class="dv">2</span>]</span>
 <span id="cb8-2"><a></a>numbers.append(<span class="dv">40</span>)</span>
 <span id="cb8-3"><a></a>numbers <span class="co"># evaluate this at this point</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -510,28 +510,28 @@
 <pre><code>[1, 2, 31, 0, 2, 40]</code></pre>
 </div>
 </div>
-<div id="bb7985a1" class="cell" data-execution_count="7">
+<div id="c73d4869" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a>numbers.insert(<span class="dv">3</span>, <span class="dv">10</span>)</span>
 <span id="cb10-2"><a></a>numbers <span class="co"># evaluate this at this point</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>[1, 2, 31, 10, 0, 2, 40]</code></pre>
 </div>
 </div>
-<div id="c2345b5a" class="cell" data-execution_count="8">
+<div id="fbf9da3e" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a>numbers.remove(<span class="dv">2</span>)</span>
 <span id="cb12-2"><a></a>numbers <span class="co"># evaluate this at this point</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>[1, 31, 10, 0, 2, 40]</code></pre>
 </div>
 </div>
-<div id="ef52cdb6" class="cell" data-execution_count="9">
+<div id="d7961f32" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a>numbers.pop(<span class="dv">2</span>)</span>
 <span id="cb14-2"><a></a>numbers <span class="co"># evaluate this at this point</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>[1, 31, 0, 2, 40]</code></pre>
 </div>
 </div>
-<div id="9a567f84" class="cell" data-execution_count="10">
+<div id="542a5720" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a>new_list <span class="op">=</span> [<span class="dv">40</span>, <span class="dv">50</span>, <span class="dv">60</span>]</span>
 <span id="cb16-2"><a></a>numbers.extend(new_list)</span>
 <span id="cb16-3"><a></a>numbers <span class="co"># evaluate this at this point</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -548,7 +548,7 @@
 <li>It <strong>mutates</strong> the <code>original_list</code> removing values found in <code>to_remove_list</code> and then appending the values in <code>to_append_list</code></li>
 </ol>
 <p>Test case:</p>
-<div id="85c13b01" class="cell" data-execution_count="11">
+<div id="dc51832c" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a>test_list <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
 <span id="cb18-2"><a></a>remove_and_append(test_list, [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>], [<span class="dv">10</span>, <span class="dv">11</span>])</span>
 <span id="cb18-3"><a></a><span class="cf">assert</span> test_list <span class="op">==</span> [<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">11</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -556,7 +556,7 @@
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="be6cad23" class="cell" data-execution_count="12">
+<div id="bb8a08d4" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a></a><span class="kw">def</span> remove_and_append(original_list, to_remove_list, to_append_list):</span>
 <span id="cb19-2"><a></a>  <span class="cf">for</span> item <span class="kw">in</span> to_remove_list:</span>
 <span id="cb19-3"><a></a>    <span class="cf">if</span> item <span class="kw">in</span> original_list:</span>
@@ -587,7 +587,7 @@
 <section id="write-python-code-2" class="slide level2">
 <h2>Write python code</h2>
 <p>Test cases:</p>
-<div id="7fbacbd5" class="cell" data-execution_count="13">
+<div id="c16ffe79" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
 <span id="cb21-2"><a></a>    original_list <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">453</span>, <span class="dv">3</span>, <span class="dv">32</span>, <span class="dv">5</span>, <span class="dv">7</span>]</span>
 <span id="cb21-3"><a></a>    result <span class="op">=</span> create_dictionary(original_list)</span>

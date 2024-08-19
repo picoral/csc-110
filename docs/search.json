@@ -6491,7 +6491,7 @@
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.7273991215459183\n8",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.7481881332313113\n7",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -6513,7 +6513,7 @@
     "href": "slides-06-02.html#write-a-function-solution",
     "title": "random (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -7572,7 +7572,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Sep 25, Wednesday\nMidterm Exam 2 - Oct 23, Wednesday\nMidterm Exam 3 - Nov 20, Wednesday\n\nThe final exam (pencil and paper format) for all sections will be on:\n\nNA NA, NA – 6:00pm - 8:00pm in room TBA\n\nAll assignments that are submitted on Gradescope are due at 7pm.",
+    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Oct 2, Wednesday\nMidterm Exam 2 - Oct 23, Wednesday\nMidterm Exam 3 - Nov 20, Wednesday\n\nThe final exam (pencil and paper format) for all sections will be on:\n\nNA NA, NA – 6:00pm - 8:00pm in room TBA\n\nAll assignments that are submitted on Gradescope are due at 7pm.",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8298,7 +8298,7 @@
     "href": "syllabus.html#incomplete-i-or-withdrawal-w",
     "title": "Syllabus",
     "section": "Incomplete (I) or Withdrawal (W):",
-    "text": "Incomplete (I) or Withdrawal (W):\nRequests for incomplete (I) or withdrawal (W) must be made in accordance with University policies, which are available at http://catalog.arizona.edu/policy/grades-and-grading-system#incomplete and http://catalog.arizona.edu/policy/grades-and-grading-system#Withdrawal respectively.",
+    "text": "Incomplete (I) or Withdrawal (W):\nRequests for incomplete (I) or withdrawal (W) must be made in accordance with University policies, which are available at https://catalog.arizona.edu/policy/courses-credit/grading/grading-system.",
     "crumbs": [
       "Start Here",
       "Syllabus"

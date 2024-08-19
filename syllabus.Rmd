@@ -35,7 +35,7 @@ This course is scheduled to be an in-person course, meeting in-person three time
 
 -   [Education](https://maps.app.goo.gl/cgoHMggP2DkNVt3o6) Rm 211, 1:00-1:50pm, MWF
 
-This is a four-unit course, meeting in the lecture room three times a week (MWF). The weekly in-person lab sessions are flexible, meaning students have a number of time slots to choose from. To schedule your lab session go to [the weekly lab session spreadsheet](https://docs.google.com/spreadsheets/d/1mS3H-8GyLHb__rZaf9j66khmkncQgeqEXfyVk2l0sNo/edit?usp=sharing).
+This is a four-unit course, meeting in the lecture room three times a week (MWF). The weekly in-person lab sessions are flexible, meaning students have a number of time slots to choose from. To schedule your lab session go to [the weekly lab session spreadsheet]().
 
 Take a look on UAccess for your designated section. Attendance is expected and required.
 
@@ -199,9 +199,11 @@ The correspondence between percentage grade and numeric grade is as follows:
 -   Greater or equal to 60% at least a D
 -   Anything less, at least an E / F
 
+ University policy regarding grades and grading systems is available at <https://catalog.arizona.edu/policy/courses-credit/grading/grading-system> 
+
 ## Incomplete (I) or Withdrawal (W):
 
-Requests for incomplete (I) or withdrawal (W) must be made in accordance with University policies, which are available at <http://catalog.arizona.edu/policy/grades-and-grading-system#incomplete> and <http://catalog.arizona.edu/policy/grades-and-grading-system#Withdrawal> respectively.
+Requests for incomplete (I) or withdrawal (W) must be made in accordance with University policies, which are available at <https://catalog.arizona.edu/policy/courses-credit/grading/grading-system>.
 
 # Honors Credit
 
@@ -262,7 +264,7 @@ Selling class notes and/or other course materials to other students or to a thir
 
 For a list of emergency procedures for all types of incidents, please visit the website of the Critical Incident Response Team (CIRT): <https://cirt.arizona.edu/case-emergency/overview>
 
-Also watch the video available at <https://arizona.sabacloud.com/Saba/Web_spf/NA7P1PRD161/common/learningeventdetail/crtfy000000000003560>
+Also watch the video available at <https://arizona.sabacloud.com/Saba/Web_spf/NA7P1PRD161/app/me/ledetail;spf-url=common%2Flearningeventdetail%2Fcrtfy000000000003841>
 
 # University-wide Policies link
 
