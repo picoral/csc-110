@@ -9,11 +9,18 @@ title: "Schedule"
 library(tidyverse)
 library(readxl)
 schedule <- read_excel("schedule.xlsx") %>% 
-  mutate(formatted_date = format(date),
+  filter(term == "fall 2024") %>% 
+  mutate(date = parse_date(date),
+         formatted_date = paste0(month(date, label = TRUE), " ",
+                                 day(date), ", ",
+                                wday(date, label = TRUE, abbr = FALSE)),
          formatted_start = format(week_start, "%b %d"))
 
 assignments <- read_excel("assessment_schedule.xlsx") %>% 
-  mutate(formatted_date = format(due_date))
+  mutate(due_date = parse_date(due_date),
+         formatted_date = paste0(month(due_date, label = TRUE), " ",
+                                 day(due_date), ", ",
+                                wday(due_date, label = TRUE, abbr = FALSE)))
 ```
 
 # Exam Dates
@@ -194,7 +201,8 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 # Week 9 (`r schedule %>% filter(week_number == 9 & term == "fall 2024") %>% pull(formatted_start)`)
 
-## Quiz 08 (`r assignments %>% filter(assessment == "Quiz 08") %>% pull(formatted_date)`)
+## Midterm 2 (`r assignments %>% filter(assessment == "Midterm 2") %>% pull(formatted_date)`)
+
 
 ## Readings
 
@@ -213,7 +221,7 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 # Week 10 (`r schedule %>% filter(week_number == 10 & term == "fall 2024") %>% pull(formatted_start)`)
 
-## Quiz 09 (`r assignments %>% filter(assessment == "Quiz 09") %>% pull(formatted_date)`)
+## Quiz 08 (`r assignments %>% filter(assessment == "Quiz 08") %>% pull(formatted_date)`)
 
 ## Readings
 
@@ -232,7 +240,7 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 # Week 11 (`r schedule %>% filter(week_number == 11 & term == "fall 2024") %>% pull(formatted_start)`)
 
-## Midterm 2 (`r assignments %>% filter(assessment == "Midterm 2") %>% pull(formatted_date)`)
+## Quiz 09 (`r assignments %>% filter(assessment == "Quiz 09") %>% pull(formatted_date)`)
 
 
 ## Readings
@@ -269,7 +277,7 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 # Week 13 (`r schedule %>% filter(week_number == 13 & term == "fall 2024") %>% pull(formatted_start)`)
 
-## Quiz 11 (`r assignments %>% filter(assessment == "Quiz 11") %>% pull(formatted_date)`)
+## Midterm 3 (`r assignments %>% filter(assessment == "Midterm 3") %>% pull(formatted_date)`)
 
 ## Readings
 
@@ -289,7 +297,7 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 # Week 14 (`r schedule %>% filter(week_number == 14 & term == "fall 2024") %>% pull(formatted_start)`)
 
-## Quiz 12 (`r assignments %>% filter(assessment == "Quiz 12") %>% pull(formatted_date)`)
+## Quiz 11 (`r assignments %>% filter(assessment == "Quiz 11") %>% pull(formatted_date)`)
 
 ## Class slides
 
@@ -305,7 +313,7 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 # Week 15 (`r schedule %>% filter(week_number == 15 & term == "fall 2024") %>% pull(formatted_start)`)
 
-## Midterm 3 (`r assignments %>% filter(assessment == "Midterm 3") %>% pull(formatted_date)`)
+## Quiz 12 (`r assignments %>% filter(assessment == "Quiz 12") %>% pull(formatted_date)`)
 
 ## Readings
 
