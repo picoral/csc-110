@@ -257,7 +257,7 @@
     "href": "hello.html",
     "title": "Hello World!",
     "section": "",
-    "text": "Before we begin writing Python code, you need to install Python3 in your computer (alternatively you can run your code in the cloud on replit.com for example – see videos later on this page for more info on how to do that).\n\nGo to https://www.python.org/downloads/ and follow the instructions to install python for your specific Operating System (Mac, Windows, etc.)\nI recommend you use Visual Studio Code for your IDE (Integrated Development Environment). Download and install VS code: https://code.visualstudio.com/download\nIf you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based IDE such as https://replit.com/",
+    "text": "Before we begin writing Python code, you need to install Python3 in your computer (alternatively you can run your code in the cloud on vscode.dev for example).\n\nGo to https://www.python.org/downloads/ and follow the instructions to install python for your specific Operating System (Mac, Windows, etc.)\nI recommend you use Visual Studio Code for your IDE (Integrated Development Environment). Download and install VS code: https://code.visualstudio.com/download\nIf you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based IDE such as https://vscode.dev/",
     "crumbs": [
       "Module 1 - Basics",
       "Hello World!"
@@ -268,7 +268,7 @@
     "href": "hello.html#installing-python",
     "title": "Hello World!",
     "section": "",
-    "text": "Before we begin writing Python code, you need to install Python3 in your computer (alternatively you can run your code in the cloud on replit.com for example – see videos later on this page for more info on how to do that).\n\nGo to https://www.python.org/downloads/ and follow the instructions to install python for your specific Operating System (Mac, Windows, etc.)\nI recommend you use Visual Studio Code for your IDE (Integrated Development Environment). Download and install VS code: https://code.visualstudio.com/download\nIf you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based IDE such as https://replit.com/",
+    "text": "Before we begin writing Python code, you need to install Python3 in your computer (alternatively you can run your code in the cloud on vscode.dev for example).\n\nGo to https://www.python.org/downloads/ and follow the instructions to install python for your specific Operating System (Mac, Windows, etc.)\nI recommend you use Visual Studio Code for your IDE (Integrated Development Environment). Download and install VS code: https://code.visualstudio.com/download\nIf you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based IDE such as https://vscode.dev/",
     "crumbs": [
       "Module 1 - Basics",
       "Hello World!"
@@ -6491,7 +6491,7 @@
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.14017045045739118\n7",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.7273991215459183\n8",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -6513,7 +6513,7 @@
     "href": "slides-06-02.html#write-a-function-solution",
     "title": "random (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -7579,11 +7579,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-01-2024-08-28",
-    "href": "schedule.html#quiz-01-2024-08-28",
+    "objectID": "schedule.html#quiz-01-aug-28-wednesday",
+    "href": "schedule.html#quiz-01-aug-28-wednesday",
     "title": "Schedule",
-    "section": "Quiz 01 (2024-08-28)",
-    "text": "Quiz 01 (2024-08-28)",
+    "section": "Quiz 01 (Aug 28, Wednesday)",
+    "text": "Quiz 01 (Aug 28, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7623,11 +7623,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-02-2024-09-04",
-    "href": "schedule.html#quiz-02-2024-09-04",
+    "objectID": "schedule.html#quiz-02-sep-4-wednesday",
+    "href": "schedule.html#quiz-02-sep-4-wednesday",
     "title": "Schedule",
-    "section": "Quiz 02 (2024-09-04)",
-    "text": "Quiz 02 (2024-09-04)",
+    "section": "Quiz 02 (Sep 4, Wednesday)",
+    "text": "Quiz 02 (Sep 4, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7667,11 +7667,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-03-2024-09-11",
-    "href": "schedule.html#quiz-03-2024-09-11",
+    "objectID": "schedule.html#quiz-03-sep-11-wednesday",
+    "href": "schedule.html#quiz-03-sep-11-wednesday",
     "title": "Schedule",
-    "section": "Quiz 03 (2024-09-11)",
-    "text": "Quiz 03 (2024-09-11)",
+    "section": "Quiz 03 (Sep 11, Wednesday)",
+    "text": "Quiz 03 (Sep 11, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7711,11 +7711,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-04-2024-09-18",
-    "href": "schedule.html#quiz-04-2024-09-18",
+    "objectID": "schedule.html#quiz-04-sep-18-wednesday",
+    "href": "schedule.html#quiz-04-sep-18-wednesday",
     "title": "Schedule",
-    "section": "Quiz 04 (2024-09-18)",
-    "text": "Quiz 04 (2024-09-18)",
+    "section": "Quiz 04 (Sep 18, Wednesday)",
+    "text": "Quiz 04 (Sep 18, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7755,11 +7755,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-05-2024-09-25",
-    "href": "schedule.html#quiz-05-2024-09-25",
+    "objectID": "schedule.html#quiz-05-sep-25-wednesday",
+    "href": "schedule.html#quiz-05-sep-25-wednesday",
     "title": "Schedule",
-    "section": "Quiz 05 (2024-09-25)",
-    "text": "Quiz 05 (2024-09-25)",
+    "section": "Quiz 05 (Sep 25, Wednesday)",
+    "text": "Quiz 05 (Sep 25, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7799,11 +7799,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#midterm-1-2024-10-02",
-    "href": "schedule.html#midterm-1-2024-10-02",
+    "objectID": "schedule.html#midterm-1-oct-2-wednesday",
+    "href": "schedule.html#midterm-1-oct-2-wednesday",
     "title": "Schedule",
-    "section": "Midterm 1 (2024-10-02)",
-    "text": "Midterm 1 (2024-10-02)",
+    "section": "Midterm 1 (Oct 2, Wednesday)",
+    "text": "Midterm 1 (Oct 2, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7843,11 +7843,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-06-2024-10-09",
-    "href": "schedule.html#quiz-06-2024-10-09",
+    "objectID": "schedule.html#quiz-06-oct-9-wednesday",
+    "href": "schedule.html#quiz-06-oct-9-wednesday",
     "title": "Schedule",
-    "section": "Quiz 06 (2024-10-09)",
-    "text": "Quiz 06 (2024-10-09)",
+    "section": "Quiz 06 (Oct 9, Wednesday)",
+    "text": "Quiz 06 (Oct 9, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7887,11 +7887,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-07-2024-10-16",
-    "href": "schedule.html#quiz-07-2024-10-16",
+    "objectID": "schedule.html#quiz-07-oct-16-wednesday",
+    "href": "schedule.html#quiz-07-oct-16-wednesday",
     "title": "Schedule",
-    "section": "Quiz 07 (2024-10-16)",
-    "text": "Quiz 07 (2024-10-16)",
+    "section": "Quiz 07 (Oct 16, Wednesday)",
+    "text": "Quiz 07 (Oct 16, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7931,11 +7931,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-08-2024-10-30",
-    "href": "schedule.html#quiz-08-2024-10-30",
+    "objectID": "schedule.html#midterm-2-oct-23-wednesday",
+    "href": "schedule.html#midterm-2-oct-23-wednesday",
     "title": "Schedule",
-    "section": "Quiz 08 (2024-10-30)",
-    "text": "Quiz 08 (2024-10-30)",
+    "section": "Midterm 2 (Oct 23, Wednesday)",
+    "text": "Midterm 2 (Oct 23, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7975,11 +7975,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-09-2024-11-06",
-    "href": "schedule.html#quiz-09-2024-11-06",
+    "objectID": "schedule.html#quiz-08-oct-30-wednesday",
+    "href": "schedule.html#quiz-08-oct-30-wednesday",
     "title": "Schedule",
-    "section": "Quiz 09 (2024-11-06)",
-    "text": "Quiz 09 (2024-11-06)",
+    "section": "Quiz 08 (Oct 30, Wednesday)",
+    "text": "Quiz 08 (Oct 30, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8019,11 +8019,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#midterm-2-2024-10-23",
-    "href": "schedule.html#midterm-2-2024-10-23",
+    "objectID": "schedule.html#quiz-09-nov-6-wednesday",
+    "href": "schedule.html#quiz-09-nov-6-wednesday",
     "title": "Schedule",
-    "section": "Midterm 2 (2024-10-23)",
-    "text": "Midterm 2 (2024-10-23)",
+    "section": "Quiz 09 (Nov 6, Wednesday)",
+    "text": "Quiz 09 (Nov 6, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8063,11 +8063,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-10-2024-11-13",
-    "href": "schedule.html#quiz-10-2024-11-13",
+    "objectID": "schedule.html#quiz-10-nov-13-wednesday",
+    "href": "schedule.html#quiz-10-nov-13-wednesday",
     "title": "Schedule",
-    "section": "Quiz 10 (2024-11-13)",
-    "text": "Quiz 10 (2024-11-13)",
+    "section": "Quiz 10 (Nov 13, Wednesday)",
+    "text": "Quiz 10 (Nov 13, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8107,11 +8107,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-11-2024-12-04",
-    "href": "schedule.html#quiz-11-2024-12-04",
+    "objectID": "schedule.html#midterm-3-nov-20-wednesday",
+    "href": "schedule.html#midterm-3-nov-20-wednesday",
     "title": "Schedule",
-    "section": "Quiz 11 (2024-12-04)",
-    "text": "Quiz 11 (2024-12-04)",
+    "section": "Midterm 3 (Nov 20, Wednesday)",
+    "text": "Midterm 3 (Nov 20, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8151,11 +8151,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-12-2024-12-11",
-    "href": "schedule.html#quiz-12-2024-12-11",
+    "objectID": "schedule.html#quiz-11-dec-4-wednesday",
+    "href": "schedule.html#quiz-11-dec-4-wednesday",
     "title": "Schedule",
-    "section": "Quiz 12 (2024-12-11)",
-    "text": "Quiz 12 (2024-12-11)",
+    "section": "Quiz 11 (Dec 4, Wednesday)",
+    "text": "Quiz 11 (Dec 4, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8184,11 +8184,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#midterm-3-2024-11-20",
-    "href": "schedule.html#midterm-3-2024-11-20",
+    "objectID": "schedule.html#quiz-12-dec-11-wednesday",
+    "href": "schedule.html#quiz-12-dec-11-wednesday",
     "title": "Schedule",
-    "section": "Midterm 3 (2024-11-20)",
-    "text": "Midterm 3 (2024-11-20)",
+    "section": "Quiz 12 (Dec 11, Wednesday)",
+    "text": "Quiz 12 (Dec 11, Wednesday)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8379,171 +8379,6 @@
     "crumbs": [
       "Module 1 - Basics",
       "Module 1 Programming Problems"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-01-aug-28-wednesday",
-    "href": "schedule.html#quiz-01-aug-28-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 01 (Aug 28, Wednesday)",
-    "text": "Quiz 01 (Aug 28, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-02-sep-4-wednesday",
-    "href": "schedule.html#quiz-02-sep-4-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 02 (Sep 4, Wednesday)",
-    "text": "Quiz 02 (Sep 4, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-03-sep-11-wednesday",
-    "href": "schedule.html#quiz-03-sep-11-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 03 (Sep 11, Wednesday)",
-    "text": "Quiz 03 (Sep 11, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-04-sep-18-wednesday",
-    "href": "schedule.html#quiz-04-sep-18-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 04 (Sep 18, Wednesday)",
-    "text": "Quiz 04 (Sep 18, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-05-sep-25-wednesday",
-    "href": "schedule.html#quiz-05-sep-25-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 05 (Sep 25, Wednesday)",
-    "text": "Quiz 05 (Sep 25, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#midterm-1-oct-2-wednesday",
-    "href": "schedule.html#midterm-1-oct-2-wednesday",
-    "title": "Schedule",
-    "section": "Midterm 1 (Oct 2, Wednesday)",
-    "text": "Midterm 1 (Oct 2, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-06-oct-9-wednesday",
-    "href": "schedule.html#quiz-06-oct-9-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 06 (Oct 9, Wednesday)",
-    "text": "Quiz 06 (Oct 9, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-07-oct-16-wednesday",
-    "href": "schedule.html#quiz-07-oct-16-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 07 (Oct 16, Wednesday)",
-    "text": "Quiz 07 (Oct 16, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-08-oct-30-wednesday",
-    "href": "schedule.html#quiz-08-oct-30-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 08 (Oct 30, Wednesday)",
-    "text": "Quiz 08 (Oct 30, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-09-nov-6-wednesday",
-    "href": "schedule.html#quiz-09-nov-6-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 09 (Nov 6, Wednesday)",
-    "text": "Quiz 09 (Nov 6, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#midterm-2-oct-23-wednesday",
-    "href": "schedule.html#midterm-2-oct-23-wednesday",
-    "title": "Schedule",
-    "section": "Midterm 2 (Oct 23, Wednesday)",
-    "text": "Midterm 2 (Oct 23, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-10-nov-13-wednesday",
-    "href": "schedule.html#quiz-10-nov-13-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 10 (Nov 13, Wednesday)",
-    "text": "Quiz 10 (Nov 13, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-11-dec-4-wednesday",
-    "href": "schedule.html#quiz-11-dec-4-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 11 (Dec 4, Wednesday)",
-    "text": "Quiz 11 (Dec 4, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#quiz-12-dec-11-wednesday",
-    "href": "schedule.html#quiz-12-dec-11-wednesday",
-    "title": "Schedule",
-    "section": "Quiz 12 (Dec 11, Wednesday)",
-    "text": "Quiz 12 (Dec 11, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#midterm-3-nov-20-wednesday",
-    "href": "schedule.html#midterm-3-nov-20-wednesday",
-    "title": "Schedule",
-    "section": "Midterm 3 (Nov 20, Wednesday)",
-    "text": "Midterm 3 (Nov 20, Wednesday)",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
     ]
   }
 ]
