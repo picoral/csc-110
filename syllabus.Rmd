@@ -13,11 +13,18 @@ library(tidyverse)
 library(readxl)
 library(knitr)
 schedule <- read_excel("schedule.xlsx") %>% 
-  mutate(formatted_date = format(date),
+  filter(term == "fall 2024") %>% 
+  mutate(date = parse_date(date),
+         formatted_date = paste0(month(date, label = TRUE), " ",
+                                 day(date), ", ",
+                                wday(date, label = TRUE, abbr = FALSE)),
          formatted_start = format(week_start, "%b %d"))
 
 assignments <- read_excel("assessment_schedule.xlsx") %>% 
-  mutate(formatted_date = format(due_date))
+  mutate(due_date = parse_date(due_date),
+         formatted_date = paste0(month(due_date, label = TRUE), " ",
+                                 day(due_date), ", ",
+                                wday(due_date, label = TRUE, abbr = FALSE)))
 
 opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
@@ -26,9 +33,7 @@ opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 This course is scheduled to be an in-person course, meeting in-person three times a week. There are multiple sections of the course with various meeting times. Your meeting time should be one of the following:
 
--   [Gittings](https://goo.gl/maps/LpwVaL8JVxxRVDfA8) Room 129b, 1:00-1:50pm, MWF
--   [Gittings](https://goo.gl/maps/LpwVaL8JVxxRVDfA8) Room 129b, 2:00-2:50pm, MWF
-
+-   [Education](https://maps.app.goo.gl/cgoHMggP2DkNVt3o6) Rm 211, 1:00-1:50pm, MWF
 
 This is a four-unit course, meeting in the lecture room three times a week (MWF). The weekly in-person lab sessions are flexible, meaning students have a number of time slots to choose from. To schedule your lab session go to [the weekly lab session spreadsheet](https://docs.google.com/spreadsheets/d/1mS3H-8GyLHb__rZaf9j66khmkncQgeqEXfyVk2l0sNo/edit?usp=sharing).
 
@@ -50,8 +55,8 @@ An introduction to programming with an emphasis on solving problems drawn from a
         -   Email: adrianaps\@arizona.edu
         -   Instructor Website: adrianapicoral.com
         -   Office hours (open door, drop in, my office [GS](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 811):
-            -   Tuesday 1:00pm to 3:00pm
-            -   Wednesday 11:30am to 12:30pm
+            -   Monday 2:30pm to 3:30pm
+            -   Wednesday 10:30am to 12:30pm
 
 There will also be many undergraduate TAs. See the class website for their contact info!
 
@@ -97,16 +102,15 @@ Participating in the course and attending the in-person lectures and other cours
 
 ## Administrative Drops
 
-Every semester, students enroll in introductory CS classes but do not submit any work, resulting in a grade of `E` at the end of the term. To prevent this, at the end of the **second week** (January 19), all students who have not submitted/completed **five or more** of the following will be administratively dropped:
+Every semester, students enroll in introductory CS classes but do not submit any work, resulting in a grade of `E` at the end of the term. To prevent this, at the end of the **second week** (September 06), all students who have not submitted/completed **four or more** of the following will be administratively dropped:
 
-1.  Class presence on January 10
-2.  January 10 quiz
-3.  Class presence on January 12
+1.  Class presence on August 26
+2.  August 28 quiz
+3.  Class presence on August 30
 4.  [Beginning of semester survey](https://uarizona.co1.qualtrics.com/jfe/form/SV_0q8KC0FwVhCiYD4)
-5.  January 17 quiz
+5.  September 04 quiz
 6.  [Module 1 Programming Problem 1](https://adrianapicoral.com/csc-110/assignments-01.html)
-7.  [Module 1 Programming Problem 2](https://adrianapicoral.com/csc-110/assignments-02.html)
-8.  Class presence on January 19
+8.  Class presence on September 06
 
 In addition, to ensure your success in this course, and that you are on top of the work that is due every week, administrative drops will be in place throughout the semester. Students who miss coursework for two weeks or more often get an E at the end of the term in this course. After the second week of class, at any point during the semester if you fail to attend class and submit assignments for two consecutive weeks you will be administratively dropped.
 
@@ -129,8 +133,8 @@ All online communication will be conducted through my official UA e-mail address
 
 All readings, videos, and assignment instructions will be available in the course website.
 
--   Course D2L: <https://d2l.arizona.edu/d2l/home/1386086>
--   Course Gradescope: <https://www.gradescope.com/courses/676322>
+-   Course D2L: <https://d2l.arizona.edu/d2l/home/1497424>
+-   Course Gradescope: \<\>
 -   Course website: <https://adrianapicoral.com/csc-110/>
 
 # Assignments and Examinations: Schedule/Due Dates
@@ -155,7 +159,7 @@ You must keep theses dates available. Do not schedule any flights, travel plans,
 
 Weekly quizzes will be held every Wednesday (unless otherwise noted). The 2 (two) lowest grades for quizzes will be dropped from final grade calculations.
 
-Short programming projects are due on the same day as programming problems. While the instructions for programming problems are on the website, instructions for short projects will be available only during our weekly 50-minute in-person lab sessions. The lowest grade for short programming projects will be dropped at the end of the semester. There will be two lab sessions (the weeks of March 18 and April 15) for you to work on a maximum of two short programming project submissions you have missed.
+Short programming projects are due on the same day as programming problems. While the instructions for programming problems are on the website, instructions for short projects will be available only during our weekly 50-minute in-person lab sessions. The lowest grade for short programming projects will be dropped at the end of the semester. There will be two lab sessions (the weeks of October 16 and October 12) for you to work on a maximum of two short programming project submissions you have missed.
 
 To schedule your lab session go to [the weekly lab session spreadsheet](https://docs.google.com/spreadsheets/d/1mS3H-8GyLHb__rZaf9j66khmkncQgeqEXfyVk2l0sNo/edit?usp=sharing).
 
@@ -165,9 +169,9 @@ For programming problems and projects, late work is not accepted
 
 ## Extra Credit
 
-Up to 1 point of extra credit will be awarded to students who come to office hours in person. Check our office hours schedule on the website <https://adrianapicoral.com/csc-110/tas.html> and ask the TA or instructor to submit your points to gradescope. 
+Up to 1 point of extra credit will be awarded to students who come to office hours in person. Check our office hours schedule on the website <https://adrianapicoral.com/csc-110/tas.html> and ask the TA or instructor to submit your points to gradescope.
 
-You are required to ask a question and/or work on an assignment or practice problem with the TA or instructor to receive 0.5 points for each office hour attendance. It is your responsibility to ensure the TA or instructor enter your 0.5 points on gradescope during the session. Instructors will not award you these points at a later date, do not email instructors about getting points at a later date (for example, if you forget to ask the TA to enter your office hour points on gradescope). 
+You are required to ask a question and/or work on an assignment or practice problem with the TA or instructor to receive 0.5 points for each office hour attendance. It is your responsibility to ensure the TA or instructor enter your 0.5 points on gradescope during the session. Instructors will not award you these points at a later date, do not email instructors about getting points at a later date (for example, if you forget to ask the TA to enter your office hour points on gradescope).
 
 Your first TA office visit should take place before the Midterm 1 date, and the second visit should take place before the Midterm 2 date.
 
@@ -177,7 +181,7 @@ The final exam is worth 15%.
 
 The final exam will be on:
 
--   `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(time)`  in [room TBA]()
+-   `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(time)` in [room TBA]()
 
 You must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.
 
@@ -194,7 +198,6 @@ The correspondence between percentage grade and numeric grade is as follows:
 -   Greater or equal to 70% at least a C
 -   Greater or equal to 60% at least a D
 -   Anything less, at least an E / F
-
 
 ## Incomplete (I) or Withdrawal (W):
 
@@ -237,13 +240,11 @@ assignments %>%
   kable(col.names = c("Assessment", "Date", "Time/Location"))
 ```
 
-
 # Classroom Behavior Policy
 
 To foster a positive learning environment, students and instructors have a shared responsibility. We want a safe, welcoming, and inclusive environment where all of us feel comfortable with each other and where we can challenge ourselves to succeed. To that end, our focus is on the tasks at hand and not on extraneous activities (e.g., texting, chatting, reading a newspaper, making phone calls, web surfing, etc.).
 
 Students are asked to refrain from disruptive conversations with people sitting around them during lecture. Students observed engaging in disruptive activity will be asked to cease this behavior. Those who continue to disrupt the class will be asked to leave lecture or discussion and may be reported to the Dean of Students.
-
 
 # Code of Academic Integrity
 
@@ -257,42 +258,38 @@ Uploading material from this course to a website other than D2L is strictly proh
 
 Selling class notes and/or other course materials to other students or to a third party for resale is not permitted without the instructor's express written consent. Violations to this and other course rules are subject to the Code of Academic Integrity and may result in course sanctions. Additionally, students who use D2L or UA e-mail to sell or buy these copyrighted materials are subject to Code of Conduct Violations for misuse of student e-mail addresses. This conduct may also constitute copyright infringement.
 
-
 # Safety on Campus and in the Classroom
 
 For a list of emergency procedures for all types of incidents, please visit the website of the Critical Incident Response Team (CIRT): <https://cirt.arizona.edu/case-emergency/overview>
 
 Also watch the video available at <https://arizona.sabacloud.com/Saba/Web_spf/NA7P1PRD161/common/learningeventdetail/crtfy000000000003560>
 
-
 # University-wide Policies link
 
-Links to the following UA policies are provided here, http://catalog.arizona.edu/syllabus-policies: 
+Links to the following UA policies are provided here, <http://catalog.arizona.edu/syllabus-policies>:
 
-* Absence and Class Participation Policies
-* Threatening Behavior Policy
-* Accessibility and Accommodations Policy
-* Code of Academic Integrity
-* Nondiscrimination and Anti-Harassment Policy
+-   Absence and Class Participation Policies
+-   Threatening Behavior Policy
+-   Accessibility and Accommodations Policy
+-   Code of Academic Integrity
+-   Nondiscrimination and Anti-Harassment Policy
 
-# Department-wide Syllabus Policies and Resources link  
+# Department-wide Syllabus Policies and Resources link
 
-Links to the following departmental syllabus policies and resources are provided here, https://www.cs.arizona.edu/cs-course-syllabus-policies : 
+Links to the following departmental syllabus policies and resources are provided here, <https://www.cs.arizona.edu/cs-course-syllabus-policies> :
 
-* Department Code of Conduct
-* Class Recordings
-* Illnesses and Emergencies
-* Obtaining Help
-* Preferred Names and Pronouns
-* Confidentiality of Student Records 
-* Additional Resources
-* Land Acknowledgement Statement
-
+-   Department Code of Conduct
+-   Class Recordings
+-   Illnesses and Emergencies
+-   Obtaining Help
+-   Preferred Names and Pronouns
+-   Confidentiality of Student Records
+-   Additional Resources
+-   Land Acknowledgement Statement
 
 # Confidentiality of Student Records
 
 Student education records are considered confidential and may not be released without the written consent of the student. For more information visit <http://www.registrar.arizona.edu/ferpa>.
-
 
 # Subject to Change Statement
 
