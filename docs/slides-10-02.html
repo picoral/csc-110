@@ -413,7 +413,7 @@
 <section id="variable-length-parameter" class="slide level2">
 <h2>Variable length parameter</h2>
 <p>Sometimes you want to handle a variable number of parameters (like <code>print</code> does)</p>
-<div id="05de8ec7" class="cell" data-execution_count="1">
+<div id="31921621" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1 2 3</code></pre>
@@ -423,7 +423,7 @@
 <section id="variable-length-parameter-1" class="slide level2">
 <h2>Variable length parameter</h2>
 <p>You can add a <code>*</code> before your parameter name so that it accepts a variable number of arguments, gathering them into a tuple</p>
-<div id="963b7afa" class="cell" data-execution_count="2">
+<div id="d3e4c2c8" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">def</span> concatenate(<span class="op">*</span>values):</span>
 <span id="cb3-2"><a></a>  new_string <span class="op">=</span> <span class="st">""</span></span>
 <span id="cb3-3"><a></a>  <span class="cf">for</span> v <span class="kw">in</span> values:</span>
@@ -446,7 +446,7 @@
 <li>It takes a variable number of arguments: <code>*values</code></li>
 <li>It returns the highest value in <code>values</code></li>
 </ol>
-<div id="47ae7d2b" class="cell" data-execution_count="3">
+<div id="45d03480" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="cf">assert</span> maximum(<span class="dv">1</span>) <span class="op">==</span> <span class="dv">1</span></span>
 <span id="cb5-2"><a></a><span class="cf">assert</span> maximum(<span class="dv">3</span>,<span class="dv">1</span>) <span class="op">==</span> <span class="dv">3</span></span>
 <span id="cb5-3"><a></a><span class="cf">assert</span> maximum(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>) <span class="op">==</span> <span class="dv">6</span></span>
@@ -455,7 +455,7 @@
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="4f04d66c" class="cell" data-execution_count="4">
+<div id="1a28291e" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">def</span> maximum(<span class="op">*</span>values):</span>
 <span id="cb6-2"><a></a>  result <span class="op">=</span> <span class="va">None</span></span>
 <span id="cb6-3"><a></a>  <span class="cf">for</span> v <span class="kw">in</span> values:</span>
@@ -483,7 +483,7 @@
 <li>It takes a variable number of arguments: <code>*values</code></li>
 <li>It returns the highest and lowest values in <code>values</code></li>
 </ol>
-<div id="05035027" class="cell" data-execution_count="5">
+<div id="413fa78e" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="cf">assert</span> min_max(<span class="dv">1</span>) <span class="op">==</span> (<span class="dv">1</span>, <span class="dv">1</span>)</span>
 <span id="cb8-2"><a></a><span class="cf">assert</span> min_max(<span class="dv">3</span>,<span class="dv">1</span>) <span class="op">==</span> (<span class="dv">1</span>, <span class="dv">3</span>)</span>
 <span id="cb8-3"><a></a><span class="cf">assert</span> min_max(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>) <span class="op">==</span> (<span class="dv">2</span>, <span class="dv">6</span>)</span>
@@ -492,7 +492,7 @@
 </section>
 <section id="write-a-function-solution-1" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="a0310125" class="cell" data-execution_count="6">
+<div id="a3722f53" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="kw">def</span> min_max(<span class="op">*</span>values):</span>
 <span id="cb9-2"><a></a>  <span class="bu">max</span> <span class="op">=</span> <span class="va">None</span></span>
 <span id="cb9-3"><a></a>  <span class="bu">min</span> <span class="op">=</span> <span class="va">None</span></span>

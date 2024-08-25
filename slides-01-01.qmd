@@ -124,20 +124,9 @@ Exams are on paper. Why?
 ## Exams and Quizzes
 
 -   Midterm exams and weekly quizzes are always on Wednesday (same room as our lectures)
--   Our first quiz will be on today
+-   Our first quiz will be on Wednesday
 -   No preparation is required for this first quiz
--   Completion only grade for quiz 1
-
-## Quiz 01
-
-<center>
-<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
-<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
-</center>
-
-You have 10 minutes to complete the quiz
-
-Completion only (meaning no matter your performance you get 100% for it if you have your name on it)
+-   Completion only grade for quiz 1 (Wednesday)
 
 ## Syllabus Activity
 
@@ -147,8 +136,8 @@ Completion only (meaning no matter your performance you get 100% for it if you h
 
 ## Other Important Dates
 
--   Last day for students to add themselves to a course using UAccess is January 17
--   Last day for students to drop without a grade of W (withdraw) is January 23
+-   Last day for students to add themselves to a course using UAccess is September 02
+-   Last day for students to drop without a grade of W (withdraw) is September 08
 
 ## Academic integrity
 
@@ -216,6 +205,19 @@ Also describe the steps you took to try to solve the problem yourself.
 -   [Departmental Tutors](https://www.cs.arizona.edu/undergraduate/student-resources/tutoring) (free)
 -   Email me (it will take longer than coming to office hours)
 
+## Tips on slides
+
+Press the `e` key
+
 # This is a difficult course, but we are here to help you succeed
 
+## Quiz 01
 
+<center>
+<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+</center>
+
+You have 10 minutes to complete the quiz
+
+Completion only (meaning no matter your performance you get 100% for it if you have your name on it)

@@ -2399,18 +2399,7 @@
     "href": "slides-01-01.html#exams-and-quizzes-1",
     "title": "Course Introduction (class slides)",
     "section": "Exams and Quizzes",
-    "text": "Exams and Quizzes\n\nMidterm exams and weekly quizzes are always on Wednesday (same room as our lectures)\nOur first quiz will be on today\nNo preparation is required for this first quiz\nCompletion only grade for quiz 1",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#quiz-01",
-    "href": "slides-01-01.html#quiz-01",
-    "title": "Course Introduction (class slides)",
-    "section": "Quiz 01",
-    "text": "Quiz 01\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\nCompletion only (meaning no matter your performance you get 100% for it if you have your name on it)",
+    "text": "Exams and Quizzes\n\nMidterm exams and weekly quizzes are always on Wednesday (same room as our lectures)\nOur first quiz will be on Wednesday\nNo preparation is required for this first quiz\nCompletion only grade for quiz 1 (Wednesday)",
     "crumbs": [
       "Module 1 - Basics",
       "Course Introduction (class slides)"
@@ -2432,7 +2421,7 @@
     "href": "slides-01-01.html#other-important-dates",
     "title": "Course Introduction (class slides)",
     "section": "Other Important Dates",
-    "text": "Other Important Dates\n\nLast day for students to add themselves to a course using UAccess is January 17\nLast day for students to drop without a grade of W (withdraw) is January 23",
+    "text": "Other Important Dates\n\nLast day for students to add themselves to a course using UAccess is September 02\nLast day for students to drop without a grade of W (withdraw) is September 08",
     "crumbs": [
       "Module 1 - Basics",
       "Course Introduction (class slides)"
@@ -2532,6 +2521,28 @@
     "title": "Course Introduction (class slides)",
     "section": "How to get help?",
     "text": "How to get help?\n\nCome to office hours!\nJoin Discord and ask questions there\nDepartmental Tutors (free)\nEmail me (it will take longer than coming to office hours)",
+    "crumbs": [
+      "Module 1 - Basics",
+      "Course Introduction (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-01-01.html#tips-on-slides",
+    "href": "slides-01-01.html#tips-on-slides",
+    "title": "Course Introduction (class slides)",
+    "section": "Tips on slides",
+    "text": "Tips on slides\nPress the e key",
+    "crumbs": [
+      "Module 1 - Basics",
+      "Course Introduction (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-01-01.html#quiz-01",
+    "href": "slides-01-01.html#quiz-01",
+    "title": "Course Introduction (class slides)",
+    "section": "Quiz 01",
+    "text": "Quiz 01\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\nCompletion only (meaning no matter your performance you get 100% for it if you have your name on it)",
     "crumbs": [
       "Module 1 - Basics",
       "Course Introduction (class slides)"
@@ -6491,7 +6502,7 @@
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.7481881332313113\n7",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.0038134963686043966\n5",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -6513,7 +6524,7 @@
     "href": "slides-06-02.html#write-a-function-solution",
     "title": "random (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -7572,7 +7583,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Oct 2, Wednesday\nMidterm Exam 2 - Oct 23, Wednesday\nMidterm Exam 3 - Nov 20, Wednesday\n\nThe final exam (pencil and paper format) for all sections will be on:\n\nNA NA, NA – 6:00pm - 8:00pm in room TBA\n\nAll assignments that are submitted on Gradescope are due at 7pm.",
+    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Oct 2, Wednesday\nMidterm Exam 2 - Oct 23, Wednesday\nMidterm Exam 3 - Nov 20, Wednesday\n\nThe final exam (pencil and paper format) for all sections will be on:\n\nDec 13, Friday – 6:00pm - 8:00pm in room TBA\n\nAll assignments that are submitted on Gradescope are due at 7pm.",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8287,7 +8298,7 @@
     "href": "syllabus.html#final-examination",
     "title": "Syllabus",
     "section": "Final Examination",
-    "text": "Final Examination\nThe final exam is worth 15%.\nThe final exam will be on:\n\nNA NA, NA – 6:00pm - 8:00pm in room TBA\n\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nSee also Final Exam Regulations and Schedule: https://registrar.arizona.edu/finals",
+    "text": "Final Examination\nThe final exam is worth 15%.\nThe final exam will be on:\n\nDec 13, Friday – 6:00pm - 8:00pm in room TBA\n\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nSee also Final Exam Regulations and Schedule: https://registrar.arizona.edu/finals",
     "crumbs": [
       "Start Here",
       "Syllabus"
@@ -8320,7 +8331,7 @@
     "href": "syllabus.html#assignment-due-dates",
     "title": "Syllabus",
     "section": "Assignment due dates",
-    "text": "Assignment due dates\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nAug 28, Wednesday\nin class\n\n\nSurvey\nAug 30, Friday\n7pm\n\n\nQuiz 02\nSep 4, Wednesday\nin class\n\n\nModule 1 Programming Problems\nSep 5, Thursday\n7pm\n\n\nModule 2 Programming Problems\nSep 10, Tuesday\n7pm\n\n\nShort Programming Project 1\nSep 10, Tuesday\n7pm\n\n\nQuiz 03\nSep 11, Wednesday\nin class\n\n\nProgramming Project 1\nSep 12, Thursday\n7pm\n\n\nModule 3 Programming Problems\nSep 17, Tuesday\n7pm\n\n\nShort Programming Project 2\nSep 17, Tuesday\n7pm\n\n\nQuiz 04\nSep 18, Wednesday\nin class\n\n\nProgramming Project 2\nSep 19, Thursday\n7pm\n\n\nModule 4 Programming Problems\nSep 24, Tuesday\n7pm\n\n\nShort Programming Project 3\nSep 24, Tuesday\n7pm\n\n\nQuiz 05\nSep 25, Wednesday\nin class\n\n\nProgramming Project 3\nSep 26, Thursday\n7pm\n\n\nMidterm 1\nOct 2, Wednesday\nin class\n\n\nModule 5 Programming Problems\nOct 3, Thursday\n7pm\n\n\nShort Programming Project 4\nOct 4, Friday\n7pm\n\n\nProgramming Project 4\nOct 7, Monday\n7pm\n\n\nModule 6 Programming Problems\nOct 8, Tuesday\n7pm\n\n\nShort Programming Project 5\nOct 8, Tuesday\n7pm\n\n\nQuiz 06\nOct 9, Wednesday\nin class\n\n\nProgramming Project 5\nOct 10, Thursday\n7pm\n\n\nModule 7 Programming Problems\nOct 15, Tuesday\n7pm\n\n\nShort Programming Project 6\nOct 15, Tuesday\n7pm\n\n\nQuiz 07\nOct 16, Wednesday\nin class\n\n\nProgramming Project 6\nOct 17, Thursday\n7pm\n\n\nMidterm 2\nOct 23, Wednesday\nin class\n\n\nModule 8 Programming Problems\nOct 24, Thursday\n7pm\n\n\nModule 9 Programming Problems\nOct 29, Tuesday\n7pm\n\n\nShort Programming Project 7\nOct 29, Tuesday\n7pm\n\n\nQuiz 08\nOct 30, Wednesday\nin class\n\n\nProgramming Project 7\nOct 31, Thursday\n7pm\n\n\nModule 10 Programming Problems\nNov 5, Tuesday\n7pm\n\n\nShort Programming Project 8\nNov 5, Tuesday\n7pm\n\n\nQuiz 09\nNov 6, Wednesday\nin class\n\n\nProgramming Project 8\nNov 7, Thursday\n7pm\n\n\nModule 11 Programming Problems\nNov 12, Tuesday\n7pm\n\n\nShort Programming Project 9\nNov 12, Tuesday\n7pm\n\n\nQuiz 10\nNov 13, Wednesday\nin class\n\n\nProgramming Project 9\nNov 14, Thursday\n7pm\n\n\nMidterm 3\nNov 20, Wednesday\nin class\n\n\nModule 12 Programming Problems\nNov 21, Thursday\n7pm\n\n\nShort Programming Project 10\nNov 26, Tuesday\n7pm\n\n\nModule 13 Programming Problems\nNov 26, Tuesday\n7pm\n\n\nQuiz 11\nDec 4, Wednesday\nin class\n\n\nProgramming Project 10\nDec 5, Thursday\n7pm\n\n\nModule 14 Programming Problems\nDec 10, Tuesday\n7pm\n\n\nShort Programming Project 11\nDec 10, Tuesday\n7pm\n\n\nQuiz 12\nDec 11, Wednesday\nin class\n\n\nProgramming Project 11\nDec 11, Wednesday\n7pm\n\n\nFinal Exam\nNA NA, NA\nTBA",
+    "text": "Assignment due dates\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nAug 28, Wednesday\nin class\n\n\nSurvey\nAug 30, Friday\n7pm\n\n\nQuiz 02\nSep 4, Wednesday\nin class\n\n\nModule 1 Programming Problems\nSep 5, Thursday\n7pm\n\n\nModule 2 Programming Problems\nSep 10, Tuesday\n7pm\n\n\nShort Programming Project 1\nSep 10, Tuesday\n7pm\n\n\nQuiz 03\nSep 11, Wednesday\nin class\n\n\nProgramming Project 1\nSep 12, Thursday\n7pm\n\n\nModule 3 Programming Problems\nSep 17, Tuesday\n7pm\n\n\nShort Programming Project 2\nSep 17, Tuesday\n7pm\n\n\nQuiz 04\nSep 18, Wednesday\nin class\n\n\nProgramming Project 2\nSep 19, Thursday\n7pm\n\n\nModule 4 Programming Problems\nSep 24, Tuesday\n7pm\n\n\nShort Programming Project 3\nSep 24, Tuesday\n7pm\n\n\nQuiz 05\nSep 25, Wednesday\nin class\n\n\nProgramming Project 3\nSep 26, Thursday\n7pm\n\n\nMidterm 1\nOct 2, Wednesday\nin class\n\n\nModule 5 Programming Problems\nOct 3, Thursday\n7pm\n\n\nShort Programming Project 4\nOct 4, Friday\n7pm\n\n\nProgramming Project 4\nOct 7, Monday\n7pm\n\n\nModule 6 Programming Problems\nOct 8, Tuesday\n7pm\n\n\nShort Programming Project 5\nOct 8, Tuesday\n7pm\n\n\nQuiz 06\nOct 9, Wednesday\nin class\n\n\nProgramming Project 5\nOct 10, Thursday\n7pm\n\n\nModule 7 Programming Problems\nOct 15, Tuesday\n7pm\n\n\nShort Programming Project 6\nOct 15, Tuesday\n7pm\n\n\nQuiz 07\nOct 16, Wednesday\nin class\n\n\nProgramming Project 6\nOct 17, Thursday\n7pm\n\n\nMidterm 2\nOct 23, Wednesday\nin class\n\n\nModule 8 Programming Problems\nOct 24, Thursday\n7pm\n\n\nModule 9 Programming Problems\nOct 29, Tuesday\n7pm\n\n\nShort Programming Project 7\nOct 29, Tuesday\n7pm\n\n\nQuiz 08\nOct 30, Wednesday\nin class\n\n\nProgramming Project 7\nOct 31, Thursday\n7pm\n\n\nModule 10 Programming Problems\nNov 5, Tuesday\n7pm\n\n\nShort Programming Project 8\nNov 5, Tuesday\n7pm\n\n\nQuiz 09\nNov 6, Wednesday\nin class\n\n\nProgramming Project 8\nNov 7, Thursday\n7pm\n\n\nModule 11 Programming Problems\nNov 12, Tuesday\n7pm\n\n\nShort Programming Project 9\nNov 12, Tuesday\n7pm\n\n\nQuiz 10\nNov 13, Wednesday\nin class\n\n\nProgramming Project 9\nNov 14, Thursday\n7pm\n\n\nMidterm 3\nNov 20, Wednesday\nin class\n\n\nModule 12 Programming Problems\nNov 21, Thursday\n7pm\n\n\nShort Programming Project 10\nNov 26, Tuesday\n7pm\n\n\nModule 13 Programming Problems\nNov 26, Tuesday\n7pm\n\n\nQuiz 11\nDec 4, Wednesday\nin class\n\n\nProgramming Project 10\nDec 5, Thursday\n7pm\n\n\nModule 14 Programming Problems\nDec 10, Tuesday\n7pm\n\n\nShort Programming Project 11\nDec 10, Tuesday\n7pm\n\n\nQuiz 12\nDec 11, Wednesday\nin class\n\n\nProgramming Project 11\nDec 11, Wednesday\n7pm\n\n\nFinal Exam\nDec 13, Friday\nTBA",
     "crumbs": [
       "Start Here",
       "Syllabus"
