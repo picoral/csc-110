@@ -33,6 +33,14 @@ The TAs are responsible for:
 
 . . . So get to know them!
 
+## Get to know each-other
+
+-   Introduce yourself!
+-   Share your
+    -   Name
+    -   Program/Major, declared or Intended (and why you chose that major)
+    -   One thing that you can do that took many hours of practice
+
 ## What is this class, anyways?
 
 -   In this class, you will learn how to program
@@ -69,13 +77,6 @@ This is the intro course sequence for the CS department:
 -   For some, this is your very first CS course!
 -   Prerequisites: College Algebra or CSc 101 or appropriate math placement score
 
-## Get to know each-other
-
--   Introduce yourself!
--   Share your
-    -   Name
-    -   Program/Major, declared or Intended (and why you chose that major)
-    -   One thing that you can do that took many hours of practice
 
 ## What do you need to succeed in this class?
 
@@ -138,6 +139,10 @@ Exams are on paper. Why?
 
 -   Last day for students to add themselves to a course using UAccess is September 02
 -   Last day for students to drop without a grade of W (withdraw) is September 08
+
+## Attendance
+
+Access gradescope and submit answer the attendance question.
 
 ## Academic integrity
 
