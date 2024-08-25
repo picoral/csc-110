@@ -4078,29 +4078,7 @@
     "href": "tas.html",
     "title": "TAs and Office Hours",
     "section": "",
-    "text": "The Undergraduate Teaching Assistants (UGTAs or TAs) in this class are here to help. You are also welcome to send an email.\nThe best way to talk with a particular TA is via office hours, so check the schedule (scroll down this page).",
-    "crumbs": [
-      "Start Here",
-      "TAs and Office Hours"
-    ]
-  },
-  {
-    "objectID": "tas.html#pm-section",
-    "href": "tas.html#pm-section",
-    "title": "TAs and Office Hours",
-    "section": "1pm Section",
-    "text": "1pm Section\n\nElias Zheng\nGabriel Hernandez\nGaregin Mazmanyan\nMadeline DeLeon\nTaoseef Aziz\nSteven Truong\nWaldo Guzman Barrientos",
-    "crumbs": [
-      "Start Here",
-      "TAs and Office Hours"
-    ]
-  },
-  {
-    "objectID": "tas.html#pm-section-1",
-    "href": "tas.html#pm-section-1",
-    "title": "TAs and Office Hours",
-    "section": "2pm Section",
-    "text": "2pm Section\n\nAli Sartaz Khan\nChitrangada Juneja\nNees Abusaada\nOwen Chambers\nPri Vaghela\nSamarie Tavenner\nZachary Nicolosi\n\nInterested in becoming a TA in the future? Check out more information about what TAs do and how to apply.",
+    "text": "The Undergraduate Teaching Assistants (UGTAs or TAs) in this class are here to help. You are also welcome to send an email.\nThe best way to talk with a particular TA is via office hours, so check the schedule (scroll down this page).\n\nCourse Coordinators\nCourse coordinators are experienced UGTAs that assist the instructor with course management and will have a supervisory role with the course UGTAs.\n\nMiro Vanek\nPearl McNabb\n\n\n\nTAs\nUndergraduate Teaching Assistants (UGTAs) in the Department of Computer Science assist instructors in delivering undergraduate computer science courses. CS introductory courses utilize active learning and collaborative learning spaces to provide a collaborative and supportive environment for students learning programming skills. All teaching assistants have taken and excelled in the courses they support and are familiar with the material to mentor new students as they learn.\n\nDefne Aydin\nOwen Chambers\nPri Vaghela\nRuby Gilliland\nSavannah Rabasa\nSteven Truong\n\nInterested in becoming a TA in the future? Check out more information about what TAs do and how to apply.\n\n\nOffice Hours\nShown below is the office hours schedule. The in-person office hours are hosted in Gould-Simpson 914. Adriana’s office hours are in GS 811.",
     "crumbs": [
       "Start Here",
       "TAs and Office Hours"
@@ -6502,7 +6480,7 @@
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.0038134963686043966\n5",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.16312138046406\n9",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -6524,7 +6502,7 @@
     "href": "slides-06-02.html#write-a-function-solution",
     "title": "random (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -8340,12 +8318,12 @@
   {
     "objectID": "discord.html",
     "href": "discord.html",
-    "title": "Discord (online discussion and office hours)",
+    "title": "Piazza (online communication)",
     "section": "",
-    "text": "Link to join our Discord server: https://discord.gg/qfTyEVUJQJ\nREAD THE INFORMATION BELOW, IT’S VERY IMPORTANT.\n\nDiscord Rules\n\nChange your user name for the course server so that your name on this server matches your name on the roster/D2L. TAs, coords, and instructors will be checking if your name is in the roster before answering your questions or adding you to the office hours voice channels.\nDo not direct message (DM) TAs.\nDo not share code solutions. You are free to share error messages, but not code. TAs and instructors can access your submission on gradescope.\nIt is expected that everyone will participate in the online discussion in a mature and respectful manner. Do not demean or embarrass others. Do not make sexist, racist, xenophobic, homophobic, transphobic, or victim-blaming comments. Immature, aggressive, or disrespectful behavior will not be tolerated. If you see anyone breaking this rule, report that person to me (adrianaps@arizona.edu)\nBe cautious of how you use humor in sessions and online. Be aware of the potential impact of your words, regardless of the intentions. Think through and reread your comments before you say/post them.",
+    "text": "This term we will be using Piazza for class discussion. The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself. Rather than emailing questions to the teaching staff, I encourage you to post your questions on Piazza.\nREAD THE INFORMATION BELOW, IT’S VERY IMPORTANT.\n\nPiazza Rules\n\nDo not share code solutions. You are free to share error messages, but not code. TAs and instructors can access your submission on gradescope.\nIt is expected that everyone will participate in the online discussion in a mature and respectful manner. Do not demean or embarrass others. Do not make sexist, racist, xenophobic, homophobic, transphobic, or victim-blaming comments. Immature, aggressive, or disrespectful behavior will not be tolerated. If you see anyone breaking this rule, report that person to me (adrianaps@arizona.edu)\nBe cautious of how you use humor in sessions and online. Be aware of the potential impact of your words, regardless of the intentions. Think through and reread your comments before you say/post them.",
     "crumbs": [
       "Start Here",
-      "Discord (online discussion and office hours)"
+      "Piazza (online communication)"
     ]
   },
   {
