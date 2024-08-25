@@ -413,7 +413,7 @@
 <section id="while-vs.-for-loops" class="slide level2">
 <h2><code>while</code> vs.&nbsp;<code>for</code> loops</h2>
 <p>In addition to <code>while</code>, we can use <code>for</code> to create loops</p>
-<div id="d3eeb0d1" class="cell" data-execution_count="1">
+<div id="ed08962f" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>values <span class="op">=</span> [<span class="dv">70</span>, <span class="dv">20</span>, <span class="dv">30</span>]</span>
 <span id="cb1-2"><a></a>index <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb1-3"><a></a><span class="cf">while</span> index <span class="op">&lt;</span> <span class="bu">len</span>(values):</span>
@@ -425,7 +425,7 @@
 30</code></pre>
 </div>
 </div>
-<div id="600ba7a9" class="cell" data-execution_count="2">
+<div id="a26d3ea7" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>values <span class="op">=</span> [<span class="dv">70</span>, <span class="dv">20</span>, <span class="dv">30</span>]</span>
 <span id="cb3-2"><a></a><span class="cf">for</span> index <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(values)):</span>
 <span id="cb3-3"><a></a>  <span class="bu">print</span>(values[index])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -444,14 +444,14 @@
 <li>It iterates over the list, changing odd numbers to even number (even up)</li>
 <li>Use a <code>for</code> loop</li>
 </ol>
-<div id="0593e670" class="cell" data-execution_count="3">
+<div id="49db3bbb" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>test_integers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
 <span id="cb5-2"><a></a><span class="cf">assert</span> make_all_even(test_integers) <span class="op">==</span> [<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="5145cd34" class="cell" data-execution_count="4">
+<div id="cdc344a9" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">def</span> make_all_even(integers):</span>
 <span id="cb6-2"><a></a>  <span class="co"># for each index in list</span></span>
 <span id="cb6-3"><a></a>  <span class="cf">for</span> index <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(integers)):</span>
@@ -478,7 +478,7 @@
 <li>Use a <code>for</code> loop</li>
 </ol>
 <p>Test cases:</p>
-<div id="e19e9848" class="cell" data-execution_count="5">
+<div id="f4eb50eb" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="cf">assert</span> indices_of_vowels(<span class="st">"hello"</span>) <span class="op">==</span> [<span class="dv">1</span>, <span class="dv">4</span>]</span>
 <span id="cb8-2"><a></a><span class="cf">assert</span> indices_of_vowels(<span class="st">""</span>) <span class="op">==</span> []</span>
 <span id="cb8-3"><a></a><span class="cf">assert</span> indices_of_vowels(<span class="st">"aeiou"</span>) <span class="op">==</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -486,7 +486,7 @@
 </section>
 <section id="write-a-function-solution-1" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="320f602d" class="cell" data-execution_count="6">
+<div id="08a25c00" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="kw">def</span> indices_of_vowels(string):</span>
 <span id="cb9-2"><a></a>  result <span class="op">=</span> [] <span class="co"># initialize empty list to hold indices</span></span>
 <span id="cb9-3"><a></a>  <span class="co"># for every index in list</span></span>
@@ -520,7 +520,7 @@
 </section>
 <section id="more-on-how-to-use-range-1" class="slide level2">
 <h2>More on how to use <code>range()</code></h2>
-<div id="30298e6c" class="cell" data-execution_count="7">
+<div id="e951ade5" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
 <span id="cb10-2"><a></a>  <span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -531,7 +531,7 @@
 4</code></pre>
 </div>
 </div>
-<div id="62eacd1c" class="cell" data-execution_count="8">
+<div id="06024110" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">1</span>):</span>
 <span id="cb12-2"><a></a>  <span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -542,7 +542,7 @@
 4</code></pre>
 </div>
 </div>
-<div id="c7e3d27d" class="cell" data-execution_count="9">
+<div id="cab12c0f" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">2</span>):</span>
 <span id="cb14-2"><a></a>  <span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -562,7 +562,7 @@
 <li>Use a <code>for</code> loop</li>
 </ol>
 <p>Test cases:</p>
-<div id="05c6d936" class="cell" data-execution_count="10">
+<div id="55cb33c5" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a>characters <span class="op">=</span> [<span class="st">"a"</span>, <span class="st">"e"</span>, <span class="st">"p"</span>, <span class="st">"o"</span>, <span class="st">"p"</span>, <span class="st">"w"</span>, <span class="st">"l"</span>, <span class="st">"i"</span>, <span class="st">"e"</span>, <span class="st">"f"</span>]</span>
 <span id="cb16-2"><a></a><span class="cf">assert</span> every_two_together(characters) <span class="op">==</span> <span class="st">"apple"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -570,7 +570,7 @@
 <section id="write-a-function-solution-2" class="slide level2">
 <h2>Write a function – solution</h2>
 <p>What other test cases should we run?</p>
-<div id="95fac103" class="cell" data-execution_count="11">
+<div id="85335e5e" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a></a><span class="kw">def</span> every_two_together(chars):</span>
 <span id="cb17-2"><a></a>  new_string <span class="op">=</span> <span class="st">""</span></span>
 <span id="cb17-3"><a></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(chars), <span class="dv">2</span>):</span>
@@ -587,14 +587,14 @@
 <section id="write-a-function-3" class="slide level2">
 <h2>Write a function</h2>
 <p>Test cases:</p>
-<div id="551d8383" class="cell" data-execution_count="12">
+<div id="52bc7b4a" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a>my_numbers <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">0</span>]</span>
 <span id="cb18-2"><a></a><span class="cf">assert</span> add_every_two(my_numbers) <span class="op">==</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution-3" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="57173597" class="cell" data-execution_count="13">
+<div id="f27ac517" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a></a><span class="kw">def</span> add_every_two(numbers):</span>
 <span id="cb19-2"><a></a>  result <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb19-3"><a></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(numbers), <span class="dv">2</span>):</span>
