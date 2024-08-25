@@ -12,7 +12,7 @@ assignments <- read_excel("assessment_schedule.xlsx") %>%
   mutate(formatted_date = format(due_date))
 ```
 
-Programming Problems should be submitted to [gradescope](https://www.gradescope.com/courses/676322).
+Programming Problems should be submitted to [gradescope](https://www.gradescope.com/courses/827397).
 
 If you need instructions on how to submit your `.py` files to gradescope, watch the video at the end of this page.
 
@@ -38,7 +38,7 @@ Hello World!
 </pre>
 ```
 
-Name the program `hello.py`. Make sure that gradescope (<https://www.gradescope.com/courses/487587/assignments/2554285>) gives you the points for passing the test case.
+Name the program `hello.py`. Make sure that gradescope gives you the points for passing the test case.
 
 # Programming Problem 2
 
