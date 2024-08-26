@@ -1,6 +1,6 @@
 ---
 title: "Course Introduction (class slides)"
-format: revealjs
+format: pdf
 website:
   google-analytics: "G-X5E6TNHNQ5"
   cookie-consent: true
@@ -206,7 +206,7 @@ Also describe the steps you took to try to solve the problem yourself.
 ## How to get help?
 
 -   Come to office hours!
--   Join [Discord](https://discord.gg/qfTyEVUJQJ) and ask questions there
+-   Join  Piazza and ask questions there
 -   [Departmental Tutors](https://www.cs.arizona.edu/undergraduate/student-resources/tutoring) (free)
 -   Email me (it will take longer than coming to office hours)
 
