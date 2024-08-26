@@ -16,7 +16,7 @@ slide-number: true
 
 -   Did you download Python 3?
 -   Did you download VS Code (or PyCharm, or Mu)?
--   If not, that's fine, you can use [replit.com](https://replit.com/)
+-   If not, that's fine, you can use [vscode.dev](https://vscode.dev/)
 
 # What is a program?
 
@@ -110,12 +110,6 @@ Write a simple program that prints the following output to the python console:
 </pre>
 ```
 
-# Attendance
-
-* As a group, write your answer to the previous exercise on a whiteboard
-* Write on the whiteboard the name of a TA
-* Submit your whiteboard answer to Gradescope (take a picture with a phone)
-
 # Variables
 
 ## Variables and assignment
@@ -180,16 +174,6 @@ Try the following operators with the different types in python:
 </pre>
 ```
 
-## Quiz 02
-
-<center>
-<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
-<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
-</center>
-
-You have 10 minutes to complete the quiz.
-
-Your solution needs to print the exact characters shown in your quiz (there are different versions of the quiz) -- changes to the characters (for example, not printing the quotes or apostrophe) will be considered as an incorrect solution (zero grade awarded).
 
 ## Operations and Variable Assignments
 
@@ -228,3 +212,14 @@ area = 3.1415 * radius ** 2
 <br />
 
 The purpose of comments is to "document" the program so that subsequent readers can more easily understand it, or learn things about it (e.g., its original author).
+
+## Quiz 02
+
+<center>
+<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+</center>
+
+You have 10 minutes to complete the quiz.
+
+Your solution needs to print the exact characters shown in your quiz (there are different versions of the quiz) -- changes to the characters (for example, not printing the quotes or apostrophe) will be considered as an incorrect solution (zero grade awarded).

@@ -1,6 +1,6 @@
 ---
 title: "Course Introduction (class slides)"
-format: pdf
+format: revealjs
 website:
   google-analytics: "G-X5E6TNHNQ5"
   cookie-consent: true
