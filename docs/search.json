@@ -2285,6 +2285,17 @@
     ]
   },
   {
+    "objectID": "slides-01-01.html#get-to-know-each-other",
+    "href": "slides-01-01.html#get-to-know-each-other",
+    "title": "Course Introduction (class slides)",
+    "section": "Get to know each-other",
+    "text": "Get to know each-other\n\nIntroduce yourself!\nShare your\n\nName\nProgram/Major, declared or Intended (and why you chose that major)\nOne thing that you can do that took many hours of practice",
+    "crumbs": [
+      "Module 1 - Basics",
+      "Course Introduction (class slides)"
+    ]
+  },
+  {
     "objectID": "slides-01-01.html#what-is-this-class-anyways",
     "href": "slides-01-01.html#what-is-this-class-anyways",
     "title": "Course Introduction (class slides)",
@@ -2312,17 +2323,6 @@
     "title": "Course Introduction (class slides)",
     "section": "General Info",
     "text": "General Info\n\nFor some, this is your very first CS course!\nPrerequisites: College Algebra or CSc 101 or appropriate math placement score",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#get-to-know-each-other",
-    "href": "slides-01-01.html#get-to-know-each-other",
-    "title": "Course Introduction (class slides)",
-    "section": "Get to know each-other",
-    "text": "Get to know each-other\n\nIntroduce yourself!\nShare your\n\nName\nProgram/Major, declared or Intended (and why you chose that major)\nOne thing that you can do that took many hours of practice",
     "crumbs": [
       "Module 1 - Basics",
       "Course Introduction (class slides)"
@@ -2428,6 +2428,17 @@
     ]
   },
   {
+    "objectID": "slides-01-01.html#attendance",
+    "href": "slides-01-01.html#attendance",
+    "title": "Course Introduction (class slides)",
+    "section": "Attendance",
+    "text": "Attendance\nAccess gradescope and submit answer the attendance question.",
+    "crumbs": [
+      "Module 1 - Basics",
+      "Course Introduction (class slides)"
+    ]
+  },
+  {
     "objectID": "slides-01-01.html#academic-integrity",
     "href": "slides-01-01.html#academic-integrity",
     "title": "Course Introduction (class slides)",
@@ -2455,83 +2466,6 @@
     "title": "Course Introduction (class slides)",
     "section": "Materials",
     "text": "Materials\n\nReadings, videos, exercises, slides, assignment instructions will be available on the website\nHOWEVER, you are still responsible for things said/announced in class",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#how-to-get-help",
-    "href": "slides-01-01.html#how-to-get-help",
-    "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\n\nCome to office hours!\n\nBut come prepared – do not expect the TAs to solve problems for you (you wouldn’t learn to solve them yourself if you are always asking other people to do it for you)\n\n1 point of extra credit if you show up to office hours (read the syllabus for specifics on this)",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#how-to-get-help-1",
-    "href": "slides-01-01.html#how-to-get-help-1",
-    "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\nWe’ll see in this course that a key skill that you should develop as coder is the ability to find solutions to problems. Knowing how to get help is part of that skill.",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#how-to-get-help-2",
-    "href": "slides-01-01.html#how-to-get-help-2",
-    "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\nBefore you ask for help:\n\nCheck for typos (read your error messages)\nGoogle is your friend (use it wisely). Copy and paste the exact error message on a Google search. (this step also includes read the documentation on the functions you’re trying to use).",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#how-to-get-help-3",
-    "href": "slides-01-01.html#how-to-get-help-3",
-    "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\nBefore you ask for help:\n\nIf you are still stuck, you an always try rubber duck debugging. Describe the problem aloud, explaining it line-by-line, to a rubber duck or another person (who might not have any experience with programming). This is also a good preparation step to asking other people for help (next section).",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#how-to-get-help-4",
-    "href": "slides-01-01.html#how-to-get-help-4",
-    "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself.",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#how-to-get-help-6",
-    "href": "slides-01-01.html#how-to-get-help-6",
-    "title": "Course Introduction (class slides)",
-    "section": "How to get help?",
-    "text": "How to get help?\n\nCome to office hours!\nJoin Piazza and ask questions there\nDepartmental Tutors (free)\nEmail me (it will take longer than coming to office hours)",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#tips-on-slides",
-    "href": "slides-01-01.html#tips-on-slides",
-    "title": "Course Introduction (class slides)",
-    "section": "Tips on slides",
-    "text": "Tips on slides\nPress the e key",
     "crumbs": [
       "Module 1 - Basics",
       "Course Introduction (class slides)"
@@ -5381,17 +5315,6 @@
     ]
   },
   {
-    "objectID": "slides-01-02.html#quiz-02",
-    "href": "slides-01-02.html#quiz-02",
-    "title": "Python Basics (class slides)",
-    "section": "Quiz 02",
-    "text": "Quiz 02\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nYour solution needs to print the exact characters shown in your quiz (there are different versions of the quiz) – changes to the characters (for example, not printing the quotes or apostrophe) will be considered as an incorrect solution (zero grade awarded).",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Python Basics (class slides)"
-    ]
-  },
-  {
     "objectID": "slides-01-02.html#operations-and-variable-assignments",
     "href": "slides-01-02.html#operations-and-variable-assignments",
     "title": "Python Basics (class slides)",
@@ -5408,6 +5331,17 @@
     "title": "Python Basics (class slides)",
     "section": "Comments",
     "text": "Comments\nComputer program can include comments, which are simply text that is meant to be read, but not executed.\n\n\n# assign a radius value\nradius = 3\n# compute the area of a circle\narea = 3.1415 * radius ** 2\n\n\nThe purpose of comments is to “document” the program so that subsequent readers can more easily understand it, or learn things about it (e.g., its original author).",
+    "crumbs": [
+      "Module 1 - Basics",
+      "Python Basics (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-01-02.html#quiz-02",
+    "href": "slides-01-02.html#quiz-02",
+    "title": "Python Basics (class slides)",
+    "section": "Quiz 02",
+    "text": "Quiz 02\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nYour solution needs to print the exact characters shown in your quiz (there are different versions of the quiz) – changes to the characters (for example, not printing the quotes or apostrophe) will be considered as an incorrect solution (zero grade awarded).",
     "crumbs": [
       "Module 1 - Basics",
       "Python Basics (class slides)"
@@ -6480,7 +6414,7 @@
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.1938845653374538\n4",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.9570545095144892\n0",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -8368,17 +8302,6 @@
     "crumbs": [
       "Module 1 - Basics",
       "Module 1 Programming Problems"
-    ]
-  },
-  {
-    "objectID": "slides-01-01.html#attendance",
-    "href": "slides-01-01.html#attendance",
-    "title": "Course Introduction (class slides)",
-    "section": "Attendance",
-    "text": "Attendance\nAccess gradescope and submit answer the attendance question.",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Course Introduction (class slides)"
     ]
   }
 ]

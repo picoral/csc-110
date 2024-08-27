@@ -450,17 +450,17 @@
 </section>
 <section id="what-is-a-sorted-list-1" class="slide level2">
 <h2>What is a sorted list?</h2>
-<div id="b2afd81a" class="cell" data-execution_count="1">
+<div id="36ab7c7c" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>items <span class="op">=</span> [<span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">43</span>, <span class="dv">10</span>, <span class="dv">12</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <h3 id="not-sorted">Not sorted</h3>
-<div id="50b8ced7" class="cell" data-execution_count="2">
+<div id="58933012" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>[5, 10, 20, 6, 7, 9, 43, 10, 12]</code></pre>
 </div>
 </div>
 <h3 id="sorted">Sorted</h3>
-<div id="9fa8ccd2" class="cell" data-execution_count="3">
+<div id="5722f680" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>[5, 6, 7, 9, 10, 10, 12, 20, 43]</code></pre>
 </div>
@@ -528,7 +528,7 @@
 </section>
 <section id="write-selection-sort-solution" class="slide level2">
 <h2>Write selection sort – solution</h2>
-<div id="fca9a856" class="cell" data-execution_count="4">
+<div id="727035dc" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="kw">def</span> find_min_index(items):</span>
 <span id="cb4-2"><a></a>  min_index <span class="op">=</span> <span class="va">None</span></span>
 <span id="cb4-3"><a></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(items)):</span>
@@ -557,7 +557,7 @@
 </section>
 <section id="how-many-total-sweeps-and-swaps-to-sort-this-list" class="slide level2">
 <h2>How many total sweeps and swaps to sort this list?</h2>
-<div id="a1b2a7f1" class="cell" data-execution_count="5">
+<div id="31e59d3e" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a>numbers <span class="op">=</span> [ <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">4</span> ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -573,7 +573,7 @@
 </section>
 <section id="how-many-total-sweeps-and-swaps-to-sort-this-list-2" class="slide level2">
 <h2>How many total sweeps and swaps to sort this list?</h2>
-<div id="91f6c03c" class="cell" data-execution_count="6">
+<div id="3c08fa98" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a>numbers <span class="op">=</span> [ <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">5</span> ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -617,7 +617,7 @@
 </section>
 <section id="write-bubble-sort-solution-1" class="slide level2">
 <h2>Write bubble sort – solution 1</h2>
-<div id="b08ea186" class="cell" data-execution_count="7">
+<div id="2bce4a8f" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="kw">def</span> bubble_sort(items):</span>
 <span id="cb8-2"><a></a>  end <span class="op">=</span> <span class="bu">len</span>(items)<span class="op">-</span><span class="dv">1</span></span>
 <span id="cb8-3"><a></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(items)<span class="op">-</span><span class="dv">1</span>):</span>
@@ -662,7 +662,7 @@
 </section>
 <section id="write-bubble-sort-solution-2" class="slide level2">
 <h2>Write bubble sort – solution 2</h2>
-<div id="18620d6b" class="cell" data-execution_count="8">
+<div id="45da1781" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="kw">def</span> bubble_sort(items):</span>
 <span id="cb10-2"><a></a>  is_sorted <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb10-3"><a></a>  end <span class="op">=</span> <span class="bu">len</span>(items)<span class="op">-</span><span class="dv">1</span></span>
@@ -688,7 +688,7 @@
 </section>
 <section id="how-many-total-sweeps-and-swaps-to-sort-this-list-4" class="slide level2">
 <h2>How many total sweeps and swaps to sort this list?</h2>
-<div id="e7220d02" class="cell" data-execution_count="9">
+<div id="55a3d364" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a>numbers <span class="op">=</span> [ <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">4</span> ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -710,7 +710,7 @@
 </section>
 <section id="how-many-total-sweeps-and-swaps" class="slide level2">
 <h2>How many total sweeps and swaps?</h2>
-<div id="72779b2b" class="cell" data-execution_count="10">
+<div id="89b44905" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a></a>numbers <span class="op">=</span> [ <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">5</span> ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
