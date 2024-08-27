@@ -7638,7 +7638,7 @@
     "href": "schedule.html#class-slides-1",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nFunctions (pdf)\nMath in Python (pdf)",
+    "text": "Class slides\n\nFunctions\nMath in Python",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7649,7 +7649,7 @@
     "href": "schedule.html#assignments-1",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 2 Programming Problems – Due date: Sep 10, Tuesday at 7pm\nProgramming Project 1 – Due date: Sep 12, Thursday at 7pm",
+    "text": "Assignments\n\nModule 2 Programming Problems – Due date: Sep 10, Tuesday at 7pm\nShort Project 1 – Due date: Sep 10, Tuesday at 7pm\nProgramming Project 1 – Due date: Sep 12, Thursday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7682,7 +7682,7 @@
     "href": "schedule.html#class-slides-2",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nMore on Functions (pdf)\nBuilt-in Python Functions (pdf)",
+    "text": "Class slides\n\nMore on Functions\nBuilt-in Python Functions",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7693,7 +7693,7 @@
     "href": "schedule.html#assignments-2",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 3 Programming Problems – Due date: Sep 17, Tuesday at 7pm\nProgramming Project 2 – Due date: Sep 19, Thursday at 7pm",
+    "text": "Assignments\n\nModule 3 Programming Problems – Due date: Sep 17, Tuesday at 7pm\nShort Project 2 – Due date: Sep 17, Tuesday at 7pm\nProgramming Project 2 – Due date: Sep 19, Thursday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7726,7 +7726,7 @@
     "href": "schedule.html#class-slides-3",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nMore expressions (pdf)\nIf statements (pdf)\nif elif else (pdf)",
+    "text": "Class slides\n\nMore expressions\nIf statements\nif elif else",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7737,7 +7737,7 @@
     "href": "schedule.html#assignments-3",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 4 Programming Problems – Due date: Sep 24, Tuesday at 7pm\nProgramming Project 3 – Due date: Sep 26, Thursday at 7pm",
+    "text": "Assignments\n\nModule 4 Programming Problems – Due date: Sep 24, Tuesday at 7pm\nShort Project 3 – Due date: Sep 24, Tuesday at 7pm\nProgramming Project 3 – Due date: Sep 26, Thursday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7770,7 +7770,7 @@
     "href": "schedule.html#class-slides-4",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nwhile loop intro (pdf)\nloops + string (pdf)\nwhile loop aggregation (pdf)",
+    "text": "Class slides\n\nwhile loop intro\nloops + string\nwhile loop aggregation",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7781,7 +7781,7 @@
     "href": "schedule.html#assignments-4",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 5 Programming Problems – Due date: Oct 3, Thursday at 7pm\nProgramming Project 4 – Due date: Oct 7, Monday at 7pm",
+    "text": "Assignments\n\nModule 5 Programming Problems – Due date: Oct 3, Thursday at 7pm\nShort Project 4 – Due date: Oct 4, Friday at 7pm\nProgramming Project 4 – Due date: Oct 7, Monday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7814,7 +7814,7 @@
     "href": "schedule.html#class-slides-5",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nLists (pdf)\nrandom (pdf)",
+    "text": "Class slides\n\nLists\nrandom",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7825,7 +7825,7 @@
     "href": "schedule.html#assignments-5",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Oct 8, Tuesday at 7pm\nProgramming Project 5 – Due date: Oct 10, Thursday at 7pm",
+    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Oct 8, Tuesday at 7pm\nShort Project 5 – Due date: Oct 8, Tuesday at 7pm\nProgramming Project 5 – Due date: Oct 10, Thursday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7858,7 +7858,7 @@
     "href": "schedule.html#class-slides-6",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nmutability (pdf)\nfor loops with range (pdf)",
+    "text": "Class slides\n\nmutability\n\nfor loops with range",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7869,7 +7869,7 @@
     "href": "schedule.html#assignments-6",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Oct 15, Tuesday at 7pm\nProgramming Project 6 – Due date: Oct 17, Thursday at 7pm",
+    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Oct 15, Tuesday at 7pm\nShort Project 6 – Due date: Oct 15, Tuesday at 7pm\nProgramming Project 6 – Due date: Oct 17, Thursday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7902,7 +7902,7 @@
     "href": "schedule.html#class-slides-7",
     "title": "Schedule",
     "section": "Class slides",
-    "text": "Class slides\n\nintro to dictionaries (pdf)\nfor x in list loops (pdf)",
+    "text": "Class slides\n\nintro to dictionaries\n\nfor x in list loops",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -7913,7 +7913,7 @@
     "href": "schedule.html#assignments-7",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 8 Programming Problems – Due date: Oct 24, Thursday at 7pm\nProgramming Project 7 – Due date: Oct 31, Thursday at 7pm",
+    "text": "Assignments\n\nModule 8 Programming Problems – Due date: Oct 24, Thursday at 7pm\nShort Project 7 – Due date: Oct 29, Tuesday at 7pm\nProgramming Project 7 – Due date: Oct 31, Thursday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8001,7 +8001,7 @@
     "href": "schedule.html#assignments-9",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 10 Programming Problems – Due date: Nov 5, Tuesday at 7pm\nProgramming Project 8 – Due date: Nov 7, Thursday at 7pm",
+    "text": "Assignments\n\nModule 10 Programming Problems – Due date: Nov 5, Tuesday at 7pm\nShort Project 8 – Due date: Nov 5, Tuesday at 7pm\nProgramming Project 8 – Due date: Nov 7, Thursday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8045,7 +8045,7 @@
     "href": "schedule.html#assignments-10",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 11 Programming Problems – Due date: Nov 12, Tuesday at 7pm\nProgramming Project 9 – Due date: Nov 14, Thursday at 7pm",
+    "text": "Assignments\n\nModule 11 Programming Problems – Due date: Nov 12, Tuesday at 7pm\nShort Project 9 – Due date: Nov 12, Tuesday at 7pm\nProgramming Project 9 – Due date: Nov 14, Thursday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8089,7 +8089,7 @@
     "href": "schedule.html#assignments-11",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 12 Programming Problems – Due date: Nov 21, Thursday at 7pm\nProgramming Project 10 – Due date: Dec 5, Thursday at 7pm",
+    "text": "Assignments\n\nModule 12 Programming Problems – Due date: Nov 21, Thursday at 7pm\nShort Project 10 – Due date: Nov 26, Tuesday at 7pm\nProgramming Project 10 – Due date: Dec 5, Thursday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8133,7 +8133,7 @@
     "href": "schedule.html#assignments-12",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 13 Programming Problems – Due date: Nov 26, Tuesday at 7pm\nProgramming Project 11 – Due date: Dec 11, Wednesday at 7pm",
+    "text": "Assignments\n\nModule 13 Programming Problems – Due date: Nov 26, Tuesday at 7pm\nShort Project 11 – Due date: Dec 10, Tuesday at 7pm\nProgramming Project 11 – Due date: Dec 11, Wednesday at 7pm",
     "crumbs": [
       "Start Here",
       "Schedule"
