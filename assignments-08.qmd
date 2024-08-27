@@ -10,7 +10,10 @@ title: "Module 8 Assignments"
 library(tidyverse)
 library(readxl)
 assignments <- read_excel("assessment_schedule.xlsx") %>% 
-  mutate(formatted_date = format(due_date))
+  mutate(due_date = parse_date(due_date),
+         formatted_date = paste0(month(due_date, label = TRUE), " ",
+                                 day(due_date), ", ",
+                                wday(due_date, label = TRUE, abbr = FALSE)))
 ```
 
 # Short Project 07
