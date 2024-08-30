@@ -109,6 +109,15 @@ Write a simple program that prints the following output to the python console:
 </pre>
 ```
 
+## Submit to gradescope
+
+Submit your solution to the previous problem to [gradescope](https://www.gradescope.com/courses/827397/assignments/4853136)
+
+Name your file `first.py`
+
+Remember that the `print()` function prints a line break (`\n` character) by default, you can
+change the default by specifying the parameter `end` to be an empty string
+
 # Variables
 
 ## Variables and assignment
