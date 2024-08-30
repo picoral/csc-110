@@ -115,6 +115,8 @@ Submit your solution to the previous problem to [gradescope](https://www.gradesc
 
 Name your file `first.py`
 
+Also, like for the programming problems due next week, we will set up our code to be inside a main function (DEMO)
+
 Remember that the `print()` function prints a line break (`\n` character) by default, you can
 change the default by specifying the parameter `end` to be an empty string
 
