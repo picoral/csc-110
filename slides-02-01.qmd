@@ -91,9 +91,12 @@ def volume(radius, height):
   return vol
 
 
-print(volume(1, 2)) # 6.283
-print(volume(6, 10)) # 1130.94
-print(volume(5, 5)) # 392.68750000000006
+def main():
+  print(volume(1, 2)) # 6.283
+  print(volume(6, 10)) # 1130.94
+  print(volume(5, 5)) # 392.68750000000006
+  
+main()
 ```
 
 

@@ -6799,7 +6799,7 @@
     "href": "slides-02-01.html#function-to-calculate-the-volume-of-a-cylinder-1",
     "title": "Functions (class slides)",
     "section": "Function to calculate the volume of a cylinder",
-    "text": "Function to calculate the volume of a cylinder\n\ndef volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\nprint(volume(1, 2)) # 6.283\nprint(volume(6, 10)) # 1130.94\nprint(volume(5, 5)) # 392.68750000000006",
+    "text": "Function to calculate the volume of a cylinder\n\ndef volume(radius, height):\n  # calculate the area first\n  area = 3.1415 * radius ** 2\n  \n  # multiply area by height\n  vol = area * height\n  \n  # return calculated volume\n  return vol\n\n\ndef main():\n  print(volume(1, 2)) # 6.283\n  print(volume(6, 10)) # 1130.94\n  print(volume(5, 5)) # 392.68750000000006\n  \nmain()",
     "crumbs": [
       "Module 2 - Functions, Operators and Expressions",
       "Functions (class slides)"
