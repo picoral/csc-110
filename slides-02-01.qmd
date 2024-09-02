@@ -96,12 +96,6 @@ print(volume(6, 10)) # 1130.94
 print(volume(5, 5)) # 392.68750000000006
 ```
 
-## Submit to Gradescope
-
--   Name your python script with the `volume` function `cylinder.py`
--   Go to [Gradescope]() and submit your `.py` file
--   You can resubmit as many times as you need (up to the deadline)
--   You can look at your `Submission History` and activate a previous submission
 
 # Order of Operations
 
