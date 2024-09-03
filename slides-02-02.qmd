@@ -208,8 +208,3 @@ def main():
 main()
 ```
 
-## Write a function -- sphere volume and area
-
-Submit your sphere volume and area solution as attendance on Gradescope.
-
-Name your file `sphere.py`
