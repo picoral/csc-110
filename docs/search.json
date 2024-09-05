@@ -7077,7 +7077,7 @@
     "href": "slides-02-02.html#write-a-function",
     "title": "Math in Python (class slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a function that calculates the area of a square:\n\nIts name is square_area\nIt takes one argument: side\nIt calculates the area of a square (a quadrilateral with two sides parallel that are of equal length). The area of a square is calculated by multiplying the side by itself (\\(area = side^2\\)).\nIt returns the value for calculated square area.",
+    "text": "Write a function\nWrite a function called square_area that takes in one argument (side length) and calculates the area of a square (a quadrilateral with two sides parallel that are of equal length). The area of a square is calculated by multiplying the side by itself (\\(area = side^2\\)). Your function should return the value for calculated square area.\nName your file square.py and submit it to attendance on gradescope. Add a comment to your code with a TA name.",
     "crumbs": [
       "Module 2 - Functions, Operators and Expressions",
       "Math in Python (class slides)"

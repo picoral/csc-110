@@ -25,12 +25,9 @@ slide-number: true
 
 ## Write a function
 
-Write a function that calculates the area of a square:
+Write a function called `square_area` that takes in one argument (side length) and calculates the area of a square (a quadrilateral with two sides parallel that are of equal length). The area of a square is calculated by multiplying the side by itself ($area = side^2$). Your function should return the value for calculated square area.
 
-1.  Its name is `square_area`
-2.  It takes one argument: `side`
-3.  It calculates the area of a square (a quadrilateral with two sides parallel that are of equal length). The area of a square is calculated by multiplying the side by itself ($area = side^2$).
-4.  It returns the value for calculated square area.
+Name your file `square.py` and submit it to attendance on gradescope. Add a comment to your code with a TA name.
 
 ## Square Area
 
