@@ -4969,7 +4969,7 @@
     "href": "slides-03-01.html#write-a-function",
     "title": "More on Functions (class slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is hypotenuse\nIt takes two arguments: a and b representing the length of the two non-hypotenuse sides of a right angle triangle\nIt calculate the hypotenuse (c) according to the Pythagorean theorem formula: \\(c = \\sqrt(a^2 + b^2)\\)\nIt returns the calculated hypotenuse\nTest cases: hypotenuse(3, 4) should return 5.0, hypotenuse(10, 10) should return 14.14",
+    "text": "Write a function\nWrite a Python function called hypotenuse that takes two arguments: a and b representing the length of the two non-hypotenuse sides of a right angle triangle. The function should calculate the hypotenuse (c) according to the Pythagorean theorem formula: \\(c = \\sqrt(a^2 + b^2)\\), and return it rounded at two decimals.\nTest cases: hypotenuse(3, 4) should return 5.0, hypotenuse(10, 10) should return 14.14\nName your file hypotenuse.py",
     "crumbs": [
       "Module 3 - More on Functions, Operators and Expressions",
       "More on Functions (class slides)"
@@ -8313,6 +8313,17 @@
     "crumbs": [
       "Module 1 - Basics",
       "Python Basics (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-03-01.html#submit-attendance",
+    "href": "slides-03-01.html#submit-attendance",
+    "title": "More on Functions (class slides)",
+    "section": "Submit attendance",
+    "text": "Submit attendance\nSubmit your hypotenuse.py file with your solution to gradescope for attendance Name your",
+    "crumbs": [
+      "Module 3 - More on Functions, Operators and Expressions",
+      "More on Functions (class slides)"
     ]
   }
 ]

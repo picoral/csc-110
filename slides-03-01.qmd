@@ -121,13 +121,12 @@ main()
 
 ## Write a function
 
-Write a Python function that does the following:
+Write a Python function called `hypotenuse` that takes two arguments: `a` and `b` representing the length of the two non-hypotenuse sides of a right angle triangle.
+The function should calculate the hypotenuse (`c`) according to the Pythagorean theorem formula: $c = \sqrt(a^2 + b^2)$, and return it rounded at two decimals.
 
-1.  Its name is `hypotenuse`
-2.  It takes two arguments: `a` and `b` representing the length of the two non-hypotenuse sides of a right angle triangle
-3.  It calculate the hypotenuse (`c`) according to the Pythagorean theorem formula: $c = \sqrt(a^2 + b^2)$
-4.  It returns the calculated hypotenuse
-5.  Test cases: `hypotenuse(3, 4)` should return `5.0`, `hypotenuse(10, 10)` should return `14.14`
+Test cases: `hypotenuse(3, 4)` should return `5.0`, `hypotenuse(10, 10)` should return `14.14`
+
+Name your file `hypotenuse.py`
 
 ## Write a function
 
@@ -170,3 +169,8 @@ def main():
   
 main()
 ```
+
+## Submit attendance
+
+Submit your `hypotenuse.py` file with your solution to gradescope for attendance
+Name your 
