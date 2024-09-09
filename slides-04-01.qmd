@@ -106,7 +106,6 @@ def main():
 main()
 ```
 
-Save your .py file as `odd.py` and submit it to Gradescope for attendance.
 
 ## Comparisons
 

@@ -4573,7 +4573,7 @@
     "href": "slides-03-02.html#write-a-function-1",
     "title": "Built-in Python Functions (class slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is count_characters\nIt takes a string argument, name\nIt returns the total number of characters in name\n\n\nprint( count_characters(\"Adriana\") ) # 7\nprint( count_characters(\"\") ) # 0\nprint( count_characters(\" \") ) # 1\nprint( count_characters(\"10\") ) # 2",
+    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is count_characters\nIt takes three string arguments, a, b and c\nIt returns the total number of characters for all three strings\n\n\nprint( count_characters(\"Adri\", \"ana\", \"Picoral\") ) # 14\nprint( count_characters(\"\", \"\", \"\") ) # 0\nprint( count_characters(\" \", \" \", \" \") ) # 3\nprint( count_characters(\"10\", \"2\", \"3\") ) # 4",
     "crumbs": [
       "Module 3 - More on Functions, Operators and Expressions",
       "Built-in Python Functions (class slides)"
@@ -4606,7 +4606,7 @@
     "href": "slides-03-02.html#write-a-function-2",
     "title": "Built-in Python Functions (class slides)",
     "section": "Write a function",
-    "text": "Write a function\nIn the same script, write main():\n\nPrompt user to enter their first name and last name using input()\nCall your greeting function and save the string it returns to a variable\nPrint the variable\nCall your count_characters function with the user’s full name and save the integer value returned to a variable\nPrint a message to the user: Your full name has X letters. – replacing X with the right character count",
+    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is calculate_year_born, with no parameters\nIt prompts user to enter their age input()\nIt converts user’s age to integer (since input() always returns a string)\nIt calculates (imperfectly) the year a person of age was born by subtracting age from 2024\nIt returns an integer representing the approximate year person of age was born\n\n\nprint( calculate_year_born() ) # user enters 43, function returns 1981",
     "crumbs": [
       "Module 3 - More on Functions, Operators and Expressions",
       "Built-in Python Functions (class slides)"
@@ -4617,7 +4617,7 @@
     "href": "slides-03-02.html#announcements",
     "title": "Built-in Python Functions (class slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nMidterm 1 on February 14 (this room)\nModules 1-5 (practice problems on the website)\nReview session TBA\nBRING PHOTO ID TO THE EXAM",
+    "text": "Announcements\nCheck your grade on D2l",
     "crumbs": [
       "Module 3 - More on Functions, Operators and Expressions",
       "Built-in Python Functions (class slides)"
@@ -5803,7 +5803,7 @@
     "href": "slides-04-01.html#write-a-function-solution",
     "title": "More expressions (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef odd(n):\n  return n % 2 == 1\n\ndef main():\n  print( odd(10) ) # False\n  print( odd(5) ) # True\n  print( odd(0) ) # False\n  \nmain()\n\nFalse\nTrue\nFalse\n\n\nSave your .py file as odd.py and submit it to Gradescope for attendance.",
+    "text": "Write a function – solution\n\ndef odd(n):\n  return n % 2 == 1\n\ndef main():\n  print( odd(10) ) # False\n  print( odd(5) ) # True\n  print( odd(0) ) # False\n  \nmain()\n\nFalse\nTrue\nFalse",
     "crumbs": [
       "Module 4 - Control Flow (if statements)",
       "More expressions (class slides)"

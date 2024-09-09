@@ -6,6 +6,10 @@ slide-number: true
 
 # CSC 110 Python Functions
 
+## Announcements
+
+Check your grade on D2l
+
 ## Write a function
 
 Write a Python function that does the following:
@@ -19,17 +23,6 @@ Write a Python function that does the following:
 #| eval: false
 print( greeting("Adriana", "Picoral") ) # Hello, Adriana Picoral!
 ```
-
-## Quiz 03
-
-<center>
-<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
-<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
-</center>
-
-You have 10 minutes to complete the quiz.
-
-Your formula in your function should be Python code (in other words, do not just copy the formula in the instructions, make it so it uses **actual symbols for Python operators**)
 
 
 ## Reading the documentation
@@ -55,19 +48,29 @@ print(character_count)
 Write a Python function that does the following:
 
 1.  Its name is `count_characters`
-2.  It takes a string argument, `name`
-3.  It returns the total number of characters in `name`
+2.  It takes three string arguments, `a`, `b` and `c`
+3.  It returns the total number of characters for all three strings
 
 
 ```{python}
 #| echo: true
 #| eval: false
-print( count_characters("Adriana") ) # 7
-print( count_characters("") ) # 0
-print( count_characters(" ") ) # 1
-print( count_characters("10") ) # 2
+print( count_characters("Adri", "ana", "Picoral") ) # 14
+print( count_characters("", "", "") ) # 0
+print( count_characters(" ", " ", " ") ) # 3
+print( count_characters("10", "2", "3") ) # 4
 ```
 
+## Quiz 03
+
+<center>
+<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+</center>
+
+You have 10 minutes to complete the quiz.
+
+Your formula in your function should be Python code (in other words, do not just copy the formula in the instructions, make it so it uses **actual symbols for Python operators**)
 
 ## `input()` function
 
@@ -82,34 +85,6 @@ print( count_characters("10") ) # 2
 input("What's your name?\n")
 ```
 
-
-## Write main()
-
-Now you should have two functions in your `.py` script: `greeting` and `count_characters`.
-
-Write a `main()` function.
-
-## Write a function
-
-In the same script, write `main()`:
-
-1.  Prompt user to enter their first name and last name using `input()`
-2.  Call your `greeting` function and save the string it returns to a variable
-3.  Print the variable
-4.  Call your `count_characters` function with the user's full name and save the integer value returned to a variable
-5.  Print a message to the user: `Your full name has X letters.` -- replacing X with the right character count
-
-## Announcements
-
-* Midterm 1 on February 14 (this room)
-* Modules 1-5 (practice problems on the website)
-* Review session TBA
-* BRING PHOTO ID TO THE EXAM
-
-
-## `input()` function
-
-Use `input()` to get user input (it always returns a string)
 
 ## `int()` function
 
@@ -153,17 +128,3 @@ Write a Python function that does the following:
 #| eval: false
 print( calculate_year_born() ) # user enters 43, function returns 1981
 ```
-
-## Attendance
-
-Submit your calculate_year_born solution as attendance on Gradescope.
-
-Name your file `get_input.py`
-
-
-
-## Organizing your code
-
--   Split your functions and your `main()` in different files
--   Use `from script_name import *`
--   For gradescope, submit only your script with all of your functions
