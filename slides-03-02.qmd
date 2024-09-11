@@ -10,6 +10,8 @@ slide-number: true
 
 Check your grade on D2l
 
+You can request a regrade on Gradescope (DEMO)
+
 ## Write a function
 
 Write a Python function that does the following:
