@@ -4617,7 +4617,7 @@
     "href": "slides-03-02.html#announcements",
     "title": "Built-in Python Functions (class slides)",
     "section": "Announcements",
-    "text": "Announcements\nCheck your grade on D2l",
+    "text": "Announcements\nCheck your grade on D2l\nYou can request a regrade on Gradescope (DEMO)",
     "crumbs": [
       "Module 3 - More on Functions, Operators and Expressions",
       "Built-in Python Functions (class slides)"
@@ -5792,7 +5792,7 @@
     "href": "slides-04-01.html#write-a-function",
     "title": "More expressions (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is odd and it takes one integer argument n\nIt returns True if n is odd, False if n is even\n\n\nprint( odd(10) ) # False\nprint( odd(5) ) # True\nprint( odd(0) ) # False",
+    "text": "Write a function\nWrite a function called odd that takes one integer argument n and returns True if n is odd, False if n is even\n\nprint( odd(10) ) # False\nprint( odd(5) ) # True\nprint( odd(0) ) # False\n\nSubmit your odd.py file to attendance on Gradescope",
     "crumbs": [
       "Module 4 - Control Flow (if statements)",
       "More expressions (class slides)"
