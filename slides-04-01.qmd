@@ -79,8 +79,7 @@ Expressions with comparisons operators are evaluated to `True` or `False`
 
 ## Write a function
 
-1. Its name is `odd` and it takes one integer argument `n`
-1. It **returns** `True` if `n` is odd, `False` if `n` is even
+Write a function called `odd` that takes one integer argument `n` and **returns** `True` if `n` is odd, `False` if `n` is even
 
 ```{python}
 #| eval: false
@@ -89,6 +88,8 @@ print( odd(10) ) # False
 print( odd(5) ) # True
 print( odd(0) ) # False
 ```
+
+Submit your `odd.py` file to attendance on Gradescope
 
 ## Write a function -- solution
 
