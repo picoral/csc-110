@@ -9,8 +9,7 @@ slide-number: true
 ## Announcements
 
 * Check grades on D2L and your submission on gradescope
-* Office hours are now in GS 856 (same floor, the other side of the building)
-* Midterm 1 on February 14 (in class, bring PHOTO ID)
+* Midterm 1 on October 2 (in class, bring PHOTO ID)
 
 ## if elif else
 
@@ -35,13 +34,27 @@ Rewrite the code below to use `elif` and `else`
 #| eval: false
 #| echo: true
 def polarity(x):
+  result = ""
   if x > 0:
-    return "positive"
+    result = "positive"
   if x < 0:
-    return "negative"
+    result = "negative"
   if x == 0:
-    return "zero"
+    result = "zero"
+  return result
 ```
+
+## Quiz 04
+
+You have 10 minutes to complete the quiz
+
+* No need for comments
+* No need for a `main()`
+* No need to print test cases
+* Just write your function and what's inside the function
+
+Built-in functions you can use: `round()`, `input()`, `float()`, `str()`, `int()` — you don’t have to use all of these
+
 
 ## Write a function
 

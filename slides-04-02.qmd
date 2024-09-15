@@ -81,11 +81,8 @@ main()
 
 ## Write a function
 
-Write a Python function that does the following:
-
-1.  Its name is `absolute`
-2.  It takes one numeric argument (integer or float) `n`
-3.  It returns the absolute value of `n`: if `n` is positive, it results `n`, if `n` is negative, it returns `n * -1`
+Write a Python function called `absolute` that takes one numeric argument (integer or float) `n`
+and returns the absolute value of `n`: if `n` is positive, it results `n`, if `n` is negative, it returns `n * -1`
 
 Test cases:
 
@@ -97,8 +94,9 @@ print( absolute(-4) ) # 4
 print( absolute(0) ) # 0
 ```
 
+Submit your solution (name your file `absolute.py`) to gradescope for attendance
 
-## Write a function
+## Write a function -- solution
 
 ```{python}
 #| echo: true
@@ -258,13 +256,3 @@ def main():
 main()
 ```
 
-## Quiz 04
-
-You have 10 minutes to complete the quiz
-
-* No need for comments
-* No need for a `main()`
-* No need to print test cases
-* Just write your function and what's inside the function
-
-Built-in functions you can use: `round()`, `input()`, `float()`, `str()`, `int()` — you don’t have to use all of these
