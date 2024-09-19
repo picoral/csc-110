@@ -62,20 +62,22 @@ Go to [Python Tutor](https://pythontutor.com/visualize.html#mode=edit) to visual
 
 ## While loop -- example
 
+Factorial: 5! = 1 * 2 * 3. * 4 * 5 = 120
+
 ```{python}
 #| eval: true
 #| echo: true
-def multiply(n, m):
-  result = 0
-  count = 0
-  while count < m:
-    result += n
-    count += 1
+def factorial(n):
+  result = 1
+  current_n = 1
+  while current_n <= n:
+    result = result * current_n
+    current_n += 1
   return result
 
 def main():
-  print( multiply(2, 3) )
-  print( multiply(5, 2) )
+  print( factorial(5) )
+  print( factorial(6) )
   
 main()
 ```

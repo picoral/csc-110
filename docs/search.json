@@ -3638,7 +3638,7 @@
     "href": "slides-05-01.html#while-loop-example",
     "title": "while loop intro (class slides)",
     "section": "While loop – example",
-    "text": "While loop – example\n\ndef multiply(n, m):\n  result = 0\n  count = 0\n  while count &lt; m:\n    result += n\n    count += 1\n  return result\n\ndef main():\n  print( multiply(2, 3) )\n  print( multiply(5, 2) )\n  \nmain()\n\n6\n10",
+    "text": "While loop – example\nFactorial: 5! = 1 * 2 * 3. * 4 * 5 = 120\n\ndef factorial(n):\n  result = 1\n  current_n = 1\n  while current_n &lt;= n:\n    result = result * current_n\n    current_n += 1\n  return result\n\ndef main():\n  print( factorial(5) )\n  print( factorial(6) )\n  \nmain()\n\n120\n720",
     "crumbs": [
       "Module 5 - Control Flow (while statements)",
       "while loop intro (class slides)"
