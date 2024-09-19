@@ -84,9 +84,8 @@ main()
 
 ## Write a function
 
-1. Write a function called `add_up_to` that takes an numeric argument `n`.
-1. The function should add all numbers from 1 to `n` in a while loop
-1. Return sum
+Write a function called `add_up_to` that takes an numeric argument `n`.
+The function should add all numbers from 1 to `n` in a while loop, and then (outside the loop) return the sum
 
 ```{python}
 #| eval: false
@@ -94,6 +93,8 @@ main()
 print( add_up_to(5) ) # 15
 print( add_up_to(10) ) # 55
 ```
+
+Name your file `sum_up.py` (your filename is different than your function name) and submit it to attendance on gradescope
 
 ## Write a function -- solution
 
