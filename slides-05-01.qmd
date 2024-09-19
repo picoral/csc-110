@@ -190,7 +190,9 @@ def age_milestones(age):
   return message
 
 def validate_age(age):
-  return age.isnumeric()
+  if age.isnumeric() and int(age) < 150:
+    return True
+  return False
      
 def main():
   '''
