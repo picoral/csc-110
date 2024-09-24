@@ -10,6 +10,8 @@ slide-number: true
 
 * Midterm 1 October 2 -- BRING PHOTO ID
 * Modules 1 to 5 -- study guide under practice problems page on website
+* Review session Tuesday, October 1, 5pm to 7pm
+    * Gittings 129b
 
 # String Manipulation
 
