@@ -8347,5 +8347,16 @@
       "Module 4 - Control Flow (if statements)",
       "If statements (class slides)"
     ]
+  },
+  {
+    "objectID": "project-3.html#overspending",
+    "href": "project-3.html#overspending",
+    "title": "Programming Project 3",
+    "section": "Overspending",
+    "text": "Overspending\nWhat happens if the expenditures and taxes are more than the annual salary? This should be represented by negative values in the extra row. You should also print a warning after the chart. Below is an example of a financial situation in which the user spends more than they earn, resulting in a deficit in the extra row.\n\n# arguments: salary, mortgage/rent, bills, food, travel\nwheres_the_money(40000, 2000, 300, 150, 4000)\n\n------------------------------------------------------------------------------------------------------\nSee the financial breakdown below, based on a salary of $40000\n------------------------------------------------------------------------------------------------------\n| mortgage/rent | $  24,000.00 |  60.0% | ############################################################\n|         bills | $   3,600.00 |   9.0% | #########\n|          food | $   7,800.00 |  19.5% | ###################\n|        travel | $   4,000.00 |  10.0% | ##########\n|           tax | $   8,000.00 |  20.0% | ####################\n|         extra | $  -7,400.00 | -18.5% |\n------------------------------------------------------------------------------------------------------\n&gt;&gt;&gt; WARNING: DEFICIT &lt;&lt;&lt;",
+    "crumbs": [
+      "Programming Projects",
+      "Programming Project 3"
+    ]
   }
 ]
