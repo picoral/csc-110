@@ -3319,7 +3319,7 @@
     "href": "slides-05-03.html#write-a-function-1",
     "title": "while loop aggregation (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is vowels_only\nIt takes a string argument\nIt builds a new string containing only the vowels in the string argument\nIt returns new string with vowels only (define an index before the loop, use index in the while condition, change index inside the loop)\n\n\nprint( vowels_only(\"banana\") ) # \"aaa\"\nprint( vowels_only(\"fly\") ) # \"\"",
+    "text": "Write a function\nWrite a function called count_vowels that takes a string as argument, and returns an integer with the number of vowels in the string.\nHINT: use in to determine if a character is a vowel\n\nassert count_vowels(\"banana\") == 3\nassert count_vowels(\"fly\") == 0",
     "crumbs": [
       "Module 5 - Control Flow (while statements)",
       "while loop aggregation (class slides)"
@@ -3341,7 +3341,7 @@
     "href": "slides-05-03.html#write-a-function-2",
     "title": "while loop aggregation (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is factorial\nIt takes a numeric argument number\nIt returns the factorial of number\nThe factorial of a number is the product of itself and all the integers below it – factorial of 4 = 1 * 2 * 3 * 4 = 24\nUse while\n\n\nprint( factorial(4) ) # 24\nprint( factorial(5) ) # 120\nprint( factorial(0) ) # 1",
+    "text": "Write a function\n\nIts name is vowels_only\nIt takes a string argument\nIt builds a new string containing only the vowels in the string argument\nIt returns new string with vowels only (define an index before the loop, use index in the while condition, change index inside the loop)\n\n\nprint( vowels_only(\"banana\") ) # \"aaa\"\nprint( vowels_only(\"fly\") ) # \"\"",
     "crumbs": [
       "Module 5 - Control Flow (while statements)",
       "while loop aggregation (class slides)"
@@ -3363,7 +3363,7 @@
     "href": "slides-05-03.html#write-a-function-3",
     "title": "while loop aggregation (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is power\nIt takes two numeric arguments: base and exp\nIt returns the base to the power of exp\nDon’t use the ** operator, use a while loop (define an index before the loop, use index in the while condition, change index inside the loop)\n\n\nassert power(2, 3) == 8\nassert power(3, 3) == 27",
+    "text": "Write a function\n\nIts name is factorial\nIt takes a numeric argument number\nIt returns the factorial of number\nThe factorial of a number is the product of itself and all the integers below it – factorial of 4 = 1 * 2 * 3 * 4 = 24\nUse while\n\n\nprint( factorial(4) ) # 24\nprint( factorial(5) ) # 120\nprint( factorial(0) ) # 1",
     "crumbs": [
       "Module 5 - Control Flow (while statements)",
       "while loop aggregation (class slides)"
@@ -8357,6 +8357,28 @@
     "crumbs": [
       "Programming Projects",
       "Programming Project 3"
+    ]
+  },
+  {
+    "objectID": "slides-05-03.html#solution",
+    "href": "slides-05-03.html#solution",
+    "title": "while loop aggregation (class slides)",
+    "section": "Solution",
+    "text": "Solution\n\ndef count_vowels(string):\n  index = 0\n  count = 0\n  while index &lt; len(string):\n    if string[index] in \"aeiou\":\n      count += 1\n    index += 1\n  return count\n\ndef main():\n  assert count_vowels(\"banana\") == 3\n  assert count_vowels(\"fly\") == 0\n  print(\"End of tests.\")\n  \nmain()\n\nEnd of tests.",
+    "crumbs": [
+      "Module 5 - Control Flow (while statements)",
+      "while loop aggregation (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-05-03.html#write-a-function-4",
+    "href": "slides-05-03.html#write-a-function-4",
+    "title": "while loop aggregation (class slides)",
+    "section": "Write a function",
+    "text": "Write a function\n\nIts name is power\nIt takes two numeric arguments: base and exp\nIt returns the base to the power of exp\nDon’t use the ** operator, use a while loop (define an index before the loop, use index in the while condition, change index inside the loop)\n\n\nassert power(2, 3) == 8\nassert power(3, 3) == 27",
+    "crumbs": [
+      "Module 5 - Control Flow (while statements)",
+      "while loop aggregation (class slides)"
     ]
   }
 ]

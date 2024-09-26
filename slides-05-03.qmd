@@ -65,6 +65,44 @@ main()
 
 ## Write a function
 
+Write a function called `count_vowels` that takes a string as argument, and returns
+an integer with the number of vowels in the string.
+
+HINT: use `in` to determine if a character is a vowel
+
+```{python}
+#| eval: false
+#| echo: true
+assert count_vowels("banana") == 3
+assert count_vowels("fly") == 0
+```
+
+## Solution
+
+```{python}
+#| eval: true
+#| echo: true
+def count_vowels(string):
+  index = 0
+  count = 0
+  while index < len(string):
+    if string[index] in "aeiou":
+      count += 1
+    index += 1
+  return count
+
+def main():
+  assert count_vowels("banana") == 3
+  assert count_vowels("fly") == 0
+  print("End of tests.")
+  
+main()
+
+```
+
+
+## Write a function
+
 1.  Its name is `vowels_only`
 2.  It takes a `string` argument
 3.  It builds a new string containing only the vowels in the `string` argument
