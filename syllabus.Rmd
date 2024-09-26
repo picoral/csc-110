@@ -181,7 +181,7 @@ The final exam is worth 15%.
 
 The final exam will be on:
 
--   `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(time)` in [room TBA]()
+-   `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(time)` in [S SCI 100](https://classrooms.registrar.arizona.edu/27/100)
 
 You must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.
 

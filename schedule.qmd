@@ -35,7 +35,8 @@ Midterm (individual) exams (pencil and paper format):
 
 The final exam (pencil and paper format) for all sections will be on:
 
--   `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(time)` in [room TBA]()
+-   `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam" & term == "fall 2024") %>% pull(time)` in [S SCI 100](https://classrooms.registrar.arizona.edu/27/100)
+
 
 All assignments that are submitted on Gradescope are due at 7pm.
 
