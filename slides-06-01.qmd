@@ -7,11 +7,6 @@ df-print: kable
 
 # CSc 110 - Lists
 
-## Announcements
-
-* Problems 9 and 10, and Short Project 04 due today 
-* Project 04 due Monday
-
 ## Sequences
 
 We've worked with `strings`, which are sequences in Python. Sequences can be indexed with `[ ]`:
