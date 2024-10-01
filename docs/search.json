@@ -1134,17 +1134,6 @@
     "text": "try: and except:\n\nages = [35, 35, 23, 18, 45, 18, 72]\ntry:\n    print(ages[0] + ages[7])\nexcept:\n    print('Failed to print the sum of two ages')\n     print('Tried to get a value from an index that does not exist in the list')\n\n\nages = [35, 35, 23, 18, 45, 18, 72]\nprint(ages[0] + ages[7])\n\nIndexError: list index out of range"
   },
   {
-    "objectID": "slides-06-01.html#announcements",
-    "href": "slides-06-01.html#announcements",
-    "title": "lists (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nProblems 9 and 10, and Short Project 04 due today\nProject 04 due Monday",
-    "crumbs": [
-      "Module 6 - Data Structures (lists)",
-      "lists (class slides)"
-    ]
-  },
-  {
     "objectID": "slides-06-01.html#sequences",
     "href": "slides-06-01.html#sequences",
     "title": "lists (class slides)",
@@ -3326,11 +3315,11 @@
     ]
   },
   {
-    "objectID": "slides-05-03.html#write-a-function-solution-1",
-    "href": "slides-05-03.html#write-a-function-solution-1",
+    "objectID": "slides-05-03.html#solution",
+    "href": "slides-05-03.html#solution",
     "title": "while loop aggregation (class slides)",
-    "section": "Write a function – solution",
-    "text": "Write a function – solution\nWrite more test cases for this function.\n\ndef vowels_only(string):\n  new_string = \"\"\n  index = 0\n  while index &lt; len(string):\n    if string[index] in \"aeiou\":\n      new_string += string[index]\n    index += 1\n  return new_string\n\ndef main():\n  print( vowels_only(\"banana\") ) # \"aaa\"\n  \nmain()\n\naaa",
+    "section": "Solution",
+    "text": "Solution\n\ndef count_vowels(string):\n  index = 0\n  count = 0\n  while index &lt; len(string):\n    if string[index] in \"aeiou\":\n      count += 1\n    index += 1\n  return count\n\ndef main():\n  assert count_vowels(\"banana\") == 3\n  assert count_vowels(\"fly\") == 0\n  print(\"End of tests.\")\n  \nmain()\n\nEnd of tests.",
     "crumbs": [
       "Module 5 - Control Flow (while statements)",
       "while loop aggregation (class slides)"
@@ -3348,11 +3337,11 @@
     ]
   },
   {
-    "objectID": "slides-05-03.html#write-a-function-solution-2",
-    "href": "slides-05-03.html#write-a-function-solution-2",
+    "objectID": "slides-05-03.html#write-a-function-solution-1",
+    "href": "slides-05-03.html#write-a-function-solution-1",
     "title": "while loop aggregation (class slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\nWrite more test cases for this function.\n\ndef factorial(number):\n  result = 1\n  index = 1\n  while index &lt;= number:\n    result *= index\n    index += 1\n  return result\n\ndef main():\n  assert factorial(4) == 24\n  assert factorial(5) == 120\n  assert factorial(0) == 1\n  \nmain()",
+    "text": "Write a function – solution\nWrite more test cases for this function.\n\ndef vowels_only(string):\n  new_string = \"\"\n  index = 0\n  while index &lt; len(string):\n    if string[index] in \"aeiou\":\n      new_string += string[index]\n    index += 1\n  return new_string\n\ndef main():\n  print( vowels_only(\"banana\") ) # \"aaa\"\n  \nmain()\n\naaa",
     "crumbs": [
       "Module 5 - Control Flow (while statements)",
       "while loop aggregation (class slides)"
@@ -3364,6 +3353,28 @@
     "title": "while loop aggregation (class slides)",
     "section": "Write a function",
     "text": "Write a function\n\nIts name is factorial\nIt takes a numeric argument number\nIt returns the factorial of number\nThe factorial of a number is the product of itself and all the integers below it – factorial of 4 = 1 * 2 * 3 * 4 = 24\nUse while\n\n\nprint( factorial(4) ) # 24\nprint( factorial(5) ) # 120\nprint( factorial(0) ) # 1",
+    "crumbs": [
+      "Module 5 - Control Flow (while statements)",
+      "while loop aggregation (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-05-03.html#write-a-function-solution-2",
+    "href": "slides-05-03.html#write-a-function-solution-2",
+    "title": "while loop aggregation (class slides)",
+    "section": "Write a function – solution",
+    "text": "Write a function – solution\nWrite more test cases for this function.\n\ndef factorial(number):\n  result = 1\n  index = 1\n  while index &lt;= number:\n    result *= index\n    index += 1\n  return result\n\ndef main():\n  assert factorial(4) == 24\n  assert factorial(5) == 120\n  assert factorial(0) == 1\n  \nmain()",
+    "crumbs": [
+      "Module 5 - Control Flow (while statements)",
+      "while loop aggregation (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-05-03.html#write-a-function-4",
+    "href": "slides-05-03.html#write-a-function-4",
+    "title": "while loop aggregation (class slides)",
+    "section": "Write a function",
+    "text": "Write a function\n\nIts name is power\nIt takes two numeric arguments: base and exp\nIt returns the base to the power of exp\nDon’t use the ** operator, use a while loop (define an index before the loop, use index in the while condition, change index inside the loop)\n\n\nassert power(2, 3) == 8\nassert power(3, 3) == 27",
     "crumbs": [
       "Module 5 - Control Flow (while statements)",
       "while loop aggregation (class slides)"
@@ -4525,22 +4536,22 @@
     ]
   },
   {
-    "objectID": "slides-03-02.html#write-a-function",
-    "href": "slides-03-02.html#write-a-function",
+    "objectID": "slides-03-02.html#announcements",
+    "href": "slides-03-02.html#announcements",
     "title": "Built-in Python Functions (class slides)",
-    "section": "Write a function",
-    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is greeting\nIt takes two arguments, first_name and last_name\nIt returns a string with a greeting using first_name and last_name\n\n\nprint( greeting(\"Adriana\", \"Picoral\") ) # Hello, Adriana Picoral!",
+    "section": "Announcements",
+    "text": "Announcements\nCheck your grade on D2l\nYou can request a regrade on Gradescope (DEMO)",
     "crumbs": [
       "Module 3 - More on Functions, Operators and Expressions",
       "Built-in Python Functions (class slides)"
     ]
   },
   {
-    "objectID": "slides-03-02.html#quiz-03",
-    "href": "slides-03-02.html#quiz-03",
+    "objectID": "slides-03-02.html#write-a-function",
+    "href": "slides-03-02.html#write-a-function",
     "title": "Built-in Python Functions (class slides)",
-    "section": "Quiz 03",
-    "text": "Quiz 03\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nYour formula in your function should be Python code (in other words, do not just copy the formula in the instructions, make it so it uses actual symbols for Python operators)",
+    "section": "Write a function",
+    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is greeting\nIt takes two arguments, first_name and last_name\nIt returns a string with a greeting using first_name and last_name\n\n\nprint( greeting(\"Adriana\", \"Picoral\") ) # Hello, Adriana Picoral!",
     "crumbs": [
       "Module 3 - More on Functions, Operators and Expressions",
       "Built-in Python Functions (class slides)"
@@ -4580,55 +4591,22 @@
     ]
   },
   {
+    "objectID": "slides-03-02.html#quiz-03",
+    "href": "slides-03-02.html#quiz-03",
+    "title": "Built-in Python Functions (class slides)",
+    "section": "Quiz 03",
+    "text": "Quiz 03\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nYour formula in your function should be Python code (in other words, do not just copy the formula in the instructions, make it so it uses actual symbols for Python operators)",
+    "crumbs": [
+      "Module 3 - More on Functions, Operators and Expressions",
+      "Built-in Python Functions (class slides)"
+    ]
+  },
+  {
     "objectID": "slides-03-02.html#input-function",
     "href": "slides-03-02.html#input-function",
     "title": "Built-in Python Functions (class slides)",
     "section": "input() function",
     "text": "input() function\n\nThe input() function prompts the user to input text in the standard output\nWhatever is inside the parentheses in input() will be written to the standard output (without a trailing newline, which you can add using \\n).\nThe function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that\ninput() always returns a string\n\n\ninput(\"What's your name?\\n\")",
-    "crumbs": [
-      "Module 3 - More on Functions, Operators and Expressions",
-      "Built-in Python Functions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-03-02.html#write-main",
-    "href": "slides-03-02.html#write-main",
-    "title": "Built-in Python Functions (class slides)",
-    "section": "Write main()",
-    "text": "Write main()\nNow you should have two functions in your .py script: greeting and count_characters.\nWrite a main() function.",
-    "crumbs": [
-      "Module 3 - More on Functions, Operators and Expressions",
-      "Built-in Python Functions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-03-02.html#write-a-function-2",
-    "href": "slides-03-02.html#write-a-function-2",
-    "title": "Built-in Python Functions (class slides)",
-    "section": "Write a function",
-    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is calculate_year_born, with no parameters\nIt prompts user to enter their age input()\nIt converts user’s age to integer (since input() always returns a string)\nIt calculates (imperfectly) the year a person of age was born by subtracting age from 2024\nIt returns an integer representing the approximate year person of age was born\n\n\nprint( calculate_year_born() ) # user enters 43, function returns 1981",
-    "crumbs": [
-      "Module 3 - More on Functions, Operators and Expressions",
-      "Built-in Python Functions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-03-02.html#announcements",
-    "href": "slides-03-02.html#announcements",
-    "title": "Built-in Python Functions (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\nCheck your grade on D2l\nYou can request a regrade on Gradescope (DEMO)",
-    "crumbs": [
-      "Module 3 - More on Functions, Operators and Expressions",
-      "Built-in Python Functions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-03-02.html#input-function-1",
-    "href": "slides-03-02.html#input-function-1",
-    "title": "Built-in Python Functions (class slides)",
-    "section": "input() function",
-    "text": "input() function\nUse input() to get user input (it always returns a string)",
     "crumbs": [
       "Module 3 - More on Functions, Operators and Expressions",
       "Built-in Python Functions (class slides)"
@@ -4657,33 +4635,11 @@
     ]
   },
   {
-    "objectID": "slides-03-02.html#write-a-function-3",
-    "href": "slides-03-02.html#write-a-function-3",
+    "objectID": "slides-03-02.html#write-a-function-2",
+    "href": "slides-03-02.html#write-a-function-2",
     "title": "Built-in Python Functions (class slides)",
     "section": "Write a function",
     "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is calculate_year_born, with no parameters\nIt prompts user to enter their age input()\nIt converts user’s age to integer (since input() always returns a string)\nIt calculates (imperfectly) the year a person of age was born by subtracting age from 2024\nIt returns an integer representing the approximate year person of age was born\n\n\nprint( calculate_year_born() ) # user enters 43, function returns 1981",
-    "crumbs": [
-      "Module 3 - More on Functions, Operators and Expressions",
-      "Built-in Python Functions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-03-02.html#attendance",
-    "href": "slides-03-02.html#attendance",
-    "title": "Built-in Python Functions (class slides)",
-    "section": "Attendance",
-    "text": "Attendance\nSubmit your calculate_year_born solution as attendance on Gradescope.\nName your file get_input.py",
-    "crumbs": [
-      "Module 3 - More on Functions, Operators and Expressions",
-      "Built-in Python Functions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-03-02.html#organizing-your-code",
-    "href": "slides-03-02.html#organizing-your-code",
-    "title": "Built-in Python Functions (class slides)",
-    "section": "Organizing your code",
-    "text": "Organizing your code\n\nSplit your functions and your main() in different files\nUse from script_name import *\nFor gradescope, submit only your script with all of your functions",
     "crumbs": [
       "Module 3 - More on Functions, Operators and Expressions",
       "Built-in Python Functions (class slides)"
@@ -4987,6 +4943,17 @@
     ]
   },
   {
+    "objectID": "slides-03-01.html#submit-attendance",
+    "href": "slides-03-01.html#submit-attendance",
+    "title": "More on Functions (class slides)",
+    "section": "Submit attendance",
+    "text": "Submit attendance\nSubmit your hypotenuse.py file with your solution to gradescope for attendance Name your",
+    "crumbs": [
+      "Module 3 - More on Functions, Operators and Expressions",
+      "More on Functions (class slides)"
+    ]
+  },
+  {
     "objectID": "ascii-table.html",
     "href": "ascii-table.html",
     "title": "ASCII table",
@@ -5032,6 +4999,17 @@
     "title": "Programming Project 3",
     "section": "",
     "text": "Programming Projects are to be submitted to gradescope\nDue date: Sep 26, Thursday at 7pm\nThis programming project is an adaptation of Ben Dicken’s Where’s the Money Programming Assignment.\nDo not import any modules for this assignment. Do not use built-in functions like max() (you have to write your own). You can use the built-in functions we covered in class: print(), round(), input(), len(), int(), float(), str() in addition to format().",
+    "crumbs": [
+      "Programming Projects",
+      "Programming Project 3"
+    ]
+  },
+  {
+    "objectID": "project-3.html#overspending",
+    "href": "project-3.html#overspending",
+    "title": "Programming Project 3",
+    "section": "Overspending",
+    "text": "Overspending\nWhat happens if the expenditures and taxes are more than the annual salary? This should be represented by negative values in the extra row. You should also print a warning after the chart. Below is an example of a financial situation in which the user spends more than they earn, resulting in a deficit in the extra row.\n\n# arguments: salary, mortgage/rent, bills, food, travel\nwheres_the_money(40000, 2000, 300, 150, 4000)\n\n------------------------------------------------------------------------------------------------------\nSee the financial breakdown below, based on a salary of $40000\n------------------------------------------------------------------------------------------------------\n| mortgage/rent | $  24,000.00 |  60.0% | ############################################################\n|         bills | $   3,600.00 |   9.0% | #########\n|          food | $   7,800.00 |  19.5% | ###################\n|        travel | $   4,000.00 |  10.0% | ##########\n|           tax | $   8,000.00 |  20.0% | ####################\n|         extra | $  -7,400.00 | -18.5% |\n------------------------------------------------------------------------------------------------------\n&gt;&gt;&gt; WARNING: DEFICIT &lt;&lt;&lt;",
     "crumbs": [
       "Programming Projects",
       "Programming Project 3"
@@ -5260,6 +5238,17 @@
     ]
   },
   {
+    "objectID": "slides-01-02.html#submit-to-gradescope",
+    "href": "slides-01-02.html#submit-to-gradescope",
+    "title": "Python Basics (class slides)",
+    "section": "Submit to gradescope",
+    "text": "Submit to gradescope\nSubmit your solution to the previous problem to gradescope\nName your file first.py\nAlso, like for the programming problems due next week, we will set up our code to be inside a main function (DEMO)\nRemember that the print() function prints a line break (\\n character) by default, you can change the default by specifying the parameter end to be an empty string",
+    "crumbs": [
+      "Module 1 - Basics",
+      "Python Basics (class slides)"
+    ]
+  },
+  {
     "objectID": "slides-01-02.html#variables-and-assignment",
     "href": "slides-01-02.html#variables-and-assignment",
     "title": "Python Basics (class slides)",
@@ -5436,19 +5425,19 @@
     ]
   },
   {
-    "objectID": "slides-04-02.html#write-a-function-1",
-    "href": "slides-04-02.html#write-a-function-1",
+    "objectID": "slides-04-02.html#write-a-function-solution",
+    "href": "slides-04-02.html#write-a-function-solution",
     "title": "If statements (class slides)",
-    "section": "Write a function",
-    "text": "Write a function\n\nFunction name is age_milestones and it takes one integer argument: age\nIt returns:\n\n‘You may apply to join the military’ if age is greater or equal to 18\n‘You may drink’ if age is greater or equal to 21\n‘You may run for president’ if age is greater or equal to 35\n\n\n\nprint( age_milestones(18) ) # You may apply to join the military.\nprint( age_milestones(30) ) # You may apply to join the military. You may drink.\nprint( age_milestones(0) ) #",
+    "section": "Write a function – solution",
+    "text": "Write a function – solution\n\ndef absolute(n):\n  if n &gt; 0:\n    return n\n  else:\n    return -n\n  \ndef main():\n  print( absolute(4) )\n  print( absolute(-4) )\n  print( absolute(0) )\n  \nmain()\n\n4\n4\n0",
     "crumbs": [
       "Module 4 - Control Flow (if statements)",
       "If statements (class slides)"
     ]
   },
   {
-    "objectID": "slides-04-02.html#write-a-function-2",
-    "href": "slides-04-02.html#write-a-function-2",
+    "objectID": "slides-04-02.html#write-a-function-1",
+    "href": "slides-04-02.html#write-a-function-1",
     "title": "If statements (class slides)",
     "section": "Write a function",
     "text": "Write a function\n\nFunction name is age_milestones and it takes one integer argument: age\nIt returns:\n\n‘You may apply to join the military’ if age is greater or equal to 18\n‘You may drink’ if age is greater or equal to 21\n‘You may run for president’ if age is greater or equal to 35\n\n\n\nprint( age_milestones(18) ) # You may apply to join the military.\nprint( age_milestones(30) ) # You may apply to join the military. You may drink.\nprint( age_milestones(0) ) #",
@@ -5513,17 +5502,6 @@
     ]
   },
   {
-    "objectID": "slides-04-02.html#quiz-04",
-    "href": "slides-04-02.html#quiz-04",
-    "title": "If statements (class slides)",
-    "section": "Quiz 04",
-    "text": "Quiz 04\nYou have 10 minutes to complete the quiz\n\nNo need for comments\nNo need for a main()\nNo need to print test cases\nJust write your function and what’s inside the function\n\nBuilt-in functions you can use: round(), input(), float(), str(), int() — you don’t have to use all of these",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "If statements (class slides)"
-    ]
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About these materials",
@@ -5573,6 +5551,17 @@
     "title": "if elif else statements (class slides)",
     "section": "Rewrite the code",
     "text": "Rewrite the code\nRewrite the code below to use elif and else\n\ndef polarity(x):\n  result = \"\"\n  if x &gt; 0:\n    result = \"positive\"\n  if x &lt; 0:\n    result = \"negative\"\n  if x == 0:\n    result = \"zero\"\n  return result",
+    "crumbs": [
+      "Module 4 - Control Flow (if statements)",
+      "if elif else statements (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-04-03.html#quiz-04",
+    "href": "slides-04-03.html#quiz-04",
+    "title": "if elif else statements (class slides)",
+    "section": "Quiz 04",
+    "text": "Quiz 04\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments\nNo need for a main()\nNo need to print test cases\nJust write your function and what’s inside the function\n\nBuilt-in functions you can use: round(), input(), float(), str(), int() — you don’t have to use all of these",
     "crumbs": [
       "Module 4 - Control Flow (if statements)",
       "if elif else statements (class slides)"
@@ -5661,83 +5650,6 @@
     "title": "if elif else statements (class slides)",
     "section": "Write a function - solution",
     "text": "Write a function - solution\n\ndef average_of_highest(x, y, z):\n  if x &gt;= z and y &gt;= z:\n    return (x + y) / 2\n  elif y &gt;= x and z &gt;= x:\n    return (y + z) / 2\n  else:\n    return (x + z) / 2\n  \ndef main():\n  print( average_of_highest(1, 3, 5) ) # should print 4.0\n  print( average_of_highest(6, 4, 2) ) # should print 5.0\n  print( average_of_highest(4, 2, 1) ) # should print 3.0\n  print( average_of_highest(2, 2, 1) ) # should print 2.0\n  print( average_of_highest(2, 1, 2) ) # should print 2.0\n  print( average_of_highest(1, 2, 1) ) # should print 1.5\n  \nmain()\n\n4.0\n5.0\n3.0\n2.0\n2.0\n1.5",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "if elif else statements (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-03.html#write-a-function-3",
-    "href": "slides-04-03.html#write-a-function-3",
-    "title": "if elif else statements (class slides)",
-    "section": "Write a function",
-    "text": "Write a function\n\nIts name is triangle_type, and it takes three arguments: x, y and z representing the lengths of the three sides of a triangle\nIt returns:\n\n\"Equilateral\" if all three sides are the same\n\"Isosceles\" if two of the sides are of equal length\n\"Obtuse\" when all three sides are of different lengths\n\nRemember that equality is transitive (as long as x equals y, and y equals z, then z equals y) – btw, greater than is also a transitive relation",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "if elif else statements (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-03.html#write-a-function---solution-1",
-    "href": "slides-04-03.html#write-a-function---solution-1",
-    "title": "if elif else statements (class slides)",
-    "section": "Write a function - solution",
-    "text": "Write a function - solution\n\ndef triangle_type(x, y, z):\n  '''\n  This function labels a triangle of side lengths x, y, z into three categories:\n    * Equilateral if all three sides are the same length\n    * Isosceles if two of the sides are of equal length\n    * Obtuse if all three sides are of different lengths\n  Args:\n    x, y, z: numeric (integer or float) representing tiangle side lengths\n  Returns:\n    A string: \"Equilateral\", \"Isosceles\", or \"Obtuse\"\n  '''\n  if x == y and y == z: # if expression is true, then we know x == z\n    return \"Equilateral\"\n  elif x == y or y == z or z == x: # are any two sides equal?\n    return \"Isosceles\"\n  else: # all three sides are different\n    return \"Obtuse\"\n\ndef main():\n  print( triangle_type(3, 3, 3) ) # \"Equilateral\"\n  print( triangle_type(3, 2, 3) ) # \"Isosceles\"\n  print( triangle_type(4, 5, 6) ) # \"Obtuse\"\n  \nmain()\n\nEquilateral\nIsosceles\nObtuse",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "if elif else statements (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-03.html#write-a-function-4",
-    "href": "slides-04-03.html#write-a-function-4",
-    "title": "if elif else statements (class slides)",
-    "section": "Write a function",
-    "text": "Write a function\n\nIts name is triangle_inequality, and it takes three arguments: x, y and z representing the lengths of the three sides of a triangle\nFor any triangle, the sum of the lengths of any two sides must be greater than the length of the remaining side (learn more about it) – when inequality is violated, the triangle does not exist\nIt returns:\n\nTrue if the triangle inequality holds true\nFalse otherwise",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "if elif else statements (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-03.html#write-a-function---solution-2",
-    "href": "slides-04-03.html#write-a-function---solution-2",
-    "title": "if elif else statements (class slides)",
-    "section": "Write a function - solution",
-    "text": "Write a function - solution\n\ndef triangle_inequality(x, y, z):\n  '''\n  This function checks for the triangle inequality given three numbers\n  representing the side lengths of a triangle\n  Args:\n    x, y, z: numeric (integer or float) representing tiangle side lengths\n  Returns:\n    True if inequality is held, False if it is violated\n  '''\n  if x &gt;= y + z or y &gt;= x + z or z &gt;= y + x:\n    return False\n  else:\n    return True\n  \ndef main():\n  print( triangle_inequality(3, 3, 3) ) # True\n  print( triangle_inequality(3, 2, 3) ) # True\n  print( triangle_inequality(4, 5, 6) ) # True\n  print( triangle_inequality(1, 2, 3) ) # False\n  \nmain()\n\nTrue\nTrue\nTrue\nFalse",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "if elif else statements (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-03.html#modify-triangle_type",
-    "href": "slides-04-03.html#modify-triangle_type",
-    "title": "if elif else statements (class slides)",
-    "section": "Modify triangle_type",
-    "text": "Modify triangle_type\nModify your triangle_type function to check if the triangle exists before checking if the triangle is equilateral, isosceles, or obtuse.",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "if elif else statements (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-03.html#solution",
-    "href": "slides-04-03.html#solution",
-    "title": "if elif else statements (class slides)",
-    "section": "Solution",
-    "text": "Solution\n\ndef triangle_inequality(x, y, z):\n  if x &gt;= y + z or y &gt;= x + z or z &gt;= y + x:\n    return False\n  else:\n    return True\n  \ndef triangle_type(x, y, z):\n  '''\n  This function labels a triangle of side lengths x, y, z into four categories:\n    * Non-existing if side lengths violate inequality\n    * Equilateral if all three sides are the same length\n    * Isosceles if two of the sides are of equal length\n    * Obtuse if all three sides are of different lengths\n  Args:\n    x, y, z: numeric (integer or float) representing tiangle side lengths\n  Returns:\n    A string: \"Equilateral\", \"Isosceles\", \"Obtuse\", \n    or \"The triangle does not exist\"\n  '''\n  if triangle_inequality(x, y, z):\n    if x == y and y == z: # if expression is true, then we know x == z\n      return \"Equilateral\"\n    elif x == y or y == z or z == x: # are any two sides equal?\n      return \"Isosceles\"\n    else: # all three sides are different\n      return \"Obtuse\"\n  else:\n    return \"The triangle does not exist\"\n\ndef main():\n  print( triangle_type(3, 3, 3) ) # \"Equilateral\"\n  print( triangle_type(3, 2, 3) ) # \"Isosceles\"\n  print( triangle_type(4, 5, 6) ) # \"Obtuse\"\n  print( triangle_type(1, 2, 3) ) # \"The triangle does not exist\"\n  \nmain()\n\nEquilateral\nIsosceles\nObtuse\nThe triangle does not exist",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "if elif else statements (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-03.html#organize-your-code",
-    "href": "slides-04-03.html#organize-your-code",
-    "title": "if elif else statements (class slides)",
-    "section": "Organize your code",
-    "text": "Organize your code\nSplit your functions and your code testing into two files: one called triangles.py and another called test_triangles.py – remember to use from triangles import * in your test_triangles.py script.",
     "crumbs": [
       "Module 4 - Control Flow (if statements)",
       "if elif else statements (class slides)"
@@ -6414,7 +6326,7 @@
     "href": "slides-06-02.html#random-module",
     "title": "random (class slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.9570545095144892\n0",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\n\nimport random\n\nn = random.random()\nprint(n)\n\nn = random.randint(0, 9)\nprint(n)\n\n0.3072641836026476\n9",
     "crumbs": [
       "Module 6 - Data Structures (lists)",
       "random (class slides)"
@@ -6806,17 +6718,6 @@
     ]
   },
   {
-    "objectID": "slides-02-01.html#submit-to-gradescope",
-    "href": "slides-02-01.html#submit-to-gradescope",
-    "title": "Functions (class slides)",
-    "section": "Submit to Gradescope",
-    "text": "Submit to Gradescope\n\nName your python script with the volume function cylinder.py\nGo to Gradescope and submit your .py file\nYou can resubmit as many times as you need (up to the deadline)\nYou can look at your Submission History and activate a previous submission",
-    "crumbs": [
-      "Module 2 - Functions, Operators and Expressions",
-      "Functions (class slides)"
-    ]
-  },
-  {
     "objectID": "slides-02-01.html#pemdas",
     "href": "slides-02-01.html#pemdas",
     "title": "Functions (class slides)",
@@ -7041,14 +6942,7 @@
     "href": "exam-instructions.html#exam-instructions",
     "title": "Exam Instructions",
     "section": "Exam Instructions",
-    "text": "Exam Instructions\nThis exam starts at 6:00pm and it ends at 8:00pm\nNo breaks during the exam. Use the restroom now.\n\nHave your photo ID handy\nPut away phones, laptops, calculators, smart watches, etc. Please remove headphones/earbuds and either turn hats or remove."
-  },
-  {
-    "objectID": "exam-instructions.html#exam-instructions-1",
-    "href": "exam-instructions.html#exam-instructions-1",
-    "title": "Exam Instructions",
-    "section": "Exam Instructions",
-    "text": "Exam Instructions\n\nTWO STUDENTS PER TABLE (sit diagonally to each other – not side-by-side, not in front of each other)"
+    "text": "Exam Instructions\nThis exam starts at 1:00pm and it ends at 1:50pm\nNo breaks during the exam. Use the restroom now.\n\nHave your photo ID handy\nPut away phones, laptops, calculators, smart watches, etc. Please remove headphones/earbuds and either turn hats or remove.\nWrite with a blue or black pen, or pencil. If you have a question, please raise your hand."
   },
   {
     "objectID": "slides-02-02.html#the-mathematical-operators",
@@ -7177,17 +7071,6 @@
     "title": "Math in Python (class slides)",
     "section": "Write a function – solutions",
     "text": "Write a function – solutions\n\ndef sphere_volume(radius):\n  \"calculates the volume of a sphere of given radius\"\n  volume = (4 / 3) * 3.1415 * radius**3\n  return round(volume, 2)\n\n\ndef sphere_area(radius):\n  \"calculates the area of a sphere of given radius\"\n  area = 4 * 3.1415 * radius**2\n  return round(area, 2)\n\n\ndef main():\n  r = .75\n  v = sphere_volume(r)\n  a = sphere_area(r)\n  print(v, a)\n  \nmain()\n\n1.77 7.07",
-    "crumbs": [
-      "Module 2 - Functions, Operators and Expressions",
-      "Math in Python (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-02-02.html#write-a-function-sphere-volume-and-area",
-    "href": "slides-02-02.html#write-a-function-sphere-volume-and-area",
-    "title": "Math in Python (class slides)",
-    "section": "Write a function – sphere volume and area",
-    "text": "Write a function – sphere volume and area\nSubmit your sphere volume and area solution as attendance on Gradescope.\nName your file sphere.py",
     "crumbs": [
       "Module 2 - Functions, Operators and Expressions",
       "Math in Python (class slides)"
@@ -8302,83 +8185,6 @@
     "crumbs": [
       "Module 1 - Basics",
       "Module 1 Programming Problems"
-    ]
-  },
-  {
-    "objectID": "slides-01-02.html#submit-to-gradescope",
-    "href": "slides-01-02.html#submit-to-gradescope",
-    "title": "Python Basics (class slides)",
-    "section": "Submit to gradescope",
-    "text": "Submit to gradescope\nSubmit your solution to the previous problem to gradescope\nName your file first.py\nAlso, like for the programming problems due next week, we will set up our code to be inside a main function (DEMO)\nRemember that the print() function prints a line break (\\n character) by default, you can change the default by specifying the parameter end to be an empty string",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Python Basics (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-03-01.html#submit-attendance",
-    "href": "slides-03-01.html#submit-attendance",
-    "title": "More on Functions (class slides)",
-    "section": "Submit attendance",
-    "text": "Submit attendance\nSubmit your hypotenuse.py file with your solution to gradescope for attendance Name your",
-    "crumbs": [
-      "Module 3 - More on Functions, Operators and Expressions",
-      "More on Functions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-03.html#quiz-04",
-    "href": "slides-04-03.html#quiz-04",
-    "title": "if elif else statements (class slides)",
-    "section": "Quiz 04",
-    "text": "Quiz 04\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments\nNo need for a main()\nNo need to print test cases\nJust write your function and what’s inside the function\n\nBuilt-in functions you can use: round(), input(), float(), str(), int() — you don’t have to use all of these",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "if elif else statements (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-02.html#write-a-function-solution",
-    "href": "slides-04-02.html#write-a-function-solution",
-    "title": "If statements (class slides)",
-    "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef absolute(n):\n  if n &gt; 0:\n    return n\n  else:\n    return -n\n  \ndef main():\n  print( absolute(4) )\n  print( absolute(-4) )\n  print( absolute(0) )\n  \nmain()\n\n4\n4\n0",
-    "crumbs": [
-      "Module 4 - Control Flow (if statements)",
-      "If statements (class slides)"
-    ]
-  },
-  {
-    "objectID": "project-3.html#overspending",
-    "href": "project-3.html#overspending",
-    "title": "Programming Project 3",
-    "section": "Overspending",
-    "text": "Overspending\nWhat happens if the expenditures and taxes are more than the annual salary? This should be represented by negative values in the extra row. You should also print a warning after the chart. Below is an example of a financial situation in which the user spends more than they earn, resulting in a deficit in the extra row.\n\n# arguments: salary, mortgage/rent, bills, food, travel\nwheres_the_money(40000, 2000, 300, 150, 4000)\n\n------------------------------------------------------------------------------------------------------\nSee the financial breakdown below, based on a salary of $40000\n------------------------------------------------------------------------------------------------------\n| mortgage/rent | $  24,000.00 |  60.0% | ############################################################\n|         bills | $   3,600.00 |   9.0% | #########\n|          food | $   7,800.00 |  19.5% | ###################\n|        travel | $   4,000.00 |  10.0% | ##########\n|           tax | $   8,000.00 |  20.0% | ####################\n|         extra | $  -7,400.00 | -18.5% |\n------------------------------------------------------------------------------------------------------\n&gt;&gt;&gt; WARNING: DEFICIT &lt;&lt;&lt;",
-    "crumbs": [
-      "Programming Projects",
-      "Programming Project 3"
-    ]
-  },
-  {
-    "objectID": "slides-05-03.html#solution",
-    "href": "slides-05-03.html#solution",
-    "title": "while loop aggregation (class slides)",
-    "section": "Solution",
-    "text": "Solution\n\ndef count_vowels(string):\n  index = 0\n  count = 0\n  while index &lt; len(string):\n    if string[index] in \"aeiou\":\n      count += 1\n    index += 1\n  return count\n\ndef main():\n  assert count_vowels(\"banana\") == 3\n  assert count_vowels(\"fly\") == 0\n  print(\"End of tests.\")\n  \nmain()\n\nEnd of tests.",
-    "crumbs": [
-      "Module 5 - Control Flow (while statements)",
-      "while loop aggregation (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-05-03.html#write-a-function-4",
-    "href": "slides-05-03.html#write-a-function-4",
-    "title": "while loop aggregation (class slides)",
-    "section": "Write a function",
-    "text": "Write a function\n\nIts name is power\nIt takes two numeric arguments: base and exp\nIt returns the base to the power of exp\nDon’t use the ** operator, use a while loop (define an index before the loop, use index in the while condition, change index inside the loop)\n\n\nassert power(2, 3) == 8\nassert power(3, 3) == 27",
-    "crumbs": [
-      "Module 5 - Control Flow (while statements)",
-      "while loop aggregation (class slides)"
     ]
   }
 ]
