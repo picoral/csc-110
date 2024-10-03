@@ -10,7 +10,7 @@ df-print: kable
 ## Announcements
 
 * Check D2L and gradescope for grades
-* 41% of your grade is in at this point in the semester
+* 36.6% of your grade is in at this point in the semester
 
 
 
