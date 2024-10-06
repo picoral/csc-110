@@ -117,5 +117,5 @@ print(numbers)
 
 Submit your `random_list` to gradescope.
 
-Name your file `random_list.py` and remember to set a seed.
+Name your file `random_list.py` and remember to set the seed to `123` inside your function.
 
