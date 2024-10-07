@@ -7,11 +7,6 @@ df-print: kable
 
 # CSc 110 - dictionaries
 
-## Announcements
-
-* Last lab for short project 06 is Today -- no lab for the rest of the week, we re-start lab sessions Monday March 11
-
-
 # Dictionaries
 
 ## Data Structure
