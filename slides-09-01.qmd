@@ -7,6 +7,13 @@ df-print: kable
 
 # CSc 110 - files
 
+## Announcements
+
+* Midterm 2 grades have been published
+* Also check D2L grades
+* November 3 is the Last day for students to drop from a regular session class with a W grade through UAccess
+* No in-person class on November 1 -- a video lecture will be posted on D2L
+
 ## Files and file systems
 
 -   On (at least most of) our computers, there is a **file system** via which we can create, save, modify, and remove files
