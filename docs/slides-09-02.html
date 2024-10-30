@@ -428,13 +428,13 @@
 <li>Return the total</li>
 <li><a href="data/numbers.txt">Download the text file</a> for the test case below</li>
 </ol>
-<div id="13db23b9" class="cell" data-execution_count="1">
+<div id="a2677a66" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="cf">assert</span> sum_all(<span class="st">"numbers.txt"</span>) <span class="op">==</span> <span class="dv">15</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="8eea158b" class="cell" data-execution_count="2">
+<div id="c697c3f3" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="kw">def</span> sum_all(file_name):</span>
 <span id="cb2-2"><a></a>  total <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb2-3"><a></a>  <span class="cf">for</span> line <span class="kw">in</span> <span class="bu">open</span>(file_name, <span class="st">"r"</span>):</span>
@@ -480,7 +480,7 @@
 </section>
 <section id="evaluate-the-code" class="slide level2">
 <h2>Evaluate the code</h2>
-<div id="eea3b0d0" class="cell" data-execution_count="3">
+<div id="3536d9b9" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>words <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'w'</span>)</span>
 <span id="cb5-2"><a></a>words.write(<span class="st">'The slow wolf'</span>)</span>
 <span id="cb5-3"><a></a>words.write(<span class="st">'jumped over'</span>)</span>
@@ -490,7 +490,7 @@
 </section>
 <section id="evaluate-the-code-1" class="slide level2">
 <h2>Evaluate the code</h2>
-<div id="696d43fd" class="cell" data-execution_count="4">
+<div id="298b30fa" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a>words <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'w'</span>)</span>
 <span id="cb6-2"><a></a>words.write(<span class="st">'The slow wolf</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="cb6-3"><a></a>words.write(<span class="st">'jumped over</span><span class="ch">\n</span><span class="st">'</span>)</span>
@@ -500,13 +500,30 @@
 </section>
 <section id="evaluate-the-code-2" class="slide level2">
 <h2>Evaluate the code</h2>
-<div id="2b830978" class="cell" data-execution_count="5">
+<div id="6f30bf19" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a>words <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'a'</span>)</span>
 <span id="cb7-2"><a></a>words.write(<span class="st">'The slow wolf</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="cb7-3"><a></a>words.write(<span class="st">'jumped over</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="cb7-4"><a></a>words.write(<span class="st">'the bear</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="cb7-5"><a></a>words.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="quiz-08" class="slide level2">
+<h2>Quiz 08</h2>
+<center>
+<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;">
+<a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time
+<div id="clock_block_cb650886c4849ee">
+
+</div>
+</div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async=""></script>
+</center>
+<p>You have 10 minutes to complete the quiz</p>
+<ul>
+<li>No need for comments, no need for a <code>main()</code>, no need for test cases</li>
+</ul>
+<p>Allowed built-in functions: <code>round()</code>, <code>input()</code>, <code>float()</code>, <code>str()</code>, <code>int()</code>, <code>len()</code>, <code>range()</code></p>
 </section>
 <section id="write-a-function-1" class="slide level2">
 <h2>Write a function</h2>
@@ -517,14 +534,14 @@
 <li><a href="data/alien.txt">Download test file</a></li>
 </ol>
 <p>Test case:</p>
-<div id="a69f9e41" class="cell" data-execution_count="6">
+<div id="5aae500f" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a>write_word_count(<span class="st">"alien.txt"</span>)</span>
 <span id="cb8-2"><a></a><span class="co"># writes out out_alien.txt with word counts</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution-1" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="17c2f270" class="cell" data-execution_count="7">
+<div id="e677c1b2" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="kw">def</span> count_words(file_name):</span>
 <span id="cb9-2"><a></a>  f <span class="op">=</span> <span class="bu">open</span>(file_name, <span class="st">"r"</span>)</span>
 <span id="cb9-3"><a></a>  counts <span class="op">=</span> {}</span>
