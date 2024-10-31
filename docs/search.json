@@ -8219,5 +8219,16 @@
       "Module 9 - Reading and Writing Text Files",
       "files and strings (class slides)"
     ]
+  },
+  {
+    "objectID": "slides-10-02.html#quiz-09",
+    "href": "slides-10-02.html#quiz-09",
+    "title": "tuples (class slides)",
+    "section": "Quiz 09",
+    "text": "Quiz 09\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no need for test cases\n\nAllowed built-in functions: round(), input(), float(), str(), int(), len(), range()",
+    "crumbs": [
+      "Module 10 - Data Structures (tuples)",
+      "tuples (class slides)"
+    ]
   }
 ]
