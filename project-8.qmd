@@ -99,9 +99,9 @@ You might find the string methods `.lower()`,`.isupper()`, and `.capitalize()` u
 
 # Ignoring Punctuation
 
-You also should make the spell checker ignore punctuation. In particular, `spellcheck.py``` should be able to handle a trailing ,, ., ?, or !. For instance, it should be able to change `hudnred?` to `hundred?` in replace mode. How can this be accomplished?
+You also should make the spell checker ignore punctuation. In particular, `spellcheck.py``` should be able to handle a trailing ,, ., ?, or ! or ;. For instance, it should be able to change `hudnred?` to `hundred?` in replace mode. How can this be accomplished?
 
-Before looking up a word in the misspellings dictionary, check if the last character is one of the four types of punctuation that you should look for (, or . or ? or !). If it is, create a variable to store that punctuation, and then trim it off of the end of the word. Then, proceed with checking the spelling. After you have determined if it is spelled correctly or not, you can put the punctuation at the end of the word.
+Before looking up a word in the misspellings dictionary, check if the last character is one of the four types of punctuation that you should look for (, or . or ? or ! or ;). If it is, create a variable to store that punctuation, and then trim it off of the end of the word. Then, proceed with checking the spelling. After you have determined if it is spelled correctly or not, you can put the punctuation at the end of the word.
 
 # Development Strategy
 
