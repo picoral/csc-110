@@ -2597,7 +2597,7 @@
     "href": "slides-11-01.html#lists-within-lists",
     "title": "more on for loops (class slides)",
     "section": "lists within lists",
-    "text": "lists within lists\nWe’ve worked with lists of integers, list of strings, and lists of floats – but we can also have lists of lists:\n\nlists = [[9,  8,  7,  8],\n         [10, 20, 30, 4],\n         [5,  50, 55, 4]]\nlists[0]\n\n[9, 8, 7, 8]\n\n\n\nlists[0][0]\n\n9",
+    "text": "lists within lists\nWe’ve worked with lists of lists, but here’s a review:\n\nlists = [[9,  8,  7,  8],\n         [10, 20, 30, 4],\n         [5,  50, 55, 4]]\nlists[0]\n\n[9, 8, 7, 8]\n\n\n\nlists[0][0]\n\n9",
     "crumbs": [
       "Module 11 - Data Structures (2D lists)",
       "more on for loops (class slides)"
