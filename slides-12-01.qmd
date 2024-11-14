@@ -7,11 +7,6 @@ df-print: kable
 
 # CSc 110 - Data Structures
 
-## Announcements
-
-* Check grades on D2L and gradescope
-* Midterm 3 is on April 24
-* Final exam on May 3
 
 ## Data Structures in Python
 
