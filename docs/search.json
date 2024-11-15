@@ -2498,7 +2498,7 @@
     "href": "slides-13-01.html#write-a-function",
     "title": "mutating lists (class slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is remove_names\nIt takes one argument: a list of strings\nIt mutates and returns the argument list removing all strings that end in vowel\n\n\nnames = [\"Beatrice\", \"Philip\", \"Anna\", \"Peter\"]\nremove_names(names)\nassert names == [\"Philip\", \"Peter\"]",
+    "text": "Write a function\nWrite a function called remove_names that takes one argument: a list of strings. The function should mutate and return the argument list removing all strings that end in vowel from that list.\nName your file delete_from_list.py and submit it for attendance on gradescope.\n\nnames = [\"Beatrice\", \"Philip\", \"Anna\", \"Peter\"]\nremove_names(names)\nassert names == [\"Philip\", \"Peter\"]",
     "crumbs": [
       "Module 13 - Control Flow with different Data Structures",
       "mutating lists (class slides)"
@@ -8229,6 +8229,17 @@
     "crumbs": [
       "Module 10 - Data Structures (tuples)",
       "tuples (class slides)"
+    ]
+  },
+  {
+    "objectID": "slides-13-01.html#announcements",
+    "href": "slides-13-01.html#announcements",
+    "title": "mutating lists (class slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nMidterm 3 November 20 (Wednesday) bring photo ID\nReview session November 19, 5pm to 7pm at Gittings 129b",
+    "crumbs": [
+      "Module 13 - Control Flow with different Data Structures",
+      "mutating lists (class slides)"
     ]
   }
 ]

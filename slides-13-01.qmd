@@ -7,6 +7,11 @@ df-print: kable
 
 # CSc 110 - mutating lists
 
+## Announcements
+
+* Midterm 3 November 20 (Wednesday) bring photo ID
+* Review session November 19, 5pm to 7pm at Gittings 129b
+
 ## Lists are mutable
 
 * changes to a list in a function will remain after the function finishes running
@@ -139,9 +144,3 @@ def main():
   
 main()
 ```
-
-# Submit code for attendance
-
-Submit your `remove_odds` functions to Gradescope for attendance.
-
-Name your file `remove_odds.py`

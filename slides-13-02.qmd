@@ -7,11 +7,6 @@ df-print: kable
 
 # CSc 110 - mutating dictionaries
 
-## Announcements
-
-* Fill out SCS at [scsonline.ucatt.arizona.edu](https://scsonline.ucatt.arizona.edu/index.php)
-* If 80% of students complete the survey, I'll drop a third quiz grade
-* Midterm 3 on April 24, Final exam on May 3
 
 ## Dictionaries are mutable
 
