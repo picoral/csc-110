@@ -37,6 +37,8 @@ Midterm 2 (Modules 1-8) + [Study Guide 2](pdfs/study-guide-2.pdf)
 
 Midterm 3 (Modules 1-12) + [Study Guide 3](pdfs/study-guide-3.pdf)
 
+[Midterm 3 review slides](review-3.html)
+
 
 17. [Practice Problems Module 13](https://colab.research.google.com/drive/1_eVARSVE203JFI7xe1YvEEeZCPMpaDSS?usp=sharing)
 18. [Practice problems Module 13 ](https://colab.research.google.com/drive/1-mSE4alNCXCef4RrcOOhg1pQH4xvs47l?usp=sharing)
