@@ -1,0 +1,219 @@
+---
+title: "Midterm 3 Review"
+format: revealjs
+slide-number: true
+df-print: kable
+---
+
+## Data Structures
+
+* List
+* Dictionary
+* Tuple
+* Set
+
+Answer the following for all data structures
+
+* Mutable or not mutable? Order?
+* Methods to create empty, add and remove values
+* Loop to iterate over
+
+## List
+
+* Mutable -- `.append(value)`, `.pop(index)`
+* To create empty: `new_list = []`
+* To mutate, use index
+
+Other useful methods: `.extend()`
+
+## List
+
+* `for value in list_name` to access values (no index needed)
+
+* `for i in range(len(list_name))` to mutate individual values
+
+* `for i in range(len(list_name)-1, -1, -1)` to pop items from the list
+
+## Dictionary
+
+* Mutable -- `dict_name[key] = value`, `.pop(key)`
+* To create empty: `new_dict = {}`
+* To mutate, use key (there are no indices in dictionaries)
+* Does **not** store repeated keys
+
+## Dictionary
+
+* `for key in dict_name` to access key (and access value through key)
+* `for value in dict_name.values()` to access values only
+* `for key, value in dict_name.items()` to access key value pairs
+
+## Set
+
+* Mutable -- `.add(value)`, `remove(value)`
+* To create empty: `new_set = set()`
+* No index in sets
+* Does **not** store repeated elements
+
+## Set
+
+No index, so just one type of loop
+
+* `for value in set_name` to access values
+
+## Tuple
+
+* Immutable (no methods)
+* To create tuple use parentheses: `(10, 20, 2)`
+* Use parameter name in function definition with a `*` to take in variable number of arguments
+* Return a tuple from a function, separating values with a comma: `return 10, 20, 2`
+
+## Common to all data structures
+
+We can use `len()` with all data structures
+
+# Attendance on gradescope
+
+## Combining data structures
+
+* Tuples can be used as dictionary keys
+* List of lists is a pretty common data structur
+* We can have lists of tuples, tuples of lists, etc.
+
+## Exercise 1
+
+Write a function that takes in a filename string for [a file that contains coordinates and shape names](data/shapes.txt), with values separated by comma, and returns a dictionary with coordinates as key and shape name as value.
+
+```{python}
+#| eval: false
+#| echo: true
+my_dict = read_file("shapes.txt")
+assert my_dict == {(10, 5): 'triangle', 
+                   (5, 5): 'circle', 
+                   (6, 7): 'triangle', 
+                   (15, 10): 'square', 
+                   (20, 25): 'rectangle'}
+```
+
+
+## Solution 1
+
+```{python}
+#| eval: true
+#| echo: true
+def read_file(filename):
+  f = open(filename, "r")
+  result = {} # new dictionary
+  for line in f:
+    parts = line.strip().split(",")
+    key = (int(parts[0]), int(parts[1]))
+    result[key] = parts[2]
+  return result
+
+if __name__ == "__main__":
+  my_dict = read_file("shapes.txt")
+  assert my_dict == {(10, 5): 'triangle', 
+                     (5, 5): 'circle', 
+                     (6, 7): 'triangle', 
+                     (15, 10): 'square', 
+                     (20, 25): 'rectangle'}
+  print(my_dict)
+    
+  
+```
+
+## Exercise 2
+
+Write a function called `split_odds_evens` that takes in a variable number of arguments and returns a tuple of lists, one list with all odd numbers, another list with all even numbers
+
+```{python}
+#| eval: false
+#| echo: true
+result = split_odds_evens(10, 2, 1, 20, 32, 2, 4, 3, 2, 1)
+assert result == ([1, 3, 1], [10, 2, 20, 32, 2, 4, 2])
+```
+
+
+## Solution 2
+
+```{python}
+#| eval: true
+#| echo: true
+def split_odds_evens(*values):
+  odds = []
+  evens = []
+  for v in values:
+    if v % 2 == 0:
+      evens.append(v)
+    else:
+      odds.append(v)
+  return odds, evens
+
+if __name__ == "__main__":
+  result = split_odds_evens(10, 2, 1, 20, 32, 2, 4, 3, 2, 1)
+  assert result == ([1, 3, 1], [10, 2, 20, 32, 2, 4, 2])
+  print(result)
+```
+
+## Exercise 3
+
+Write a function called `odds_evens_sets` that takes in a variable number of arguments and returns a tuple of sets, one list with all unique odd numbers, another with all unique even numbers
+
+```{python}
+#| eval: false
+#| echo: true
+result = odds_evens_sets(10, 2, 1, 20, 32, 2, 4, 3, 2, 1)
+assert result == ({1, 3}, {32, 2, 4, 10, 20})
+```
+
+
+## Solution 3
+
+```{python}
+#| eval: true
+#| echo: true
+def odds_evens_sets(*values):
+  odds = set()
+  evens = set()
+  for v in values:
+    if v % 2 == 0:
+      evens.add(v)
+    else:
+      odds.add(v)
+  return odds, evens
+
+if __name__ == "__main__":
+  result = odds_evens_sets(10, 2, 1, 20, 32, 2, 4, 3, 2, 1)
+  assert result == ({1, 3}, {32, 2, 4, 10, 20})
+  print(result)
+```
+
+## Exercise 4
+
+Write a python function that removes all negative numbers from an argument list. The function should mutate the argument list.
+
+```{python}
+#| eval: false
+#| echo: true
+original_list = [-1, 0, 2, -3, 1, 1]
+remove_negatives(original_list)
+assert original_list == [0, 2, 1, 1]
+```
+
+
+## Solution 4
+
+```{python}
+#| eval: true
+#| echo: true
+def remove_negatives(numbers):
+  for i in range(len(numbers)-1, -1, -1):
+    if numbers[i] < 0:
+      numbers.pop(i)
+
+if __name__ == "__main__":
+  original_list = [-1, 0, 2, -3, 1, 1]
+  remove_negatives(original_list)
+  assert original_list == [0, 2, 1, 1]
+  print(original_list)
+```
+
