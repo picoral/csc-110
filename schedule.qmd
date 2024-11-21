@@ -313,9 +313,9 @@ All assignments that are submitted on Gradescope are due at 7pm.
 
 ## Class slides
 
--   [combining data structures](slides-14-01.html)
+-   [More 2D lists](slides-14-01.html)
 -   [sorting](slides-14-02.html)
--   [review](slides-14-03.html)
+
 
 ## Assignments
 

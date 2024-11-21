@@ -499,7 +499,7 @@
 <section id="exercise-1" class="slide level2">
 <h2>Exercise 1</h2>
 <p>Write a function that takes in a filename string for <a href="data/shapes.txt">a file that contains coordinates and shape names</a>, with values separated by comma, and returns a dictionary with coordinates as key and shape name as value.</p>
-<div id="f19ad592" class="cell" data-execution_count="1">
+<div id="a3530a84" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>my_dict <span class="op">=</span> read_file(<span class="st">"shapes.txt"</span>)</span>
 <span id="cb1-2"><a></a><span class="cf">assert</span> my_dict <span class="op">==</span> {(<span class="dv">10</span>, <span class="dv">5</span>): <span class="st">'triangle'</span>, </span>
 <span id="cb1-3"><a></a>                   (<span class="dv">5</span>, <span class="dv">5</span>): <span class="st">'circle'</span>, </span>
@@ -510,7 +510,7 @@
 </section>
 <section id="solution-1" class="slide level2">
 <h2>Solution 1</h2>
-<div id="ee757b0f" class="cell" data-execution_count="2">
+<div id="7bc89cf8" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="kw">def</span> read_file(filename):</span>
 <span id="cb2-2"><a></a>  f <span class="op">=</span> <span class="bu">open</span>(filename, <span class="st">"r"</span>)</span>
 <span id="cb2-3"><a></a>  result <span class="op">=</span> {} <span class="co"># new dictionary</span></span>
@@ -536,14 +536,14 @@
 <section id="exercise-2" class="slide level2">
 <h2>Exercise 2</h2>
 <p>Write a function called <code>split_odds_evens</code> that takes in a variable number of arguments and returns a tuple of lists, one list with all odd numbers, another list with all even numbers</p>
-<div id="8a7098d4" class="cell" data-execution_count="3">
+<div id="7d60fc99" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a>result <span class="op">=</span> split_odds_evens(<span class="dv">10</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">20</span>, <span class="dv">32</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
 <span id="cb4-2"><a></a><span class="cf">assert</span> result <span class="op">==</span> ([<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">1</span>], [<span class="dv">10</span>, <span class="dv">2</span>, <span class="dv">20</span>, <span class="dv">32</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="solution-2" class="slide level2">
 <h2>Solution 2</h2>
-<div id="797fd4a5" class="cell" data-execution_count="4">
+<div id="a9dfd914" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> split_odds_evens(<span class="op">*</span>values):</span>
 <span id="cb5-2"><a></a>  odds <span class="op">=</span> []</span>
 <span id="cb5-3"><a></a>  evens <span class="op">=</span> []</span>
@@ -566,14 +566,14 @@
 <section id="exercise-3" class="slide level2">
 <h2>Exercise 3</h2>
 <p>Write a function called <code>odds_evens_sets</code> that takes in a variable number of arguments and returns a tuple of sets, one list with all unique odd numbers, another with all unique even numbers</p>
-<div id="f52b329d" class="cell" data-execution_count="5">
+<div id="c42d32d9" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a>result <span class="op">=</span> odds_evens_sets(<span class="dv">10</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">20</span>, <span class="dv">32</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
 <span id="cb7-2"><a></a><span class="cf">assert</span> result <span class="op">==</span> ({<span class="dv">1</span>, <span class="dv">3</span>}, {<span class="dv">32</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">10</span>, <span class="dv">20</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="solution-3" class="slide level2">
 <h2>Solution 3</h2>
-<div id="69d6c843" class="cell" data-execution_count="6">
+<div id="9e942770" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="kw">def</span> odds_evens_sets(<span class="op">*</span>values):</span>
 <span id="cb8-2"><a></a>  odds <span class="op">=</span> <span class="bu">set</span>()</span>
 <span id="cb8-3"><a></a>  evens <span class="op">=</span> <span class="bu">set</span>()</span>
@@ -596,7 +596,7 @@
 <section id="exercise-4" class="slide level2">
 <h2>Exercise 4</h2>
 <p>Write a python function that removes all negative numbers from an argument list. The function should mutate the argument list.</p>
-<div id="fbea01cb" class="cell" data-execution_count="7">
+<div id="fab358d1" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a>original_list <span class="op">=</span> [<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="op">-</span><span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">1</span>]</span>
 <span id="cb10-2"><a></a>remove_negatives(original_list)</span>
 <span id="cb10-3"><a></a><span class="cf">assert</span> original_list <span class="op">==</span> [<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -604,7 +604,7 @@
 </section>
 <section id="solution-4" class="slide level2">
 <h2>Solution 4</h2>
-<div id="ec382e2e" class="cell" data-execution_count="8">
+<div id="540c67f8" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="kw">def</span> remove_negatives(numbers):</span>
 <span id="cb11-2"><a></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(numbers)<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>):</span>
 <span id="cb11-3"><a></a>    <span class="cf">if</span> numbers[i] <span class="op">&lt;</span> <span class="dv">0</span>:</span>

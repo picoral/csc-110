@@ -1,97 +1,90 @@
 ---
-title: "combining data structures (class slides)"
+title: "More 2D lists (class slides)"
 format: revealjs
 slide-number: true
 df-print: kable
 ---
 
-# CSC 110 -- Combining data structures
+# CSC 110 -- Review
 
-## Announcements
+## Write functions side-by-side
 
-* Fill out SCS at [scsonline.ucatt.arizona.edu](https://scsonline.ucatt.arizona.edu/index.php)
-* If 80% of students complete the survey, I'll drop a third quiz grade
-* Midterm 3 on April 24, Final exam on May 3
+Write a function called `remove_first` that takes in a list of lists (2D list) and removes the first element of each sublist.
 
-## Tuples as dictionary keys
+Write a function called `remove_odds` that takes in a list of list (2D list) of numbers and removes all values that are odd.
 
--   We can only use immutable types as dictionary keys (strings, integers, and tuples)
--   Values in a dictionary can be of any type
-
-## Tuples as dictionary keys
-
-Tuples are useful as keys since keys need to be unique (no repeated key is allowed)
+## Solutions
 
 ```{python}
 #| eval: true
 #| echo: true
-course_schedule = { ("CSC 110", "section 1") : ("Gittings", "129b"),
-                    ("CSC 110", "section 2") : ("Gittings", "129b"),
-                    ("CSC 120", "section 1") : ("Gittings", "129b"),
-                    ("CSC 120", "section 2") : ("Gittings", "129b"),
-                    ("CSC 144", "section 1") : ("Social Sciences", "100"),
-                    ("CSC 210", "section 1") : ("Gittings", "129b")}
-```
+def remove_first(list_of_lists):
+  for sublist in list_of_lists:
+    if len(sublist) > 0:
+      sublist.pop(0)
+  return list_of_lists
 
--   How would you retrieve the room where CSC 144, section 1 takes place?
--   How would you retrieve all rooms for CSC 120?
+def remove_odds(list_of_lists):
+  for sublist in list_of_lists:
+    for i in range(len(sublist)-1, -1, -1):
+      if sublist[i] % 2 == 1:
+        sublist.pop(i)
+  return list_of_lists
 
-# Attendance
-
-Go to gradescope and answer today's attendance question
-
-## Write a function
-
-1.  Its name is `retrieve_room`
-2.  It takes three arguments: a dictionary with course information, a string for course code and number (e.g., `"CSC 110"`) and a string for section (e.g., `"section 1"`)
-3.  It returns a string with the building and room numbers (concatenated)
-
-```{python}
-#| eval: false
-#| echo: true
-print( retrieve_room(course_schedule, "CSC 110", "section 1") ) 
-# "Gittings 129b"
-```
-
-## Write a function -- solution
-
-```{python}
-#| eval: true
-#| echo: true
-def retrieve_room(course_dict, course, section):
-  c, s =  course_dict[(course, section)]
-  return c + " " + s
-
-def main():
-  course_schedule = { ("CSC 110", "section 1") : ("Gittings", "129b"),
-                    ("CSC 110", "section 2") : ("Gittings", "129b"),
-                    ("CSC 120", "section 1") : ("Gittings", "129b"),
-                    ("CSC 120", "section 2") : ("Gittings", "129b"),
-                    ("CSC 144", "section 1") : ("Social Sciences", "100"),
-                    ("CSC 210", "section 1") : ("Gittings", "129b")}
-  print( retrieve_room(course_schedule, 
-                       "CSC 110", "section 1")) # "Gittings 129b"
+if __name__ == "__main__":
+  original_list = [["banana", "apple"], [], ["pear"]]
+  remove_first(original_list)
+  assert original_list == [["apple"], [], []]
   
-main()
+  numbers = [[1, 1, 1], [0, 0], []]
+  remove_odds(numbers)
+  assert numbers == [[], [0, 0], []]
 ```
 
-## Dictionaries as values
+## Write functions side-by-side
+
+Write a function called `censor_consonants` that takes as argument a string and returns the string with the consonants replaced with `"*"`.
+
+Write a function called `replace_consonants` that takes as argument a list of characters (strings of length one) and replaces the consonants with a `"*"`.
+
+## Solutions
 
 ```{python}
 #| eval: true
 #| echo: true
-course_schedule = { "CSC 110": 
-                      {1: {"building": "Gittings", "room": "129b"},
-                       2: {"building": "Gittings", "room": "129b"} },
-                    "CSC 120":
-                       {1: {"building": "Gittings", "room": "129b"},
-                        2: {"building": "Gittings", "room": "129b"} },
-                    "CSC 144":
-                       {1: {"building": "Social Sciences", "room": "100"}}}
-                       
-course_schedule["CSC 110"][1]["building"]
+def censor_consonants(string):
+  new_string = ""
+  for char in string:
+    if char not in "aeiou":
+      new_string += "*"
+    else:
+      new_string += char
+  return new_string
+
+def replace_consonants(strings):
+  for i in range(len(strings)):
+    if strings[i] not in "aeiou":
+      strings[i] = "*"
+  return strings
+
+if __name__ == "__main__":
+  assert censor_consonants("abcd") == "a***"
+  
+  letters = ["a", "b", "c", "d"]
+  replace_consonants(letters)
+  assert letters == ["a", "*", "*", "*"]
+
 ```
 
--   How would you retrieve the room for the section 1 of CSC 120?
+## Quiz 11
 
+<center>
+<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+</center>
 
+You have 10 minutes to complete the quiz
+
+* No need for comments, no need for a `main()`, no test cases
+
+Built-in functions you can use: `round()`, `input()`, `float()`, `str()`, `int()`, `len()`, `range()`, `set()`, `list()` — you don’t have to use all of these
