@@ -8238,5 +8238,16 @@
       "Module 1 - Basics",
       "Module 1 Programming Problems"
     ]
+  },
+  {
+    "objectID": "slides-14-02.html#quiz-11",
+    "href": "slides-14-02.html#quiz-11",
+    "title": "sorting (class slides)",
+    "section": "Quiz 11",
+    "text": "Quiz 11\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz\n\nNo need for comments, no need for a main(), no test cases\n\nBuilt-in functions you can use: round(), input(), float(), str(), int(), len(), range(), set(), list() — you don’t have to use all of these",
+    "crumbs": [
+      "Module 14 - Combining Data Structures and Sorting Lists",
+      "sorting (class slides)"
+    ]
   }
 ]
