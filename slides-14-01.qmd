@@ -5,7 +5,13 @@ slide-number: true
 df-print: kable
 ---
 
-# CSC 110 -- Review
+# CSC 110 -- 2D lists Manipulation
+
+## Announcements
+
+* Pay attention do dates
+  * Final exam: Dec 13, Friday – 6:00pm - 8:00pm in S SCI 100
+  * Projects 11 and 12 due on WEDNESDAY, Dec 11
 
 ## Write functions side-by-side
 
