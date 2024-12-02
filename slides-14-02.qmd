@@ -7,6 +7,12 @@ df-print: kable
 
 # CSC 110 -- Sorting
 
+## Announcements
+
+* Pay attention do dates
+  * Final exam: Dec 13, Friday – 6:00pm - 8:00pm in S SCI 100
+  * Projects 11 and 12 due on WEDNESDAY, Dec 11
+
 ## Sorting
 
 -   A number of reasons to want sorted data
@@ -191,11 +197,6 @@ numbers = [ 3, 1, 7, 2, 4, 8, 5 ]
 \[ 1, 2, 3, 4, 5, 7, 8 \] swap
 
 6 sweeps, 6 swaps
-
-
-# Attendance
-
-Go to gradescope and answer today's attendance question
 
 ## Bubble sort
 
