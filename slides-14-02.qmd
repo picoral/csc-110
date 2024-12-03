@@ -93,6 +93,12 @@ You have 10 minutes to complete the quiz
 
 Built-in functions you can use: `round()`, `input()`, `float()`, `str()`, `int()`, `len()`, `range()`, `set()`, `list()` — you don’t have to use all of these
 
+## Survey
+
+[bit.ly/ua-ta-students](https://bit.ly/ua-ta-students)
+
+![](images/qrcode.png)
+
 ## Selection sort
 
 **Selection sort is a very simple sorting algorithm**
