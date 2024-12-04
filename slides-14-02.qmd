@@ -80,6 +80,12 @@ Come up with a sorting algorithm
 
 -   **Out-of-place sorting:** may require a secondary data structure
 
+## Out-of-place sorting
+
+* Create a new empty list
+* Find the min on the original list, remove it from original, add to new
+* Repeat until original list is empty
+
 ## Quiz 11
 
 <center>

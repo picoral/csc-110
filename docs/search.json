@@ -8260,5 +8260,16 @@
       "Module 14 - Combining Data Structures and Sorting Lists",
       "sorting (class slides)"
     ]
+  },
+  {
+    "objectID": "slides-14-02.html#out-of-place-sorting",
+    "href": "slides-14-02.html#out-of-place-sorting",
+    "title": "sorting (class slides)",
+    "section": "Out-of-place sorting",
+    "text": "Out-of-place sorting\n\nCreate a new empty list\nFind the min on the original list, remove it from original, add to new\nRepeat until original list is empty",
+    "crumbs": [
+      "Module 14 - Combining Data Structures and Sorting Lists",
+      "sorting (class slides)"
+    ]
   }
 ]
