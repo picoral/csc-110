@@ -210,6 +210,8 @@ numbers = [ 3, 1, 7, 2, 4, 8, 5 ]
 
 6 sweeps, 6 swaps
 
+# Attendance on gradescope
+
 ## Bubble sort
 
 -   **Bubble Sort:** another sorting algorithm
